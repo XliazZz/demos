@@ -1,791 +1,849 @@
 <!DOCTYPE html>
 
 <html lang="es"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "on-primary-container": "#dadfff", "surface-container-high": "#e1e8fd", "secondary": "#715d00", "on-primary": "#ffffff", "tertiary-fixed": "#ffdbd0", "primary-fixed": "#dde1ff", "surface-variant": "#dce2f7", "surface-container": "#e9edff", "on-tertiary-fixed": "#3a0b00", "on-tertiary-fixed-variant": "#842500", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "on-secondary-fixed": "#231b00", "surface-container-low": "#f1f3ff", "primary-container": "#1652f0", "on-primary-fixed-variant": "#0038b6", "on-primary-fixed": "#001452", "background": "#f9f9ff", "surface-dim": "#d3daef", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#ffb59e", "secondary-fixed-dim": "#ebc300", "on-surface-variant": "#434656", "on-secondary-fixed-variant": "#554500", "secondary-fixed": "#ffe177", "on-error": "#ffffff", "primary": "#003cc1", "surface-bright": "#f9f9ff", "outline": "#747687", "surface": "#f9f9ff", "on-secondary-container": "#6f5c00", "tertiary": "#8c2800", "surface-container-highest": "#dce2f7", "inverse-primary": "#b7c4ff", "error-container": "#ffdad6", "surface-tint": "#064ceb", "on-error-container": "#93000a", "primary-fixed-dim": "#b7c4ff", "on-background": "#141b2b", "secondary-container": "#fed400", "on-surface": "#141b2b", "inverse-surface": "#293040", "tertiary-container": "#b53600", "on-tertiary-container": "#ffd7cc", "outline-variant": "#c3c5d8", "inverse-on-surface": "#edf0ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1.25rem", "space-xs": "0.25rem", "margin-tablet": "2rem", "margin": "1rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-desktop": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "body-md": [ "Inter" ], "headline-sm": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "label-md": [ "Space Grotesk" ], "label-lg": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-sm": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-xl": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Lubricentro Velazco. No es el sitio oficial.</div><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-desktop max-w-[1440px] mx-auto flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-on-surface focus:outline-none" data-path="servicios" href="#"><span class="material-symbols-outlined text-primary text-[28px]">oil_barrel</span><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface leading-none whitespace-nowrap" style="white-space: nowrap;">LUBRICENTRO VELAZCO</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">SERVICE &amp; FLUID LAB // VILLA CRESPO</span></div></a><nav class="hidden xl:flex items-center gap-space-md ml-space-md" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors py-space-xs px-space-sm text-primary font-bold whitespace-nowrap" data-path="servicios" href="#" style="white-space: nowrap;">Servicios</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm whitespace-nowrap" data-path="calculadora-de-aceite" href="#calculadora" style="white-space: nowrap;">Calculadora</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm whitespace-nowrap" data-path="como-trabajamos" href="#como-trabajamos" style="white-space: nowrap;">Proceso</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm whitespace-nowrap" data-path="marcas" href="#marcas" style="white-space: nowrap;">Marcas</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm whitespace-nowrap" data-path="ubicacion-y-horarios" href="#ubicacion-y-horarios" style="white-space: nowrap;">Contacto</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden xl:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm whitespace-nowrap" href="tel:+541148583408" style="white-space: nowrap;"><span class="material-symbols-outlined text-[18px]">call</span><span>+54 11 4858-3408</span></a><a class="inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors font-label-md text-label-md uppercase tracking-wider px-space-md py-space-sm rounded-lg shadow-[0_2px_0_0_rgba(17,24,39,0.08)]" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="hidden sm:inline">Turnos por WhatsApp</span><span class="sm:hidden">Turnos</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
-<!-- Top Hazard Status Strip -->
-<div class="w-full h-1.5" style="background: repeating-linear-gradient(45deg, #fed400, #fed400 12px, #141b2b 12px, #141b2b 24px);"></div>
-<!-- Operational Alert Banner -->
-<div class="w-full bg-surface-container-low px-gutter-desktop py-space-xs">
-<div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
-<div class="flex items-center gap-space-sm">
-<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
-<span class="font-bold text-on-surface">BOX ACTIVO // VELASCO 1211</span>
-<span class="hidden md:inline text-outline">• TIEMPO DE ESPERA ESTIMADO: 15-20 MIN</span>
-</div>
-<div class="flex items-center gap-space-md">
-<span class="text-secondary font-bold">LUN–VIE: 08:30–18:30 HS</span>
-<span class="hidden sm:inline text-outline">|</span>
-<span class="text-on-surface font-medium">SÁB: 08:30–13:00 HS</span>
-</div>
-</div>
-</div>
-<!-- HERO SECTION -->
-<section class="relative w-full overflow-hidden bg-surface-container-lowest" style="background-image: radial-gradient(#c3c5d8 0.75px, transparent 0.75px); background-size: 20px 20px;">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop py-space-xl">
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Frenos y Embragues Velasco | Taller Especializado Villa Crespo</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#dfe2eb","on-secondary-container":"#fffbff","primary":"#00122b","primary-fixed":"#d5e3ff","inverse-surface":"#2c3137","surface-container-low":"#f0f3fd","tertiary-fixed":"#d3e4fe","on-secondary-fixed-variant":"#930004","on-tertiary-container":"#7f8fa7","on-tertiary-fixed-variant":"#38485d","on-tertiary":"#ffffff","surface-container":"#ebeef7","surface-dim":"#d7dae3","primary-container":"#0f2747","on-secondary":"#ffffff","secondary-fixed":"#ffdad5","outline-variant":"#c4c6cf","surface":"#f8f9ff","on-primary-fixed-variant":"#324769","secondary-container":"#df2c23","tertiary-container":"#18283c","surface-container-high":"#e5e8f1","on-secondary-fixed":"#410001","inverse-primary":"#b2c7f0","on-primary":"#ffffff","inverse-on-surface":"#edf1fa","background":"#f8f9ff","secondary-fixed-dim":"#ffb4a9","on-error":"#ffffff","on-primary-fixed":"#011b3b","on-background":"#181c22","primary-fixed-dim":"#b2c7f0","on-tertiary-fixed":"#0b1c30","surface-container-highest":"#dfe2eb","error":"#ba1a1a","tertiary-fixed-dim":"#b7c8e1","surface-tint":"#4a5f82","tertiary":"#021326","on-error-container":"#93000a","on-surface":"#181c22","on-surface-variant":"#44474e","surface-container-lowest":"#ffffff","secondary":"#ba080b","surface-bright":"#f8f9ff","error-container":"#ffdad6","on-primary-container":"#798fb4","outline":"#74777f"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","margin-desktop":"3rem",gutter:"1.25rem","margin-tablet":"2rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2.5rem"},fontFamily:{"label-md":["Inter"],"headline-md":["Barlow Condensed"],"headline-xl":["Barlow Condensed"],"body-sm":["Inter"],"headline-sm":["Barlow Condensed"],"headline-lg-mobile":["Barlow Condensed"],"label-sm":["Inter"],"label-lg":["Inter"],"headline-xl-mobile":["Barlow Condensed"],"headline-lg":["Barlow Condensed"],"body-md":["Inter"],"body-lg":["Inter"]},fontSize:{"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"28px",letterSpacing:"0.02em",fontWeight:"700"}],"headline-xl":["48px",{lineHeight:"52px",letterSpacing:"0.04em",fontWeight:"800"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"30px",letterSpacing:"0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-xl-mobile":["32px",{lineHeight:"36px",letterSpacing:"0.03em",fontWeight:"800"}],"headline-lg":["36px",{lineHeight:"40px",letterSpacing:"0.03em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"22px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Frenos y Embragues Velasco. No es el sitio oficial.</div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(15,39,71,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter"><a class="flex items-center gap-space-sm group" data-path="servicios" href="#"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 bg-secondary-container rounded-none"></span><span class="font-headline-sm text-headline-sm uppercase tracking-wide text-primary-container leading-none">Frenos y Embragues Velasco</span></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline mt-1">Taller Especializado · Villa Crespo</span></div></a><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-surface-container-high text-primary-container font-semibold rounded-DEFAULT"><a aria-current="page" class="px-3 py-2 uppercase tracking-wider transition-all bg-surface-container-high text-primary-container font-semibold rounded-DEFAULT" data-path="servicios" href="#">Servicios</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="diagnostico-interactivo" href="#">Diagnóstico Interactivo</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="como-trabajamos" href="#">Cómo Trabajamos</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="opiniones" href="#">Opiniones</a><a class="px-3 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ubicacion" href="#">Ubicación</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center px-4 py-2.5 bg-secondary-container text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary transition-all active:translate-y-px shadow-[0_1px_3px_rgba(15,39,71,0.08)]" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] mr-1.5">chat</span><span>Pedí Turno WhatsApp</span></a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- SECTION: HERO -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-24">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
-<!-- Left Hero Content -->
-<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
-<!-- Category Chip -->
-<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-DEFAULT">
-<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">VILLA CRESPO · SERVICE RÁPIDO OFICIAL</span>
-<span class="font-label-sm text-label-sm text-outline">[SYS_ID: VC-1211]</span>
+<!-- Col Left (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high text-primary-container">
+<span class="w-2 h-2 bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Taller Especializado en Villa Crespo · CABA</span>
 </div>
-<!-- Main Title -->
-<h1 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight leading-[1.05]">
-            Service rápido. <br/>
-<span class="text-primary-container">Sin vueltas.</span>
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container text-on-surface">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md text-primary-container uppercase tracking-wide">4.8 en Google · 50 reseñas verificadas</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl uppercase text-primary-container tracking-tight leading-none">
+            Frenos y embragues en Villa Crespo.<br/>
+<span class="text-secondary-container">Sin vueltas.</span>
 </h1>
-<!-- Subtitle -->
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-            Cambio de aceite y filtros en <strong class="text-on-surface">30 minutos</strong>, en Villa Crespo. Traé tu auto con atención inmediata por orden de llegada o coordiná tu turno directo por WhatsApp.
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Diagnóstico honesto, repuestos de primera línea y presupuesto claro antes de desarmar. Cuidamos la seguridad de tu auto en el corazón del barrio.
           </p>
-<!-- CTAs -->
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
-<a class="inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors font-headline-sm text-headline-sm uppercase tracking-wider px-space-lg py-space-sm rounded-lg shadow-md font-bold" href="https://wa.me/5491148571612?text=Hola%20Lubricentro%20Velazco%2C%20quiero%20coordinar%20un%20turno%20para%20service" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[22px]">chat</span>
-              Sacá turno por WhatsApp
-            </a>
-<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors font-label-lg text-label-lg uppercase tracking-wider px-space-md py-space-sm rounded-lg shadow-sm font-semibold" href="#calculadora">
-<span class="material-symbols-outlined text-[20px]">calculate</span>
-              Calculá tu próximo cambio
-            </a>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto pt-space-xs">
+<a class="inline-flex items-center justify-center px-6 py-4 bg-secondary-container text-on-secondary font-headline-md text-headline-md uppercase tracking-wider hover:bg-secondary transition-all active:translate-y-px shadow-[0_2px_8px_rgba(223,44,35,0.25)]" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px] mr-2">chat</span>
+<span>Pedí turno por WhatsApp</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-4 bg-primary-container text-on-primary font-headline-md text-headline-md uppercase tracking-wider hover:bg-tertiary-container transition-all active:translate-y-px" href="#diagnostico">
+<span class="material-symbols-outlined text-[22px] mr-2 text-secondary-fixed-dim">build_circle</span>
+<span>¿Qué le pasa a tu auto?</span>
+</a>
 </div>
-<!-- Technical Spec Chips Row -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs w-full pt-space-md">
-<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-DEFAULT">
-<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">TIEMPO PROMEDIO</span>
-<span class="font-label-md text-label-md text-on-surface font-bold">30 min en fosa</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-md w-full">
+<div class="flex items-center gap-2 p-2 bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0">check_circle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Diagnóstico sin cargo en el acto</span>
 </div>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Garantía escrita de mano de obra</span>
 </div>
-<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-DEFAULT">
-<span class="material-symbols-outlined text-primary text-[20px]">directions_car</span>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">COBERTURA</span>
-<span class="font-label-md text-label-md text-on-surface font-bold">Todas las marcas</span>
-</div>
-</div>
-<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-DEFAULT">
-<span class="material-symbols-outlined text-primary text-[20px]">oil_barrel</span>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">CALIDAD</span>
-<span class="font-label-md text-label-md text-on-surface font-bold">100% Sellado</span>
+<div class="flex items-center gap-2 p-2 bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary-container text-[20px] shrink-0">handshake</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Atención directa de dueños</span>
 </div>
 </div>
 </div>
-</div>
-<!-- Right Hero Image with Precision Workshop Framing -->
-<div class="lg:col-span-5 relative">
-<div class="relative bg-surface-container-lowest p-space-xs rounded-xl shadow-xl">
-<!-- Top Diagnostic HUD Header -->
-<div class="flex items-center justify-between px-space-sm py-space-xs bg-surface-container-high rounded-t-DEFAULT">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">BAY_ACTIVE // AUTO_LIFT 01</span>
-<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
-<span class="w-1.5 h-1.5 rounded-full bg-secondary-container inline-block"></span> EN CURSO
-              </span>
-</div>
-<!-- Workshop Photo Placeholder -->
-<div class="relative overflow-hidden rounded-b-DEFAULT aspect-[4/3] bg-surface-container">
-<img class="w-full h-full object-cover object-center" data-alt="Taller automotriz mecánico moderno, limpio y profesional en Villa Crespo Buenos Aires, elevador hidráulico con mecánico vertiendo aceite sintético de bidón dorado en embudo de motor, taller con piso epoxi blanco inmaculado, herramientas Snap-on prolijas de fondo y luz cenital diurna brillante" src="img/f3f16060bffca516.jpg"/>
-<!-- Technical overlay badge on image -->
-<div class="absolute bottom-3 left-3 right-3 bg-surface/95 backdrop-blur-md px-space-sm py-space-xs rounded-DEFAULT shadow-md flex items-center justify-between">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
-<span class="font-label-md text-label-md font-bold text-on-surface">Ramírez de Velasco 1211</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">VILLA CRESPO</span>
+<!-- Col Right (5 cols) -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative bg-surface-container-highest p-2 shadow-[0_4px_20px_rgba(15,39,71,0.08)]">
+<div class="relative aspect-[16/10] overflow-hidden bg-primary">
+<img alt="Cálipers y discos ventilados inspeccionados en taller Velasco Villa Crespo" class="w-full h-full object-cover" src="img/9493fd9fa59d6357.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-primary-container font-label-sm text-label-sm uppercase tracking-wider">
+                  CONTROL DE SEGURIDAD // PASTILLAS, DISCOS Y LÍQUIDO DOT4
+                </span>
 </div>
 </div>
+<!-- Floating mini-card -->
+<div class="absolute -bottom-5 -left-4 bg-primary-container text-on-primary p-3 shadow-lg flex items-center gap-3 max-w-[280px]">
+<div class="w-10 h-10 bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary text-[24px]">verified_user</span>
 </div>
-<!-- Micro Spec Floating Tag -->
-<div class="hidden sm:flex items-center gap-space-xs absolute -bottom-4 -left-4 bg-on-surface text-surface-bright px-space-md py-space-xs rounded-lg shadow-lg">
-<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Torqueo exacto según fabricante</span>
+<div>
+<p class="font-headline-sm text-headline-sm uppercase tracking-wide leading-none">Freno Seguro</p>
+<p class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider mt-1">= VTV Aprobada sin fallas</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- SERVICIOS INTEGRALES -->
-<section class="w-full bg-surface-container-low py-space-xl" id="servicios">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop flex flex-col gap-space-lg">
-<!-- Section Header -->
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<!-- SECTION: TRUST BAR -->
+<section class="w-full bg-surface-container-low py-space-lg">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
 <div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">// PROTOCOLOS DE MANTENIMIENTO</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Servicios de Laboratorio &amp; Taller</h2>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-bold">01 // ENFOQUE</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">precision_manufacturing</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
-          Diagnóstico visual sin cargo en cada ingreso. Repuestos homologados con garantía y trazabilidad completa de fluidos.
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wide mb-1">Especialistas Únicos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dedicados 100% a sistema de frenos y transmisión por embrague. Nada de improvisar en tren rodante.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-high/30">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Tolerancia Cero Error</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-bold">02 // TRANSPARENCIA</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">car_repair</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wide mb-1">Diagnóstico Sin Cargo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subimos el auto al elevador y revisamos el desgaste en 15 minutos sin costo. Mirás la pieza con nosotros.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-high/30">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Chequeo visual en fosa</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-bold">03 // PROVEEDORES</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">inventory_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wide mb-1">Primeras Marcas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bosch, Fras-le, Litton, Valeo, LuK, Brembo, Corven y fluidos homologados por norma IRAM/DOT4.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-high/30">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Repuestos Genuinos</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-bold">04 // RESPALDO</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">assignment_turned_in</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wide mb-1">Garantía Escrita</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cada recambio, centrado y rectificación cuenta con respaldo total de taller y prueba en banco dinámico.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-high/30">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">6 Meses de Garantía</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: SERVICIOS -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">COBERTURA TÉCNICA INTEGRAL</span>
+<h2 class="font-headline-xl text-headline-xl uppercase text-primary-container tracking-tight mt-1">Servicios de Taller &amp; Rectificación</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Precios transparentes y repuestos originales o alternativos premium según tu necesidad y modelo vehicular.
         </p>
 </div>
-<!-- Grid 3x2 on desktop, 1 col on mobile -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
-<!-- Card 1: Aceite y Filtro -->
-<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-<div class="w-full h-1 bg-primary absolute top-0 left-0 right-0"></div>
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">oil_barrel</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Servicio 1 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">disc_full</span>
 </div>
-<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high text-primary font-bold rounded-DEFAULT">SRV-01</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Eje Delantero / Trasero</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Cambio de Aceite y Filtro</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Mineral, Semisintético o Sintético 100% puro. Drenado por gravedad, cambio de arandela de tapón de cárter y colocación de filtro de aceite sellado nuevo.
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Pastillas de Freno</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Cambio de pastillas delanteras y traseras con limpieza de cáliper, lubricación de pernos guía con grasa sintética para alta temperatura y purgado de seguridad.
             </p>
-<div class="flex flex-wrap gap-space-xs pt-space-xs">
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Shell / Castrol / Total</span>
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">30 minutos</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low/60 p-space-sm">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline">Presupuesto base</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">Desde $32.000 ARS</span>
+</div>
+<a class="inline-flex items-center justify-center w-full py-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-container transition-colors" href="https://wa.me/5491148571612?text=Hola%20Velasco,%20quiero%20consultar%20por%20cambio%20de%20Pastillas%20de%20Freno" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] mr-1.5">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
 </div>
 </div>
-<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">PRECIO BASE</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">Desde $38.500</span>
+<!-- Servicio 2 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">settings_backup_restore</span>
 </div>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Torno de Precisión</span>
 </div>
-<!-- Card 2: Filtros Integrales -->
-<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-<div class="w-full h-1 bg-primary absolute top-0 left-0 right-0"></div>
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">air</span>
-</div>
-<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high text-primary font-bold rounded-DEFAULT">SRV-02</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Aire, Combustible y Habitáculo</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Reemplazo de elemento filtrante de aire motor, aspirado de portafiltro, filtro de nafta/diésel y antipolen de habitáculo con desinfección preventiva.
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Discos y Rectificación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Medición con micrómetro micrométrico digital, rectificado paralelo en torno o recambio por discos nuevos ventilados, macizos o ranurados con balanceo estático.
             </p>
-<div class="flex flex-wrap gap-space-xs pt-space-xs">
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Mann / Fram / Bosch</span>
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Mejora consumo</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low/60 p-space-sm">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline">Presupuesto base</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">Desde $44.000 ARS</span>
+</div>
+<a class="inline-flex items-center justify-center w-full py-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-container transition-colors" href="https://wa.me/5491148571612?text=Hola%20Velasco,%20quiero%20consultar%20por%20Discos%20y%20Rectificación" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] mr-1.5">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
 </div>
 </div>
-<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">PRECIO BASE</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">Desde $14.200</span>
+<!-- Servicio 3 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">speed</span>
 </div>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Transmisión</span>
 </div>
-<!-- Card 3: Frenos y Pastillas -->
-<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-<div class="w-full h-1 bg-secondary-container absolute top-0 left-0 right-0"></div>
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">disc_full</span>
-</div>
-<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-secondary-fixed text-on-secondary-fixed font-bold rounded-DEFAULT">SEGURIDAD</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Frenos y Pastillas</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Inspección de espesor de discos con micrómetro, limpieza de caliper, colocación de pastillas cerámicas o semimetálicas y verificación de líquido DOT4.
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Kit de Embrague Completo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Placa de presión, disco de fricción y crapodina / rulemán de empuje (LuK / Valeo), centrado con vástago cónico y purgado integral de circuito hidráulico.
             </p>
-<div class="flex flex-wrap gap-space-xs pt-space-xs">
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Raybestos / Bosch / Litton</span>
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Test en banco</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low/60 p-space-sm">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline">Presupuesto base</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">Desde $125.000 ARS</span>
+</div>
+<a class="inline-flex items-center justify-center w-full py-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-container transition-colors" href="https://wa.me/5491148571612?text=Hola%20Velasco,%20quiero%20consultar%20por%20Kit%20de%20Embrague%20Completo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] mr-1.5">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
 </div>
 </div>
-<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">PRECIO BASE</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">Desde $42.000</span>
+<!-- Servicio 4 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">opacity</span>
 </div>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Fluido Hidráulico</span>
 </div>
-<!-- Card 4: Revisión Pre-Viaje -->
-<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-<div class="w-full h-1 bg-primary absolute top-0 left-0 right-0"></div>
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">fact_check</span>
-</div>
-<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high text-primary font-bold rounded-DEFAULT">SRV-04</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Revisión Pre-Viaje (25 Puntos)</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Chequeo integral de tren delantero, fuelles, bujes, amortiguadores, neumáticos, luces reglamentarias, escobillas limpiaparabrisas y correas auxiliares.
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Líquido y Purgado DOT4</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Drenado computarizado por presión neumática, extracción de sedimentos y burbujas de aire, reemplazo total de fluido DOT3/DOT4 de alta temperatura de ebullición.
             </p>
-<div class="flex flex-wrap gap-space-xs pt-space-xs">
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Checklist Digital</span>
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Ruta segura</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low/60 p-space-sm">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline">Presupuesto base</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">Desde $22.000 ARS</span>
+</div>
+<a class="inline-flex items-center justify-center w-full py-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-container transition-colors" href="https://wa.me/5491148571612?text=Hola%20Velasco,%20quiero%20consultar%20por%20Líquido%20y%20Purgado%20DOT4" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] mr-1.5">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
 </div>
 </div>
-<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">PRECIO BASE</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">Desde $18.000</span>
+<!-- Servicio 5 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">tune</span>
 </div>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm uppercase tracking-wider text-primary-container">Freno Trasero</span>
 </div>
-<!-- Card 5: Refrigerante & Fluidos -->
-<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-<div class="w-full h-1 bg-primary absolute top-0 left-0 right-0"></div>
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">water_drop</span>
-</div>
-<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high text-primary font-bold rounded-DEFAULT">SRV-05</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Refrigerante y Fluidos</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Drenado completo, purgado del circuito, reemplazo de refrigerante orgánico de larga duración (antioxidante/anticongelante) y nivel de dirección hidráulica.
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Tambores, Cintas y Cilindros</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Rectificación micrométrica de tambores traseros, cambio de cintas de freno vulcanizadas, reemplazo de bombines con fuga de retén y regulación de freno de mano.
             </p>
-<div class="flex flex-wrap gap-space-xs pt-space-xs">
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Orgánico Tirreno / Bardahl</span>
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Control pH</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low/60 p-space-sm">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline">Presupuesto base</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">Desde $38.000 ARS</span>
+</div>
+<a class="inline-flex items-center justify-center w-full py-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-container transition-colors" href="https://wa.me/5491148571612?text=Hola%20Velasco,%20quiero%20consultar%20por%20Tambores,%20Cintas%20y%20Cilindros" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] mr-1.5">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
 </div>
 </div>
-<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">PRECIO BASE</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">Desde $19.500</span>
+<!-- Servicio 6 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[28px]">fact_check</span>
 </div>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary font-label-sm text-label-sm uppercase tracking-wider font-bold">Revisión Obligatoria</span>
 </div>
-<!-- Card 6: Batería y Lámparas -->
-<div class="flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-<div class="w-full h-1 bg-primary absolute top-0 left-0 right-0"></div>
-<div class="flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">battery_charging_full</span>
-</div>
-<span class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high text-primary font-bold rounded-DEFAULT">SRV-06</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Batería &amp; Lámparas</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Test computarizado de vida útil de batería y alternador (CCA test). Reemplazo inmediato de bombines H7, H4, posición, freno y calibración de haz de luz.
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Chequeo Integral Pre-VTV</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Prueba en fosa técnica de fuerza y eficacia de frenado, desbalanceo porcentual por eje, estado de flexibles de goma y tensión del cable de estacionamiento.
             </p>
-<div class="flex flex-wrap gap-space-xs pt-space-xs">
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Moura / Willard / Osram</span>
-<span class="font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant px-space-xs py-0.5 rounded-DEFAULT">Test en 2 min</span>
 </div>
+<div class="pt-space-sm bg-surface-container-low/60 p-space-sm">
+<div class="flex items-baseline justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-outline">Presupuesto base</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">Desde $18.000 ARS</span>
 </div>
-<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">PRECIO BASE</span>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">Desde $12.000</span>
+<a class="inline-flex items-center justify-center w-full py-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-container transition-colors" href="https://wa.me/5491148571612?text=Hola%20Velasco,%20quiero%20consultar%20por%20Chequeo%20Pre-VTV" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] mr-1.5">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- SIGNATURE FEATURE: CALCULADORA DE PRÓXIMO CAMBIO + SACÁ TURNO -->
-<section class="w-full bg-surface-container-lowest py-space-xl relative" id="calculadora">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop">
-<!-- Box Header Banner -->
-<div class="flex items-center justify-between bg-on-surface text-surface-bright px-space-md py-space-xs rounded-t-xl">
-<div class="flex items-center gap-space-xs">
-<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
-<span class="font-label-md text-label-md uppercase tracking-wider font-bold">ESTACIÓN DE CÁLCULO PREVENTIVO &amp; RESERVA INMEDIATA</span>
+<!-- SECTION: DIAGNÓSTICO INTERACTIVO (SIGNATURE FEATURE) -->
+<section class="w-full py-space-xl bg-surface-container-low scroll-mt-24" id="diagnostico">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-md">
+<div class="max-w-3xl mb-space-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container/10 text-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-2 font-bold">
+<span class="w-2 h-2 bg-secondary-container"></span>
+            DIAGNÓSTICO INTERACTIVO RÁPIDO
+          </div>
+<h2 class="font-headline-xl text-headline-xl uppercase text-primary-container tracking-tight">¿Qué le pasa a tu auto?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+            Tocá los síntomas que notás al manejar. Nuestro cotizador te indica la urgencia técnica y arma el mensaje listo para enviar directamente a nuestro WhatsApp para coordinar el ingreso al taller.
+          </p>
 </div>
-<span class="font-label-sm text-label-sm text-outline-variant font-mono">CALC_ENGINE v3.2</span>
+<!-- 8 Clickable Symptom Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-lg" id="symptoms-container">
+<!-- Card 1 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Pastillas en el testigo acústico o cristalizadas por fricción térmica." data-id="chilla" data-text="Chilla al frenar" data-urgency="Moderada - No demorar el recambio para no rayar los discos.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">volume_up</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
 </div>
-<!-- Main Container 2 Columns -->
-<div class="grid grid-cols-1 lg:grid-cols-12 bg-surface-container-low rounded-b-xl shadow-lg overflow-hidden">
-<!-- Left: Interactive Calculator -->
-<div class="lg:col-span-6 p-space-lg flex flex-col gap-space-md bg-surface-container-lowest">
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">[PARAMETRIZACIÓN]</span>
-<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Calculadora de Aceite</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-              Ingresá tu kilometraje actual y la base de lubricante para calcular el umbral exacto del próximo servicio.
-            </p>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Chilla al frenar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pastillas en el testigo o material de fricción cristalizado.</p>
 </div>
-<!-- Calculator Form Elements -->
-<div class="flex flex-col gap-space-md pt-space-xs">
-<div class="flex flex-col gap-1">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold flex justify-between" for="currentKm">
-<span>Kilometraje Actual de tu Auto</span>
-<span class="text-primary font-mono">[ODOMETRO]</span>
-</label>
-<div class="relative">
-<input class="w-full bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-lg font-headline-sm text-headline-sm font-bold focus:outline-none focus:bg-surface-container" id="currentKm" min="0" step="500" type="number" value="77500"/>
-<span class="absolute right-4 top-1/2 -translate-y-1/2 font-label-md text-label-md text-outline font-bold">KM</span>
+<!-- Card 2 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Aire en el circuito hidráulico, pérdida de líquido o bomba de freno con fugas internas en pistón." data-id="esponjoso" data-text="Pedal esponjoso o al fondo" data-urgency="URGENCIA ALTA // Peligro de pérdida de frenado total. Conducir a baja velocidad o traer en grúa.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">airline_seat_legroom_reduced</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Pedal esponjoso</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El pedal baja hasta el fondo o se siente blando y elástico.</p>
+</div>
+<!-- Card 3 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Discos alabeados o deformados por choque térmico (pasar por charcos calientes) o desgaste desparejo." data-id="vibra" data-text="Vibra el volante al frenar" data-urgency="Moderada - Produce desgaste acelerado en rótulas y extremos de dirección.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">vibration</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Vibra el volante</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sacudidas perceptibles en la dirección al apretar el freno.</p>
+</div>
+<!-- Card 4 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Cáliper trabado, pistón clavado por óxido o flexible de freno estrangulado impidiendo el retorno del fluido." data-id="tira" data-text="El auto tira para un lado" data-urgency="Alta - Pérdida de trayectoria en frenadas de emergencia. Desgaste desparejo en cubiertas.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">alt_route</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Tira para un lado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Al frenar, el vehículo se desvía bruscamente hacia la izquierda o derecha.</p>
+</div>
+<!-- Card 5 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Disco de embrague desgastado en su espesor límite o contaminado con aceite de retén de bancada." data-id="patina" data-text="Embrague patina / no acelera" data-urgency="Media-Alta - El motor sube de revoluciones pero el auto no avanza con fuerza; puede dejarte a pie en subidas.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">speed</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Embrague patina</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El motor se acelera pero el auto no tracciona proporcionalmente.</p>
+</div>
+<!-- Card 6 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Placa de embrague fatigada, bombín hidráulico o crapodina que no desacopla completamente del volante." data-id="cambios" data-text="Cuesta que entren los cambios" data-urgency="Media - Desgasta los sincronizados de la caja de cambios si se fuerza la palanca.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">swap_driving_apps_wheel</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Cuestan los cambios</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La primera y marcha atrás raspan o se traban con el motor en marcha.</p>
+</div>
+<!-- Card 7 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Diafragma de placa deformado o cable de comando seco con rozamiento interno excesivo." data-id="duro" data-text="Pedal de embrague muy duro" data-urgency="Moderada - Fatiga mecánica severa en rodamiento de empuje y molestia física al manejar en tránsito porteño.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">fitness_center</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Pedal muy duro</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Excesiva resistencia en el pie izquierdo para desacoplar.</p>
+</div>
+<!-- Card 8 -->
+<div class="symptom-card cursor-pointer p-4 bg-surface hover:bg-surface-container-high transition-all select-none" data-diagnosis="Fricción excesiva y patinamiento continuo en forros de embrague o cáliper trabado rozando el disco sin soltar." data-id="olor" data-text="Olor a quemado al exigir la marcha" data-urgency="URGENCIA ALTA // Cristalización inmediata o sobrecalentamiento de rodamientos de rueda.">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary-container card-icon">local_fire_department</span>
+<span class="w-5 h-5 flex items-center justify-center bg-surface-container-high check-box">
+<span class="material-symbols-outlined text-[16px] hidden check-mark text-on-secondary">check</span>
+</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container mt-3 mb-1">Olor a quemado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Olor agrio y humo visible en ruedas o campana de embrague.</p>
 </div>
 </div>
-<div class="flex flex-col gap-1">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold flex justify-between" for="oilType">
-<span>Tipo de Aceite Utilizado</span>
-<span class="text-primary font-mono">[BASE_SPEC]</span>
-</label>
-<select class="w-full bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-lg font-body-md text-body-md font-semibold focus:outline-none focus:bg-surface-container" id="oilType">
-<option selected="" value="10000">Sintético 100% Puro (+10.000 km) · Recomendado autos modernos</option>
-<option value="7500">Semisintético 10W-40 (+7.500 km) · Estándar alto rendimiento</option>
-<option value="5000">Mineral 15W-40 / 20W-50 (+5.000 km) · Motores clásicos / carga</option>
-</select>
+<!-- Live Diagnostic Box -->
+<div class="bg-surface-container p-space-md mb-space-lg transition-all" id="diagnostic-result-box">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-secondary-container text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
 </div>
-</div>
-<!-- Dynamic Output Telemetry Gauge Card -->
-<div class="mt-space-xs bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-sm">
-<div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">PRÓXIMO REEMPLAZO SUGERIDO</span>
-<span class="px-space-xs py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold rounded-DEFAULT" id="kmStatusBadge">CALIBRADO</span>
-</div>
-<div class="flex items-baseline gap-space-xs">
-<span class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight" id="targetKmDisplay">87.500</span>
-<span class="font-headline-md text-headline-md text-on-surface font-bold">KM</span>
-</div>
-<!-- Segmented Gauge Bar (Inline SVG) -->
-<div class="w-full flex flex-col gap-1">
-<div class="flex justify-between font-label-sm text-label-sm text-outline uppercase font-semibold">
-<span>Actual: <span class="text-on-surface" id="actualKmLabel">77.500 km</span></span>
-<span>Margen: <span class="text-primary" id="marginLabel">+10.000 km</span></span>
-</div>
-<svg class="w-full h-4 rounded-DEFAULT overflow-hidden" preserveaspectratio="none" viewbox="0 0 100 12">
-<rect fill="#dce2f7" height="12" width="100" x="0" y="0"></rect>
-<rect fill="#1652f0" height="12" id="gaugeFill" width="75" x="0" y="0"></rect>
-<line stroke="#fed400" stroke-width="2" x1="85" x2="85" y1="0" y2="12"></line>
-</svg>
-<div class="flex justify-between items-center text-[11px] text-on-surface-variant pt-0.5">
-<span>0 km de desgaste</span>
-<span class="font-bold text-secondary">Límite recomendado de viscosidad</span>
-</div>
-</div>
-<!-- Quick Advice -->
-<div class="flex items-start gap-space-xs pt-space-xs text-on-surface">
-<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">schedule</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                En uso urbano (CABA), equivale a aprox. <strong class="text-on-surface" id="estimatedMonths">8 a 10 meses</strong> de rodaje regular. Recomendamos no exceder los 12 meses aunque no alcances el kilometraje.
+<div class="flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">PRE-DIAGNÓSTICO TÉCNICO EN VIVO</span>
+<p class="font-body-md text-body-md text-primary-container font-semibold mt-1" id="diagnostic-summary">
+                Seleccioná uno o más síntomas para ver la evaluación técnica preliminar.
+              </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 italic" id="diagnostic-urgency">
+                Estamos listos en nuestro taller de Villa Crespo para revisarlo en el elevador sin costo.
               </p>
 </div>
 </div>
 </div>
-<!-- Right: Instant WhatsApp Booking Form -->
-<div class="lg:col-span-6 p-space-lg flex flex-col justify-between bg-surface-container-low">
-<div class="flex flex-col gap-space-sm">
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">[ORDEN INMEDIATA]</span>
-<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Sacá tu turno en 1 clic</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                Completá los datos básicos de tu auto. Al tocar el botón se genera el mensaje listo para enviar al WhatsApp del lubricentro.
-              </p>
+<!-- Vehicle Details Form -->
+<div class="bg-surface p-space-md shadow-inner mb-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-primary-container mb-1.5 font-bold" for="veh-model">Marca y Modelo</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-lowest text-primary-container font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" id="veh-model" placeholder="Ej: Volkswagen Gol Trend 1.6" type="text"/>
 </div>
-<form class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs" id="bookingForm" onsubmit="return false;">
-<!-- Input Patente -->
-<div class="flex flex-col gap-1">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="bookPatente">
-                  Patente del Vehículo
-                </label>
-<input class="w-full bg-surface-container-lowest text-on-surface uppercase px-space-md py-space-sm rounded-lg font-headline-sm text-headline-sm font-bold tracking-wider placeholder:text-outline-variant focus:outline-none focus:bg-surface" id="bookPatente" placeholder="EJ: AE 458 TZ" type="text"/>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-primary-container mb-1.5 font-bold" for="veh-year">Año y Patente (opcional)</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-lowest text-primary-container font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" id="veh-year" placeholder="Ej: 2018 · AB 123 CD" type="text"/>
 </div>
-<!-- Input Modelo/Año -->
-<div class="flex flex-col gap-1">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="bookCar">
-                  Modelo y Año
-                </label>
-<input class="w-full bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-lg font-body-md text-body-md font-semibold placeholder:text-outline-variant focus:outline-none focus:bg-surface" id="bookCar" placeholder="EJ: VW Gol Trend 2019" type="text"/>
-</div>
-<!-- Select Servicio -->
-<div class="flex flex-col gap-1">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="bookService">
-                  Servicio Requerido
-                </label>
-<select class="w-full bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-lg font-body-md text-body-md font-semibold focus:outline-none" id="bookService">
-<option value="Cambio de Aceite y Filtro">Cambio de Aceite y Filtro</option>
-<option value="Service Completo (Aceite + 3 Filtros)">Service Completo (Aceite + 3 Filtros)</option>
-<option value="Revisión Pre-Viaje 25 Puntos">Revisión Pre-Viaje 25 Puntos</option>
-<option value="Frenos y Pastillas">Frenos y Pastillas</option>
-<option value="Fluidos y Refrigerante">Fluidos y Refrigerante</option>
-<option value="Consulta / Revisión General">Consulta / Revisión General</option>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-primary-container mb-1.5 font-bold" for="veh-time">Turno Preferido</label>
+<select class="w-full px-3 py-2.5 bg-surface-container-lowest text-primary-container font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" id="veh-time">
+<option value="Mañana (8:00 a 12:00)">Mañana (8:00 a 12:00)</option>
+<option value="Tarde (13:00 a 18:00)">Tarde (13:00 a 18:00)</option>
+<option value="Sábado por la mañana (8:00 a 13:00)">Sábado por la mañana (8:00 a 13:00)</option>
+<option value="Urgencia / Hoy mismo">Urgencia / Hoy mismo</option>
 </select>
 </div>
-<!-- Preferred Day -->
-<div class="flex flex-col gap-1">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold" for="bookDay">
-                  Día o Franja Preferida
-                </label>
-<input class="w-full bg-surface-container-lowest text-on-surface px-space-md py-space-sm rounded-lg font-body-md text-body-md font-semibold placeholder:text-outline-variant focus:outline-none focus:bg-surface" id="bookDay" placeholder="EJ: Mañana por la tarde" type="text"/>
-</div>
-</form>
-</div>
-<!-- Bottom Action Area -->
-<div class="flex flex-col gap-space-sm pt-space-md">
-<div class="flex flex-col gap-space-xs bg-surface-container-lowest p-space-sm rounded-lg border border-outline-variant/30 mb-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Atención inmediata por orden de llegada o con turno fijado</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Diagnóstico de 25 puntos y verificación de niveles sin cargo</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span><span class="font-body-sm text-body-sm text-on-surface font-medium leading-tight">Presupuesto cerrado en mostrador antes de iniciar el trabajo</span></div></div><button class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-all font-headline-sm text-headline-sm uppercase tracking-wider px-space-lg py-space-md rounded-lg shadow-md font-bold" id="sendWhatsAppBtn" type="button">
-<span class="material-symbols-outlined text-[24px]">send</span>
-              Confirmar turno por WhatsApp
-            </button>
-<div class="flex items-center justify-center gap-space-xs text-outline text-label-sm font-label-sm uppercase tracking-wider">
-<span class="material-symbols-outlined text-[16px]">lock</span>
-<span>Sin seña previa obligatoria · Respuesta en menos de 10 min</span>
 </div>
 </div>
+<!-- Action Submit Button -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">lock</span>
+<span class="font-body-sm text-body-sm">Presupuesto sin compromiso. Te respondemos de inmediato.</span>
+</div>
+<button class="w-full sm:w-auto px-8 py-4 bg-secondary-container text-on-secondary font-headline-md text-headline-md uppercase tracking-wider hover:bg-secondary transition-all active:translate-y-px shadow-[0_2px_8px_rgba(223,44,35,0.3)] flex items-center justify-center" id="btn-submit-diag">
+<span class="material-symbols-outlined text-[22px] mr-2">chat</span>
+<span>Pedir turno por WhatsApp con estos síntomas</span>
+</button>
 </div>
 </div>
 </div>
 </section>
-<!-- CÓMO TRABAJAMOS: 4 PASOS -->
-<section class="w-full bg-surface-container-low py-space-xl" id="como-trabajamos">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop flex flex-col gap-space-lg">
-<div class="flex flex-col items-start gap-space-xs">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">// WORKFLOW CERTIFICADO</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Cómo Trabajamos en Velazco</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-          Protocolo ágil, técnico y transparente. Mirás todo el proceso mientras te tomás un café en nuestra sala climatizada.
+<!-- SECTION: CÓMO TRABAJAMOS -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-2xl mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">METODOLOGÍA TRANSPARENTE</span>
+<h2 class="font-headline-xl text-headline-xl uppercase text-primary-container tracking-tight mt-1">Cómo Trabajamos en Velasco</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+          En nuestro taller no existen las sorpresas al momento de pagar. Te mostramos la pieza gastada, presupuestamos antes de accionar y te devolvemos las piezas reemplazadas.
         </p>
 </div>
-<!-- 4 Numbered Steps -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
-<!-- Step 01 -->
-<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative">
-<div class="flex items-center justify-between pb-space-sm">
-<span class="font-headline-lg text-headline-lg text-outline-variant font-bold leading-none">01</span>
-<span class="material-symbols-outlined text-primary text-[28px]">directions_car</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Llegás sin vueltas</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
-            Ingresás directo a la fosa en Juan Ramírez de Velasco 1211 o presentás tu turno de WhatsApp. Te recibimos al instante sin demoras innecesarias.
-          </p>
-</div>
-<!-- Step 02 -->
-<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative">
-<div class="flex items-center justify-between pb-space-sm">
-<span class="font-headline-lg text-headline-lg text-outline-variant font-bold leading-none">02</span>
-<span class="material-symbols-outlined text-primary text-[28px]">manage_search</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Diagnóstico &amp; Elección</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
-            Chequeamos la viscosidad SAE y la norma API/ACEA exacta indicada en el manual de tu motor. Vos elegís la marca frente al mostrador.
-          </p>
-</div>
-<!-- Step 03 -->
-<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative">
-<div class="flex items-center justify-between pb-space-sm">
-<span class="font-headline-lg text-headline-lg text-primary font-bold leading-none">03</span>
-<span class="material-symbols-outlined text-primary text-[28px]">timelapse</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Service en 30 Minutos</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
-            Drenado por gravedad en caliente, cambio de filtros sellados, arandela de cobre nueva y apriete con torquímetro calibrado.
-          </p>
-</div>
-<!-- Step 04 -->
-<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative">
-<div class="flex items-center justify-between pb-space-sm">
-<span class="font-headline-lg text-headline-lg text-outline-variant font-bold leading-none">04</span>
-<span class="material-symbols-outlined text-secondary text-[28px]">sticky_note_2</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold">Ficha Técnica Digital</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
-            Te colocamos el sticker estático en el parabrisas y te enviamos la ficha técnica a tu WhatsApp para que tengas el historial guardado.
-          </p>
-</div>
-</div>
-</div>
-</section>
-<!-- MARCAS DE ACEITE QUE USAMOS (LABORATORY TABLE DISPLAY) -->
-<section class="w-full bg-surface-container-lowest py-space-xl" id="marcas">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop flex flex-col gap-space-lg">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
-<div class="lg:col-span-6 flex flex-col gap-space-sm">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">// SUMINISTRO OFICIAL CERTIFICADO</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Primeras Marcas Mundiales</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            Trabajamos únicamente con envases originales sellados y tambores con precinto de fábrica. Garantizamos la trazabilidad total del lubricante que entra al motor de tu auto.
-          </p>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs">
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">SHELL</span>
-<span class="font-label-sm text-label-sm text-outline">Helix Ultra / HX8</span>
-</div>
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">CASTROL</span>
-<span class="font-label-sm text-label-sm text-outline">EDGE &amp; Magnatec</span>
-</div>
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">MOBIL</span>
-<span class="font-label-sm text-label-sm text-outline">Mobil 1 ESP / Super</span>
-</div>
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">YPF ELAION</span>
-<span class="font-label-sm text-label-sm text-outline">Auro / F50 / F30</span>
-</div>
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">TOTAL</span>
-<span class="font-label-sm text-label-sm text-outline">Quartz Ineo / 9000</span>
-</div>
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold">MOTUL</span>
-<span class="font-label-sm text-label-sm text-outline">8100 X-cess / Specific</span>
-</div>
-</div>
-<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase font-bold pt-space-xs">
-<span class="material-symbols-outlined text-[18px]">verified_user</span>
-<span>Normas cumplidas: API SP/SN Plus · ACEA C2/C3/A3/B4 · VW 508.88 · Dexos 2</span>
-</div>
-</div>
-<!-- Visual photo card representing technical lab layout of fluids -->
-<div class="lg:col-span-6 relative">
-<div class="bg-surface-container-low p-space-xs rounded-xl shadow-lg">
-<div class="overflow-hidden rounded-lg aspect-[16/10]">
-<img class="w-full h-full object-cover" data-alt="Disposición limpia e industrial sobre mesada de acero inoxidable quirúrgico en taller mecánico con envases premium de aceite Shell Helix Ultra gris, Castrol EDGE dorado, Mobil 1 negro, junto con filtros de aire rectangulares anaranjados y filtros cilíndricos Bosch nuevos en sus cajas y una llave dinamométrica de precisión" src="img/dee1c8f68e1c1ad5.jpg"/>
-</div>
-<div class="px-space-md py-space-sm flex items-center justify-between">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">BANCO DE TRABAJO // CONTROL DE CALIDAD</span>
-<span class="font-label-sm text-label-sm bg-surface-container text-primary font-bold px-space-xs py-0.5 rounded-DEFAULT">100% ORIGINAL</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- RESEÑAS DE CLIENTES DE VILLA CRESPO -->
-<section class="w-full bg-surface-container-low py-space-xl">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop flex flex-col gap-space-lg">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-desktop mb-space-xl">
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
 <div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">// OPINIONES REALES EN GOOGLE MAPS</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Vecinos de Villa Crespo que confían</h2>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-xl text-headline-xl text-secondary-container font-extrabold">01</span>
+<span class="material-symbols-outlined text-primary-container text-[28px]">search_check</span>
 </div>
-<div class="flex items-center gap-space-xs">
-<span class="font-headline-md text-headline-md font-bold text-on-surface">4.9</span>
-<div class="flex text-secondary-container">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Traelo y lo revisamos en la fosa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Subimos tu auto a los elevadores en Juan Ramírez de Velasco 1211. Miramos el estado real del sistema hidráulico, el espesor de pastillas y el juego del pedal frente a vos.
+            </p>
 </div>
-<span class="font-label-sm text-label-sm text-outline uppercase">(+320 valoraciones)</span>
+<div class="mt-6 pt-3 bg-surface-container">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider">Duración: 15 minutos sin costo</span>
 </div>
 </div>
-<!-- 3 Columns Reviews Grid -->
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-xl text-headline-xl text-secondary-container font-extrabold">02</span>
+<span class="material-symbols-outlined text-primary-container text-[28px]">receipt_long</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Presupuesto detallado por WhatsApp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Te enviamos fotos, videos del desgaste y el costo exacto de repuestos originales o alternativos más mano de obra antes de tocar un solo tornillo. Cero sorpresas.
+            </p>
+</div>
+<div class="mt-6 pt-3 bg-surface-container">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider">Aprobación previa obligatoria</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-xl text-headline-xl text-secondary-container font-extrabold">03</span>
+<span class="material-symbols-outlined text-primary-container text-[28px]">task_alt</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary-container tracking-wide mb-2">Retirás en el día con garantía</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Probamos el frenado y la suavidad del pedal en calle, te entregamos las cajas y repuestos viejos que fueron cambiados y tu certificado de garantía por escrito.
+            </p>
+</div>
+<div class="mt-6 pt-3 bg-surface-container">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider">Entrega en el día (según turno)</span>
+</div>
+</div>
+</div>
+<!-- Workshop Gallery Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop">
+<div class="relative bg-surface-container-highest overflow-hidden aspect-[4/3] group">
+<img alt="Mecánico instalando kit de embrague con volante en taller Velasco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="img/e59f6a211398bc54.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-primary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">
+              ARMADO DE PRECISIÓN // EMBRAGUE MONOMASA &amp; BIMASA
+            </span>
+<p class="font-body-sm text-body-sm text-white/90 mt-1">Centrado milimétrico para evitar vibraciones en el disco nuevo.</p>
+</div>
+</div>
+<div class="relative bg-surface-container-highest overflow-hidden aspect-[4/3] group">
+<img alt="Elevadores mecánicos e inspección técnica en fosa de Villa Crespo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="img/5cc5f5054945c260.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-primary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">
+              BAHÍA DE SERVICIO // ELEVADORES HIDRÁULICOS HOMOLOGADOS
+            </span>
+<p class="font-body-sm text-body-sm text-white/90 mt-1">Instalaciones limpias y equipadas con instrumental de purgado a presión.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: OPINIONES DE VECINOS -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">RESEÑAS REALES DE VILLA CRESPO Y ALREDEDORES</span>
+<h2 class="font-headline-xl text-headline-xl uppercase text-primary-container tracking-tight mt-1">Opiniones de Nuestros Clientes</h2>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 shadow-sm">
+<span class="font-headline-md text-headline-md text-primary-container font-bold">4.8 / 5.0</span>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">50 Reseñas Google</span>
+</div>
+</div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
 <!-- Review 1 -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="flex items-center justify-between">
-<div class="flex text-secondary-container">
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 mb-3">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="font-label-sm text-label-sm text-outline">Hace 2 semanas</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface">
-              “Excelente atención de los muchachos. Caí sin turno un martes a la mañana y en 25 minutos me cambiaron aceite sintético Total y los 3 filtros de mi Cronos. Te muestran los repuestos viejos antes de tirarlos. 10 de 10.”
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4 leading-relaxed">
+              "Llevé el Corolla porque chillaba feo y en otro lado me querían cambiar todo el tren delantero. Acá me cambiaron las pastillas, rectificaron los discos y me cobraron exactamente lo acordado. Honestos de verdad."
             </p>
 </div>
-<div class="flex items-center gap-space-xs pt-space-xs">
-<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
-              MR
-            </div>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-bold text-on-surface">Matías Rossi</span>
-<span class="font-label-sm text-label-sm text-outline">Fiat Cronos 1.3 Drive</span>
+<div class="pt-3 bg-surface-container-high/40 flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container uppercase">Fernando C.</p>
+<p class="font-label-sm text-label-sm text-outline uppercase">Vecino de Malabia · Toyota Corolla</p>
 </div>
+<span class="material-symbols-outlined text-secondary-container text-[22px]">verified</span>
 </div>
 </div>
 <!-- Review 2 -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="flex items-center justify-between">
-<div class="flex text-secondary-container">
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 mb-3">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="font-label-sm text-label-sm text-outline">Hace 1 mes</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface">
-              “El taller más limpio y ordenado de la zona. Trabajo en Palermo y me cruzo acá a Velasco porque no te inventan cosas que no son. Me revisaron frenos y me dijeron que todavía tenían 10.000 km de vida. Honradez total.”
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4 leading-relaxed">
+              "Me hicieron el embrague completo de una Kangoo de reparto en el día. El pedal quedó una seda, me mandaron videos del desgaste del disco viejo por WhatsApp antes de poner el nuevo LuK. Súper recomendables."
             </p>
 </div>
-<div class="flex items-center gap-space-xs pt-space-xs">
-<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
-              LP
-            </div>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-bold text-on-surface">Luciana Pardo</span>
-<span class="font-label-sm text-label-sm text-outline">Ford Fiesta Kinetic</span>
+<div class="pt-3 bg-surface-container-high/40 flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container uppercase">Mariana G.</p>
+<p class="font-label-sm text-label-sm text-outline uppercase">Villa Crespo · Renault Kangoo</p>
 </div>
+<span class="material-symbols-outlined text-secondary-container text-[22px]">verified</span>
 </div>
 </div>
 <!-- Review 3 -->
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<div class="flex items-center justify-between">
-<div class="flex text-secondary-container">
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex text-amber-500 mb-3">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="font-label-sm text-label-sm text-outline">Hace 3 semanas</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface">
-              “Coordiné turno por WhatsApp para el sábado a primera hora, llegué y ya tenían preparado el aceite Castrol EDGE y el filtro Mann para mi Vento. En media hora me fui con el sticker puesto y la ficha en el celu. Impecable.”
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4 leading-relaxed">
+              "Fui a hacer la revisión pre-VTV porque reboté por desbalance en el eje trasero. Cambiaron cilindros y cintas, purgaron todo y pasé la VTV al día siguiente sin observaciones. Excelentes muchachos."
             </p>
 </div>
-<div class="flex items-center gap-space-xs pt-space-xs">
-<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-bold text-primary font-label-md">
-              GA
-            </div>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-bold text-on-surface">Gonzalo Aguirre</span>
-<span class="font-label-sm text-label-sm text-outline">VW Vento 2.0 TSI</span>
+<div class="pt-3 bg-surface-container-high/40 flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container uppercase">Lucas B.</p>
+<p class="font-label-sm text-label-sm text-outline uppercase">Parque Centenario · Fiat Palio</p>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-[22px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: VISITANOS & CONTACTO -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-stretch">
+<!-- Col Info (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg lg:p-space-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">UBICACIÓN ESTRATÉGICA EN CAPITAL</span>
+<h2 class="font-headline-xl text-headline-xl uppercase text-primary-container tracking-tight mt-1 mb-space-md">Vení al Taller</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+              Estamos en una zona de fácil acceso desde Av. Juan B. Justo y Av. Corrientes. Podés dejar el auto por la mañana y retirarlo a la salida de tu trabajo.
+            </p>
+<div class="space-y-space-md">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">pin_drop</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container">Dirección</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Juan Ramírez de Velasco 1211, Villa Crespo, CABA</p>
+<p class="font-label-sm text-label-sm text-outline uppercase mt-0.5">(Entre Darwin y Humboldt)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container">Horarios de Fosa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lunes a Viernes: 8:00 a 18:00 (Corrido)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sábados: 8:00 a 13:00</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">phone_in_talk</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary-container">Teléfonos Directos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Taller fijo: <a class="font-bold text-primary-container hover:underline" href="tel:01148571612">4857-1612</a></p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">WhatsApp: <a class="font-bold text-primary-container hover:underline" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank">+54 9 11 4857-1612</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm mt-space-lg pt-space-md bg-surface-container">
+<a class="flex-1 py-3 px-4 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider text-center hover:bg-tertiary-container transition-colors flex items-center justify-center" href="https://www.google.com/maps/search/?api=1&amp;query=Frenos%20y%20Embragues%20Velasco%20Juan%20Ram%C3%ADrez%20de%20Velasco%201211" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] mr-1.5 text-secondary-fixed-dim">map</span>
+<span>Cómo Llegar (Google Maps)</span>
+</a>
+<a class="flex-1 py-3 px-4 bg-secondary-container text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider text-center hover:bg-secondary transition-colors flex items-center justify-center" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] mr-1.5">chat</span>
+<span>Escribinos al WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Col Map representation (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container p-space-md flex flex-col justify-between">
+<!-- Stylized Technical City Grid Representation -->
+<div class="relative w-full h-[360px] lg:h-full min-h-[340px] bg-primary overflow-hidden flex flex-col justify-between p-6">
+<!-- Grid Lines pattern -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="relative z-10 flex items-center justify-between">
+<span class="px-2.5 py-1 bg-surface-container-lowest text-primary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                GPS: -34.5901, -58.4412 · VILLA CRESPO
+              </span>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
+                TALLER ACTIVO
+              </span>
+</div>
+<!-- Stylized landmarks card in center -->
+<div class="relative z-10 max-w-sm bg-surface-container-lowest p-4 shadow-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-3 h-3 bg-secondary-container animate-pulse"></span>
+<p class="font-headline-sm text-headline-sm uppercase text-primary-container">Velasco Taller Mecánico</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+                Juan Ramírez de Velasco 1211 (e/ Humboldt y Darwin).
+              </p>
+<div class="space-y-1.5 bg-surface-container-low p-2 font-label-sm text-label-sm text-primary-container">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">train</span>
+<span>A 400m de Subte B (Estación Malabia / Dorrego)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">directions_bus</span>
+<span>A 200m de Metrobús Juan B. Justo</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">navigation</span>
+<span>A 3 cuadras de Av. Corrientes</span>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex justify-end">
+<a class="px-4 py-2 bg-secondary-container text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary transition-colors inline-flex items-center" href="https://www.google.com/maps/search/?api=1&amp;query=Frenos%20y%20Embragues%20Velasco%20Juan%20Ram%C3%ADrez%20de%20Velasco%201211" rel="noopener noreferrer" target="_blank">
+<span>Abrir en Google Maps</span>
+<span class="material-symbols-outlined text-[18px] ml-1">open_in_new</span>
+</a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- VISITANOS & CONTACTO CON MAPA TÉCNICO -->
-<section class="w-full bg-surface-container-lowest py-space-xl" id="ubicacion-y-horarios">
-<div class="w-full max-w-[1440px] mx-auto px-gutter-desktop">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
-<!-- Left: Address & Direct Contact -->
-<div class="lg:col-span-5 flex flex-col justify-between gap-space-md">
-<div class="flex flex-col gap-space-sm">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">// BASE OPERATIVA CENTRAL</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Vení al taller en Villa Crespo</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Fácil acceso desde Av. Corrientes, Av. Scalabrini Ortiz y Av. Juan B. Justo. Fosa pasante de alta capacidad para autos particulares, utilitarios y flotas comerciales.
-            </p>
-<div class="flex flex-col gap-space-sm pt-space-xs">
-<div class="flex items-start gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
-<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">location_on</span>
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Juan Ramírez de Velasco 1211</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Entre Darwin y Humboldt · Villa Crespo, CABA</span>
+<!-- STICKY ACTION BAR FOR MOBILE -->
+<div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md p-3 shadow-[0_-2px_10px_rgba(15,39,71,0.12)]">
+<div class="grid grid-cols-2 gap-2">
+<a class="py-2.5 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center" href="tel:01148571612">
+<span class="material-symbols-outlined text-[18px] mr-1">call</span>
+<span>Llamar</span>
+</a>
+<a class="py-2.5 bg-secondary-container text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] mr-1">chat</span>
+<span>WhatsApp</span>
+</a>
 </div>
 </div>
-<div class="flex items-start gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
-<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">schedule</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Horarios de Fosa</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Lunes a viernes: 08:30 a 18:30 hs (corrido)</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Sábados: 08:30 a 13:00 hs</span>
-</div>
-</div>
-<div class="flex items-start gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
-<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">phone_in_talk</span>
-<div class="flex flex-col">
-<span class="font-label-md text-label-md font-bold text-on-surface uppercase">Teléfono de Taller</span>
-<a class="font-headline-sm text-headline-sm font-bold text-primary hover:underline" href="tel:+541148583408">+54 11 4858-3408</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Buttons -->
-<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
-<a class="flex-1 inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container transition-colors font-headline-sm text-headline-sm uppercase px-space-md py-space-sm rounded-lg shadow-sm font-bold" href="https://www.google.com/maps/search/?api=1&amp;query=Lubricentro+Velazco+Juan+Ram%C3%ADrez+de+Velasco+1211+Villa+Crespo+Buenos+Aires" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[20px]">directions</span>
-              Cómo llegar (Maps)
-            </a>
-<a class="flex-1 inline-flex items-center justify-center gap-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-colors font-headline-sm text-headline-sm uppercase px-space-md py-space-sm rounded-lg shadow-sm font-bold" href="https://wa.me/5491148571612?text=Hola%2C%20estoy%20por%20pasar%20por%20el%20taller%2C%20%C2%BFtienen%20fosa%20libre%3F" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-              Consultar fosa libre
-            </a>
-</div>
-</div>
-<!-- Right: Map Location Card with technical coordinates HUD -->
-<div class="lg:col-span-7 flex flex-col">
-<div class="bg-surface-container-low p-space-xs rounded-xl shadow-lg flex flex-col h-full">
-<div class="px-space-md py-space-xs bg-surface-container flex items-center justify-between rounded-t-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">GPS // -34.5912° S, -58.4419° W</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">SECTOR CABA // CORREDOR NORTE</span>
-</div>
-<!-- Map Container with data-location pipeline -->
-<div class="w-full min-h-[360px] flex-1 bg-cover bg-center rounded-b-lg relative overflow-hidden" data-location="Juan Ramírez de Velasco 1211, Villa Crespo, Buenos Aires" style="background-image: url('img/668ba0fbffe74297.png');">
-<!-- Overlay map badge with street references -->
-<div class="absolute top-4 left-4 bg-surface/95 backdrop-blur-md p-space-sm rounded-lg shadow-md max-w-xs flex flex-col gap-1">
-<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">PUNTO DE REFERENCIA</span>
-<span class="font-label-md text-label-md font-bold text-on-surface">A 2 cuadras de Corrientes &amp; Juan B. Justo</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Subte Línea B (Estación Dorrego / Malabia) y Tren San Martín (Chacarita).</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Script for Oil Calculator and Dynamic WhatsApp Reservation Builder -->
+<!-- INTERACTIVE DIAGNOSTIC JAVASCRIPT -->
 <script>
-    (function initVelazcoCalculator() {
-      const currentKmInput = document.getElementById('currentKm');
-      const oilTypeSelect = document.getElementById('oilType');
-      const targetKmDisplay = document.getElementById('targetKmDisplay');
-      const actualKmLabel = document.getElementById('actualKmLabel');
-      const marginLabel = document.getElementById('marginLabel');
-      const gaugeFill = document.getElementById('gaugeFill');
-      const kmStatusBadge = document.getElementById('kmStatusBadge');
-      const estimatedMonths = document.getElementById('estimatedMonths');
+    (function () {
+      const cards = document.querySelectorAll('.symptom-card');
+      const summaryEl = document.getElementById('diagnostic-summary');
+      const urgencyEl = document.getElementById('diagnostic-urgency');
+      const submitBtn = document.getElementById('btn-submit-diag');
+      const modelInput = document.getElementById('veh-model');
+      const yearInput = document.getElementById('veh-year');
+      const timeSelect = document.getElementById('veh-time');
 
-      const bookPatente = document.getElementById('bookPatente');
-      const bookCar = document.getElementById('bookCar');
-      const bookService = document.getElementById('bookService');
-      const bookDay = document.getElementById('bookDay');
-      const sendWhatsAppBtn = document.getElementById('sendWhatsAppBtn');
+      let selectedSymptoms = [];
 
-      function calculateOilSchedule() {
-        const currentKm = parseInt(currentKmInput.value, 10) || 0;
-        const interval = parseInt(oilTypeSelect.value, 10) || 10000;
-        const targetKm = currentKm + interval;
+      cards.forEach((card) => {
+        card.addEventListener('click', () => {
+          const symptomId = card.getAttribute('data-id');
+          const symptomText = card.getAttribute('data-text');
+          const symptomDiagnosis = card.getAttribute('data-diagnosis');
+          const symptomUrgency = card.getAttribute('data-urgency');
 
-        // Update displays
-        targetKmDisplay.textContent = targetKm.toLocaleString('es-AR');
-        actualKmLabel.textContent = currentKm.toLocaleString('es-AR') + ' km';
-        marginLabel.textContent = '+' + interval.toLocaleString('es-AR') + ' km';
+          const isSelected = card.classList.contains('active-symptom');
 
-        // Est. months calculation (based on ~1000-1200 km per month in Buenos Aires)
-        const minMonths = Math.max(3, Math.round(interval / 1200));
-        const maxMonths = Math.max(4, Math.round(interval / 950));
-        estimatedMonths.textContent = minMonths + ' a ' + maxMonths + ' meses';
+          if (isSelected) {
+            card.classList.remove('active-symptom', 'bg-secondary-container/10');
+            card.querySelector('.check-mark').classList.add('hidden');
+            card.querySelector('.check-box').classList.remove('bg-secondary-container');
+            card.querySelector('.check-box').classList.add('bg-surface-container-high');
+            selectedSymptoms = selectedSymptoms.filter((s) => s.id !== symptomId);
+          } else {
+            card.classList.add('active-symptom', 'bg-secondary-container/10');
+            card.querySelector('.check-mark').classList.remove('hidden');
+            card.querySelector('.check-box').classList.add('bg-secondary-container');
+            card.querySelector('.check-box').classList.remove('bg-surface-container-high');
+            selectedSymptoms.push({
+              id: symptomId,
+              text: symptomText,
+              diagnosis: symptomDiagnosis,
+              urgency: symptomUrgency
+            });
+          }
 
-        // Adjust SVG gauge
-        if (interval === 10000) {
-          gaugeFill.setAttribute('width', '80');
-          gaugeFill.setAttribute('fill', '#1652f0');
-          kmStatusBadge.textContent = 'MÁX PROTECCIÓN';
-          kmStatusBadge.className = 'px-space-xs py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold rounded-DEFAULT';
-        } else if (interval === 7500) {
-          gaugeFill.setAttribute('width', '65');
-          gaugeFill.setAttribute('fill', '#1652f0');
-          kmStatusBadge.textContent = 'USO ESTÁNDAR';
-          kmStatusBadge.className = 'px-space-xs py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold rounded-DEFAULT';
+          updateDiagnosticUI();
+        });
+      });
+
+      function updateDiagnosticUI() {
+        if (selectedSymptoms.length === 0) {
+          summaryEl.innerText = 'Seleccioná uno o más síntomas para ver la evaluación técnica preliminar.';
+          urgencyEl.innerText = 'Estamos listos en nuestro taller de Villa Crespo para revisarlo en el elevador sin costo.';
+          urgencyEl.className = 'font-body-sm text-body-sm text-on-surface-variant mt-1 italic';
         } else {
-          gaugeFill.setAttribute('width', '45');
-          gaugeFill.setAttribute('fill', '#fed400');
-          kmStatusBadge.textContent = 'CICLO CORTO';
-          kmStatusBadge.className = 'px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase font-bold rounded-DEFAULT';
+          const symptomList = selectedSymptoms.map((s) => s.text).join(' + ');
+          const latestDiagnosis = selectedSymptoms[selectedSymptoms.length - 1].diagnosis;
+          const hasHighUrgency = selectedSymptoms.some((s) => s.urgency.includes('ALTA'));
+
+          summaryEl.innerText = `Síntomas: [${symptomList}]. Causa probable: ${latestDiagnosis}`;
+
+          if (hasHighUrgency) {
+            urgencyEl.innerText = 'ATENCIÓN: Se detectó al menos un síntoma de URGENCIA ALTA. Te recomendamos no salir a autopista y solicitar turno prioritario de inmediato.';
+            urgencyEl.className = 'font-body-sm text-body-sm text-secondary-container font-bold mt-1';
+          } else {
+            urgencyEl.innerText = 'Nivel de urgencia: Moderado a Preventivo. Traelo esta semana para evitar daños mayores en componentes conexos.';
+            urgencyEl.className = 'font-body-sm text-body-sm text-primary-container font-medium mt-1';
+          }
         }
       }
 
-      currentKmInput.addEventListener('input', calculateOilSchedule);
-      oilTypeSelect.addEventListener('change', calculateOilSchedule);
+      submitBtn.addEventListener('click', () => {
+        const vehicle = modelInput.value.trim() || 'No especificado';
+        const details = yearInput.value.trim() || 'A confirmar';
+        const shift = timeSelect.value;
 
-      // WhatsApp Dynamic Booking Link
-      sendWhatsAppBtn.addEventListener('click', function() {
-        const patente = bookPatente.value.trim().toUpperCase() || 'A coordinar';
-        const car = bookCar.value.trim() || 'No especificado';
-        const service = bookService.value;
-        const day = bookDay.value.trim() || 'A coordinar con el taller';
-        const currentKm = currentKmInput.value || '77500';
-        const oilText = oilTypeSelect.options[oilTypeSelect.selectedIndex].text.split('(')[0].trim();
-        const nextKm = targetKmDisplay.textContent;
+        let symptomsListText = selectedSymptoms.length > 0
+          ? selectedSymptoms.map((s) => `- ${s.text}`).join('\n')
+          : '- Consulta general de frenos y embrague';
 
-        const message = `¡Hola Lubricentro Velazco! 👋 Quiero coordinar un turno para mi auto:\n\n` +
-          `🚗 *Vehículo:* ${car}\n` +
-          `🔢 *Patente:* ${patente}\n` +
-          `⚙️ *Servicio:* ${service}\n` +
-          `🛢️ *Tipo de Aceite sugerido:* ${oilText}\n` +
-          `📍 *Km Actual:* ${currentKm} km (Próximo cambio estimado: ${nextKm} km)\n` +
-          `🗓️ *Preferencia de día/horario:* ${day}\n\n` +
-          `¿Tienen disponibilidad? ¡Muchas gracias!`;
+        let message = `Hola Frenos y Embragues Velasco! Quiero pedir un turno para revisión técnica en Villa Crespo.\n\n` +
+          `*Vehículo:* ${vehicle}\n` +
+          `*Año / Patente:* ${details}\n` +
+          `*Turno preferido:* ${shift}\n\n` +
+          `*Síntomas que noto al manejar:*\n${symptomsListText}\n\n` +
+          `¿Me confirman si tienen disponibilidad para subirlo a la fosa? Muchas gracias!`;
 
-        const waUrl = 'https://wa.me/5491148571612?text=' + encodeURIComponent(message);
-        window.open(waUrl, '_blank');
+        const encodedMessage = encodeURIComponent(message);
+        window.open(`https://wa.me/5491148571612?text=${encodedMessage}`, '_blank');
       });
-
-      // Initial execution
-      calculateOilSchedule();
     })();
   </script>
-</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full max-w-[1440px] mx-auto px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-space-xl"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[24px]">oil_barrel</span><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">LUBRICENTRO VELAZCO</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Centro integral de lubricación automotriz y diagnóstico de fluidos. Precisión técnica, rapidez de servicio y primeras marcas en Villa Crespo, Ciudad Autónoma de Buenos Aires.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="font-label-sm text-label-sm px-space-sm py-space-xs bg-surface-container text-primary font-bold rounded-DEFAULT uppercase tracking-wider">[DIAG_SYS // BAY_VC01]</span><span class="font-label-sm text-label-sm px-space-sm py-space-xs bg-surface-container-highest text-on-surface-variant rounded-DEFAULT uppercase tracking-wider">CALIBRACIÓN OFICIAL</span></div></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-outline">Taller &amp; Horarios</span><div class="flex items-start gap-space-xs text-on-surface"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5 shrink-0">location_on</span><div class="flex flex-col"><span class="font-body-md text-body-md text-on-surface">Juan Ramírez de Velasco 1211</span><span class="font-body-sm text-body-sm text-on-surface-variant">Villa Crespo, CABA, Argentina</span><a class="font-label-sm text-label-sm text-primary hover:underline uppercase tracking-wider mt-space-xs inline-flex items-center gap-space-xs" href="https://maps.google.com/?q=Juan+Ramirez+de+Velasco+1211+Villa+Crespo" rel="noopener noreferrer" target="_blank">Ver en Google Maps <span class="material-symbols-outlined text-[14px]">open_in_new</span></a></div></div><div class="flex items-start gap-space-xs text-on-surface pt-space-xs"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">schedule</span><div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant"><span class="text-on-surface font-medium">Lunes a viernes: 8:30–18:30</span><span>Sábados: 8:30–13:00</span><span>Domingos &amp; Feriados: Cerrado</span></div></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-outline">Atención Inmediata</span><div class="flex flex-col gap-space-xs"><a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-space-xs" href="tel:+541148583408"><span class="material-symbols-outlined text-[18px]">phone_enabled</span>+54 11 4858-3408</a><a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors flex items-center gap-space-xs" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp Guardia</a></div><div class="pt-space-sm"><a class="inline-flex items-center justify-center gap-space-xs w-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors font-label-md text-label-md uppercase tracking-wider px-space-md py-space-sm rounded-lg shadow-[0_2px_0_0_rgba(17,24,39,0.08)]" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">calendar_today</span>Reservar Turno</a></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">Lubricentro Velazco © 2026. Todos los derechos reservados.</p><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">ISO 9001 COMPLIANT WORKFLOW</span><span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">SISTEMA VELAZCO ACTIVE</span></div></div></div></footer><a aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-all px-space-md py-space-sm rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.15)] group" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-label-md text-label-md uppercase tracking-wider font-bold pr-space-xs hidden md:inline">WhatsApp</span></a></body></html>
+</div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1440px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-2 mb-space-xs"><span class="w-2 h-2 bg-secondary-container"></span><span class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wide">Velasco Taller</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Centro técnico integral de frenos hidráulicos, ABS, embragues mecánicos y bimasa. Precisión de ingeniería y diagnóstico computarizado en el corazón de Villa Crespo.</p><div class="pt-2"><span class="inline-block px-2.5 py-1 bg-surface-container-highest font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Villa Crespo · CABA</span></div></div><div class="space-y-space-xs"><h4 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wider mb-space-sm">Ubicación &amp; Teléfono</h4><div class="space-y-2"><p class="font-body-sm text-body-sm text-on-surface-variant flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-secondary-container shrink-0 mt-0.5">location_on</span><span>Juan Ramírez de Velasco 1211, Villa Crespo, CABA</span></p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-container shrink-0">call</span><a class="font-label-md text-label-md text-primary-container hover:underline" href="tel:01148571612">4857-1612</a></p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary-container shrink-0">near_me</span><a class="font-label-md text-label-md text-primary-container hover:underline" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank">+54 9 11 4857-1612</a></p></div></div><div class="space-y-space-xs"><h4 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wider mb-space-sm">Horarios de Atención</h4><div class="space-y-2 bg-surface-container-lowest p-space-sm shadow-[0_1px_3px_rgba(15,39,71,0.04)]"><div class="flex justify-between items-center"><span class="font-label-sm text-label-sm text-outline uppercase">Lunes a Viernes</span><span class="font-label-md text-label-md text-primary-container">8:00 a 18:00</span></div><div class="flex justify-between items-center"><span class="font-label-sm text-label-sm text-outline uppercase">Sábados</span><span class="font-label-md text-label-md text-primary-container">8:00 a 13:00</span></div><div class="flex justify-between items-center pt-1"><span class="font-label-sm text-label-sm text-outline uppercase">Domingos</span><span class="font-label-sm text-label-sm text-secondary-container uppercase font-bold">Cerrado</span></div></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm uppercase text-primary-container tracking-wider mb-space-sm">Turnos Inmediatos</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Recepción de vehículos con turno previo o diagnóstico de urgencia para frenos descalibrados y ruidos de embrague.</p><a class="inline-flex items-center justify-center w-full px-4 py-2.5 bg-primary-container text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-tertiary-container transition-all active:translate-y-px" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] mr-2 text-secondary-container">calendar_clock</span><span>Agendar por WhatsApp</span></a></div></div><div class="pt-space-md bg-surface-container-high/40 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Frenos y Embragues Velasco © 2026 · Todos los derechos reservados</p><div class="flex items-center gap-6"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Taller Certificado Frenos y Embragues</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Villa Crespo · Bs.As.</span></div></div></div></footer><aside class="fixed bottom-6 right-6 z-50"><a aria-label="Contactar por WhatsApp al 5491148571612" class="group flex items-center gap-2 pl-3.5 pr-4 py-3 bg-secondary-container text-on-secondary rounded-full shadow-[0_4px_16px_rgba(223,44,35,0.4)] hover:bg-secondary hover:shadow-[0_6px_20px_rgba(186,8,11,0.5)] transition-all duration-200 active:translate-y-0.5" href="https://wa.me/5491148571612" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-headline-sm text-headline-sm uppercase tracking-wider font-bold">WhatsApp Taller</span></a></aside></body></html>

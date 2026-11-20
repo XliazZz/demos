@@ -1,770 +1,771 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="es"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'secondary-container': '#234f3f', 'surface-bright': '#3a3938', 'on-secondary-container': '#91bfaa', 'background': '#131312', 'secondary-fixed': '#beedd7', 'secondary-fixed-dim': '#a2d1bb', 'inverse-on-surface': '#31302f', 'outline': '#9a8f80', 'surface-container-low': '#1c1c1a', 'on-surface-variant': '#d1c5b4', 'tertiary-fixed-dim': '#ccc6b7', 'surface-container-lowest': '#0e0e0d', 'surface-container': '#20201e', 'tertiary-fixed': '#e9e2d2', 'on-primary-fixed': '#271900', 'surface-dim': '#131312', 'surface-variant': '#353533', 'on-secondary-fixed': '#002116', 'outline-variant': '#4e4639', 'on-error-container': '#ffdad6', 'on-primary-fixed-variant': '#5c4205', 'surface-tint': '#e8c17a', 'tertiary': '#d6cfc0', 'on-tertiary-fixed': '#1e1c12', 'on-background': '#e5e2df', 'surface-container-highest': '#353533', 'inverse-surface': '#e5e2df', 'on-primary': '#412d00', 'on-secondary': '#073829', 'surface-container-high': '#2a2a29', 'primary': '#f2ca83', 'on-tertiary-fixed-variant': '#4a473b', 'on-secondary-fixed-variant': '#234f3f', 'tertiary-container': '#bab4a5', 'on-error': '#690005', 'error': '#ffb4ab', 'on-primary-container': '#5b4205', 'secondary': '#a2d1bb', 'on-tertiary': '#333026', 'inverse-primary': '#775a1d', 'surface': '#131312', 'on-surface': '#e5e2df', 'error-container': '#93000a', 'primary-fixed-dim': '#e8c17a', 'primary-fixed': '#ffdea5', 'on-tertiary-container': '#4a463a', 'primary-container': '#d4af6a' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'gutter-mobile': '1rem', 'space-xs': '0.25rem', 'space-md': '1rem', 'space-sm': '0.5rem', 'space-xl': '2.5rem', 'space-lg': '1.5rem', 'gutter': '1.5rem', 'margin-mobile': '1.25rem', 'margin': '3rem' }, 'fontFamily': { 'display-lg-mobile': ['Bodoni Moda'], 'label-lg': ['Bodoni Moda'], 'headline-lg-mobile': ['Bodoni Moda'], 'headline-md': ['Bodoni Moda'], 'headline-sm': ['Bodoni Moda'], 'label-sm': ['Epilogue'], 'body-md': ['Epilogue'], 'body-lg': ['Epilogue'], 'body-sm': ['Epilogue'], 'display-lg': ['Bodoni Moda'], 'headline-lg': ['Bodoni Moda'], 'label-md': ['Epilogue'], 'title-md': ['Epilogue'] }, 'fontSize': { 'display-lg-mobile': ['36px', { 'lineHeight': '44px', 'letterSpacing': '0.03em', 'fontWeight': '700' }], 'label-lg': ['14px', { 'lineHeight': '20px', 'letterSpacing': '0.15em', 'fontWeight': '700' }], 'headline-lg-mobile': ['28px', { 'lineHeight': '36px', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'headline-md': ['28px', { 'lineHeight': '36px', 'letterSpacing': '0.02em', 'fontWeight': '500' }], 'headline-sm': ['22px', { 'lineHeight': '30px', 'letterSpacing': '0.01em', 'fontWeight': '500' }], 'label-sm': ['10px', { 'lineHeight': '14px', 'letterSpacing': '0.15em', 'fontWeight': '500' }], 'body-md': ['14px', { 'lineHeight': '22px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'body-lg': ['16px', { 'lineHeight': '26px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'body-sm': ['12px', { 'lineHeight': '18px', 'letterSpacing': '0.02em', 'fontWeight': '400' }], 'display-lg': ['56px', { 'lineHeight': '64px', 'letterSpacing': '0.04em', 'fontWeight': '700' }], 'headline-lg': ['40px', { 'lineHeight': '48px', 'letterSpacing': '0.03em', 'fontWeight': '600' }], 'label-md': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.12em', 'fontWeight': '600' }], 'title-md': ['18px', { 'lineHeight': '26px', 'letterSpacing': '0.02em', 'fontWeight': '600' }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen selection:bg-primary-container selection:text-on-primary-container"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para 1927. No es el sitio oficial.</div><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="1927 Speakeasy Logo" class="h-8 w-auto object-contain" src="img/8395f055bf60122a.png"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">1927</span></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-secondary-container text-on-secondary-container"><a aria-current="page" class="font-label-md uppercase transition-colors py-space-xs px-space-sm bg-secondary-container text-on-secondary-container" data-path="el-club" href="#">El Club</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="carta-de-autor" href="#">Carta de Autor</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="agenda" href="#">Agenda</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="galeria" href="#">Galería</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="reservas" href="#">Reservas</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="ubicacion" href="#">Ubicación</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg uppercase px-space-lg py-space-sm transition-all shadow-[0_0_20px_rgba(212,175,106,0.15)]" href="#reservas">RESERVÁ TU MESA</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-on-surface bg-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<html lang="es"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Club 1927 · Cantina de Barrio</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#eae2d2", "inverse-on-surface": "#f8f0e0", "surface": "#fff8ef", "inverse-surface": "#343026", "on-primary-fixed-variant": "#145135", "error": "#ba1a1a", "tertiary-fixed-dim": "#f5bd58", "on-surface": "#1e1b12", "on-secondary-fixed-variant": "#85230e", "surface-variant": "#eae2d2", "on-secondary": "#ffffff", "secondary-container": "#fc795d", "primary-fixed-dim": "#97d4af", "on-surface-variant": "#404942", "surface-dim": "#e1d9ca", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "secondary-fixed": "#ffdad3", "outline-variant": "#c0c9c0", "on-tertiary-fixed": "#271900", "primary-fixed": "#b3f0ca", "surface-bright": "#fff8ef", "on-primary": "#ffffff", "primary": "#004228", "background": "#fff8ef", "secondary": "#a63a23", "tertiary-fixed": "#ffdeaa", "surface-container-low": "#fbf3e3", "surface-tint": "#2f694b", "on-primary-container": "#93cfaa", "outline": "#707972", "tertiary": "#4d3400", "surface-container-lowest": "#ffffff", "surface-container-high": "#efe7d7", "primary-container": "#1f5a3d", "surface-container": "#f5eddd", "secondary-fixed-dim": "#ffb4a4", "on-primary-fixed": "#002111", "inverse-primary": "#97d4af", "on-background": "#1e1b12", "on-secondary-container": "#6f1201", "error-container": "#ffdad6", "tertiary-container": "#6b4a00", "on-secondary-fixed": "#3d0500", "on-tertiary-fixed-variant": "#5f4100", "on-tertiary-container": "#f1b954", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "margin": "2rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "body-md": ["Work Sans"], "headline-md": ["Oswald"], "label-md": ["Work Sans"], "headline-xl-mobile": ["Oswald"], "body-lg": ["Work Sans"], "body-sm": ["Work Sans"], "headline-lg-mobile": ["Oswald"], "headline-lg": ["Oswald"], "label-lg": ["Oswald"], "label-sm": ["Work Sans"], "headline-sm": ["Oswald"], "headline-xl": ["Oswald"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "42px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-lg": ["16px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary selection:text-on-secondary"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Club 1927. No es el sitio oficial.</div><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_10px_rgba(43,30,22,0.08)] border-b border-surface-container-highest"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="img/21c612497ff8f4d1.png"/><div class="flex flex-col"><span class="font-headline-md text-headline-md uppercase tracking-tight text-primary leading-none">Club 1927</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Cantina de Barrio</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-xs"><a aria-current="page" class="uppercase tracking-wider transition-colors bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-xs" data-path="el-club" href="#">El Club</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="la-carta" href="#">La Carta</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="birras-tiradas" href="#">Birras Tiradas</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="pizarron-del-dia" href="#">Pizarrón del Día</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="eventos" href="#">Eventos</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="visitanos" href="#">Visitanos</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-space-xs font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high px-space-md py-space-sm rounded-lg transition-colors border border-outline-variant" href="https://wa.me/5491130641308" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a><a class="inline-flex items-center justify-center font-label-lg text-label-lg uppercase px-space-md py-space-sm bg-primary-container text-on-primary hover:bg-primary transition-all rounded-lg shadow-[2px_2px_0px_#271900] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none" href="#reserva">Reservá tu mesa</a></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
 <!-- HERO SECTION -->
-<section class="relative w-full -mt-20 pt-24 min-h-[972px] flex items-center justify-center overflow-hidden bg-surface-container-lowest">
-<!-- Atmospheric Ambient Background -->
-<div class="absolute inset-0 bg-cover bg-center z-0 opacity-40 mix-blend-luminosity scale-105 transform duration-1000 transition-transform" data-alt="Dark, atmospheric speakeasy bar interior from the 1920s Art Déco era in Buenos Aires with warm amber lighting, marble and brass counter, high back shelves stacked with crystal bottles, jazz band in shadowy background, cinematic smoke and low exposure photography." style="background-image: url('img/cc4c12ce8480a326.jpg')"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/90 via-surface/85 to-surface z-0"></div>
-<!-- Art Déco Geometry Backdrop Lines (SVG) -->
-<div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-20">
-<svg class="w-full max-w-4xl h-full text-primary" fill="none" stroke="currentColor" viewbox="0 0 800 800">
-<circle cx="400" cy="400" r="320" stroke-dasharray="4 4" stroke-width="1"></circle>
-<circle cx="400" cy="400" r="260" stroke-width="1.5"></circle>
-<polygon points="400,100 700,400 400,700 100,400" stroke-width="1"></polygon>
-<line stroke-width="1" x1="400" x2="400" y1="50" y2="750"></line>
-<line stroke-width="1" x1="50" x2="750" y1="400" y2="400"></line>
-<line stroke-width="0.75" x1="150" x2="650" y1="150" y2="650"></line>
-<line stroke-width="0.75" x1="650" x2="150" y1="150" y2="650"></line>
-</svg>
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-24">
+<!-- Checkered decorative pattern top accent line -->
+<div class="absolute top-0 left-0 right-0 h-2 bg-[repeating-linear-gradient(45deg,#a63a23,#a63a23_10px,#fff8ef_10px,#fff8ef_20px)] opacity-70"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-sm w-fit bg-surface-container-high px-space-md py-space-xs rounded-full shadow-sm">
+<img alt="Club 1927 Escudo" class="w-6 h-6 object-contain" src="img/21c612497ff8f4d1.png"/>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Cantina de barrio · Villa Crespo</span>
 </div>
-<!-- Main Hero Content -->
-<div class="relative z-10 max-w-5xl mx-auto px-gutter py-space-xl flex flex-col items-center text-center">
-<!-- Overline Heraldic Badge -->
-<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low text-primary mb-space-md shadow-[0_0_15px_rgba(212,175,106,0.1)]">
-<span class="material-symbols-outlined text-[16px]">local_bar</span>
-<span class="font-label-sm text-label-sm uppercase tracking-[0.25em]">SPEAKEASY • COCKTAIL CLUB DE AUTOR</span>
-<span class="material-symbols-outlined text-[16px]">key</span>
+<h1 class="font-headline-xl text-headline-xl uppercase text-primary tracking-tight">
+            Comida casera y birra artesanal, <span class="text-secondary">como en el club.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Guisos de olla humeantes, milanesas a caballo para compartir, pastas amasadas a mano y 4 canillas de birra tirada helada. Mesas largas, amigos de siempre y el espíritu intacto de nuestro barrio porteño.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg uppercase px-space-lg py-space-md bg-primary-container text-on-primary hover:bg-primary transition-all rounded shadow-md active:translate-y-0.5" href="#pizarron-reserva">
+<span class="material-symbols-outlined mr-space-xs">restaurant_menu</span>
+              Reservá tu mesa
+            </a>
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg uppercase px-space-lg py-space-md bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all rounded shadow-md active:translate-y-0.5" href="#la-carta">
+<span class="material-symbols-outlined mr-space-xs">menu_book</span>
+              Ver la carta
+            </a>
 </div>
-<!-- Monumental Brand Title -->
-<div class="relative my-space-xs">
-<h1 class="font-display-lg text-[64px] sm:text-[96px] md:text-[128px] leading-none tracking-widest text-primary drop-shadow-[0_4px_24px_rgba(242,202,131,0.25)] select-none">
-          1927
-        </h1>
-<p class="font-headline-sm text-headline-sm uppercase tracking-[0.3em] text-on-surface-variant mt-space-xs">
-          Villa Crespo • Buenos Aires
+<!-- Quick badges strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-lg">
+<div class="bg-surface-container px-space-sm py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">soup_kitchen</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">Cocina de Olla</span>
+</div>
+<div class="bg-surface-container px-space-sm py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">sports_bar</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">4 Canillas</span>
+</div>
+<div class="bg-surface-container px-space-sm py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">groups</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">Salón Festejos</span>
+</div>
+<div class="bg-surface-container px-space-sm py-space-xs rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">location_on</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">Antezana 340</span>
+</div>
+</div>
+</div>
+<!-- Visual Mosaic Column -->
+<div class="lg:col-span-5 relative">
+<div class="relative bg-surface p-space-sm rounded-xl shadow-xl">
+<img alt="Milanesa Napolitana Club 1927" class="w-full h-80 lg:h-96 object-cover rounded-lg" src="img/22f37f9780d6a4c5.jpg"/>
+<div class="absolute -bottom-4 -left-4 bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-sm rounded shadow-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">star</span>
+<span class="font-label-md text-label-md uppercase font-bold">Napolitana con Puré Mantecoso</span>
+</div>
+<div class="absolute -top-3 -right-3 bg-primary text-on-primary font-headline-sm text-headline-sm uppercase px-space-md py-1 rounded shadow-md rotate-3">
+              ¡Porciones Reales!
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EL CLUB (HISTORIA & ESPÍRITU) -->
+<section class="w-full py-space-xl bg-surface" id="el-club">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Photo and ambience -->
+<div class="lg:col-span-5 order-2 lg:order-1 relative">
+<div class="relative bg-surface-container p-space-sm rounded-xl shadow-lg">
+<img alt="Club Social de Barrio y Ping Pong" class="w-full h-80 object-cover rounded" src="img/c4eba6c7e7cb43c1.jpg"/>
+<div class="p-space-sm mt-space-xs bg-surface rounded">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold block">Salón de Juegos &amp; Tertulias</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Donde el truco, el ping pong y el vermut con soda marcan el compás de cada noche.</p>
+</div>
+</div>
+</div>
+<!-- Story text -->
+<div class="lg:col-span-7 order-1 lg:order-2 flex flex-col gap-space-md">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-secondary font-bold">Nuestra Historia</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary">
+            El club donde el barrio se junta a comer bien
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Inspirado en los clubes sociales de barrio, <strong class="text-primary">Club 1927</strong> es un punto de encuentro para vecinos, trabajadores y familias que buscan una mesa generosa tras la jornada.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Hoy conservamos esa mística popular: acá no hay modas pasajeras ni porciones milimétricas. Se cocina a fuego lento, los ravioles se estiran con palo de madera, el pan llega tibio y las jarras de birra artesanal se sirven con dos dedos firmes de espuma.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="bg-surface-container-low p-space-md rounded shadow-sm">
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-xs">skillet</span>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-1">Olla y Bodegón</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recetas familiares que no escatiman en cariño ni tiempo.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-space-xs">local_drink</span>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-1">Birras Amigas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cervecerías artesanales rotando directo de los barriles.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded shadow-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[28px] mb-space-xs">diversity_3</span>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-1">Mesa Comunitaria</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Para 2 personas o tablones festivos de 20 amigos.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LA CARTA DE CANTINA -->
+<section class="w-full py-space-xl bg-surface-container-low" id="la-carta">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-lg text-label-lg uppercase text-secondary font-bold tracking-widest">Lo Que Se Come</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary mt-1">La Carta del Club</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Comida honesta, hecha en el momento con ingredientes frescos. Valores en Pesos Argentinos (ARS).
         </p>
 </div>
-<!-- Tagline & Coordinates -->
-<p class="font-display-lg italic font-normal text-headline-sm sm:text-headline-md text-tertiary max-w-2xl mt-space-sm mb-space-lg">
-        “Lo que pasa en el club, queda en el club.”
-      </p>
-<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider mb-space-xl">
-<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
-<span>Antezana 340, Villa Crespo • Acceso Clandestino</span>
+<!-- Menu Category Tabs Interactive -->
+<div class="flex items-center justify-center gap-space-xs sm:gap-space-sm mb-space-lg flex-wrap">
+<button class="cat-filter-btn px-space-md py-space-xs rounded font-label-lg text-label-lg uppercase transition-all bg-primary text-on-primary shadow-sm" id="cat-btn-picar" onclick="switchCategory('picar')">
+          Para Picar
+        </button>
+<button class="cat-filter-btn px-space-md py-space-xs rounded font-label-lg text-label-lg uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" id="cat-btn-platos" onclick="switchCategory('platos')">
+          Platos &amp; Minutas
+        </button>
+<button class="cat-filter-btn px-space-md py-space-xs rounded font-label-lg text-label-lg uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" id="cat-btn-pastas" onclick="switchCategory('pastas')">
+          Pastas Caseras
+        </button>
+<button class="cat-filter-btn px-space-md py-space-xs rounded font-label-lg text-label-lg uppercase transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" id="cat-btn-postres" onclick="switchCategory('postres')">
+          Postres de Abuela
+        </button>
 </div>
-<!-- Action CTAs -->
-<div class="flex flex-col sm:flex-row items-center gap-space-md w-full justify-center">
-<a class="w-full sm:w-auto inline-flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container transition-all font-label-lg text-label-lg uppercase px-space-xl py-space-md shadow-[0_0_24px_rgba(212,175,106,0.3)]" href="#reservas">
-          RESERVÁ TU MESA
-        </a>
-<a class="w-full sm:w-auto inline-flex items-center justify-center bg-surface-container text-primary hover:bg-surface-container-high transition-all font-label-lg text-label-lg uppercase px-space-xl py-space-md" href="#carta">
-          VER LA CARTA DE AUTOR
-        </a>
+<!-- Section: PARA PICAR -->
+<div class="cat-group grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="cat-picar">
+<div class="lg:col-span-5 bg-surface rounded-xl overflow-hidden shadow-md">
+<img alt="Tabla de Picada con Chacinados y Cervezas" class="w-full h-64 object-cover" src="img/f3f10019d5b5e4c7.jpg"/>
+<div class="p-space-md bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Imperdible</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Tabla de Picada Club 1927</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Salame picado fino de Mercedes, bondiola estacionada, queso Mar del Plata, aceitunas verdes al tomillo, berenjenas al escabeche y canasta de panes tibios.</p>
 </div>
-<!-- Interactive Password Reveal Box -->
-<div class="mt-space-xl pt-space-md w-full max-w-md">
-<div class="cursor-pointer group relative bg-secondary-container text-on-secondary-container p-space-md text-center transition-all duration-300 hover:bg-surface-container-high shadow-lg" id="password-box" onclick="revealPassword()">
-<div class="flex items-center justify-center gap-space-sm">
-<span class="material-symbols-outlined text-primary group-hover:rotate-12 transition-transform">lock</span>
-<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface" id="pass-prompt">
-              Tocá acá para develar la contraseña de hoy
-            </span>
-<span class="hidden font-headline-sm text-headline-sm tracking-[0.2em] text-primary" id="pass-code">
-              CHARLESTON-27
-            </span>
 </div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs" id="pass-hint">
-            Susurrala en la puerta de entrada para franquear el acceso.
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Tabla de Fiambres Club 1927</h4>
+<span class="bg-secondary/20 text-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold">Para 3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Queso Mar del Plata, salame chacarero, aceitunas marinadas y dip de la casa.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$14.500</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<img alt="Empanadas criollas" class="w-14 h-14 rounded object-cover shrink-0" src="img/03ba55d64ce361f0.jpg"/>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Empanadas de Carne a Cuchillo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Masa casera, cebolla de verdeo, huevo duro y toque de comino criollo (c/u).</p>
+</div>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$2.200</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Provoleta a la Chapa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Crocante por fuera y tierna al medio, con orégano fresco, ají molido y aceite de oliva.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$7.800</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Rabas a la Romana</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calamares tiernos en fritura seca y crocante, gajos de limón y alioli casero.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$11.500</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Papas Fritas Club Especiales</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Con queso cheddar fundido, panceta ahumada crocante y ciboulette fresco.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$6.500</span>
+</div>
+</div>
+</div>
+<!-- Section: PLATOS CASEROS & MINUTAS -->
+<div class="cat-group hidden grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="cat-platos">
+<div class="lg:col-span-5 bg-surface rounded-xl overflow-hidden shadow-md">
+<img alt="Pollo al spiedo con papas al romero" class="w-full h-64 object-cover" src="img/fbae8d42c2aa77ae.jpg"/>
+<div class="p-space-md bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Clásico Criollo</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Pollo al Spiedo de Barrio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dorado al fuego lento con piel crocante, marinado en hierbas aromáticas y servido con abundantes papas al romero.</p>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Milanesa Napolitana Gigante 1927</h4>
+<span class="bg-primary/20 text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold">Comen 3</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bife de lomo apanado, jamón cocido natural, muzza derretida, salsa de tomates asados y papas a caballo.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$19.800</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Guiso de Lentejas de Bodegón</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">En cazuela de barro, con panceta, chorizo colorado, carne tiernizada y toque de pimentón de Cachi.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$9.800</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Bife de Chorizo a la Parrilla</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Corte jugoso de 450g con ensalada mixta clásica o papas doradas al hierro.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$18.500</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Pollo al Spiedo con Papas al Romero</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Medio pollo tierno y crujiente acompañado de papas rústicas al horno.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$12.900</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Pastel de Papa Gratinado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carne cortada a mano bien especiada, puré mantecoso y cubierta tostada con azúcar quemada y queso.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$8.900</span>
+</div>
+</div>
+</div>
+<!-- Section: PASTAS CASERAS -->
+<div class="cat-group hidden grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="cat-pastas">
+<div class="lg:col-span-5 bg-surface rounded-xl overflow-hidden shadow-md">
+<img alt="Ravioles Caseros de Ricota y Nuez" class="w-full h-64 object-cover" src="img/8555e7e6be1711f7.jpg"/>
+<div class="p-space-md bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Amasadas en el Día</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Raviolones de Ricota y Nuez</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Masa al huevo elástica y suave, relleno casero con ricota fresca de campo y nueces picadas, bañados en estofado tradicional.</p>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Raviolones de Ricota y Nuez al Estofado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Servidos con salsa estofada de ternera en cocción lenta de 4 horas y queso rallado.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$9.600</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Ñoquis de Papa Caseros con Tuco y Pesto</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Livianos como una nube, tuco tradicional porteño y toque de pesto genovés.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$8.400</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Tallarines al Huevo con Bolognesa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cortados a cuchillo, con salsa bolognesa abundante y hojas de albahaca fresca.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$8.200</span>
+</div>
+</div>
+</div>
+<!-- Section: POSTRES -->
+<div class="cat-group hidden grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="cat-postres">
+<div class="lg:col-span-5 bg-surface rounded-xl overflow-hidden shadow-md">
+<img alt="Flan Casero con Crema y Dulce de Leche" class="w-full h-64 object-cover" src="img/e813ae3cae11f549.jpg"/>
+<div class="p-space-md bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold">La Gloria Final</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Flan Casero Mixto</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Receta de conventillo con 8 huevos de campo, caramelo rubio brillante, cucharada generosa de dulce de leche repostero y crema batida.</p>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Flan Casero Mixto (8 huevos)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Con dulce de leche repostero y crema chantilly fresca.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$4.200</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Budín de Pan al Caramelo con Nueces</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hecho con medialunas y pan del día anterior, bañado en caramelo líquido.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$3.800</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Tiramisú Artesanal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vainillas bañadas en café expreso con oporto, crema de mascarpone y cacao amargo.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$4.500</span>
+</div>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col sm:flex-row justify-between sm:items-center gap-space-xs">
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary">Postre Vigilante Porteño</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Láminas de queso cuartirolo criollo con dulce de membrillo o batata casero.</p>
+</div>
+<span class="font-headline-md text-headline-md text-secondary shrink-0">$3.600</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BIRRAS ARTESANALES TIRADAS (4 CANILLAS) -->
+<section class="w-full py-space-xl bg-surface" id="birras-tiradas">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-lg text-label-lg uppercase text-secondary font-bold">Pizarrón Cervecero</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary mt-1">4 Canillas de Birra Tirada</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Rotación directa de barriles frescos de pequeñas cervecerías amigas. Servidas en pinta helada.
           </p>
 </div>
-</div>
-</div>
-</section>
-<!-- EL CLUB / HISTORIA SECTION -->
-<section class="w-full py-space-xl bg-surface-container-lowest" id="el-club">
-<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-<!-- Text Narrative Column -->
-<div class="lg:col-span-6 flex flex-col gap-space-md">
-<div class="flex items-center gap-space-xs text-primary">
-<span class="w-8 h-[1px] bg-primary"></span>
-<span class="font-label-md text-label-md uppercase tracking-widest">Nuestra Historia</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">
-          El Refugio Clandestino de Villa Crespo
-        </h2>
-<p class="font-body-lg text-body-lg text-tertiary">
-          Detrás de una fachada inadvertida en la calle Antezana, sobrevive intacta la mística de la Ley Seca norteamericana injertada en el alma bohemia y noctámbula porteña. En 1927, las tertulias no pedían permiso: se refugiaban en penumbras doradas, cristalería pesada y botellas sin etiqueta oficial.
-        </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-          Diseñamos una experiencia donde el tiempo suspende su curso. Mármol verde imperial, terciopelo verde esmeralda, lámparas de alabastro facetadas y el murmullo de un cuarteto de jazz acústico componen un santuario donde cada cóctel es una obra de alquimia pura.
-        </p>
-<!-- Stats Grid -->
-<div class="grid grid-cols-3 gap-space-sm pt-space-md">
-<div class="bg-surface-container p-space-md text-center">
-<span class="font-display-lg text-headline-lg text-primary block">1927</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Inspiración de Época</span>
-</div>
-<div class="bg-surface-container p-space-md text-center">
-<span class="font-display-lg text-headline-lg text-primary block">24</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Lugares en Barra</span>
-</div>
-<div class="bg-surface-container p-space-md text-center">
-<span class="font-display-lg text-headline-lg text-primary block">100%</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Coctelería de Autor</span>
-</div>
-</div>
-</div>
-<!-- Visual Craft Column -->
-<div class="lg:col-span-6 relative">
-<div class="relative bg-surface-container p-space-sm shadow-2xl">
-<div class="relative overflow-hidden aspect-[4/3] bg-surface-container-highest">
-<img class="w-full h-full object-cover" data-alt="A close up shot of a professional male bartender in a 1920s vest and rolled white sleeves stirring an amber cocktail in a cut crystal mixing glass with a twisted copper barspoon, dimly lit speakeasy bar shelf in background." src="img/fefe169664fb0f48.jpg"/>
-</div>
-<!-- Stepped Art Déco Inset Badge -->
-<div class="absolute -bottom-6 -left-6 bg-secondary-container text-on-secondary-container p-space-md shadow-xl hidden sm:block max-w-xs">
-<span class="font-label-md text-label-md uppercase tracking-wider text-primary block mb-space-xs">Destilación &amp; Curaduría</span>
-<p class="font-body-sm text-body-sm text-on-secondary-container">
-              Hielos cristalinos tallados a diamante al momento, maceraciones botánicas de 72 horas y licores de guarda.
-            </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CARTA DE AUTOR SECTION (With Vanilla JS Filtering) -->
-<section class="w-full py-space-xl bg-surface" id="carta">
-<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-xl">
-<!-- Section Header -->
-<div class="text-center flex flex-col items-center gap-space-xs">
-<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Elixires • Espirituosos • Alquimia</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Carta de Autor • Destilados &amp; Misterio</h2>
-<p class="font-body-md text-body-md text-tertiary max-w-xl">
-          Recetas exclusivas creadas por nuestro equipo de cantineros. Ingredientes botánicos recolectados, fermentaciones propias y destilados de colección.
-        </p>
-<!-- Category Filters -->
-<div class="flex flex-wrap items-center justify-center gap-space-xs mt-space-md">
-<button class="menu-tab-btn px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider bg-primary text-on-primary transition-all" onclick="filterMenu('todos', this)">
-            Todos
-          </button>
-<button class="menu-tab-btn px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:text-primary transition-all" onclick="filterMenu('autor', this)">
-            De Autor
-          </button>
-<button class="menu-tab-btn px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:text-primary transition-all" onclick="filterMenu('clasicos', this)">
-            Clásicos Reversionados
-          </button>
-<button class="menu-tab-btn px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:text-primary transition-all" onclick="filterMenu('sin-alcohol', this)">
-            Sin Alcohol (Mocktails)
-          </button>
-</div>
-</div>
-<!-- Drinks Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg" id="cocktail-grid"><!-- Cocktail 1: Ley Seca -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="autor">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A lowball crystal tumbler cocktail with a large perfectly clear spherical ice cube, deep whiskey amber liquid, flamed orange peel zest, a smoking cinnamon stick billowing soft aromatic white smoke on a green veined marble bar surface." src="img/3e5b1471dcbca721.jpg"/>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-on-secondary-container tracking-wider">
-      N° 01 • De Autor
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Ley Seca</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$9.500</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Bourbon macerado en higos turcos, bitter de naranja amarga casero y ahumado aromático con virutas de roble americano en campana de cristal.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Old Fashioned Tallado</span>
-<span>Graduación: 28% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 2: Gatsby en Corrientes -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="autor">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An elegant coupe glass cocktail with delicate white foam topped with an edible purple orchid blossom and gold leaf flakes, placed on a dark polished wooden mahogany counter next to an antique brass cocktail spoon." src="img/4ffc79111a2e2ea4.jpg"/>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-on-secondary-container tracking-wider">
-      N° 02 • De Autor
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Gatsby en Corrientes</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$8.900</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Gin floral destilado en Buenos Aires, cordial de flor de saúco patagónico, espumante brut nature mendocino y perfume de lima.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Coupe Déco 1920</span>
-<span>Graduación: 18% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 3: Contrabando Porteño -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="autor">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal cocktail in vintage faceted tumbler with dense crema and dark roasted cold brew coffee infusion, mist of herbal bitters, set inside a dimly lit speakeasy bar setting with warm incandescent highlights." src="img/edf0c40245c2276e.jpg"/>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-on-secondary-container tracking-wider">
-      N° 03 • De Autor
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Contrabando Porteño</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$8.200</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Amaro casero y fernet artesanal, infusión fría de café colombiano de especialidad y reducción de almíbar de caña tostada.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Vaso Collins Facetado</span>
-<span>Graduación: 22% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 4: Charleston de Medianoche -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="autor">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest flex flex-col items-center justify-center p-space-md">
-<svg class="w-20 h-20 text-primary opacity-40 group-hover:opacity-80 transition-opacity duration-300" fill="none" stroke="currentColor" viewbox="0 0 100 100">
-<polygon points="50,10 90,50 50,90 10,50" stroke-width="1.5"></polygon>
-<polygon points="50,22 78,50 50,78 22,50" stroke-dasharray="2 2" stroke-width="1"></polygon>
-<circle cx="50" cy="50" r="12" stroke-width="1"></circle>
-<path d="M50 34 L50 66 M34 50 L66 50" stroke-width="1"></path>
-</svg>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-on-secondary-container tracking-wider">
-      N° 04 • De Autor
-    </div>
-<div class="absolute bottom-2 left-2 text-primary font-label-sm text-label-sm tracking-widest uppercase opacity-80">
-      RUM &amp; BOTANICALS
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Charleston de Medianoche</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$9.200</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Ron añejado 8 años, pulpa de maracuyá misionero, falernum de almendras y especias, con gotas de angostura aromática.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Nick &amp; Nora</span>
-<span>Graduación: 24% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 5: La Flapper -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="autor">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest flex flex-col items-center justify-center p-space-md">
-<svg class="w-20 h-20 text-primary opacity-40 group-hover:opacity-80 transition-opacity duration-300" fill="none" stroke="currentColor" viewbox="0 0 100 100">
-<circle cx="50" cy="50" r="38" stroke-width="1.5"></circle>
-<polygon points="50,15 85,50 50,85 15,50" stroke-width="1"></polygon>
-<circle cx="50" cy="50" r="16" stroke-dasharray="3 3" stroke-width="1"></circle>
-<line stroke-width="1" x1="25" x2="75" y1="25" y2="75"></line>
-<line stroke-width="1" x1="75" x2="25" y1="25" y2="75"></line>
-</svg>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-on-secondary-container tracking-wider">
-      N° 05 • De Autor
-    </div>
-<div class="absolute bottom-2 left-2 text-primary font-label-sm text-label-sm tracking-widest uppercase opacity-80">
-      VELVET &amp; GOLD
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">La Flapper</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$8.700</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Vodka botánico en frutos del bosque, reducción silvestre de frambuesas, velvet foam de limón y halo de glitter dorado.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Coupe Biselada</span>
-<span>Graduación: 19% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 6: Tango Sour -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="clasicos">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest flex flex-col items-center justify-center p-space-md">
-<svg class="w-20 h-20 text-primary opacity-40 group-hover:opacity-80 transition-opacity duration-300" fill="none" stroke="currentColor" viewbox="0 0 100 100">
-<path d="M20 30 Q50 15 80 30 L50 85 Z" stroke-width="1.5"></path>
-<line stroke-dasharray="2 2" stroke-width="1" x1="28" x2="72" y1="42" y2="42"></line>
-<circle cx="50" cy="55" r="6" stroke-width="1"></circle>
-<line stroke-width="1" x1="50" x2="50" y1="10" y2="90"></line>
-</svg>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-primary tracking-wider">
-      N° 06 • Reversionado
-    </div>
-<div class="absolute bottom-2 left-2 text-primary font-label-sm text-label-sm tracking-widest uppercase opacity-80">
-      MALBEC FLOAT
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Tango Sour</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$8.800</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Pisco quebranta de selección, lima fresca, clara batida a mano y un float de reducción densa de Malbec de Paraje Altamira.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Sour Glass Clásico</span>
-<span>Graduación: 21% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 7: Old Fashioned 1927 -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="clasicos">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest flex flex-col items-center justify-center p-space-md">
-<svg class="w-20 h-20 text-primary opacity-40 group-hover:opacity-80 transition-opacity duration-300" fill="none" stroke="currentColor" viewbox="0 0 100 100">
-<rect height="64" stroke-width="1.5" width="64" x="18" y="18"></rect>
-<rect height="46" stroke-dasharray="3 3" stroke-width="1" width="46" x="27" y="27"></rect>
-<line stroke-width="1.5" x1="18" x2="82" y1="18" y2="82"></line>
-<line stroke-width="1.5" x1="82" x2="18" y1="18" y2="82"></line>
-</svg>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-primary tracking-wider">
-      N° 07 • Reversionado
-    </div>
-<div class="absolute bottom-2 left-2 text-primary font-label-sm text-label-sm tracking-widest uppercase opacity-80">
-      HIGH PROOF RYE
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Old Fashioned 1927</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$9.800</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Rye Whiskey de alta graduación, blend de tres bitters, lingote de hielo traslúcido y twist de naranja flambeada en vivo.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Heavy Lowball</span>
-<span>Graduación: 32% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div>
-<!-- Cocktail 8: Prohibición Cero -->
-<div class="cocktail-item bg-surface-container-low flex flex-col justify-between overflow-hidden group hover:bg-surface-container transition-all shadow-lg" data-category="sin-alcohol">
-<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container-highest flex flex-col items-center justify-center p-space-md">
-<svg class="w-20 h-20 text-primary opacity-40 group-hover:opacity-80 transition-opacity duration-300" fill="none" stroke="currentColor" viewbox="0 0 100 100">
-<polygon points="50,12 88,38 74,86 26,86 12,38" stroke-width="1.5"></polygon>
-<polygon points="50,26 76,44 66,76 34,76 24,44" stroke-dasharray="2 2" stroke-width="1"></polygon>
-<circle cx="50" cy="52" r="8" stroke-width="1"></circle>
-</svg>
-<div class="absolute top-2 right-2 bg-secondary-container px-space-sm py-space-xs font-label-sm text-label-sm uppercase text-secondary tracking-wider">
-      N° 08 • Mocktail
-    </div>
-<div class="absolute bottom-2 left-2 text-primary font-label-sm text-label-sm tracking-widest uppercase opacity-80">
-      BOTANICAL 0.0%
-    </div>
-</div>
-<div class="p-space-md flex flex-col gap-space-xs flex-grow">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Prohibición Cero</h3>
-<span class="font-headline-sm text-headline-sm text-primary tracking-wide">$6.800</span>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary mt-space-xs">
-      Destilado botánico 0% alcohol en alambique de cobre, cordial de pomelo quemado, romero fresco y tónica premium.
-    </p>
-<div class="mt-auto pt-space-sm flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase">
-<span class="truncate">Cristal: Highball Vintage</span>
-<span>Graduación: 0% ABV</span>
-</div>
-</div>
-<div class="px-space-md pb-space-md">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#reservas">
-      Pedir al Bartender
-    </a>
-</div>
-</div></div>
-</div>
-</section>
-<!-- AGENDA & NOCHES TEMÁTICAS SECTION -->
-<section class="w-full py-space-xl bg-surface-container-lowest" id="agenda">
-<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-xl">
-<!-- Section Header -->
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<!-- Happy hour banner -->
+<div class="bg-secondary text-on-secondary px-space-md py-space-sm rounded shadow-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]">alarm_on</span>
 <div>
-<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">En Vivo • Veladas Singulares</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
-            Agenda Clandestina • Noches de Club
-          </h2>
-</div>
-<p class="font-body-sm text-body-sm text-tertiary max-w-md">
-          La música nunca se reproduce de fondo: se interpreta. Trompetas con sordina, contrabajos acústicos y pinchadiscos con acetatos originales.
-        </p>
-</div>
-<!-- Events Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
-<!-- Event 1 -->
-<div class="bg-surface-container flex flex-col justify-between p-space-lg hover:bg-surface-container-high transition-colors">
-<div>
-<div class="bg-secondary-container text-on-secondary-container inline-block px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
-              Cada Jueves • 21:30 hs
-            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
-              Jueves de Jazz &amp; Hot Club
-            </h3>
-<p class="font-body-sm text-body-sm text-tertiary">
-              Trío acústico en vivo: guitarra manouche, trompeta y contrabajo rindiendo homenaje al jazz de Chicago y París de entreguerras.
-            </p>
-</div>
-<div class="pt-space-lg">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="https://wa.me/5491130641308?text=Hola%201927%2C%20quiero%20reservar%20lugar%20para%20los%20Jueves%20de%20Jazz" target="_blank">
-              Reservar Lugar
-            </a>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider block">Happy Hour Canillero</span>
+<span class="font-body-sm text-body-sm font-semibold">19:30 a 21:00 hs: 2x1 en pintas</span>
 </div>
 </div>
-<!-- Event 2 -->
-<div class="bg-surface-container flex flex-col justify-between p-space-lg hover:bg-surface-container-high transition-colors">
-<div>
-<div class="bg-secondary-container text-on-secondary-container inline-block px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
-              Viernes • 22:00 hs
-            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
-              Viernes Vinyl Session
-            </h3>
-<p class="font-body-sm text-body-sm text-tertiary">
-              Selección exclusiva en discos de vinilo de 33 RPM: jazz modal, rhythm and blues, soul primitivo y gemas ocultas de la medianoche.
-            </p>
-</div>
-<div class="pt-space-lg">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="https://wa.me/5491130641308?text=Hola%201927%2C%20quiero%20reservar%20lugar%20para%20Viernes%20Vinyl%20Session" target="_blank">
-              Reservar Lugar
-            </a>
-</div>
-</div>
-<!-- Event 3 -->
-<div class="bg-surface-container flex flex-col justify-between p-space-lg hover:bg-surface-container-high transition-colors">
-<div>
-<div class="bg-secondary-container text-on-secondary-container inline-block px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
-              Sábados • 23:00 hs
-            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
-              Sábado Electro Swing
-            </h3>
-<p class="font-body-sm text-body-sm text-tertiary">
-              Elegancia vintage y cadencia contemporánea. Beats envolventes combinados con metales solistas en directo para coronar el fin de semana.
-            </p>
-</div>
-<div class="pt-space-lg">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="https://wa.me/5491130641308?text=Hola%201927%2C%20quiero%20reservar%20lugar%20para%20el%20Sabado%20Electro%20Swing" target="_blank">
-              Reservar Lugar
-            </a>
-</div>
-</div>
-<!-- Event 4 -->
-<div class="bg-surface-container flex flex-col justify-between p-space-lg hover:bg-surface-container-high transition-colors">
-<div>
-<div class="bg-secondary-container text-on-secondary-container inline-block px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider mb-space-sm">
-              Primer Miércoles • 20:30 hs
-            </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
-              Cata &amp; Masterclass
-            </h3>
-<p class="font-body-sm text-body-sm text-tertiary">
-              Cata a ciegas y degustación de 4 destilados raros de colección privada junto a nuestro Head Bartender. Cupo limitado a 12 personas.
-            </p>
-</div>
-<div class="pt-space-lg">
-<a class="w-full py-space-xs inline-flex items-center justify-center bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="https://wa.me/5491130641308?text=Hola%201927%2C%20quiero%20reservar%20lugar%20para%20la%20Masterclass%20de%20Destilados" target="_blank">
-              Reservar Lugar
-            </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- GALERÍA VISUAL SECTION -->
-<section class="w-full py-space-xl bg-surface" id="galeria">
-<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-lg">
-<div class="flex flex-col items-center text-center gap-space-xs">
-<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Atmósfera &amp; Salón</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Un Refugio en la Penumbra</h2>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
-<!-- Gallery 1 -->
-<div class="relative group aspect-square bg-surface-container-highest overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dimly lit interior of an exclusive Buenos Aires speakeasy salon with curved green velvet booths, dark timber paneling and couples dressed in 1920s style cocktail attire drinking champagne under warm geometric lamps." src="img/09b91946c38dd62a.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex items-end p-space-md">
-<span class="font-body-sm italic text-tertiary">El Salón Clandestino</span>
+<!-- Canilla 1 -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase">Canilla 01</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">4.8% ABV · 18 IBU</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary mb-1">Golden Ale Barrial</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Refrescante, ligera y dorada. Trago largo y final limpio, ideal para arrancar la picada y el vermú.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container/50 -mx-space-md -mb-space-md p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-semibold">Pinta 500cc</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$3.800</span>
 </div>
 </div>
-<!-- Gallery 2 -->
-<div class="relative group aspect-square bg-surface-container-highest overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Classic cocktail on hand cut crystal glass garnished with citrus twist and clear ice cube glowing softly against a dark moody speakeasy interior." src="img/89d7e80f08f6f455.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex items-end p-space-md">
-<span class="font-body-sm italic text-tertiary">El Cóctel “Ley Seca”</span>
+<!-- Canilla 2 -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase">Canilla 02</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">5.5% ABV · 15 IBU</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary mb-1">Honey de las Pampas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Elaborada con miel pura de pradera. Notas dulces sutiles, cuerpo medio y una espuma densa y cremosa.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container/50 -mx-space-md -mb-space-md p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-semibold">Pinta 500cc</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$4.200</span>
 </div>
 </div>
-<!-- Gallery 3 -->
-<div class="relative group aspect-square bg-surface-container-highest overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Stemmed cocktail glass with thick silky foam and purple orchid flower on an old dark wood bar top with soft reflections from candle lanterns." src="img/2b7bae0e7bb75656.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex items-end p-space-md">
-<span class="font-body-sm italic text-tertiary">Copas de Autor &amp; Botánica</span>
+<!-- Canilla 3 -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase">Canilla 03</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">6.2% ABV · 48 IBU</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary mb-1">IPA Porteña</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cítrica y resinosa con lúpulos patagónicos bien aromáticos. Amargor presente que marida de fiesta con la provoleta.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container/50 -mx-space-md -mb-space-md p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-semibold">Pinta 500cc</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$4.500</span>
 </div>
 </div>
-<!-- Gallery 4 -->
-<div class="relative group aspect-square bg-surface-container-highest overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Expert hands of a mixologist stirring an artisan cocktail in a cut glass mixing beaker with precision behind a lit mahogany bar shelf filled with vintage bitters." src="img/b14e6bdb1d761078.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex items-end p-space-md">
-<span class="font-body-sm italic text-tertiary">Oficio &amp; Barra Imperial</span>
+<!-- Canilla 4 -->
+<div class="bg-surface-container-low p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase">Canilla 04</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">5.2% ABV · 22 IBU</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-primary mb-1">Scottish Red Ale</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Maltosa, con notas a caramelo y galleta tostada. El acompañamiento definitivo para la milanesa napolitana.</p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container/50 -mx-space-md -mb-space-md p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface font-semibold">Pinta 500cc</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$4.200</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- RESERVAS INTERACTIVE SECTION -->
-<section class="w-full py-space-xl bg-surface-container-lowest" id="reservas">
-<div class="max-w-4xl mx-auto px-gutter">
-<div class="bg-secondary-container text-on-secondary-container p-space-lg md:p-space-xl shadow-2xl relative">
-<!-- Header -->
-<div class="text-center flex flex-col items-center gap-space-xs mb-space-lg">
-<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">Acceso Privado</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Reservá Tu Mesa en el Club</h2>
-<p class="font-body-md text-body-md text-on-secondary-container max-w-lg">
-            Las ubicaciones son limitadas para preservar la intimidad del salón. Completá tus datos y confirmá de inmediato por WhatsApp con nuestra conserjería.
-          </p>
+<!-- SIGNATURE FEATURE: PIZARRÓN DEL DÍA + RESERVA DE MESA -->
+<section class="w-full py-space-xl bg-surface-container-high" id="pizarron-reserva">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-lg text-label-lg uppercase text-secondary font-bold">Especiales &amp; Reservas</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary mt-1">El Pizarrón del Club</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Elegí el día para ver la minuta destacada o asegurá tu mesa de inmediato con confirmación directa por WhatsApp.
+        </p>
 </div>
-<!-- Reservation Form -->
-<form class="grid grid-cols-1 md:grid-cols-2 gap-space-md" id="reservation-form" onsubmit="submitReservation(event)">
-<!-- Nombre -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Nombre y Apellido</label>
-<input class="w-full bg-surface-container-lowest text-on-surface p-space-sm font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-name" placeholder="Ej. Camila Valenzuela" required="" type="text"/>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-stretch">
+<!-- LEFT: Chalkboard Component -->
+<div class="lg:col-span-6 bg-inverse-surface text-inverse-on-surface p-space-md sm:p-space-lg rounded-xl shadow-2xl flex flex-col justify-between border-4 border-[#4d3400]/40">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md border-b border-inverse-on-surface/20">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed">edit_note</span>
+<span class="font-headline-md text-headline-md uppercase tracking-wider text-tertiary-fixed">Platos de Pizarra</span>
 </div>
-<!-- Personas -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Cantidad de Personas</label>
-<select class="w-full bg-surface-container-lowest text-on-surface p-space-sm font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-people">
-<option value="1 persona">1 persona (Barra)</option>
-<option selected="" value="2 personas">2 personas (Mesa íntima)</option>
-<option value="3 personas">3 personas</option>
-<option value="4 personas">4 personas (Living)</option>
-<option value="5 a 8 personas">5 a 8 personas (Reserva grupal)</option>
-</select>
+<span class="font-label-sm text-label-sm uppercase px-2 py-0.5 rounded bg-primary text-on-primary">Semana en Curso</span>
 </div>
-<!-- Fecha -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Día Preferido</label>
-<select class="w-full bg-surface-container-lowest text-on-surface p-space-sm font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-date">
-<option value="Hoy">Hoy por la noche</option>
-<option value="Este Miércoles">Miércoles (20:00 a 03:00)</option>
-<option value="Este Jueves">Jueves (Noche de Jazz)</option>
-<option value="Este Viernes">Viernes (Vinyl Session)</option>
-<option value="Este Sábado">Sábado (Electro Swing)</option>
-<option value="Este Domingo">Domingo (20:00 a 01:00)</option>
-</select>
+<!-- Day Selector Tabs -->
+<div class="grid grid-cols-3 sm:grid-cols-6 gap-1 mb-space-md">
+<button class="chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors bg-tertiary-fixed text-on-tertiary-fixed" id="day-btn-martes" onclick="setChalkDay('martes')">Mar</button>
+<button class="chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors hover:bg-inverse-on-surface/10 text-inverse-on-surface" id="day-btn-miercoles" onclick="setChalkDay('miercoles')">Mié</button>
+<button class="chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors hover:bg-inverse-on-surface/10 text-inverse-on-surface" id="day-btn-jueves" onclick="setChalkDay('jueves')">Jue</button>
+<button class="chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors hover:bg-inverse-on-surface/10 text-inverse-on-surface" id="day-btn-viernes" onclick="setChalkDay('viernes')">Vie</button>
+<button class="chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors hover:bg-inverse-on-surface/10 text-inverse-on-surface" id="day-btn-sabado" onclick="setChalkDay('sabado')">Sáb</button>
+<button class="chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors hover:bg-inverse-on-surface/10 text-inverse-on-surface" id="day-btn-domingo" onclick="setChalkDay('domingo')">Dom</button>
 </div>
-<!-- Horario -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Horario Estimado</label>
-<select class="w-full bg-surface-container-lowest text-on-surface p-space-sm font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-time">
-<option value="20:00 hs">20:00 hs (Apertura)</option>
-<option value="21:00 hs">21:00 hs</option>
-<option selected="" value="22:00 hs">22:00 hs</option>
-<option value="23:00 hs">23:00 hs</option>
-<option value="00:00 hs">00:00 hs (Trasnoche)</option>
-<option value="01:00 hs">01:00 hs</option>
-</select>
+<!-- Dynamic Chalkboard Content -->
+<div class="bg-black/30 p-space-md rounded-lg border border-inverse-on-surface/10 min-h-[190px] flex flex-col justify-between" id="chalk-content">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-tertiary-fixed tracking-wider font-bold" id="chalk-day-title">Especial del Martes</span>
+<h3 class="font-headline-lg text-headline-lg uppercase text-surface-bright mt-1" id="chalk-dish-name">Guiso de Lentejas Criollo</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/90 mt-1" id="chalk-dish-desc">Con chorizo colorado, panceta tiernizada y batatas en cazuela caliente. Acompañado de pan casero.</p>
 </div>
-<!-- Ocasión -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Motivo de la Visita</label>
-<select class="w-full bg-surface-container-lowest text-on-surface p-space-sm font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-occasion">
-<option value="Cita íntima">Cita íntima / Aniversario</option>
-<option value="Salida con amigos">Salida de amigos</option>
-<option value="Tragos post-cena">Cóctel después de cenar</option>
-<option value="Cumpleaños / Festejo">Cumpleaños</option>
-<option value="Descubrimiento solo en barra">Experiencia individual en barra</option>
-</select>
+<div class="mt-space-md pt-space-sm border-t border-inverse-on-surface/20 flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">sports_bar</span>
+<span class="font-label-md text-label-md text-inverse-on-surface" id="chalk-dish-beer">Recomendada: Golden Ale Barrial</span>
 </div>
-<!-- Ubicación en salón -->
-<div class="flex flex-col gap-space-xs">
-<label class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Preferencia de Espacio</label>
-<select class="w-full bg-surface-container-lowest text-on-surface p-space-sm font-body-md focus:outline-none focus:ring-1 focus:ring-primary" id="res-area">
-<option value="Barra Principal de Mármol">Barra Principal de Mármol</option>
-<option value="Mesas Bajas de Terciopelo">Mesas Bajas de Terciopelo</option>
-<option value="Esquina Secreta / Rincón Privado">Esquina Secreta / Rincón Privado</option>
-</select>
+<span class="font-headline-md text-headline-md text-tertiary-fixed font-bold" id="chalk-dish-price">$9.800</span>
 </div>
-<!-- Submit Button -->
-<div class="md:col-span-2 pt-space-sm">
-<button class="w-full py-space-md bg-primary text-on-primary hover:bg-primary-container transition-all font-label-lg text-label-lg uppercase tracking-widest shadow-[0_0_24px_rgba(212,175,106,0.3)] flex items-center justify-center gap-space-sm" type="submit">
-<span class="material-symbols-outlined text-[20px]">send</span>
-              CONFIRMAR RESERVA POR WHATSAPP
-            </button>
-<p class="font-body-sm text-body-sm text-center text-on-secondary-container mt-space-xs">
-              Al confirmar, se abrirá un chat directo con el conserje para validar disponibilidad y entregarte la clave de ingreso.
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-inverse-on-surface/20 flex items-center justify-between text-inverse-on-surface/70 font-body-sm text-body-sm">
+<span>Incluye panera de cantina</span>
+<span class="text-tertiary-fixed font-bold">¡Sale rápido y humeante!</span>
+</div>
+</div>
+<!-- RIGHT: Interactive Reservation Form -->
+<div class="lg:col-span-6 bg-surface p-space-md sm:p-space-lg rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[26px]">event_seat</span>
+<h3 class="font-headline-md text-headline-md uppercase text-primary">Asegurá tu Mesa en el Club</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Completá los datos y enviamos tu reserva directa por WhatsApp. Respondemos al toque.
             </p>
+<form class="flex flex-col gap-space-sm" id="reserva-form" onsubmit="event.preventDefault(); submitReservation();">
+<!-- Name -->
+<div>
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface block mb-1" for="res-nombre">Nombre y Apellido</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded border border-surface-container-highest focus:outline-none focus:border-primary font-body-md text-body-md text-on-surface" id="res-nombre" oninput="updateLivePreview()" placeholder="Ej: Mariano González" required="" type="text"/>
 </div>
+<!-- Persons selector and Day -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface block mb-1">Personas</label>
+<div class="flex items-center bg-surface-container-lowest rounded border border-surface-container-highest">
+<button class="px-space-md py-space-sm text-primary font-bold hover:bg-surface-container-high transition-colors" onclick="adjustComensales(-1)" type="button">-</button>
+<span class="flex-1 text-center font-headline-sm text-headline-sm text-on-surface" id="comensales-count">4</span>
+<button class="px-space-md py-space-sm text-primary font-bold hover:bg-surface-container-high transition-colors" onclick="adjustComensales(1)" type="button">+</button>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface block mb-1" for="res-dia">Día</label>
+<select class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded border border-surface-container-highest focus:outline-none focus:border-primary font-body-md text-body-md text-on-surface" id="res-dia" onchange="updateLivePreview()">
+<option value="Martes">Martes</option>
+<option value="Miércoles">Miércoles</option>
+<option value="Jueves">Jueves</option>
+<option selected="" value="Viernes">Viernes</option>
+<option value="Sábado">Sábado</option>
+<option value="Domingo">Domingo</option>
+</select>
+</div>
+</div>
+<!-- Turno -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface block mb-1" for="res-turno">Turno</label>
+<select class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded border border-surface-container-highest focus:outline-none focus:border-primary font-body-md text-body-md text-on-surface" id="res-turno" onchange="updateLivePreview()">
+<option value="Noche (20:30 hs)">Noche (20:30 hs)</option>
+<option value="Noche (22:00 hs)">Noche (22:00 hs)</option>
+<option value="Mediodía (13:00 hs)">Mediodía (13:00 hs)</option>
+<option value="Mediodía (14:30 hs)">Mediodía (14:30 hs)</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface block mb-1" for="res-nota">Comentario (opcional)</label>
+<input class="w-full bg-surface-container-lowest px-space-md py-space-sm rounded border border-surface-container-highest focus:outline-none focus:border-primary font-body-md text-body-md text-on-surface" id="res-nota" oninput="updateLivePreview()" placeholder="Ej: Cumpleaños / Cerca de la tele" type="text"/>
+</div>
+</div>
+<!-- Message Preview -->
+<div class="bg-surface-container-low p-space-sm rounded mt-space-xs border border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold block mb-1">Vista previa del mensaje:</span>
+<p class="font-body-sm text-body-sm text-on-surface italic" id="live-message-preview">
+                  "¡Hola Club 1927! Quiero reservar una mesa para 4 personas el Viernes en el turno Noche (20:30 hs). Gracias!"
+                </p>
+</div>
+<!-- Action Button -->
+<button class="mt-space-xs inline-flex items-center justify-center gap-space-xs w-full py-space-md bg-primary-container text-on-primary hover:bg-primary rounded font-label-lg text-label-lg uppercase shadow-md transition-all active:translate-y-0.5" type="submit">
+<span class="material-symbols-outlined">send</span>
+                Reservar por WhatsApp
+              </button>
 </form>
 </div>
+<div class="mt-space-md pt-space-xs text-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">¿Preferís llamar directo? Tel: <strong class="text-primary font-bold">11 3064-1308</strong></span>
+</div>
+</div>
+</div>
 </div>
 </section>
-<!-- UBICACIÓN & COORDENADAS SECTION -->
-<section class="w-full py-space-xl bg-surface" id="ubicacion">
-<div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-<!-- Left: Practical Info -->
-<div class="lg:col-span-6 flex flex-col gap-space-md">
-<div>
-<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Coordenadas &amp; Reglas</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
-            Cómo Hallar el Club
+<!-- EVENTOS, CUMPLEAÑOS Y PARTIDOS -->
+<section class="w-full py-space-xl bg-surface" id="eventos">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-surface-container rounded-2xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-6 p-space-lg lg:p-space-xl flex flex-col gap-space-md">
+<span class="font-label-lg text-label-lg uppercase text-secondary font-bold">Festejos y Deporte</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary">
+            Cumpleaños, peñas y clásicos en pantalla gigante
           </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Nuestro salón conserva las mesas largas de madera maciza para reunir a la familia y amigos. Ofrecemos menús cerrados con jarras de cerveza tirada, empanadas caseras y platos compartidos.
+          </p>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">sports_soccer</span>
+<span>Todos los partidos del fútbol argentino y copas internacionales en vivo.</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">celebration</span>
+<span>Cumpleaños y agasajos de hasta 40 comensales con reserva previa.</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">cake</span>
+<span>Podés traer tu torta o pedir nuestro flan mixto tamaño familiar.</span>
+</li>
+</ul>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg uppercase px-space-lg py-space-md bg-secondary text-on-secondary hover:bg-on-secondary-container rounded shadow-md transition-all active:translate-y-0.5" href="https://wa.me/5491130641308?text=Hola%20Club%201927!%20Quería%20consultar%20por%20un%20evento%20o%20festejo%20grupal." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+              Consultar por Salón y Grupos
+            </a>
 </div>
-<div class="flex flex-col gap-space-sm text-on-surface-variant font-body-md">
-<div class="flex items-start gap-space-sm bg-surface-container p-space-md">
+</div>
+<div class="lg:col-span-6 h-full min-h-[320px]">
+<img alt="Pantalla gigante para partidos y ambiente de amigos" class="w-full h-full object-cover" src="img/39744a52e658f82e.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- VISITANOS EN VILLA CRESPO (MAPA Y CONTACTO) -->
+<section class="w-full py-space-xl bg-surface-container-low" id="visitanos">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-lg text-label-lg uppercase text-secondary font-bold">Ubicación y Horarios</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary">
+            Vení a conocer la cantina
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Estamos en Antezana 340, en pleno Villa Crespo.
+          </p>
+<div class="bg-surface p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
 <span class="material-symbols-outlined text-primary text-[24px]">pin_drop</span>
 <div>
-<strong class="text-on-surface block font-title-md">Antezana 340, Villa Crespo</strong>
-<span>Ciudad Autónoma de Buenos Aires, Argentina</span>
-<span class="block text-tertiary font-body-sm mt-space-xs">A 200m de Av. Corrientes y Av. Scalabrini Ortiz. Subte Línea B (Estación Malabia).</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Dirección</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Antezana 340, Villa Crespo, CABA</p>
 </div>
 </div>
-<div class="flex items-start gap-space-sm bg-surface-container p-space-md">
+<div class="flex items-start gap-space-sm">
 <span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
 <div>
-<strong class="text-on-surface block font-title-md">Horarios de Operación</strong>
-<span>Miércoles a Sábados: 20:00 a 03:00 hs</span>
-<span class="block">Domingos: 20:00 a 01:00 hs</span>
-<span class="text-tertiary font-body-sm">Lunes y Martes: Descanso de cantina.</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Horarios de Cantina</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Martes a Domingo: 12:00 a 15:30 y 19:30 a 00:30 hs.</p>
+<p class="font-body-sm text-body-sm text-error font-medium">Lunes: Cerrado por descanso del personal</p>
 </div>
 </div>
-<div class="flex items-start gap-space-sm bg-surface-container p-space-md">
-<span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">phone</span>
 <div>
-<strong class="text-on-surface block font-title-md">Código de Admisión &amp; Vestimenta</strong>
-<span class="block text-tertiary">Ingreso exclusivo con reserva confirmada o contraseña de la noche. Mayores de 18 años.</span>
-<span class="block text-tertiary mt-space-xs">Dress code: Elegante Sport / Nocturno. Sin ropa deportiva ni calzado abierto.</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Contacto</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Teléfono: 11 3064-1308 · Instagram: @club.1927</p>
 </div>
 </div>
 </div>
 <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
-<a class="inline-flex items-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-sm font-label-md text-label-md uppercase tracking-wider transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=1927+Antezana+340+Villa+Crespo+Buenos+Aires" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">map</span>
-            CÓMO LLEGAR (MAPS)
-          </a>
-<a class="inline-flex items-center gap-space-xs bg-surface-container text-on-surface hover:text-primary px-space-lg py-space-sm font-label-md text-label-md uppercase tracking-wider transition-colors" href="https://www.instagram.com/club.1927/" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">photo_camera</span>
-            @CLUB.1927
-          </a>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg uppercase px-space-md py-space-sm bg-primary-container text-on-primary hover:bg-primary rounded shadow-sm transition-all" href="https://www.google.com/maps/search/?api=1&amp;query=Club%201927%20Antezana%20340" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">directions</span>
+              Cómo llegar (Google Maps)
+            </a>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg uppercase px-space-md py-space-sm bg-surface-container text-on-surface hover:bg-surface-container-high rounded shadow-sm transition-all border border-surface-container-highest" href="https://wa.me/5491130641308" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+              WhatsApp
+            </a>
 </div>
 </div>
-<!-- Right: Dark Map Placeholder Frame -->
-<div class="lg:col-span-6">
-<div class="relative bg-surface-container p-space-sm shadow-2xl">
-<div class="w-full h-96 bg-cover bg-center relative flex items-center justify-center overflow-hidden" data-location="Antezana 340, Villa Crespo, Buenos Aires" style="background-image: url('img/77c6d55e1138f11c.png')">
-<!-- Custom Art Déco Map Overlay -->
-<div class="absolute inset-0 bg-surface-container-lowest/80 flex flex-col items-center justify-center p-space-md text-center">
-<div class="w-16 h-16 bg-secondary-container flex items-center justify-center mb-space-sm shadow-[0_0_20px_rgba(212,175,106,0.3)]">
-<span class="material-symbols-outlined text-primary text-[32px]">local_bar</span>
+<!-- Styled Neighborhood Map Card -->
+<div class="lg:col-span-7">
+<div class="relative bg-surface p-space-sm rounded-xl shadow-lg border border-surface-container-highest">
+<div class="w-full h-80 sm:h-96 bg-surface-container-high rounded-lg overflow-hidden relative flex flex-col items-center justify-center p-space-md text-center" data-location="Antezana 340, Villa Crespo, CABA" style="">
+<div class="p-space-md bg-surface/95 rounded-xl shadow-md max-w-sm flex flex-col items-center gap-space-xs">
+<img alt="Club 1927" class="w-12 h-12 object-contain" src="img/21c612497ff8f4d1.png"/>
+<span class="font-headline-sm text-headline-sm uppercase text-primary">Club 1927 · Villa Crespo</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Antezana 340, Villa Crespo</p>
+<a class="mt-space-xs inline-flex items-center gap-1 font-label-sm text-label-sm uppercase text-secondary font-bold hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=Club%201927%20Antezana%20340" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                  Ver en Google Maps Grande
+                </a>
 </div>
-<span class="font-headline-sm text-headline-sm text-primary uppercase tracking-widest block">1927 Speakeasy</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-space-xs">
-                Antezana 340 • Timbre de bronce con el emblema del zorro
-              </span>
-<a class="mt-space-md font-label-sm text-label-sm uppercase text-primary tracking-widest hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=1927+Antezana+340+Villa+Crespo+Buenos+Aires" target="_blank">
-                Abrir en Google Maps →
-              </a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Interactive Logic Scripts -->
+<!-- Interactive Vanilla JS -->
 <script>
-    // Reveal Password Interactive Mechanism
-    function revealPassword() {
-      const prompt = document.getElementById('pass-prompt');
-      const code = document.getElementById('pass-code');
-      const hint = document.getElementById('pass-hint');
-      
-      if (prompt && code) {
-        prompt.classList.add('hidden');
-        code.classList.remove('hidden');
-        hint.innerText = "¡Contraseña develada! Susurrala en la puerta con tu reserva.";
-      }
-    }
-
-    // Cocktail Menu Filter Function
-    function filterMenu(category, btnElement) {
-      // Toggle button styles
-      const buttons = document.querySelectorAll('.menu-tab-btn');
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-primary', 'text-on-primary');
-        btn.classList.add('bg-surface-container', 'text-on-surface');
-      });
-
-      if (btnElement) {
-        btnElement.classList.remove('bg-surface-container', 'text-on-surface');
-        btnElement.classList.add('bg-primary', 'text-on-primary');
-      }
-
-      // Filter grid items
-      const items = document.querySelectorAll('.cocktail-item');
-      items.forEach(item => {
-        const itemCat = item.getAttribute('data-category');
-        if (category === 'todos' || itemCat === category) {
-          item.style.display = 'flex';
+    // Menu Category switcher
+    function switchCategory(cat) {
+      const categories = ['picar', 'platos', 'pastas', 'postres'];
+      categories.forEach(c => {
+        const el = document.getElementById('cat-' + c);
+        const btn = document.getElementById('cat-btn-' + c);
+        if (c === cat) {
+          el.classList.remove('hidden');
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
         } else {
-          item.style.display = 'none';
+          el.classList.add('hidden');
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container', 'text-on-surface');
         }
       });
     }
 
-    // Reservation WhatsApp String Builder
-    function submitReservation(e) {
-      e.preventDefault();
-      
-      const name = document.getElementById('res-name').value;
-      const people = document.getElementById('res-people').value;
-      const date = document.getElementById('res-date').value;
-      const time = document.getElementById('res-time').value;
-      const occasion = document.getElementById('res-occasion').value;
-      const area = document.getElementById('res-area').value;
+    // Chalkboard Data & Switcher
+    const chalkboardData = {
+      martes: {
+        title: "Especial del Martes",
+        dish: "Guiso de Lentejas Criollo",
+        desc: "Con chorizo colorado, panceta tiernizada y batatas en cazuela caliente. Acompañado de pan casero.",
+        beer: "Recomendada: Golden Ale Barrial",
+        price: "$9.800"
+      },
+      miercoles: {
+        title: "Especial del Miércoles",
+        dish: "Milanesa Napolitana con Puré",
+        desc: "Carne tiernizada con pan rallado casero, muzza abundante, salsa de tomates asados y puré de papas mantecoso.",
+        beer: "Recomendada: Scottish Red Ale",
+        price: "$10.500"
+      },
+      jueves: {
+        title: "Especial del Jueves",
+        dish: "Ñoquis Caseros con Tuco de la Casa",
+        desc: "Papas seleccionadas, masa ligera y esponjosa con salsa estofada con carne picada a mano y albahaca fresca.",
+        beer: "Recomendada: Scottish Red Ale",
+        price: "$8.400"
+      },
+      viernes: {
+        title: "Especial del Viernes",
+        dish: "Gran Picada de Club Caliente",
+        desc: "Rabas crocantes, albondiguitas con tuco, dados de tortilla babé, provoletitas y papas rústicas con 2 pintas.",
+        beer: "Recomendada: IPA Porteña (2 Pintas)",
+        price: "$16.800"
+      },
+      sabado: {
+        title: "Especial del Sábado",
+        dish: "Asado al Disco Criollo",
+        desc: "Trocitos de ternera, morrones, cebollas caramelizadas, vino blanco y rodajas de papas rústicas al disco.",
+        beer: "Recomendada: Honey de las Pampas",
+        price: "$12.500"
+      },
+      domingo: {
+        title: "Especial del Domingo",
+        dish: "Raviolones de Ricota y Nuez",
+        desc: "Masa al huevo amasada en la mañana con estofado de peceto cocinado a fuego lento y lluvia de parmesano.",
+        beer: "Recomendada: Golden Ale Barrial",
+        price: "$9.900"
+      }
+    };
 
-      const message = `Hola 1927! Quisiera solicitar una reserva en el club:%0A%0A` +
-        `• *Nombre:* ${encodeURIComponent(name)}%0A` +
-        `• *Personas:* ${encodeURIComponent(people)}%0A` +
-        `• *Día:* ${encodeURIComponent(date)}%0A` +
-        `• *Horario:* ${encodeURIComponent(time)}%0A` +
-        `• *Ubicación sugerida:* ${encodeURIComponent(area)}%0A` +
-        `• *Ocasión:* ${encodeURIComponent(occasion)}%0A%0A` +
-        `Aguardo confirmación y clave de ingreso. Muchas gracias!`;
+    function setChalkDay(day) {
+      const days = ['martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
+      days.forEach(d => {
+        const btn = document.getElementById('day-btn-' + d);
+        if (d === day) {
+          btn.className = "chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors bg-tertiary-fixed text-on-tertiary-fixed";
+        } else {
+          btn.className = "chalk-day-btn text-center py-1.5 rounded font-label-sm text-label-sm uppercase font-bold transition-colors hover:bg-inverse-on-surface/10 text-inverse-on-surface";
+        }
+      });
 
-      window.open(`https://wa.me/5491130641308?text=${message}`, '_blank');
+      const data = chalkboardData[day];
+      if (data) {
+        document.getElementById('chalk-day-title').innerText = data.title;
+        document.getElementById('chalk-dish-name').innerText = data.dish;
+        document.getElementById('chalk-dish-desc').innerText = data.desc;
+        document.getElementById('chalk-dish-beer').innerText = data.beer;
+        document.getElementById('chalk-dish-price').innerText = data.price;
+      }
+    }
+
+    // Reservation comensales stepper & dynamic WhatsApp link
+    let currentComensales = 4;
+
+    function adjustComensales(delta) {
+      currentComensales = Math.max(1, Math.min(16, currentComensales + delta));
+      document.getElementById('comensales-count').innerText = currentComensales;
+      updateLivePreview();
+    }
+
+    function updateLivePreview() {
+      const nombre = document.getElementById('res-nombre').value.trim() || "[Tu Nombre]";
+      const dia = document.getElementById('res-dia').value;
+      const turno = document.getElementById('res-turno').value;
+      const nota = document.getElementById('res-nota').value.trim();
+
+      let msg = `¡Hola Club 1927! Quiero reservar una mesa para ${currentComensales} persona${currentComensales > 1 ? 's' : ''} el ${dia} en el turno ${turno}. A nombre de ${nombre}.`;
+      if (nota) {
+        msg += ` Detalle: ${nota}.`;
+      }
+      msg += ` Muchas gracias!`;
+
+      document.getElementById('live-message-preview').innerText = `"${msg}"`;
+    }
+
+    function submitReservation() {
+      const nombre = document.getElementById('res-nombre').value.trim();
+      if (!nombre) {
+        alert("Por favor indicanos tu nombre para la reserva.");
+        document.getElementById('res-nombre').focus();
+        return;
+      }
+      const dia = document.getElementById('res-dia').value;
+      const turno = document.getElementById('res-turno').value;
+      const nota = document.getElementById('res-nota').value.trim();
+
+      let text = `¡Hola Club 1927! Quiero reservar una mesa para ${currentComensales} persona${currentComensales > 1 ? 's' : ''} el día ${dia} (${turno}) a nombre de ${nombre}.`;
+      if (nota) {
+        text += ` Aclaración: ${nota}.`;
+      }
+      text += ` ¿Tienen disponibilidad? ¡Muchas gracias!`;
+
+      const encoded = encodeURIComponent(text);
+      window.open(`https://wa.me/5491130641308?text=${encoded}`, '_blank');
     }
   </script>
-</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="max-w-7xl mx-auto px-gutter py-space-xl flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="1927 Speakeasy Logo" class="h-8 w-auto object-contain" src="img/8395f055bf60122a.png"/><span class="font-headline-sm text-headline-sm uppercase text-primary">1927</span></div><p class="font-body-sm text-body-sm text-tertiary">Clandestine cocktail sanctuary nestled in Villa Crespo, Buenos Aires. Refined Art Déco mixology, rare spirits, and nocturnal jazz.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase text-primary tracking-widest">Horarios</span><p class="font-body-sm text-body-sm text-on-surface">Miércoles a sábados 20:00–3:00</p><p class="font-body-sm text-body-sm text-on-surface">Domingos 20:00–1:00</p><p class="font-label-sm text-label-sm uppercase text-tertiary mt-space-xs">Lunes &amp; Martes Cerrado</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase text-primary tracking-widest">Ubicación &amp; Contacto</span><p class="font-body-sm text-body-sm text-on-surface">Antezana 340, Villa Crespo</p><p class="font-body-sm text-body-sm text-tertiary">Buenos Aires, Argentina</p><p class="font-body-sm text-body-sm text-primary-container mt-space-xs">Instagram: @CLUB.1927</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase text-primary tracking-widest">Código de Vestimenta</span><p class="font-body-sm text-body-sm text-on-surface">Elegante Nocturno / Smart Casual.</p><p class="font-body-sm text-body-sm text-tertiary">No se permite ropa deportiva, calzado abierto ni gorras. Nos reservamos el derecho de admisión.</p></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg"><p class="font-label-sm text-label-sm uppercase text-tertiary">1927 © 2026. Todos los derechos reservados. Salón Clandestino Porteño.</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm uppercase text-tertiary">Villa Crespo • Buenos Aires</span><span class="font-label-sm text-label-sm uppercase text-primary-container">Acceso por Contraseña</span></div></div></div></footer><aside class="fixed bottom-6 right-6 z-50"><a aria-label="Contactar por WhatsApp" class="flex items-center justify-center w-14 h-14 bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary rounded-full shadow-[0_0_24px_rgba(35,79,63,0.4)] transition-transform hover:scale-105" href="https://wa.me/5491130641308" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[28px]">chat</span></a></aside></body></html>
+</div></main><footer class="w-full bg-surface-container text-on-surface border-t border-surface-container-highest mt-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-xs"><span class="font-headline-md text-headline-md uppercase text-primary">Club 1927</span><p class="font-body-sm text-body-sm text-on-surface-variant">Cantina social y de barrio en el corazón de Villa Crespo. Encuentro, vermut y cocina casera desde 1927.</p><div class="mt-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider px-space-xs py-space-xs bg-secondary text-on-secondary rounded font-bold">Villa Crespo · CABA</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg uppercase text-secondary font-semibold">Ubicación &amp; Contacto</span><p class="font-body-md text-body-md font-medium text-on-surface">Antezana 340, Villa Crespo, CABA</p><p class="font-body-sm text-body-sm text-on-surface-variant">Teléfono: 11 3064-1308</p><p class="font-body-sm text-body-sm text-on-surface-variant">Instagram: @club.1927</p><div class="flex items-center gap-space-sm mt-space-xs"><a class="inline-flex items-center gap-space-xs font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded border border-outline-variant transition-colors" href="https://maps.google.com/?q=Antezana+340+Villa+Crespo+CABA" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">map</span>Google Maps</a><a class="inline-flex items-center gap-space-xs font-label-sm text-label-sm bg-surface text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded border border-outline-variant transition-colors" href="https://wa.me/5491130641308" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">send</span>WhatsApp</a></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg uppercase text-secondary font-semibold">Horarios del Club</span><p class="font-body-sm text-body-sm text-on-surface"><strong class="text-primary">Martes a Domingo:</strong><br/>12:00 a 15:30 hs.<br/>19:30 a 00:30 hs.</p><p class="font-body-sm text-body-sm text-error font-medium">Lunes: Cerrado por descanso de cantina</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg uppercase text-secondary font-semibold">La Cantina</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>Platos clásicos de bodegón</li><li>Pizarrón con minutas del día</li><li>6 Canillas de cerveza tirada</li><li>Vermut de la casa y sifón</li></ul></div></div><div class="pt-space-md border-t border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">Club 1927 © 2026. Todos los derechos reservados. Cantina y Club Social de Barrio.</p><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Cultura de Bodegón</span></div></div></footer><a class="fixed bottom-space-lg right-space-lg z-50 flex items-center justify-center w-14 h-14 bg-primary-container text-on-primary hover:bg-primary rounded-full shadow-[3px_3px_0px_#271900] transition-all hover:scale-105 active:scale-95" href="https://wa.me/5491130641308" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[30px]">chat</span></a></body></html>
