@@ -1,265 +1,999 @@
 <!DOCTYPE html>
 
-<html lang="es"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#ffb59c", "tertiary-fixed": "#66ff8e", "inverse-on-surface": "#ffede8", "on-primary-fixed": "#390c00", "surface-container-highest": "#f5ddd7", "surface-variant": "#f5ddd7", "background": "#fff8f6", "surface-container-lowest": "#ffffff", "outline": "#8a726a", "on-tertiary": "#ffffff", "primary": "#9f3c16", "surface-bright": "#fff8f6", "secondary-fixed": "#dbe8b6", "on-error": "#ffffff", "surface-dim": "#edd5ce", "primary-fixed-dim": "#ffb59c", "on-secondary-container": "#5b673f", "on-primary-fixed-variant": "#822801", "secondary": "#57633b", "surface-container": "#ffe9e3", "on-surface": "#251915", "on-error-container": "#93000a", "tertiary": "#006b2e", "error": "#ba1a1a", "inverse-surface": "#3b2d29", "on-surface-variant": "#57423b", "on-tertiary-container": "#f7fff3", "on-primary": "#ffffff", "outline-variant": "#dec0b7", "on-background": "#251915", "on-tertiary-fixed-variant": "#005322", "secondary-container": "#d8e5b3", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#3de273", "on-tertiary-fixed": "#002109", "tertiary-container": "#00873c", "primary-fixed": "#ffdbcf", "primary-container": "#bf542c", "secondary-fixed-dim": "#bfcc9c", "surface-container-low": "#fff1ed", "on-primary-container": "#fffbff", "on-secondary-fixed-variant": "#404b26", "error-container": "#ffdad6", "on-secondary-fixed": "#151f01", "surface": "#fff8f6", "surface-tint": "#a23e18", "surface-container-high": "#fbe3dc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "2rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "headline-sm": ["Newsreader"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen pt-safe pb-safe"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para La Catalana. No es el sitio oficial.</div><main class="flex flex-col relative w-full px-margin bg-surface"><div class="flex flex-col w-full pb-16">
-<!-- Sticky Header -->
-<header class="sticky top-0 z-40 w-full bg-surface/90 backdrop-blur-md px-margin py-3 flex items-center justify-between shadow-sm">
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">La Catalana</span>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-0.5">Panadería</span>
+<html class="scroll-smooth" lang="es">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Catalana — Panadería y Confitería</title>
+<!-- Google Fonts: Pinyon Script & Great Vibes for vintage cursive mark, Playfair Display for classic bakery label headings, Libre Caslon / Cormorant / Inter for body -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Great+Vibes&amp;family=Pinyon+Script&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'butter': '#F6DF9C',
+            'butter-light': '#FDF6E2',
+            'cream': '#FFF8E7',
+            'cream-soft': '#FFFDF9',
+            'chocolate': '#4A2C1D',
+            'chocolate-dark': '#341E13',
+            'chocolate-light': '#6E4530',
+            'blush': '#F2C6C2',
+            'blush-light': '#FBECEB',
+            'gold': '#B8893B',
+            'gold-light': '#D4AF37',
+            'gold-dark': '#8E6725'
+          },
+          fontFamily: {
+            'script': ['"Pinyon Script"', 'cursive'],
+            'vibes': ['"Great Vibes"', 'cursive'],
+            'serif-display': ['"Playfair Display"', 'Georgia', 'serif'],
+            'serif-body': ['"Cormorant Garamond"', 'Garamond', 'serif'],
+            'sans': ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    /* Custom Scalloped / Festoneado Borders like antique paper doilies & pastry boxes */
+    .scallop-bottom-chocolate {
+      background-image: radial-gradient(circle at 10px -5px, transparent 12px, #4A2C1D 13px);
+      background-size: 24px 20px;
+    }
+    
+    .scallop-top-cream {
+      background-image: radial-gradient(circle at 10px 20px, transparent 12px, #FFF8E7 13px);
+      background-size: 24px 20px;
+    }
+
+    .scallop-border-box {
+      border: 2px dashed #B8893B;
+      outline: 4px solid #FFF8E7;
+      box-shadow: 0 0 0 1px #B8893B, inset 0 0 0 2px #FFF8E7, inset 0 0 0 4px #F6DF9C;
+    }
+
+    .vintage-label-frame {
+      box-shadow: inset 0 0 0 2px #4A2C1D, inset 0 0 0 5px #FFF8E7, inset 0 0 0 7px #B8893B;
+    }
+
+    .vintage-label-frame-gold {
+      box-shadow: inset 0 0 0 1px #B8893B, inset 0 0 0 4px #FFF8E7, inset 0 0 0 6px #4A2C1D;
+    }
+
+    /* Antique paper texture backdrop */
+    .bg-patisserie-dots {
+      background-image: radial-gradient(#B8893B 0.75px, transparent 0.75px);
+      background-size: 22px 22px;
+    }
+
+    /* Scalloped top card header */
+    .scallop-card-top {
+      position: relative;
+    }
+    .scallop-card-top::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background-image: radial-gradient(circle at 8px 10px, #FFFDF9 8px, transparent 9px);
+      background-size: 16px 10px;
+    }
+  </style>
+</head>
+<body class="bg-cream text-chocolate font-serif-body antialiased selection:bg-blush selection:text-chocolate"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para La Catalana. No es el sitio oficial.</div>
+<!-- TOP STRIP: HOURS & QUICK NOTICE -->
+<div class="bg-chocolate-dark text-butter-light text-xs font-sans tracking-widest uppercase py-2 px-4 border-b border-gold/30">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left"><!-- Mobile simplified line (<640px) -->
+<div class="flex sm:hidden items-center justify-center gap-1.5 text-center text-[11px] truncate w-full">
+<a class="hover:text-butter transition-colors inline-flex items-center gap-1 font-medium text-butter" href="tel:+541171625566">
+<span class="material-symbols-outlined text-[14px] text-gold">call</span>
+    +54 11 7162-5566
+  </a>
+<span class="text-gold/60">·</span>
+<span class="truncate">Av. Corrientes, Villa Crespo</span>
 </div>
-<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#25D366] text-white font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="https://wa.me/5491171625566">
-<span class="material-symbols-outlined text-[16px]">chat</span>
+<!-- Desktop & Tablet standard layout (sm:flex) -->
+<div class="hidden sm:flex items-center justify-between gap-2 w-full text-left">
+<div class="flex items-center gap-2">
+<span class="text-gold text-sm">✦</span>
+<span>Avenida Corrientes · Villa Crespo, Buenos Aires</span>
+<span class="hidden md:inline text-gold/60">•</span>
+<span class="hidden md:inline text-butter">Abierto desde las 7:00 hs</span>
+</div>
+<div class="flex items-center gap-4">
+<a class="hover:text-butter transition-colors inline-flex items-center gap-1 font-medium" href="tel:+541171625566">
+<span class="material-symbols-outlined text-[15px] text-gold">call</span>
+      +54 11 7162-5566
+    </a>
+<span class="text-gold/40">|</span>
+<span class="text-blush font-semibold tracking-wider">Horno a leña &amp; masa madre</span>
+</div>
+</div></div>
+</div>
+<!-- 1) MAIN HEADER: SCRIPT LOGO & NAV ON CHOCOLATE STRIP -->
+<header class="sticky top-0 z-40 bg-chocolate shadow-xl border-b-2 border-gold/40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+<!-- Logo Marca -->
+<a class="flex flex-col items-start focus:outline-none group" href="#">
+<span class="font-script text-4xl sm:text-5xl text-butter group-hover:text-butter-light transition-colors leading-none tracking-wide drop-shadow-sm">
+          La Catalana
+        </span>
+<span class="font-serif-display uppercase text-[9px] sm:text-xs tracking-wider text-gold-light mt-1 font-semibold flex items-center gap-1 whitespace-nowrap"><span>Panadería y Confitería</span><span class="text-butter text-[8px]">◆</span><span class="text-butter/80">Villa Crespo</span></span>
+</a>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex items-center gap-6 font-serif-display text-sm tracking-wider uppercase text-butter/90 font-medium"><a class="hover:text-butter hover:underline underline-offset-8 transition-colors whitespace-nowrap" href="#vitrina">Vitrina</a><a class="hover:text-butter hover:underline underline-offset-8 transition-colors whitespace-nowrap" href="#torta">Tortas</a><a class="hover:text-butter hover:underline underline-offset-8 transition-colors whitespace-nowrap" href="#historia">Historia</a><a class="hover:text-butter hover:underline underline-offset-8 transition-colors whitespace-nowrap" href="#resenas">Reseñas</a><a class="hover:text-butter hover:underline underline-offset-8 transition-colors whitespace-nowrap" href="#visitanos">Visitanos</a></nav>
+<!-- Right CTAs -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 bg-blush text-chocolate font-serif-display text-xs uppercase tracking-[0.15em] font-bold px-4 py-2.5 rounded-full border border-gold/40 hover:bg-butter transition-all shadow-md" href="#torta">
+<span class="material-symbols-outlined text-[16px]">cake</span>
+<span>Encargá Torta</span>
+</a>
+<a class="inline-flex items-center gap-1.5 bg-butter text-chocolate font-serif-display text-xs uppercase tracking-wider font-bold px-4 py-2.5 rounded-full border border-gold hover:bg-butter-light transition-all shadow-md" href="https://wa.me/5491171625566" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="hidden md:inline">WhatsApp</span>
+</a>
+</div>
+</div>
+</header>
+<!-- 2) HERO SECTION: ANTIQUE LABEL BADGE FLANKED BY PHOTOS -->
+<section class="relative bg-butter/30 py-12 lg:py-20 overflow-hidden border-b-4 border-double border-chocolate/20 bg-patisserie-dots">
+<!-- Top & bottom scallop decorative accents -->
+<div class="absolute -top-1 left-0 right-0 h-3 bg-repeat-x opacity-60" style="background-image: radial-gradient(circle at 6px 0px, #4A2C1D 4px, transparent 5px); background-size: 12px 6px;"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- DESKTOP HERO: 3-column / Centered Antique Oval Label Badge flanked by 2 tall photos -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Flanking Tall Photo (Facturas display) -->
+<div class="hidden lg:block lg:col-span-3">
+<div class="relative p-2.5 bg-cream rounded-2xl shadow-xl vintage-label-frame-gold transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+<div class="overflow-hidden rounded-xl aspect-[3/4]">
+<img alt="Facturas y medialunas doradas de manteca en la vitrina de La Catalana" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" src="img/1ff7a0e9e6f0264b.jpg"/>
+</div>
+<div class="text-center py-2 px-1">
+<span class="font-script text-2xl text-chocolate block">Medialunas de manteca</span>
+<span class="font-sans text-[10px] tracking-widest uppercase text-gold font-bold">Horneadas cada mañana a las 6:30 hs</span>
+</div>
+</div>
+</div>
+<!-- Center Stage: Centered Antique Scalloped Label Badge -->
+<div class="lg:col-span-6 flex flex-col items-center text-center">
+<!-- Scalloped Oval Badge Frame (Antique Cake Box Label) -->
+<div class="relative w-full max-w-xl bg-cream-soft px-6 py-10 sm:px-10 sm:py-14 rounded-[40px] sm:rounded-[60px] shadow-2xl border-4 border-chocolate vintage-label-frame">
+<!-- Ornate top corner ornaments (SVG filigrees) -->
+<div class="flex items-center justify-center gap-3 mb-3">
+<span class="text-gold text-lg">❦</span>
+<span class="font-serif-display uppercase text-xs sm:text-sm tracking-[0.35em] text-gold font-bold">Tradición de Villa Crespo</span>
+<span class="text-gold text-lg">❦</span>
+</div>
+<!-- Antique Label Subheading -->
+<div class="inline-block border-y-2 border-double border-gold/60 py-1 px-4 mb-4">
+<span class="font-serif-display text-xs sm:text-sm tracking-[0.25em] uppercase text-chocolate-light font-semibold">
+                La Catalana · Panadería &amp; Confitería · Av. Corrientes
+              </span>
+</div>
+<!-- Brand Script Centerpiece -->
+<h1 class="font-script text-5xl sm:text-7xl lg:text-8xl text-chocolate leading-[0.95] drop-shadow-sm mb-3">
+              La Catalana
+            </h1>
+<!-- Headline -->
+<h2 class="font-serif-display text-2xl sm:text-3xl text-chocolate-dark font-bold uppercase tracking-tight mb-4">
+              El sabor de siempre, <br class="hidden sm:inline"/>
+<span class="italic font-serif-body text-gold-dark lowercase font-normal text-3xl sm:text-4xl">recién horneado</span>
+</h2>
+<!-- Narrative snippet -->
+<p class="font-serif-body text-lg sm:text-xl text-chocolate-light leading-relaxed max-w-md mx-auto mb-8">
+              Masa madre con reposo en frío, manteca pura, dulce de leche repostero de campo y recetas artesanales que perfuman la cuadra desde hace décadas.
+            </p>
+<!-- Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-chocolate text-butter hover:bg-chocolate-dark font-serif-display text-xs uppercase tracking-[0.2em] font-bold px-7 py-3.5 rounded-full border border-gold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all" href="#torta">
+<span class="material-symbols-outlined text-[18px]">cake</span>
+<span>Encargá tu torta</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-cream text-chocolate hover:bg-butter/50 font-serif-display text-xs uppercase tracking-[0.2em] font-bold px-6 py-3.5 rounded-full border-2 border-chocolate/40 shadow-sm transition-all" href="#vitrina">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>Ver la vitrina</span>
+</a>
+</div>
+<!-- Label Footer Tag -->
+<div class="mt-6 pt-4 border-t border-gold/30 flex items-center justify-center gap-3 text-xs text-chocolate-light font-sans tracking-wider uppercase">
+<span>Pastelería fina</span>
+<span class="text-gold">✦</span>
+<span>Sándwiches de miga</span>
+<span class="text-gold">✦</span>
+<span>Panes al molde</span>
+</div>
+</div>
+<!-- Mobile Hero Image Row (visible under 1024px) -->
+<div class="grid grid-cols-2 gap-4 mt-8 w-full lg:hidden">
+<div class="relative p-2 bg-cream rounded-xl shadow-md border-2 border-chocolate/20">
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Facturas calientes" class="w-full h-full object-cover" src="img/1ff7a0e9e6f0264b.jpg"/>
+</div>
+<span class="font-script text-lg text-chocolate text-center block mt-1">Facturas del día</span>
+</div>
+<div class="relative p-2 bg-cream rounded-xl shadow-md border-2 border-chocolate/20">
+<div class="overflow-hidden rounded-lg aspect-square">
+<img alt="Torta artesanal" class="w-full h-full object-cover" src="img/70bf9195d695356f.jpg"/>
+</div>
+<span class="font-script text-lg text-chocolate text-center block mt-1">Tortas decoradas</span>
+</div>
+</div>
+</div>
+<!-- Right Flanking Tall Photo (Torta decorada) -->
+<div class="hidden lg:block lg:col-span-3">
+<div class="relative p-2.5 bg-cream rounded-2xl shadow-xl vintage-label-frame-gold transform rotate-2 hover:rotate-0 transition-transform duration-500">
+<div class="overflow-hidden rounded-xl aspect-[3/4]">
+<img alt="Torta artesanal decorada con dulce de leche y frutos en La Catalana" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" src="img/70bf9195d695356f.jpg"/>
+</div>
+<div class="text-center py-2 px-1">
+<span class="font-script text-2xl text-chocolate block">Tortas de celebración</span>
+<span class="font-sans text-[10px] tracking-widest uppercase text-gold font-bold">Bizcochuelo casero &amp; chantilly fresco</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3) LA VITRINA DE HOY: 4-COLUMN DESKTOP GRID -->
+<section class="py-16 sm:py-24 bg-cream relative" id="vitrina">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header with Antique Frame & Doily Flourish -->
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="flex items-center justify-center gap-3 mb-2">
+<div class="h-px w-12 bg-gold"></div>
+<span class="font-serif-display uppercase text-xs tracking-[0.3em] text-gold font-bold">Salido del horno esta mañana</span>
+<div class="h-px w-12 bg-gold"></div>
+</div>
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-chocolate mb-3">
+          La Vitrina de Hoy
+        </h2>
+<p class="font-serif-body text-xl text-chocolate-light italic">
+          Elaboración artesanal diaria sin conservantes. Elegí tus favoritos y reservalos con antelación para asegurar tu docena.
+        </p>
+</div>
+<!-- 4-Column Grid on Desktop, 2 on Tablet, 1 on Mobile -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8"><!-- Product 1: Medialunas de manteca -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Medialunas de manteca artesanales almibaradas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/1ff7a0e9e6f0264b.jpg"/>
+<span class="absolute top-2 right-2 bg-chocolate text-butter font-sans text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-full shadow">
+        Favorito
+      </span>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Medialunas de Manteca
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Masa hojaldrada con manteca pura, doble baño de almíbar aromatizado con naranja y vaina de vainilla natural.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Por docena</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$11.800</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%201%20docena%20de%20Medialunas%20de%20Manteca." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
 <span>Reservar</span>
 </a>
-</header>
-<!-- Hero Section -->
-<section class="flex flex-col px-margin pt-4 pb-6">
-<div class="relative w-full rounded-2xl overflow-hidden shadow-md">
-<img alt="Café de especialidad en Villa Crespo" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/30 to-transparent flex flex-col justify-end p-5 text-surface-bright">
-<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary text-surface-bright font-label-sm text-label-sm w-fit mb-2 shadow-sm">
-<span class="material-symbols-outlined text-[14px]">location_on</span>
-<span>Villa Crespo • Buenos Aires</span>
 </div>
-<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-bright font-semibold leading-tight mb-1">
-          La Catalana
-        </h1>
-<p class="font-headline-sm text-headline-sm text-surface-container-high italic mb-2">
-          Tu lugar en Villa Crespo
-        </p>
-<p class="font-body-sm text-body-sm text-surface-bright/90 line-clamp-3 mb-4">
-          Café de especialidad, cocina honesta de estación y pastelería artesanal hecha todos los días con amor de barrio.
-        </p>
-<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg shadow-md active:scale-98 transition-transform" href="https://wa.me/5491171625566">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-<span>Pedí por WhatsApp</span>
+</div>
+<!-- Product 2: Sándwiches de miga -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Sándwiches de miga triples de jamón, queso, huevo y morrón" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/a2a83bf90143aff8.jpg"/>
+<span class="absolute top-2 right-2 bg-gold text-cream font-sans text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-full shadow">
+        Tradición
+      </span>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Sándwiches de Miga
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Triples impecables: jamón cocido natural, queso tybo, huevo de campo y morrón asado. Miga húmeda y fresca.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Docena surtida</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$18.500</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%201%20docena%20de%20S%C3%A1ndwiches%20de%20Miga%20triples." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
 </a>
 </div>
 </div>
-</section>
-<!-- Nuestra Carta -->
-<section class="flex flex-col px-margin py-6">
-<div class="flex flex-col mb-6">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Platos y delicias</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Nuestra carta</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sabores simples, ingredientes nobles y recetas caseras</p>
+<!-- Product 3: Ensaimadas mallorquinas -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Ensaimadas mallorquinas artesanales espolvoreadas con azúcar impalpable" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/de498dd7f5130c12.jpg"/>
+<span class="absolute top-2 right-2 bg-blush text-chocolate font-sans text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-full shadow">
+        Receta 1948
+      </span>
 </div>
-<div class="grid grid-cols-1 gap-5">
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Ensaimadas
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Nuestra herencia catalana: masa espiralada liviana, espolvoreada con azúcar impalpable y rellenas con crema o dulce de leche.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Por unidad</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$3.200</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%20Ensaimadas%20artesanales." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
+</a>
+</div>
+</div>
+<!-- Product 4: Pan dulce artesanal -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Pan Dulce Milanés artesanal con frutas abrillantadas y frutos secos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/ea93be42df3309ef.jpg"/>
+<span class="absolute top-2 right-2 bg-chocolate text-butter font-sans text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-full shadow">
+        Especial
+      </span>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Pan Dulce de Confitería
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Masa madre con agua de azahar, castañas, nueces, almendras tostadas y chips de chocolate belga. Todo el año en mostrador.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Unidad de 750g</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$14.200</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%20un%20Pan%20Dulce%20artesanal%20de%20750g." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
+</a>
+</div>
+</div>
+<!-- Product 5: Vigilantes hojaldrados -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Facturas vigilantes hojaldrados con membrillo y almíbar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/e9f44d95f0cdd8a6.jpg"/>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Vigilantes Hojaldrados
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Crocantes, alargados y glaseados, con toque de azúcar rubia y opción con dulce de membrillo rubio o crema pastelera.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Por docena</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$11.800</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%201%20docena%20de%20Vigilantes." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
+</a>
+</div>
+</div>
+<!-- Product 6: Masas finas surtidas -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Masas finas surtidas y petit fours de confitería tradicional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/f7161e65265a5e9e.jpg"/>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Masas Finas de Confitería
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Barquillos, tarteletas de frutas, canastitas de dulce de leche con chocolate y bombones artesanales en caja con cinta.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Por kilo</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$21.500</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%201%20kg%20de%20Masas%20Finas%20surtidas." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
+</a>
+</div>
+</div>
+<!-- Product 7: Pan de campo a la leña -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Pan de campo artesanal de masa madre con corteza dorada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/4df44bab630eaada.jpg"/>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Pan de Campo al Horno
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Corteza gruesa y tostada, miga alveolada con fermentación de 24 horas. Horneado sobre piso de ladrillo refractario.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Hogaza entera</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$3.800</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%20un%20Pan%20de%20Campo%20artesanal." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
+</a>
+</div>
+</div>
+<!-- Product 8: Alfajores de maicena -->
+<div class="group bg-cream-soft rounded-2xl p-3 sm:p-5 shadow-md border-2 border-chocolate/20 hover:border-gold hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative scallop-card-top min-w-0 overflow-hidden">
+<div>
+<div class="relative overflow-hidden rounded-xl aspect-square mb-3 border border-gold/30">
+<img alt="Alfajores de maicena con dulce de leche repostero y coco rallado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/394fa256d3a26a29.jpg"/>
+</div>
+<div class="flex items-baseline justify-between gap-1 mb-1">
+<h3 class="font-serif-display text-base sm:text-lg font-bold text-chocolate uppercase tracking-wide leading-tight">
+        Alfajores de Maicena
+      </h3>
+</div>
+<p class="font-serif-body text-sm sm:text-base text-chocolate-light leading-relaxed mb-3">
+      Tapas suaves que se deshacen en el paladar, relleno generoso de dulce de leche colonial repostero y lluvia de coco rallado fino.
+    </p>
+</div>
+<div class="pt-3 border-t border-dashed border-chocolate/20 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-2">
+<div>
+<span class="text-[10px] sm:text-[11px] font-sans uppercase tracking-wider text-gold font-semibold block">Media docena</span>
+<span class="font-serif-display text-lg sm:text-xl font-bold text-chocolate">$8.400</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-1 bg-butter text-chocolate hover:bg-chocolate hover:text-butter font-serif-display text-xs sm:text-xs uppercase tracking-wider font-bold py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-lg border border-gold transition-colors text-center" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20reservar%20media%20docena%20de%20Alfajores%20de%20Maicena." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Reservar</span>
+</a>
+</div>
+</div></div>
+<!-- Bottom Bakery Box Guarantee Banner -->
+<div class="mt-14 bg-butter/40 border-2 border-dashed border-gold p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-chocolate text-butter flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<h4 class="font-serif-display text-lg font-bold text-chocolate uppercase tracking-wider">
+              ¿Buscás catering o bandejas para reuniones?
+            </h4>
+<p class="font-serif-body text-chocolate-light text-base">
+              Armamos cajas especiales de masas, fosforitos de jamón y queso, canapés y medialunitas rellenas.
+            </p>
+</div>
+</div>
+<a class="shrink-0 bg-chocolate text-butter hover:bg-chocolate-dark font-serif-display text-xs uppercase tracking-widest font-bold px-6 py-3 rounded-full border border-gold transition-colors shadow" href="https://wa.me/5491171625566?text=Hola%20La%20Catalana!%20Quiero%20consultar%20por%20presupuesto%20para%20catering%20y%20bandejas%20especiales." rel="noopener noreferrer" target="_blank">
+          Pedir Presupuesto por WhatsApp
+        </a>
+</div>
+</div>
+</section>
+<!-- 4) SIGNATURE FEATURE: ENCARGÁ TU TORTA (2 COLUMNS DESKTOP) -->
+<section class="py-16 sm:py-24 bg-butter/30 relative border-y-4 border-double border-chocolate/20 bg-patisserie-dots" id="torta">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Feature Header -->
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="text-gold text-sm">✦</span>
+<span class="font-serif-display uppercase text-xs tracking-[0.3em] text-gold font-bold">Pastelería de Celebración</span>
+<span class="text-gold text-sm">✦</span>
+</div>
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-chocolate mb-3">
+          Encargá tu Torta
+        </h2>
+<p class="font-serif-body text-xl text-chocolate-light italic">
+          Bizcochuelos esponjosos, rellenos abundantes y el toque artesanal que tu festejo merece. Coordiná tu pedido con dedicatoria personalizada.
+        </p>
+</div>
+<!-- 2-Column Grid on Desktop -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-cream-soft p-6 sm:p-10 lg:p-12 rounded-[32px] shadow-2xl border-4 border-chocolate vintage-label-frame">
+<!-- Left Column: Decorated Birthday Cake Photo with scalloped frame -->
+<div class="lg:col-span-5 flex flex-col items-center">
+<div class="relative w-full max-w-md p-3.5 bg-cream rounded-3xl shadow-xl border-4 border-gold/70 scallop-border-box">
+<div class="overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-square">
+<img alt="Torta artesanal decorada con capas de dulce de leche, chantilly y frutillas frescas de La Catalana" class="w-full h-full object-cover object-center" src="img/70bf9195d695356f.jpg"/>
+</div>
+<div class="text-center pt-4 pb-2 px-3">
+<span class="font-script text-3xl sm:text-4xl text-chocolate block">Hecha con dedicación</span>
+<p class="font-serif-body text-base text-chocolate-light leading-relaxed mt-1">
+                Entregada en nuestra emblemática caja octogonal con blonda calada y cinta de seda.
+              </p>
+<!-- Badge tags -->
+<div class="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-dashed border-gold/40 text-xs font-sans uppercase tracking-wider text-gold font-semibold">
+<span>Mínimo 24 hs de anticipación</span>
+<span>•</span>
+<span>Retiro en mostrador</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Order Form -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="border-b-2 border-gold/40 pb-4 mb-6">
+<span class="font-serif-display uppercase text-xs tracking-[0.25em] text-gold font-bold block mb-1">
+              Configurador en Línea
+            </span>
+<h3 class="font-serif-display text-2xl sm:text-3xl font-bold uppercase text-chocolate">
+              Personalizá tu Torta para el Festejo
+            </h3>
+<p class="font-serif-body text-base text-chocolate-light">
+              Completá los detalles a continuación. Al tocar el botón prepararemos el mensaje listo para enviar directo al WhatsApp de La Catalana.
+            </p>
+</div>
+<form class="space-y-4 sm:space-y-5" id="cake-order-form" onsubmit="event.preventDefault(); sendCakeWhatsApp();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Sabor Select -->
+<div>
+<label class="block font-serif-display text-xs uppercase tracking-wider text-chocolate font-bold mb-1.5" for="cake-flavor">
+                  Sabor de la Torta
+                </label>
+<div class="relative">
+<select class="w-full bg-cream text-chocolate border-2 border-chocolate/30 rounded-xl px-4 py-3 font-serif-body text-lg focus:outline-none focus:border-gold shadow-inner appearance-none pr-10" id="cake-flavor" onchange="updateCakePreview()">
+<option value="Chocotorta Tradicional">Chocotorta Tradicional</option>
+<option selected="" value="Rogel Clásico Porteño">Rogel Clásico Porteño</option>
+<option value="Selva Negra con Cerezas">Selva Negra con Cerezas</option>
+<option value="Frutilla con Crema Chantilly">Frutilla con Crema Chantilly</option>
+<option value="Dulce de Leche y Merengue Italiano">Dulce de Leche y Merengue Italiano</option>
+<option value="Lemon Pie Artesanal">Lemon Pie Artesanal</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-chocolate/50 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Kilos Select -->
+<div>
+<label class="block font-serif-display text-xs uppercase tracking-wider text-chocolate font-bold mb-1.5" for="cake-weight">
+                  Tamaño / Kilos
+                </label>
+<div class="relative">
+<select class="w-full bg-cream text-chocolate border-2 border-chocolate/30 rounded-xl px-4 py-3 font-serif-body text-lg focus:outline-none focus:border-gold shadow-inner appearance-none pr-10" id="cake-weight" onchange="updateCakePreview()">
+<option value="1 kg (aprox. 8 a 10 porciones)">1 kg (8–10 porciones)</option>
+<option selected="" value="1,5 kg (aprox. 12 a 15 porciones)">1,5 kg (12–15 porciones)</option>
+<option value="2 kg (aprox. 18 a 22 porciones)">2 kg (18–22 porciones)</option>
+<option value="3 kg (aprox. 28 a 32 porciones)">3 kg (28–32 porciones)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-chocolate/50 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Fecha de Retiro -->
+<div>
+<label class="block font-serif-display text-xs uppercase tracking-wider text-chocolate font-bold mb-1.5" for="cake-date">
+                  Fecha de Retiro en Mostrador
+                </label>
+<input class="w-full bg-cream text-chocolate border-2 border-chocolate/30 rounded-xl px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold shadow-inner" id="cake-date" onchange="updateCakePreview()" required="" type="date"/>
+</div>
+<!-- Nombre del Cliente -->
+<div>
+<label class="block font-serif-display text-xs uppercase tracking-wider text-chocolate font-bold mb-1.5" for="cake-client-name">
+                  Tu Nombre y Apellido
+                </label>
+<input class="w-full bg-cream text-chocolate border-2 border-chocolate/30 rounded-xl px-4 py-3 font-serif-body text-lg focus:outline-none focus:border-gold shadow-inner" id="cake-client-name" oninput="updateCakePreview()" placeholder="Ej. Mariana Rossi" required="" type="text" value="Mariana Rossi"/>
+</div>
+</div>
+<!-- Texto para la Torta (dedicatoria) -->
+<div>
+<label class="block font-serif-display text-xs uppercase tracking-wider text-chocolate font-bold mb-1.5 flex justify-between" for="cake-text">
+<span>Texto / Dedicatoria para la Torta</span>
+<span class="text-gold font-normal italic">En placa de chocolate o glasé</span>
+</label>
+<input class="w-full bg-cream text-chocolate border-2 border-chocolate/30 rounded-xl px-4 py-3 font-serif-body text-lg focus:outline-none focus:border-gold shadow-inner" id="cake-text" oninput="updateCakePreview()" placeholder="Ej. ¡Feliz Cumple Leo! Te queremos" type="text" value="¡Feliz Cumple Leo!"/>
+</div>
+<!-- Live Message Preview Box -->
+<div class="bg-cream p-4 rounded-xl border border-gold/40">
+<span class="font-sans text-[11px] uppercase tracking-wider text-gold font-bold block mb-1">
+                Vista previa del mensaje a WhatsApp:
+              </span>
+<p class="font-serif-body text-base italic text-chocolate-light" id="cake-message-preview">
+                "Hola La Catalana! Quiero encargar una torta de Rogel Clásico Porteño, 1,5 kg (aprox. 12 a 15 porciones), para el día seleccionado. Texto: ¡Feliz Cumple Leo!. Nombre: Mariana Rossi"
+              </p>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="w-full bg-chocolate text-butter hover:bg-chocolate-dark font-serif-display text-sm sm:text-base uppercase tracking-[0.2em] font-bold py-4 px-6 rounded-2xl border-2 border-gold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3" type="submit">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span>Enviar pedido por WhatsApp</span>
+</button>
+<p class="text-center font-sans text-xs text-chocolate-light mt-2">
+                Sin seña obligatoria en el momento · Te confirmamos la disponibilidad en menos de 15 minutos.
+              </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 5) NUESTRA HISTORIA: 2 COLUMNS (OLD SEPIA PHOTO + NARRATIVE) -->
+<section class="py-16 sm:py-24 bg-cream relative" id="historia">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: Old Sepia Bakery Archive Photo -->
+<div class="lg:col-span-6 relative">
+<div class="relative p-4 bg-cream-soft rounded-3xl shadow-2xl border-4 border-chocolate vintage-label-frame transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+<div class="overflow-hidden rounded-2xl aspect-[4/3] relative">
+<img alt="Fotografía histórica sepia de la panadería tradicional en Avenida Corrientes con maestros panaderos" class="w-full h-full object-cover filter contrast-105" src="img/69c708e8a2794692.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-chocolate-dark/60 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 right-3 bg-cream/90 backdrop-blur-sm p-3 rounded-xl border border-gold flex items-center justify-between">
+<div>
+<span class="font-serif-display text-xs uppercase tracking-widest text-chocolate font-bold block">Archivo Histórico</span>
+<span class="font-serif-body text-sm text-chocolate-light italic">Mostrador de roble sobre Av. Corrientes</span>
+</div>
+<span class="font-script text-2xl text-gold">Buenos Aires</span>
+</div>
+</div>
+<!-- Antique Wax Stamp Accent -->
+<div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-chocolate text-butter border-2 border-gold flex items-center justify-center font-serif-display font-bold text-xs shadow-lg">
+              1948
+            </div>
+</div>
+</div>
+<!-- Right Column: Narrative of Decades on Avenida Corrientes -->
+<div class="lg:col-span-6 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-gold text-sm">✦</span>
+<span class="font-serif-display uppercase text-xs tracking-[0.3em] text-gold font-bold">Oficio &amp; Patrimonio Barrial</span>
+</div>
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-chocolate leading-tight mb-6">
+            Más de siete décadas endulzando las esquinas de Corrientes
+          </h2>
+<div class="space-y-4 font-serif-body text-xl text-chocolate-light leading-relaxed">
+<p>
+<span class="float-left font-serif-display text-6xl leading-none text-chocolate pr-3 pt-1 font-bold">L</span>a Catalana nació cuando las carretas de reparto y los primeros tranvías todavía hacían temblar las vidrieras de Villa Crespo. Fundada por maestros panaderos oriundos de Cataluña que desembarcaron con su libreta de fermentos y amasado a brazo, la panadería se convirtió rápidamente en un punto de referencia obligado para las familias de la zona.
+            </p>
+<p>
+              Acá no hay lugar para mezclas prearmadas ni levaduras forzadas. Cada amanecer arranca a las cuatro de la madrugada con el encendido de los hornos, el hojaldre doblado pacientemente con manteca de primera línea y el aroma inconfundible de las ensaimadas y las medialunas tibias bañadas en almíbar casero.
+            </p>
+<p>
+              Seguimos atendiendo en el mismo mostrador de siempre, con la calidez rioplatense, el paquete atado con hilo de algodón y la certeza de que las cosas bien hechas nunca pasan de moda.
+            </p>
+</div>
+<!-- Feature Bullets -->
+<div class="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-gold/40">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-gold text-[22px]">auto_awesome</span>
+<div>
+<span class="font-serif-display text-sm uppercase tracking-wider text-chocolate font-bold block">100% Manteca</span>
+<span class="font-sans text-xs text-chocolate-light">Cero grasas hidrogenadas</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-gold text-[22px]">timer</span>
+<div>
+<span class="font-serif-display text-sm uppercase tracking-wider text-chocolate font-bold block">Fermentación Lenta</span>
+<span class="font-sans text-xs text-chocolate-light">Masa madre viva con reposo</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6) RESEÑAS: 3 CARDS WITH SCALLOPED TOPS -->
+<section class="py-16 sm:py-24 bg-butter/25 relative border-y-4 border-double border-chocolate/20 bg-patisserie-dots" id="resenas">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="flex items-center justify-center gap-3 mb-2">
+<span class="text-gold text-sm">✦</span>
+<span class="font-serif-display uppercase text-xs tracking-[0.3em] text-gold font-bold">Vecinos &amp; Habitúes</span>
+<span class="text-gold text-sm">✦</span>
+</div>
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-chocolate mb-3">
+          Lo que dicen en el barrio
+        </h2>
+<p class="font-serif-body text-xl text-chocolate-light italic">
+          Testimonios de quienes pasan cada mañana por el café al paso, el pan del mediodía o la torta del domingo.
+        </p>
+</div>
+<!-- 3 Cards with Scalloped Tops (simulating pastry boxes) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Card 1 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Medialunas con dulce de leche casero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
+<div class="bg-cream-soft rounded-2xl p-6 sm:p-8 shadow-xl border-2 border-chocolate/30 relative flex flex-col justify-between scallop-card-top hover:-translate-y-1 transition-transform">
+<div>
+<!-- Star Rating -->
+<div class="flex items-center gap-1 text-gold mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Medialunas artesanales de manteca</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Crocantes por fuera, esponjosas por dentro, bañadas en almíbar de naranja y acompañadas con dulce de leche casero.
-          </p>
+<p class="font-serif-body text-xl text-chocolate italic leading-relaxed mb-6">
+              «Las mejores medialunas de manteca de toda la Avenida Corrientes. Calentitas a las siete de la mañana, con ese almíbar justo que no empalaga. El olor a panadería de verdad te alegra el día.»
+            </p>
 </div>
-</article>
+<div class="pt-4 border-t border-dashed border-chocolate/20 flex items-center justify-between">
+<div>
+<span class="font-serif-display text-sm font-bold text-chocolate uppercase tracking-wider block">Facundo Gómez</span>
+<span class="font-sans text-xs text-chocolate-light">Vecino de Gurruchaga · Habitual</span>
+</div>
+<span class="font-script text-2xl text-gold">La Catalana</span>
+</div>
+</div>
 <!-- Card 2 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Tostón de masa madre con jamón y burrata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
+<div class="bg-cream-soft rounded-2xl p-6 sm:p-8 shadow-xl border-2 border-chocolate/30 relative flex flex-col justify-between scallop-card-top hover:-translate-y-1 transition-transform">
+<div>
+<!-- Star Rating -->
+<div class="flex items-center gap-1 text-gold mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Tostón con jamón crudo y burrata</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Pan de masa madre tostado, burrata cremosa, rúcula fresca del mercado y oliva virgen extra.
-          </p>
+<p class="font-serif-body text-xl text-chocolate italic leading-relaxed mb-6">
+              «Encargué la torta Rogel para el cumpleaños de 80 de mi mamá. Fue la estrella de la mesa: crocante, dulce de leche de calidad superior y un merengue perfecto. Llegó impecable en su caja tradicional.»
+            </p>
 </div>
-</article>
+<div class="pt-4 border-t border-dashed border-chocolate/20 flex items-center justify-between">
+<div>
+<span class="font-serif-display text-sm font-bold text-chocolate uppercase tracking-wider block">Beatriz San Martín</span>
+<span class="font-sans text-xs text-chocolate-light">Clienta de Villa Crespo</span>
+</div>
+<span class="font-script text-2xl text-gold">La Catalana</span>
+</div>
+</div>
 <!-- Card 3 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Ravioles caseros de ricota y nuez" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCeTRY5a8cfr3g-qt8uzkY1G5ho6v1VlWFj7xk8r0iIh9aT1EYHaVAU8AGChTgfdVbyO-FFLjd9pZr-0Vqw48qCFgfUWAK-X_2EkbYE5gJ7pOY5-6vGZZxEcWq5ReXLzG6SfTzZ1aBSoRod4skGsUi6kbZvsLhXQngtSLLvUR5fQ7WSTWroNEFNP7nI5ijloFwTb5ms0jOg1_N3HYPCRmfV903j6RauFd4gArb9hYkcDtsLYYTU2W8R4Q"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Ravioles caseros de ricota y nuez</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Pasta fresca hecha a mano con manteca noisette, salvia fresca de nuestra huerta y nueces tostadas.
-          </p>
-</div>
-</article>
-<!-- Card 4 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Café de especialidad filtrado y espresso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Café de especialidad filtrado y espresso</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Granos seleccionados de origen tostados en pequeños lotes, calibrados a diario por nuestros baristas.
-          </p>
-</div>
-</article>
-<!-- Card 5 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Sandwich caliente de pastrón curado" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Sandwich caliente de pastrón en jalá</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Mostaza artesanal a la antigua, pepinillos encurtidos caseros y queso fundido entre rebanadas doradas.
-          </p>
-</div>
-</article>
-<!-- Card 6 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Tarta rústica tibia de manzanas y canela" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Tarta rústica tibia de manzanas y canela</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Masa crocante con manteca de campo, manzanas caramelizadas y crema chantilly fresca recién batida.
-          </p>
-</div>
-</article>
-</div>
-</section>
-<!-- Gallery Strip -->
-<section class="flex flex-col py-6">
-<div class="px-margin mb-3 flex items-center justify-between">
+<div class="bg-cream-soft rounded-2xl p-6 sm:p-8 shadow-xl border-2 border-chocolate/30 relative flex flex-col justify-between scallop-card-top hover:-translate-y-1 transition-transform">
 <div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Espacios</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">El rincón del barrio</h2>
+<!-- Star Rating -->
+<div class="flex items-center gap-1 text-gold mb-4">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="material-symbols-outlined text-outline">photo_camera</span>
+<p class="font-serif-body text-xl text-chocolate italic leading-relaxed mb-6">
+              «Los sándwiches de miga son monumentales. Pan finito y húmedo, jamón abundante y los cortan prolijos en triángulo como en las confiterías de antes. Para el fin de año de la oficina salvó las papas.»
+            </p>
 </div>
-<div class="flex overflow-x-auto gap-3 px-margin py-2 scroll-smooth no-scrollbar">
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Ambiente de cafetería en Villa Crespo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
-</div>
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Medialunas y café sobre mesa de madera" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
-</div>
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Tostón gourmet en plato artesanal de cerámica" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
-</div>
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Plato de pasta casera con copa de vino" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCeTRY5a8cfr3g-qt8uzkY1G5ho6v1VlWFj7xk8r0iIh9aT1EYHaVAU8AGChTgfdVbyO-FFLjd9pZr-0Vqw48qCFgfUWAK-X_2EkbYE5gJ7pOY5-6vGZZxEcWq5ReXLzG6SfTzZ1aBSoRod4skGsUi6kbZvsLhXQngtSLLvUR5fQ7WSTWroNEFNP7nI5ijloFwTb5ms0jOg1_N3HYPCRmfV903j6RauFd4gArb9hYkcDtsLYYTU2W8R4Q"/>
-</div>
-</div>
-</section>
-<!-- Reviews / Testimonios -->
-<section class="flex flex-col px-margin py-6">
-<div class="mb-4">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Comunidad</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Lo que dicen en el barrio</h2>
-</div>
-<div class="flex flex-col gap-3">
-<!-- Review 1 -->
-<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
-<div class="flex text-amber-500 gap-0.5">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-          "Las mejores medialunas de Villa Crespo sin dudas. El café increíble y la atención te hace sentir como en casa."
-        </p>
-<span class="font-label-md text-label-md text-secondary font-medium">— Sofía M.</span>
-</div>
-<!-- Review 2 -->
-<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
-<div class="flex text-amber-500 gap-0.5">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-          "El lugar perfecto para trabajar un rato a la mañana o clavarse un vermucito al caer la tarde. Hermosa energía."
-        </p>
-<span class="font-label-md text-label-md text-secondary font-medium">— Lucas G.</span>
-</div>
-<!-- Review 3 -->
-<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
-<div class="flex text-amber-500 gap-0.5">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-          "La pasta casera del mediodía y el tostón de burrata son de otro planeta. Una joyita escondida."
-        </p>
-<span class="font-label-md text-label-md text-secondary font-medium">— Camila R.</span>
-</div>
-</div>
-</section>
-<!-- Visitanos Section -->
-<section class="flex flex-col px-margin py-6">
-<div class="bg-surface-container rounded-2xl p-5 shadow-sm flex flex-col gap-5">
+<div class="pt-4 border-t border-dashed border-chocolate/20 flex items-center justify-between">
 <div>
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Acercate</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Visitanos</h2>
+<span class="font-serif-display text-sm font-bold text-chocolate uppercase tracking-wider block">Leandro Varela</span>
+<span class="font-sans text-xs text-chocolate-light">Estudio Loyola &amp; Scalabrini Ortiz</span>
 </div>
-<div class="flex flex-col gap-4">
-<!-- Dirección -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
-<span class="material-symbols-outlined text-[20px]">location_on</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Dirección</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">Avenida Corrientes, Villa Crespo</span>
-</div>
-</div>
-<!-- Horarios -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
-<span class="material-symbols-outlined text-[20px]">schedule</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Horarios</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">Consultá horarios por WhatsApp</span>
-</div>
-</div>
-<!-- Teléfono -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
-<span class="material-symbols-outlined text-[20px]">call</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Teléfono</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">+54 11 7162-5566</span>
+<span class="font-script text-2xl text-gold">La Catalana</span>
 </div>
 </div>
 </div>
-<!-- Action Buttons -->
-<div class="flex flex-col gap-2.5 pt-2">
-<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=La%20Catalana%20Avenida%20Corrientes%2C%20Villa%20Crespo">
-<span class="material-symbols-outlined text-[18px]">directions</span>
-<span>Cómo llegar</span>
+</div>
+</section>
+<!-- 7) VISITANOS: 3 COLUMNS (ADDRESS, HOURS, PHONE/WHATSAPP) -->
+<section class="py-16 sm:py-24 bg-cream relative" id="visitanos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-14">
+<div class="flex items-center justify-center gap-3 mb-2">
+<div class="h-px w-12 bg-gold"></div>
+<span class="font-serif-display uppercase text-xs tracking-[0.3em] text-gold font-bold">Punto de Encuentro</span>
+<div class="h-px w-12 bg-gold"></div>
+</div>
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-chocolate mb-3">
+          Vení a Conocernos
+        </h2>
+<p class="font-serif-body text-xl text-chocolate-light italic">
+          El aroma a pan caliente te guía desde la vereda. Te esperamos todos los días en nuestro local de Avenida Corrientes.
+        </p>
+</div>
+<!-- 3 Columns Layout on Desktop -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Column 1: Dirección & Cómo Llegar -->
+<div class="bg-cream-soft rounded-3xl p-8 shadow-xl border-4 border-chocolate vintage-label-frame flex flex-col justify-between text-center">
+<div>
+<div class="w-14 h-14 mx-auto rounded-full bg-butter text-chocolate border-2 border-gold flex items-center justify-center mb-4 shadow">
+<span class="material-symbols-outlined text-[28px]">location_on</span>
+</div>
+<h3 class="font-serif-display text-xl font-bold uppercase tracking-wide text-chocolate mb-2">
+              Nuestra Dirección
+            </h3>
+<p class="font-serif-body text-2xl text-chocolate font-semibold mb-1">
+              Avenida Corrientes
+            </p>
+<p class="font-serif-body text-lg text-chocolate-light leading-relaxed mb-6">
+              Villa Crespo, Ciudad Autónoma de Buenos Aires.<br/>
+              A pasos del polo comercial y gastronómico.
+            </p>
+</div>
+<a class="inline-flex items-center justify-center gap-2 bg-chocolate text-butter hover:bg-chocolate-dark font-serif-display text-xs uppercase tracking-[0.2em] font-bold py-3.5 px-6 rounded-full border border-gold transition-colors shadow" href="https://www.google.com/maps/search/?api=1&amp;query=La+Catalana+Avenida+Corrientes+Villa+Crespo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Cómo llegar en Maps</span>
 </a>
-<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5491171625566">
+</div>
+<!-- Column 2: Horarios de Atención -->
+<div class="bg-cream-soft rounded-3xl p-8 shadow-xl border-4 border-chocolate vintage-label-frame flex flex-col justify-between text-center">
+<div>
+<div class="w-14 h-14 mx-auto rounded-full bg-blush text-chocolate border-2 border-gold flex items-center justify-center mb-4 shadow">
+<span class="material-symbols-outlined text-[28px]">schedule</span>
+</div>
+<h3 class="font-serif-display text-xl font-bold uppercase tracking-wide text-chocolate mb-4">
+              Horarios de Horno
+            </h3>
+<div class="space-y-4 font-serif-body text-left max-w-xs mx-auto">
+<div class="bg-cream p-3 rounded-xl border border-gold/30">
+<span class="font-serif-display text-xs uppercase tracking-wider text-gold font-bold block mb-0.5">Lunes a Sábado</span>
+<span class="text-xl font-bold text-chocolate block">7:00 a 20:30 hs</span>
+<span class="font-sans text-xs text-chocolate-light">Horno continuo durante toda la jornada</span>
+</div>
+<div class="bg-cream p-3 rounded-xl border border-gold/30">
+<span class="font-serif-display text-xs uppercase tracking-wider text-gold font-bold block mb-0.5">Domingos</span>
+<span class="text-xl font-bold text-chocolate block">7:30 a 13:30 hs</span>
+<span class="font-sans text-xs text-chocolate-light">Ideal para las facturas y el postre dominical</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-dashed border-gold/40 text-xs font-sans uppercase tracking-wider text-gold font-semibold">
+            Medios de pago: Efectivo, Débito, Transferencia &amp; QR
+          </div>
+</div>
+<!-- Column 3: Contacto Directo & WhatsApp -->
+<div class="bg-cream-soft rounded-3xl p-8 shadow-xl border-4 border-chocolate vintage-label-frame flex flex-col justify-between text-center">
+<div>
+<div class="w-14 h-14 mx-auto rounded-full bg-butter text-chocolate border-2 border-gold flex items-center justify-center mb-4 shadow">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+</div>
+<h3 class="font-serif-display text-xl font-bold uppercase tracking-wide text-chocolate mb-2">
+              Canales Directos
+            </h3>
+<p class="font-serif-body text-lg text-chocolate-light mb-4">
+              ¿Tenés un pedido grande o querés chequear qué facturas salieron recién?
+            </p>
+<div class="space-y-3 mb-6">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-gold text-[20px]">call</span>
+<a class="font-serif-display text-xl font-bold text-chocolate hover:text-gold transition-colors" href="tel:+541171625566">
+                  +54 11 7162-5566
+                </a>
+</div>
+<p class="font-sans text-xs text-chocolate-light">
+                Atención personalizada de mostrador
+              </p>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 bg-butter text-chocolate hover:bg-butter-light font-serif-display text-xs uppercase tracking-[0.2em] font-bold py-3.5 px-6 rounded-full border-2 border-chocolate transition-colors shadow" href="https://wa.me/5491171625566" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]">chat</span>
 <span>Escribinos por WhatsApp</span>
 </a>
 </div>
 </div>
+</div>
 </section>
-<!-- Footer -->
-<footer class="flex flex-col items-center justify-center text-center px-margin pt-6 pb-12 mt-4">
-<p class="font-headline-sm text-headline-sm text-primary mb-1">La Catalana</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">
-      La Catalana © 2026. Todos los derechos reservados.
-    </p>
-<p class="font-label-sm text-label-sm text-secondary">
-      Hecho con amor en Villa Crespo, Buenos Aires.
-    </p>
+<!-- 8) FOOTER ON CHOCOLATE BROWN -->
+<footer class="bg-chocolate text-butter-light pt-14 pb-8 border-t-4 border-gold">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-gold/30 items-center">
+<!-- Left Brand -->
+<div class="md:col-span-6 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="font-script text-5xl text-butter mb-1">La Catalana</span>
+<span class="font-serif-display text-xs uppercase tracking-[0.3em] text-gold font-bold mb-3">
+            Panadería y Confitería · Villa Crespo
+          </span>
+<p class="font-serif-body text-lg text-butter-light/80 max-w-md">
+            Masa madre, manteca pura y la auténtica tradición pastelera porteña sobre Avenida Corrientes. Elaboración artesanal diaria.
+          </p>
+</div>
+<!-- Center Quick Links -->
+<div class="md:col-span-3 flex flex-col items-center md:items-start text-sm font-serif-display tracking-widest uppercase space-y-2 text-butter/80">
+<a class="hover:text-butter transition-colors" href="#vitrina">La Vitrina</a>
+<a class="hover:text-butter transition-colors" href="#torta">Encargá tu Torta</a>
+<a class="hover:text-butter transition-colors" href="#historia">Nuestra Historia</a>
+<a class="hover:text-butter transition-colors" href="#resenas">Reseñas</a>
+<a class="hover:text-butter transition-colors" href="#visitanos">Ubicación &amp; Horarios</a>
+</div>
+<!-- Right Contact Recap -->
+<div class="md:col-span-3 flex flex-col items-center md:items-end text-center md:text-right">
+<span class="font-serif-display text-xs uppercase tracking-widest text-gold font-bold mb-1">Pedidos &amp; Consultas</span>
+<a class="font-serif-display text-lg font-bold text-butter hover:underline" href="tel:+541171625566">
+            +54 11 7162-5566
+          </a>
+<span class="font-sans text-xs text-butter/60 mt-1">Avenida Corrientes · Villa Crespo</span>
+<span class="font-sans text-xs text-butter/60">Lunes a Sábado 7:00 a 20:30 hs</span>
+</div>
+</div>
+<!-- Legal / Copyright Row -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-sans tracking-wider text-butter/60 text-center">
+<span>La Catalana © 2026. Todos los derechos reservados.</span>
+<div class="flex items-center gap-3">
+<span>Panadería Artesanal</span>
+<span>•</span>
+<span>Villa Crespo, Buenos Aires</span>
+</div>
+</div>
+</div>
 </footer>
-<!-- Floating WhatsApp Action -->
-<a class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl active:scale-90 transition-transform" href="https://wa.me/5491171625566">
-<span class="material-symbols-outlined text-[32px]">chat</span>
+<!-- FLOATING WHATSAPP BUTTON (BOTTOM-RIGHT) -->
+<a aria-label="Escribinos por WhatsApp a La Catalana" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-chocolate text-butter border-2 border-gold hover:bg-chocolate-dark hover:scale-105 transition-all p-3 sm:px-5 sm:py-3.5 rounded-full shadow-2xl group" href="https://wa.me/5491171625566" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[26px] text-butter animate-pulse">chat</span>
+<span class="font-serif-display text-xs uppercase tracking-widest font-bold hidden sm:inline text-butter">
+      WhatsApp La Catalana
+    </span>
 </a>
-</div></main></body></html>
+<!-- INTERACTIVE JAVASCRIPT FOR CAKE ORDER BUILDER -->
+<script>
+    // Set default pickup date to tomorrow
+    (function initDate() {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dateString = tomorrow.toISOString().split('T')[0];
+      const dateInput = document.getElementById('cake-date');
+      if (dateInput) {
+        dateInput.value = dateString;
+        dateInput.min = dateString;
+      }
+    })();
+
+    function updateCakePreview() {
+      const flavor = document.getElementById('cake-flavor').value;
+      const weight = document.getElementById('cake-weight').value;
+      const rawDate = document.getElementById('cake-date').value;
+      const text = document.getElementById('cake-text').value.trim() || 'Sin dedicatoria';
+      const name = document.getElementById('cake-client-name').value.trim() || 'Cliente';
+
+      // Format date for friendly display
+      let formattedDate = rawDate;
+      if (rawDate) {
+        const parts = rawDate.split('-');
+        if (parts.length === 3) {
+          formattedDate = `${parts[2]}/${parts[1]}/${parts[0]}`;
+        }
+      } else {
+        formattedDate = 'a coordinar';
+      }
+
+      const message = `Hola La Catalana! Quiero encargar una torta de ${flavor}, ${weight}, para el ${formattedDate}. Texto: ${text}. Nombre: ${name}`;
+      
+      const previewEl = document.getElementById('cake-message-preview');
+      if (previewEl) {
+        previewEl.innerText = `"${message}"`;
+      }
+
+      return message;
+    }
+
+    function sendCakeWhatsApp() {
+      const message = updateCakePreview();
+      const phone = '5491171625566';
+      const targetUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(targetUrl, '_blank');
+    }
+
+    // Initialize preview on first load
+    updateCakePreview();
+  </script>
+</body>
+</html>

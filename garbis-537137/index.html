@@ -1,265 +1,1167 @@
 <!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garbis — Cocina Armenia</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts: Playfair Display + Cormorant Garamond + Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#B5523B',
+            'terracotta-dark': '#9A412C',
+            saffron: '#E3A62F',
+            'saffron-light': '#FCEECF',
+            turquoise: '#1F8A8A',
+            'turquoise-dark': '#156565',
+            'turquoise-light': '#E6F4F4',
+            cream: '#F6EEDF',
+            'cream-light': '#FDFBF7',
+            'cream-surface': '#EFE4CF',
+            pomegranate: '#3A1F17',
+            'pomegranate-muted': '#6B524A'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Lato', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F6EEDF;
+      color: #3A1F17;
+      font-family: 'Lato', sans-serif;
+    }
+    .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .armenian-knot-divider {
+      background-image: radial-gradient(circle, #E3A62F 1.5px, transparent 1.5px);
+      background-size: 14px 14px;
+    }
+    .ornament-border {
+      border-image: linear-gradient(to right, #B5523B, #E3A62F, #1F8A8A, #E3A62F, #B5523B) 1;
+    }
+  </style>
+</head>
+<body class="bg-cream text-pomegranate min-h-screen relative selection:bg-saffron-light selection:text-terracotta"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Garbis. No es el sitio oficial.</div>
 
-<html lang="es"><head>
-<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#ffb59c", "tertiary-fixed": "#66ff8e", "inverse-on-surface": "#ffede8", "on-primary-fixed": "#390c00", "surface-container-highest": "#f5ddd7", "surface-variant": "#f5ddd7", "background": "#fff8f6", "surface-container-lowest": "#ffffff", "outline": "#8a726a", "on-tertiary": "#ffffff", "primary": "#9f3c16", "surface-bright": "#fff8f6", "secondary-fixed": "#dbe8b6", "on-error": "#ffffff", "surface-dim": "#edd5ce", "primary-fixed-dim": "#ffb59c", "on-secondary-container": "#5b673f", "on-primary-fixed-variant": "#822801", "secondary": "#57633b", "surface-container": "#ffe9e3", "on-surface": "#251915", "on-error-container": "#93000a", "tertiary": "#006b2e", "error": "#ba1a1a", "inverse-surface": "#3b2d29", "on-surface-variant": "#57423b", "on-tertiary-container": "#f7fff3", "on-primary": "#ffffff", "outline-variant": "#dec0b7", "on-background": "#251915", "on-tertiary-fixed-variant": "#005322", "secondary-container": "#d8e5b3", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#3de273", "on-tertiary-fixed": "#002109", "tertiary-container": "#00873c", "primary-fixed": "#ffdbcf", "primary-container": "#bf542c", "secondary-fixed-dim": "#bfcc9c", "surface-container-low": "#fff1ed", "on-primary-container": "#fffbff", "on-secondary-fixed-variant": "#404b26", "error-container": "#ffdad6", "on-secondary-fixed": "#151f01", "surface": "#fff8f6", "surface-tint": "#a23e18", "surface-container-high": "#fbe3dc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "2rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "headline-sm": ["Newsreader"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen pt-safe pb-safe"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Garbis. No es el sitio oficial.</div><main class="flex flex-col relative w-full px-margin bg-surface"><div class="flex flex-col w-full pb-16">
-<!-- Sticky Header -->
-<header class="sticky top-0 z-40 w-full bg-surface/90 backdrop-blur-md px-margin py-3 flex items-center justify-between shadow-sm">
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Garbis</span>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-0.5">Restaurante</span>
-</div>
-<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#25D366] text-white font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="https://wa.me/5491148664000">
-<span class="material-symbols-outlined text-[16px]">chat</span>
-<span>Reservar</span>
-</a>
-</header>
-<!-- Hero Section -->
-<section class="flex flex-col px-margin pt-4 pb-6">
-<div class="relative w-full rounded-2xl overflow-hidden shadow-md">
-<img alt="Café de especialidad en Villa Crespo" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
-<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/30 to-transparent flex flex-col justify-end p-5 text-surface-bright">
-<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary text-surface-bright font-label-sm text-label-sm w-fit mb-2 shadow-sm">
-<span class="material-symbols-outlined text-[14px]">location_on</span>
-<span>Villa Crespo • Buenos Aires</span>
-</div>
-<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-bright font-semibold leading-tight mb-1">
-          Garbis
-        </h1>
-<p class="font-headline-sm text-headline-sm text-surface-container-high italic mb-2">
-          Tu lugar en Villa Crespo
+  <!-- TOP ANNOUNCEMENT BANNER -->
+  <div class="bg-terracotta text-cream-light py-2 px-4 text-xs sm:text-sm font-medium text-center tracking-wide flex items-center justify-center gap-2 border-b border-terracotta-dark">
+    <span class="inline-block w-2 h-2 rounded-full bg-saffron animate-pulse"></span>
+    <span>Tradición y cocina armenia en Villa Crespo • Martes a Domingo en Av. Estado de Israel 4503</span>
+  </div>
+
+  <!-- 1. STICKY HEADER -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-pomegranate/10 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <!-- Armenian Eternity Knot stylized SVG -->
+        <div class="w-10 h-10 rounded-full border-2 border-terracotta flex items-center justify-center bg-cream-surface group-hover:bg-terracotta/10 transition-colors">
+          <svg class="w-6 h-6 text-terracotta" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3 0 1.31-.84 2.41-2.01 2.82C11.85 9.4 10.6 8.15 9.18 7.01 9.59 5.84 10.69 5 12 5zm-3 7c0-1.66 1.34-3 3-3 .7 0 1.34.24 1.84.65-1.14 1.42-2.39 2.67-3.81 3.81-.41-.5-.65-1.14-.65-1.84zm3 7c-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2.01-2.82 1.14 1.42 2.39 2.67 3.81 3.81-.41 1.17-1.51 2.01-2.82 2.01zm3-7c0 1.66-1.34 3-3 3-.7 0-1.34-.24-1.84-.65 1.14-1.42 2.39-2.67 3.81-3.81.41.5.65 1.14.65 1.84z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-serif-title text-2xl sm:text-3xl font-bold tracking-tight text-terracotta block leading-none">Garbis</span>
+          <span class="text-[10px] sm:text-xs uppercase tracking-widest text-pomegranate-muted font-bold block mt-0.5">Cocina Armenia • Villa Crespo</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-pomegranate">
+        <a href="#historia" class="hover:text-terracotta transition-colors py-1">Nuestra Historia</a>
+        <a href="#carta" class="hover:text-terracotta transition-colors py-1">La Carta</a>
+        <a href="#arma-tu-mezze" class="hover:text-terracotta transition-colors py-1 text-turquoise font-bold flex items-center gap-1.5">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-saffron"></span>
+          Armá tu Mezze
+        </a>
+        <a href="#resenas" class="hover:text-terracotta transition-colors py-1">Reseñas</a>
+        <a href="#visitanos" class="hover:text-terracotta transition-colors py-1">Visitanos</a>
+      </nav>
+
+      <!-- Header CTA Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/5491148664000" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-dark text-cream-light px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-sm transition-all transform active:scale-95">
+          <svg class="w-4 h-4 text-saffron fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span class="hidden sm:inline">Reservá por</span> WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (Split Desktop / Responsive Stack) -->
+  <section class="relative overflow-hidden pt-8 pb-16 lg:py-20">
+    <!-- Subtle geometric background accent -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-saffron/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-turquoise/10 blur-2xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Copy & CTAs -->
+        <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream-surface border border-saffron/40 text-terracotta text-xs font-bold uppercase tracking-wider">
+            <span class="text-saffron text-sm">✦</span>
+            Villa Crespo • Sabores con Historia
+          </div>
+
+          <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-pomegranate leading-[1.1]">
+            La mesa armenia de <span class="text-terracotta italic font-medium">Villa Crespo.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-pomegranate-muted leading-relaxed font-normal max-w-xl mx-auto lg:mx-0">
+            Recetas familiares transmitidas por generaciones. Un banquete de mezze servido con el calor, la generosidad y el alma de Medio Oriente en el corazón del barrio.
+          </p>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/5491148664000" target="_blank" rel="noopener noreferrer"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-terracotta hover:bg-terracotta-dark text-cream-light px-8 py-4 rounded-xl text-base font-bold shadow-md hover:shadow-lg transition-all transform active:scale-95">
+              <span>Reservá por WhatsApp</span>
+              <svg class="w-5 h-5 text-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+
+            <a href="#carta" 
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-cream-surface hover:bg-cream-surface/80 text-pomegranate border border-pomegranate/20 px-8 py-4 rounded-xl text-base font-bold transition-all">
+              <span>Ver la carta</span>
+              <span class="text-terracotta font-serif italic text-lg">↓</span>
+            </a>
+          </div>
+
+          <!-- Quick badges -->
+          <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-pomegranate-muted border-t border-pomegranate/10">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-turquoise" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Mesas adentro y vereda
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-turquoise" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Opciones vegetarianas
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-turquoise" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+              Take Away & Delivery
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Overhead Mezze Photo with Geometric Frame -->
+        <div class="lg:col-span-6 relative">
+          <!-- Geometric Armenian Line Border Frame -->
+          <div class="relative p-3 rounded-2xl bg-cream-surface shadow-xl border-2 border-saffron/40">
+            <!-- Armenian eternity knot corner decorations -->
+            <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-saffron text-pomegranate flex items-center justify-center text-xs font-bold border-2 border-cream shadow">✦</div>
+            <div class="absolute -bottom-3 -right-3 w-8 h-8 rounded-full bg-turquoise text-cream-light flex items-center justify-center text-xs font-bold border-2 border-cream shadow">✦</div>
+
+            <div class="overflow-hidden rounded-xl relative aspect-[4/3] group">
+              <img src="img/d84d1b0b044fce81.jpg" 
+                   alt="Gran banquete de mezze armenio en Garbis Villa Crespo" 
+                   class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-pomegranate/70 via-transparent to-transparent flex items-end p-6">
+                <div class="text-cream-light">
+                  <span class="text-xs uppercase tracking-widest text-saffron font-bold">Experiencia Para Compartir</span>
+                  <p class="font-serif text-xl sm:text-2xl font-bold">Mezze tradicional servido a la mesa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- UNDER HERO TURQUOISE STRIP (Address, Hours, Phone in 3 columns) -->
+    <div class="mt-14 bg-turquoise text-cream-light border-y border-turquoise-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-turquoise-dark/50 text-center md:text-left">
+          
+          <!-- Column 1: Dirección -->
+          <div class="pt-3 md:pt-0 md:pr-6 flex items-center justify-center md:justify-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-turquoise-dark/60 flex items-center justify-center text-saffron shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-widest text-saffron font-bold block">Ubicación</span>
+              <p class="text-base font-bold text-cream-light">Av. Estado de Israel 4503</p>
+              <p class="text-xs text-turquoise-light/80">Villa Crespo, Ciudad de Buenos Aires</p>
+            </div>
+          </div>
+
+          <!-- Column 2: Horarios -->
+          <div class="pt-4 md:pt-0 md:px-6 flex items-center justify-center md:justify-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-turquoise-dark/60 flex items-center justify-center text-saffron shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-widest text-saffron font-bold block">Horarios de Cocina</span>
+              <p class="text-base font-bold text-cream-light">Martes a Domingo</p>
+              <p class="text-xs text-turquoise-light/80">12:00 a 15:30 y 20:00 a 00:00 • Lunes cerrado</p>
+            </div>
+          </div>
+
+          <!-- Column 3: Contacto / Teléfono -->
+          <div class="pt-4 md:pt-0 md:pl-6 flex items-center justify-center md:justify-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-turquoise-dark/60 flex items-center justify-center text-saffron shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-widest text-saffron font-bold block">Reservas & Consultas</span>
+              <a href="tel:+541148664000" class="text-base font-bold text-cream-light hover:underline block">+54 11 4866-4000</a>
+              <a href="https://wa.me/5491148664000" target="_blank" rel="noopener noreferrer" class="text-xs text-saffron hover:underline font-semibold">WhatsApp directo disponible →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. NUESTRA HISTORIA (2 Columns: Text + Photo Collage) -->
+  <section id="historia" class="py-20 bg-cream-surface/50 border-b border-pomegranate/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Divider Knot -->
+      <div class="flex items-center justify-center gap-4 mb-12">
+        <div class="h-px bg-saffron/50 flex-1 max-w-xs"></div>
+        <span class="text-terracotta text-lg font-serif">✦ ✦ ✦</span>
+        <div class="h-px bg-saffron/50 flex-1 max-w-xs"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Text -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream border border-terracotta/20 text-terracotta text-xs font-bold uppercase tracking-wider">
+            Legado & Hogar
+          </div>
+
+          <h2 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-pomegranate tracking-tight">
+            Nuestra Historia:<br>
+            <span class="text-terracotta italic font-normal">recetas de familia que trascienden el tiempo.</span>
+          </h2>
+
+          <p class="text-base sm:text-lg text-pomegranate-muted leading-relaxed">
+            Garbis nació como un tributo a las abuelas armenias que llegaron a Buenos Aires llevando en su equipaje lo más valioso: la memoria del fuego, las mezclas de especias de Alepo y Ereván, y el amor incondicional por agasajar a la mesa.
+          </p>
+
+          <p class="text-base sm:text-lg text-pomegranate-muted leading-relaxed">
+            Desde hace décadas, en la esquina de Estado de Israel amasamos el pan lavash a mano, molemos el trigo burgol a punto exacto y horneamos los lehmeyun al calor vivo de nuestro horno. Acá no hay atajos: hay paciencia, ingredientes nobles y el orgullo de compartir una herencia viva con todos los vecinos de Villa Crespo.
+          </p>
+
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-pomegranate/10">
+            <div>
+              <span class="font-serif-title text-3xl font-bold text-terracotta block">100%</span>
+              <span class="text-xs text-pomegranate-muted uppercase tracking-wider font-semibold">Artesanal & Casero</span>
+            </div>
+            <div>
+              <span class="font-serif-title text-3xl font-bold text-turquoise block">+35</span>
+              <span class="text-xs text-pomegranate-muted uppercase tracking-wider font-semibold">Años de tradición</span>
+            </div>
+            <div>
+              <span class="font-serif-title text-3xl font-bold text-saffron block">#1</span>
+              <span class="text-xs text-pomegranate-muted uppercase tracking-wider font-semibold">En Villa Crespo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Photo Collage -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-cream bg-cream">
+            <img src="img/900ecaad18fc9102.jpg" 
+                 alt="Collage histórico familiar y cocina de Garbis" 
+                 class="w-full h-auto object-cover rounded-xl">
+            <div class="p-4 bg-cream text-center border-t border-pomegranate/10">
+              <p class="font-serif italic text-sm text-pomegranate">
+                "La hospitalidad armenia no se explica, se sirve en la mesa."
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. LA CARTA (3-Column Desktop Grid of Categories) -->
+  <section id="carta" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs uppercase tracking-widest text-turquoise font-bold">Gastronomía Armenia & Oriental</span>
+        <h2 class="font-serif-title text-4xl sm:text-5xl font-bold text-pomegranate">
+          La Carta de la Casa
+        </h2>
+        <p class="text-pomegranate-muted text-base sm:text-lg">
+          Platos elaborados en el día con aceite de oliva extra virgen, hierbas frescas y especias autóctonas.
         </p>
-<p class="font-body-sm text-body-sm text-surface-bright/90 line-clamp-3 mb-4">
-          Café de especialidad, cocina honesta de estación y pastelería artesanal hecha todos los días con amor de barrio.
+      </div>
+
+      <!-- 3-Column Grid on Desktop -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Category 1: Entradas Frías (Mezze Frío) -->
+        <div class="bg-cream-surface/60 rounded-2xl p-6 border border-saffron/30 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 pb-4 mb-4 border-b border-pomegranate/10">
+            <div class="w-8 h-8 rounded-full bg-saffron/30 text-terracotta flex items-center justify-center font-bold text-sm">01</div>
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-pomegranate">Entradas Frías</h3>
+              <span class="text-xs text-pomegranate-muted uppercase tracking-wider">Acompañadas de pan pita casero</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Hummus Clásico</h4>
+                <p class="text-xs text-pomegranate-muted">Pasta de garbanzos, tahina, oliva extra virgen y pimentón dulce.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$6.200</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Baba Ganush (Mutabal)</h4>
+                <p class="text-xs text-pomegranate-muted">Berenjenas asadas al carbón, pasta de sésamo, ajo y granada fresca.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$6.800</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Tabule Armenio</h4>
+                <p class="text-xs text-pomegranate-muted">Perejil picado a mano, menta fresca, tomate, trigo fino y limón.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$5.900</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Sarma (Niños envueltos)</h4>
+                <p class="text-xs text-pomegranate-muted">Hojas de parra rellenas de arroz aromático y hierbas (6 un.).</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$7.400</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Labne con Zaatar</h4>
+                <p class="text-xs text-pomegranate-muted">Queso crema de yogur colado artesanal con mezcla de zaatar y oliva.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$5.800</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Platos Calientes & Empanadas -->
+        <div class="bg-cream-surface/60 rounded-2xl p-6 border border-terracotta/20 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 pb-4 mb-4 border-b border-pomegranate/10">
+            <div class="w-8 h-8 rounded-full bg-terracotta/20 text-terracotta flex items-center justify-center font-bold text-sm">02</div>
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-pomegranate">Calientes de Horno</h3>
+              <span class="text-xs text-pomegranate-muted uppercase tracking-wider">Recetas horneadas al momento</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Lehmeyun Tradicional (3 un.)</h4>
+                <p class="text-xs text-pomegranate-muted">Masa fina crocante con carne picada, tomate, cebolla, limón y especias.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$7.200</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Keppe Frito Relleno (4 un.)</h4>
+                <p class="text-xs text-pomegranate-muted">Trigo burgol crocante relleno de carne especiada, nueces y cebolla confitada.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$8.400</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Falafel Casero (5 un.)</h4>
+                <p class="text-xs text-pomegranate-muted">Croquetas de garbanzo con hierbas frescas, salsa taratur y encurtidos.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$6.500</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Suberek (Borek de Queso)</h4>
+                <p class="text-xs text-pomegranate-muted">Capas de masa filo hervida rellena de mezcla de quesos y manteca dorada.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$7.900</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Fatay Abierto de Queso</h4>
+                <p class="text-xs text-pomegranate-muted">Empanada abierta con blend de queso feta y mozzarella con orégano silvestre.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$3.100</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Principales & Postres Orientales -->
+        <div class="bg-cream-surface/60 rounded-2xl p-6 border border-turquoise/30 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center gap-3 pb-4 mb-4 border-b border-pomegranate/10">
+            <div class="w-8 h-8 rounded-full bg-turquoise/20 text-turquoise flex items-center justify-center font-bold text-sm">03</div>
+            <div>
+              <h3 class="font-serif-title text-xl font-bold text-pomegranate">Principales & Dulces</h3>
+              <span class="text-xs text-pomegranate-muted uppercase tracking-wider">Carnes asadas y pastelería</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Shawarma al Plato</h4>
+                <p class="text-xs text-pomegranate-muted">Láminas marinadas de carne tierna, salsa tahina, tomate asado y arroz pilaf.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$12.500</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Shish Kebab Mixto</h4>
+                <p class="text-xs text-pomegranate-muted">Brochettes de lomo y pollo marinados con pimientos asados y cebollas.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$13.800</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Keppe al Horno (Siniya)</h4>
+                <p class="text-xs text-pomegranate-muted">Pastel al horno en molde de barro, relleno de carne, piñones y cebolla.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$11.200</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2 pt-2 border-t border-pomegranate/10">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Baklava Tradicional (2 un.)</h4>
+                <p class="text-xs text-pomegranate-muted">Hojas de masa filo crocante, abundante nuez y almíbar aromatizado con azahar.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$4.500</span>
+            </div>
+
+            <div class="flex justify-between items-baseline gap-2">
+              <div>
+                <h4 class="font-bold text-sm text-pomegranate">Mamul de Nuez o Dátiles (2 un.)</h4>
+                <p class="text-xs text-pomegranate-muted">Masitas de sémola rellenas espolvoreadas con azúcar impalpable.</p>
+              </div>
+              <span class="font-serif font-bold text-sm text-terracotta shrink-0">$3.800</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action note -->
+      <div class="mt-10 text-center">
+        <p class="text-sm text-pomegranate-muted mb-4">¿Querés armar una combinación personalizada para tu grupo? Usá nuestro calculador de mezze a continuación:</p>
+        <a href="#arma-tu-mezze" class="inline-flex items-center gap-2 text-terracotta font-bold text-sm hover:underline">
+          Ir al armador de banquete mezze <span>↓</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. SIGNATURE FEATURE: "Para compartir — armá tu mezze" -->
+  <section id="arma-tu-mezze" class="py-20 bg-cream-surface border-y-2 border-saffron/40 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="inline-block px-3 py-1 bg-turquoise/10 text-turquoise rounded-full text-xs font-bold uppercase tracking-wider">
+          Experiencia Interactiva Garbis
+        </span>
+        <h2 class="font-serif-title text-4xl sm:text-5xl font-bold text-pomegranate">
+          Para compartir — armá tu mezze
+        </h2>
+        <p class="text-pomegranate-muted text-base sm:text-lg">
+          Calculá al instante la cantidad justa de platos para tu grupo, elegí la modalidad y enviá el pedido directamente a nuestro WhatsApp con un solo clic.
         </p>
-<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg shadow-md active:scale-98 transition-transform" href="https://wa.me/5491148664000">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-<span>Pedí por WhatsApp</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Nuestra Carta -->
-<section class="flex flex-col px-margin py-6">
-<div class="flex flex-col mb-6">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Platos y delicias</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Nuestra carta</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Sabores simples, ingredientes nobles y recetas caseras</p>
-</div>
-<div class="grid grid-cols-1 gap-5">
-<!-- Card 1 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Medialunas con dulce de leche casero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Medialunas artesanales de manteca</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Crocantes por fuera, esponjosas por dentro, bañadas en almíbar de naranja y acompañadas con dulce de leche casero.
-          </p>
-</div>
-</article>
-<!-- Card 2 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Tostón de masa madre con jamón y burrata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Tostón con jamón crudo y burrata</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Pan de masa madre tostado, burrata cremosa, rúcula fresca del mercado y oliva virgen extra.
-          </p>
-</div>
-</article>
-<!-- Card 3 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Ravioles caseros de ricota y nuez" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCeTRY5a8cfr3g-qt8uzkY1G5ho6v1VlWFj7xk8r0iIh9aT1EYHaVAU8AGChTgfdVbyO-FFLjd9pZr-0Vqw48qCFgfUWAK-X_2EkbYE5gJ7pOY5-6vGZZxEcWq5ReXLzG6SfTzZ1aBSoRod4skGsUi6kbZvsLhXQngtSLLvUR5fQ7WSTWroNEFNP7nI5ijloFwTb5ms0jOg1_N3HYPCRmfV903j6RauFd4gArb9hYkcDtsLYYTU2W8R4Q"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Ravioles caseros de ricota y nuez</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Pasta fresca hecha a mano con manteca noisette, salvia fresca de nuestra huerta y nueces tostadas.
-          </p>
-</div>
-</article>
-<!-- Card 4 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Café de especialidad filtrado y espresso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Café de especialidad filtrado y espresso</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Granos seleccionados de origen tostados en pequeños lotes, calibrados a diario por nuestros baristas.
-          </p>
-</div>
-</article>
-<!-- Card 5 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Sandwich caliente de pastrón curado" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Sandwich caliente de pastrón en jalá</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Mostaza artesanal a la antigua, pepinillos encurtidos caseros y queso fundido entre rebanadas doradas.
-          </p>
-</div>
-</article>
-<!-- Card 6 -->
-<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
-<div class="w-full h-48 overflow-hidden">
-<img alt="Tarta rústica tibia de manzanas y canela" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
-</div>
-<div class="p-4 flex flex-col">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Tarta rústica tibia de manzanas y canela</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Masa crocante con manteca de campo, manzanas caramelizadas y crema chantilly fresca recién batida.
-          </p>
-</div>
-</article>
-</div>
-</section>
-<!-- Gallery Strip -->
-<section class="flex flex-col py-6">
-<div class="px-margin mb-3 flex items-center justify-between">
-<div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Espacios</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">El rincón del barrio</h2>
-</div>
-<span class="material-symbols-outlined text-outline">photo_camera</span>
-</div>
-<div class="flex overflow-x-auto gap-3 px-margin py-2 scroll-smooth no-scrollbar">
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Ambiente de cafetería en Villa Crespo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
-</div>
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Medialunas y café sobre mesa de madera" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
-</div>
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Tostón gourmet en plato artesanal de cerámica" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
-</div>
-<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
-<img alt="Plato de pasta casera con copa de vino" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCeTRY5a8cfr3g-qt8uzkY1G5ho6v1VlWFj7xk8r0iIh9aT1EYHaVAU8AGChTgfdVbyO-FFLjd9pZr-0Vqw48qCFgfUWAK-X_2EkbYE5gJ7pOY5-6vGZZxEcWq5ReXLzG6SfTzZ1aBSoRod4skGsUi6kbZvsLhXQngtSLLvUR5fQ7WSTWroNEFNP7nI5ijloFwTb5ms0jOg1_N3HYPCRmfV903j6RauFd4gArb9hYkcDtsLYYTU2W8R4Q"/>
-</div>
-</div>
-</section>
-<!-- Reviews / Testimonios -->
-<section class="flex flex-col px-margin py-6">
-<div class="mb-4">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Comunidad</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Lo que dicen en el barrio</h2>
-</div>
-<div class="flex flex-col gap-3">
-<!-- Review 1 -->
-<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
-<div class="flex text-amber-500 gap-0.5">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-          "Las mejores medialunas de Villa Crespo sin dudas. El café increíble y la atención te hace sentir como en casa."
+      </div>
+
+      <!-- 2 Columns on Desktop: Selector on Left, Dynamic Summary Card on Right -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Controls & Checkboxes (lg:col-span-7) -->
+        <div class="lg:col-span-7 bg-cream rounded-3xl p-6 sm:p-8 shadow-md border border-saffron/30 space-y-8">
+          
+          <!-- Stepper: Cantidad de personas (2-12) -->
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <label class="font-serif-title text-lg font-bold text-pomegranate">1. ¿Cuántas personas son?</label>
+              <span class="text-xs text-pomegranate-muted font-bold uppercase tracking-wider">Base $6.500 / persona</span>
+            </div>
+
+            <div class="flex items-center gap-4 bg-cream-surface p-3 rounded-2xl border border-pomegranate/10">
+              <button id="btn-decrease-people" type="button" aria-label="Menos personas"
+                      class="w-12 h-12 rounded-xl bg-cream hover:bg-cream-light text-pomegranate font-bold text-2xl flex items-center justify-center shadow-sm transition-all active:scale-90 border border-pomegranate/10">
+                −
+              </button>
+              <div class="flex-1 text-center">
+                <span id="display-people-count" class="font-serif-title text-3xl font-extrabold text-terracotta">4</span>
+                <span class="text-sm font-semibold text-pomegranate-muted ml-1">personas</span>
+              </div>
+              <button id="btn-increase-people" type="button" aria-label="Más personas"
+                      class="w-12 h-12 rounded-xl bg-cream hover:bg-cream-light text-pomegranate font-bold text-2xl flex items-center justify-center shadow-sm transition-all active:scale-90 border border-pomegranate/10">
+                +
+              </button>
+            </div>
+            <p class="text-xs text-pomegranate-muted mt-2 ml-1">Rango disponible de 2 a 12 comensales. Incluye pan pita caliente ilimitado.</p>
+          </div>
+
+          <!-- Toggle: Modalidad (Delivery / Take away / Comer acá) -->
+          <div>
+            <label class="font-serif-title text-lg font-bold text-pomegranate block mb-3">2. Elegí la modalidad</label>
+            <div class="grid grid-cols-3 gap-2 bg-cream-surface p-1.5 rounded-2xl border border-pomegranate/10" id="modalidad-group">
+              <button type="button" data-modalidad="Comer acá" 
+                      class="modalidad-btn py-3 px-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-terracotta text-cream-light shadow-sm">
+                🍽️ Comer acá
+              </button>
+              <button type="button" data-modalidad="Delivery" 
+                      class="modalidad-btn py-3 px-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-pomegranate hover:bg-cream">
+                🛵 Delivery
+              </button>
+              <button type="button" data-modalidad="Take away" 
+                      class="modalidad-btn py-3 px-2 rounded-xl text-xs sm:text-sm font-bold transition-all text-pomegranate hover:bg-cream">
+                🛍️ Take away
+              </button>
+            </div>
+          </div>
+
+          <!-- Dishes Checkboxes -->
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <label class="font-serif-title text-lg font-bold text-pomegranate">3. Elegí los platos para el banquete</label>
+              <span class="text-xs text-turquoise font-semibold">Seleccioná los favoritos</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="dishes-container">
+              
+              <!-- Hummus -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Hummus tradicional" data-price="0" checked 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Hummus Tradicional</span>
+                    <span class="text-[11px] text-pomegranate-muted">Con oliva y pimentón</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-turquoise uppercase tracking-wider">Incluido</span>
+              </label>
+
+              <!-- Baba ganush -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Baba ganush" data-price="0" checked 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Baba Ganush</span>
+                    <span class="text-[11px] text-pomegranate-muted">Berenjena asada al carbón</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-turquoise uppercase tracking-wider">Incluido</span>
+              </label>
+
+              <!-- Keppe -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Keppe frito con nuez" data-price="0" checked 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Keppe Frito</span>
+                    <span class="text-[11px] text-pomegranate-muted">Relleno con nueces</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-turquoise uppercase tracking-wider">Incluido</span>
+              </label>
+
+              <!-- Lehmeyun -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Lehmeyun clásico" data-price="0" checked 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Lehmeyun Tradicional</span>
+                    <span class="text-[11px] text-pomegranate-muted">Empanadas abiertas horneadas</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-turquoise uppercase tracking-wider">Incluido</span>
+              </label>
+
+              <!-- Shawarma (Especial) -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Shawarma de carne" data-price="1800" 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Shawarma al Plato</span>
+                    <span class="text-[11px] text-pomegranate-muted">Láminas tiernas marinadas</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-terracotta">+$1.800/p</span>
+              </label>
+
+              <!-- Dolma / Sarma -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Sarma (hojas de parra)" data-price="1200" 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Dolma / Sarma</span>
+                    <span class="text-[11px] text-pomegranate-muted">Hojas de parra rellenas</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-terracotta">+$1.200/p</span>
+              </label>
+
+              <!-- Tabule -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Tabule fresco" data-price="800" 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Tabule Fresco</span>
+                    <span class="text-[11px] text-pomegranate-muted">Perejil, menta y trigo fino</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-terracotta">+$800/p</span>
+              </label>
+
+              <!-- Baklava -->
+              <label class="dish-item flex items-center justify-between p-3.5 rounded-xl border border-pomegranate/10 bg-cream-surface/40 hover:bg-cream-surface cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" value="Baklava de nuez" data-price="1100" 
+                         class="dish-checkbox w-5 h-5 rounded text-terracotta focus:ring-terracotta accent-terracotta">
+                  <div>
+                    <span class="text-sm font-bold text-pomegranate block">Baklava Dulce</span>
+                    <span class="text-[11px] text-pomegranate-muted">Postre artesanal con azahar</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold text-terracotta">+$1.100/p</span>
+              </label>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Live Summary Card (lg:col-span-5) -->
+        <div class="lg:col-span-5 bg-pomegranate text-cream-light rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-saffron relative overflow-hidden">
+          
+          <!-- Background decoration -->
+          <div class="absolute -bottom-10 -right-10 w-44 h-44 rounded-full bg-saffron/10 blur-xl pointer-events-none"></div>
+
+          <div class="flex items-center justify-between pb-4 border-b border-cream-light/15">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-saffron">Resumen del Mezze</span>
+              <h3 class="font-serif-title text-2xl font-bold text-cream-light">Tu Banquete Garbis</h3>
+            </div>
+            <span class="w-10 h-10 rounded-full bg-cream-light/10 text-saffron flex items-center justify-center font-serif text-lg">✦</span>
+          </div>
+
+          <div class="py-5 space-y-4 text-sm">
+            <div class="flex justify-between items-center text-cream-light/80">
+              <span>Cantidad de comensales:</span>
+              <span id="summary-people" class="font-bold text-cream-light text-base">4 personas</span>
+            </div>
+
+            <div class="flex justify-between items-center text-cream-light/80">
+              <span>Modalidad seleccionada:</span>
+              <span id="summary-modalidad" class="font-bold text-saffron bg-saffron/10 px-2.5 py-1 rounded-md text-xs uppercase tracking-wider">Comer acá</span>
+            </div>
+
+            <div class="pt-3 border-t border-cream-light/10">
+              <span class="text-xs uppercase tracking-wider text-cream-light/60 block mb-2 font-bold">Platos incluidos en la mesa:</span>
+              <div id="summary-dishes-list" class="space-y-1.5 text-xs text-cream-light/90 max-h-40 overflow-y-auto pr-1">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-cream-light/20">
+              <div class="flex justify-between items-baseline mb-1">
+                <span class="text-sm text-cream-light/70">Estimado por persona:</span>
+                <span id="summary-price-per-person" class="font-serif text-lg font-bold text-saffron">$6.500</span>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-bold text-base text-cream-light">Total estimado:</span>
+                <span id="summary-total-price" class="font-serif text-3xl font-extrabold text-saffron">$26.000</span>
+              </div>
+              <p class="text-[11px] text-cream-light/60 mt-1 italic">*Precios sugeridos. Confirmación exacta con el equipo según extras.</p>
+            </div>
+          </div>
+
+          <!-- JavaScript Button to WhatsApp -->
+          <div class="pt-4">
+            <button id="btn-pedir-whatsapp" type="button"
+                    class="w-full flex items-center justify-center gap-3 bg-terracotta hover:bg-terracotta-dark text-cream-light py-4 px-6 rounded-2xl font-bold text-base shadow-lg transition-all transform active:scale-95 border border-saffron/40">
+              <svg class="w-5 h-5 text-saffron fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Pedir Mezze por WhatsApp</span>
+            </button>
+            <p class="text-[11px] text-center text-cream-light/60 mt-2">Se abrirá WhatsApp con el detalle automático de tu pedido listo para enviar.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. RESEÑAS (3 Testimonial Cards in a Row) -->
+  <section id="resenas" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs uppercase tracking-widest text-terracotta font-bold">Comunidad & Vecinos</span>
+        <h2 class="font-serif-title text-4xl sm:text-5xl font-bold text-pomegranate">
+          Lo que dicen en el barrio
+        </h2>
+        <p class="text-pomegranate-muted text-base sm:text-lg">
+          La fidelidad de nuestros comensales es nuestro mayor orgullo de cada día.
         </p>
-<span class="font-label-md text-label-md text-secondary font-medium">— Sofía M.</span>
-</div>
-<!-- Review 2 -->
-<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
-<div class="flex text-amber-500 gap-0.5">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-          "El lugar perfecto para trabajar un rato a la mañana o clavarse un vermucito al caer la tarde. Hermosa energía."
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-cream-surface p-8 rounded-2xl border border-saffron/30 shadow-sm flex flex-col justify-between relative">
+          <div>
+            <div class="flex text-saffron gap-1 text-sm mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="font-serif italic text-pomegranate text-lg mb-6 leading-relaxed">
+              "El mejor hummus y lehmeyun de Buenos Aires sin discusión. Venimos los domingos al mediodía en familia y la atención de los chicos te hace sentir en tu propia casa."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-pomegranate/10">
+            <div class="w-10 h-10 rounded-full bg-terracotta/20 text-terracotta font-serif font-bold flex items-center justify-center">MG</div>
+            <div>
+              <p class="text-sm font-bold text-pomegranate">Martín Goldfarb</p>
+              <p class="text-xs text-pomegranate-muted">Vecino de Villa Crespo • Google Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-cream-surface p-8 rounded-2xl border border-terracotta/30 shadow-sm flex flex-col justify-between relative">
+          <div>
+            <div class="flex text-saffron gap-1 text-sm mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="font-serif italic text-pomegranate text-lg mb-6 leading-relaxed">
+              "Pedimos el mezze para compartir con 6 amigos y fue un festín supremo. Todo abundante, el pan pita recién salido y el suberek una locura total. ¡Imperdible!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-pomegranate/10">
+            <div class="w-10 h-10 rounded-full bg-turquoise/20 text-turquoise font-serif font-bold flex items-center justify-center">LC</div>
+            <div>
+              <p class="text-sm font-bold text-pomegranate">Luciana Castiglione</p>
+              <p class="text-xs text-pomegranate-muted">Guía Gastronómica • Comensal frecuente</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-cream-surface p-8 rounded-2xl border border-turquoise/30 shadow-sm flex flex-col justify-between relative">
+          <div>
+            <div class="flex text-saffron gap-1 text-sm mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="font-serif italic text-pomegranate text-lg mb-6 leading-relaxed">
+              "Auténtico sabor armenio. Se nota que las recetas no cambiaron y conservan el toque de la abuela. El café oriental al final con el baklava coronan la noche."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-pomegranate/10">
+            <div class="w-10 h-10 rounded-full bg-saffron/30 text-terracotta font-serif font-bold flex items-center justify-center">AK</div>
+            <div>
+              <p class="text-sm font-bold text-pomegranate">Aram Kouyoumdjian</p>
+              <p class="text-xs text-pomegranate-muted">Comunidad Armenia • Villa Crespo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. VISITANOS (2 Columns: Data & Button on Left, Embedded-looking Map on Right) -->
+  <section id="visitanos" class="py-20 bg-cream-surface/70 border-t border-pomegranate/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Address, Hours, Phone, Buttons -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream border border-turquoise/30 text-turquoise text-xs font-bold uppercase tracking-wider">
+            Punto de Encuentro
+          </div>
+
+          <h2 class="font-serif-title text-4xl sm:text-5xl font-bold text-pomegranate">
+            Vení a visitarnos a Garbis
+          </h2>
+
+          <p class="text-pomegranate-muted text-base sm:text-lg leading-relaxed">
+            Te esperamos con la mesa puesta en nuestro cálido salón o en las mesas de la vereda para disfrutar las tardes y noches de Villa Crespo.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <!-- Dirección -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-cream border border-pomegranate/10">
+              <div class="w-10 h-10 rounded-lg bg-terracotta/10 text-terracotta flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-pomegranate-muted font-bold block">Dirección</span>
+                <p class="font-bold text-pomegranate text-base">Avenida Estado de Israel 4503</p>
+                <p class="text-xs text-pomegranate-muted">Villa Crespo, Ciudad Autónoma de Buenos Aires</p>
+              </div>
+            </div>
+
+            <!-- Horarios -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-cream border border-pomegranate/10">
+              <div class="w-10 h-10 rounded-lg bg-saffron/20 text-terracotta flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-pomegranate-muted font-bold block">Días y Horarios de Atención</span>
+                <p class="font-bold text-pomegranate text-base">Martes a domingo: 12:00 a 15:30 y 20:00 a 00:00</p>
+                <p class="text-xs text-terracotta font-semibold">Lunes cerrado por descanso del equipo.</p>
+              </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-cream border border-pomegranate/10">
+              <div class="w-10 h-10 rounded-lg bg-turquoise/10 text-turquoise flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-pomegranate-muted font-bold block">Teléfono de Salón</span>
+                <a href="tel:+541148664000" class="font-bold text-pomegranate text-base hover:text-terracotta transition-colors">+54 11 4866-4000</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=Garbis+Avenida+Estado+de+Israel+4503+Villa+Crespo" 
+               target="_blank" rel="noopener noreferrer"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-pomegranate hover:bg-pomegranate/90 text-cream-light px-7 py-3.5 rounded-xl font-bold text-sm shadow transition-all">
+              <svg class="w-4 h-4 text-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+              </svg>
+              <span>Cómo llegar en Google Maps</span>
+            </a>
+
+            <a href="https://wa.me/5491148664000" 
+               target="_blank" rel="noopener noreferrer"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-terracotta hover:bg-terracotta-dark text-cream-light px-7 py-3.5 rounded-xl font-bold text-sm shadow transition-all">
+              <span>Escribinos por WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Stylized Interactive-looking Map Card -->
+        <div class="lg:col-span-6">
+          <div class="bg-cream rounded-3xl p-4 shadow-xl border-2 border-saffron/40 overflow-hidden relative">
+            
+            <!-- Map preview canvas container -->
+            <div class="relative w-full h-[380px] rounded-2xl overflow-hidden bg-[#e5e3df] border border-pomegranate/15 flex items-center justify-center">
+              
+              <!-- Subtle map grid pattern -->
+              <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#B5523B_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              
+              <!-- Street simulation lines -->
+              <div class="absolute w-full h-8 bg-white/70 -rotate-12 transform top-1/3 shadow-sm flex items-center justify-center">
+                <span class="text-[10px] tracking-widest uppercase font-bold text-pomegranate/40">Av. Estado de Israel</span>
+              </div>
+              <div class="absolute h-full w-8 bg-white/70 rotate-45 transform left-1/2 shadow-sm flex items-center justify-center">
+                <span class="text-[10px] tracking-widest uppercase font-bold text-pomegranate/40 -rotate-90">Corrientes</span>
+              </div>
+              <div class="absolute w-full h-6 bg-white/60 rotate-6 transform bottom-1/4"></div>
+
+              <!-- Animated Pin at exact spot -->
+              <div class="relative z-10 flex flex-col items-center">
+                <div class="relative">
+                  <div class="w-12 h-12 rounded-full bg-terracotta text-cream-light flex items-center justify-center shadow-2xl border-2 border-cream ring-4 ring-terracotta/30 animate-bounce">
+                    <svg class="w-6 h-6 text-saffron" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="mt-2 bg-pomegranate text-cream-light px-4 py-2 rounded-xl shadow-xl text-center border border-saffron/50">
+                  <span class="font-serif font-bold text-sm text-saffron block">Garbis • Cocina Armenia</span>
+                  <span class="text-[11px] text-cream-light/80">Av. Estado de Israel 4503</span>
+                </div>
+              </div>
+
+              <!-- Clickable overlay to Google Maps -->
+              <a href="https://www.google.com/maps/search/?api=1&query=Garbis+Avenida+Estado+de+Israel+4503+Villa+Crespo" 
+                 target="_blank" rel="noopener noreferrer"
+                 class="absolute inset-0 z-20 flex items-end justify-center p-4 bg-gradient-to-t from-pomegranate/40 via-transparent to-transparent group">
+                <span class="bg-cream/95 text-pomegranate group-hover:bg-cream text-xs font-bold px-4 py-2 rounded-full shadow-md flex items-center gap-1.5 transition-transform transform group-hover:scale-105">
+                  <span class="text-terracotta">📍</span> Abrir en Google Maps interactivo →
+                </span>
+              </a>
+
+            </div>
+
+            <div class="pt-3 px-2 flex justify-between items-center text-xs text-pomegranate-muted">
+              <span>Villa Crespo, CABA</span>
+              <span class="font-semibold text-terracotta">A pasos de Av. Corrientes</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. FOOTER WITH GEOMETRIC ORNAMENT -->
+  <footer class="bg-pomegranate text-cream-light pt-16 pb-12 relative overflow-hidden border-t-4 border-saffron">
+    
+    <!-- Top Geometric Ornamental Line -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex items-center justify-center gap-4 mb-12">
+        <div class="h-px bg-saffron/30 flex-1"></div>
+        <div class="flex items-center gap-2 text-saffron">
+          <span class="text-xs">◆</span>
+          <span class="font-serif italic text-sm tracking-widest text-saffron">GARBIS TRADICIÓN</span>
+          <span class="text-xs">◆</span>
+        </div>
+        <div class="h-px bg-saffron/30 flex-1"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-cream-light/10">
+        
+        <!-- Brand Col -->
+        <div class="space-y-3 md:col-span-1">
+          <span class="font-serif-title text-3xl font-bold text-saffron tracking-tight block">Garbis</span>
+          <p class="text-xs text-cream-light/70 leading-relaxed">
+            Restaurante de comida armenia y de Medio Oriente en Villa Crespo. Sabores auténticos, hospitalidad generosa y mesas para compartir.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="space-y-2">
+          <span class="text-xs uppercase tracking-widest text-saffron font-bold block mb-3">Navegación</span>
+          <ul class="text-xs space-y-2 text-cream-light/80">
+            <li><a href="#historia" class="hover:text-saffron transition-colors">Nuestra Historia</a></li>
+            <li><a href="#carta" class="hover:text-saffron transition-colors">La Carta Completa</a></li>
+            <li><a href="#arma-tu-mezze" class="hover:text-saffron transition-colors">Armá tu Mezze</a></li>
+            <li><a href="#resenas" class="hover:text-saffron transition-colors">Reseñas de Clientes</a></li>
+            <li><a href="#visitanos" class="hover:text-saffron transition-colors">Cómo Llegar</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div class="space-y-2">
+          <span class="text-xs uppercase tracking-widest text-saffron font-bold block mb-3">Contacto Directo</span>
+          <p class="text-xs text-cream-light/80">Av. Estado de Israel 4503, CABA</p>
+          <p class="text-xs text-cream-light/80">Teléfono: +54 11 4866-4000</p>
+          <a href="https://wa.me/5491148664000" target="_blank" rel="noopener noreferrer" class="text-xs text-saffron hover:underline block font-semibold mt-2">
+            WhatsApp: +54 9 11 4866-4000 →
+          </a>
+        </div>
+
+        <!-- Horarios -->
+        <div class="space-y-2">
+          <span class="text-xs uppercase tracking-widest text-saffron font-bold block mb-3">Horarios</span>
+          <p class="text-xs text-cream-light/80">Martes a Domingo:</p>
+          <p class="text-xs text-saffron font-semibold">12:00 a 15:30 y 20:00 a 00:00</p>
+          <p class="text-xs text-cream-light/60 mt-1">Lunes cerrado por descanso.</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-cream-light/60 gap-4 text-center sm:text-left">
+        <p>Garbis © 2026. Todos los derechos reservados.</p>
+        <p class="flex items-center gap-2">
+          <span>Hecho con amor armenio en Villa Crespo, Buenos Aires.</span>
         </p>
-<span class="font-label-md text-label-md text-secondary font-medium">— Lucas G.</span>
-</div>
-<!-- Review 3 -->
-<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
-<div class="flex text-amber-500 gap-0.5">
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface italic">
-          "La pasta casera del mediodía y el tostón de burrata son de otro planeta. Una joyita escondida."
-        </p>
-<span class="font-label-md text-label-md text-secondary font-medium">— Camila R.</span>
-</div>
-</div>
-</section>
-<!-- Visitanos Section -->
-<section class="flex flex-col px-margin py-6">
-<div class="bg-surface-container rounded-2xl p-5 shadow-sm flex flex-col gap-5">
-<div>
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Acercate</span>
-<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Visitanos</h2>
-</div>
-<div class="flex flex-col gap-4">
-<!-- Dirección -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
-<span class="material-symbols-outlined text-[20px]">location_on</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Dirección</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">Avenida Estado de Israel 4503, Villa Crespo</span>
-</div>
-</div>
-<!-- Horarios -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
-<span class="material-symbols-outlined text-[20px]">schedule</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Horarios</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">Consultá horarios por WhatsApp</span>
-</div>
-</div>
-<!-- Teléfono -->
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
-<span class="material-symbols-outlined text-[20px]">call</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Teléfono</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">+54 11 4866-4000</span>
-</div>
-</div>
-</div>
-<!-- Action Buttons -->
-<div class="flex flex-col gap-2.5 pt-2">
-<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=Garbis%20Avenida%20Estado%20de%20Israel%204503%2C%20Villa%20Crespo">
-<span class="material-symbols-outlined text-[18px]">directions</span>
-<span>Cómo llegar</span>
-</a>
-<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5491148664000">
-<span class="material-symbols-outlined text-[18px]">chat</span>
-<span>Escribinos por WhatsApp</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="flex flex-col items-center justify-center text-center px-margin pt-6 pb-12 mt-4">
-<p class="font-headline-sm text-headline-sm text-primary mb-1">Garbis</p>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">
-      Garbis © 2026. Todos los derechos reservados.
-    </p>
-<p class="font-label-sm text-label-sm text-secondary">
-      Hecho con amor en Villa Crespo, Buenos Aires.
-    </p>
-</footer>
-<!-- Floating WhatsApp Action -->
-<a class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl active:scale-90 transition-transform" href="https://wa.me/5491148664000">
-<span class="material-symbols-outlined text-[32px]">chat</span>
-</a>
-</div></main></body></html>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (Bottom-Right) -->
+  <aside aria-label="Contacto flotante" class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/5491148664000" 
+       target="_blank" rel="noopener noreferrer"
+       class="flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl hover:shadow-green-500/30 transition-all transform hover:scale-105 active:scale-95 group">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span class="hidden sm:inline font-bold text-sm tracking-wide">WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- JAVASCRIPT FOR INTERACTIVE "ARMÁ TU MEZZE" CALCULATOR -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let peopleCount = 4;
+      let selectedModalidad = 'Comer acá';
+      const basePricePerPerson = 6500;
+
+      const displayPeople = document.getElementById('display-people-count');
+      const summaryPeople = document.getElementById('summary-people');
+      const summaryModalidad = document.getElementById('summary-modalidad');
+      const summaryDishesList = document.getElementById('summary-dishes-list');
+      const summaryPricePerPerson = document.getElementById('summary-price-per-person');
+      const summaryTotalPrice = document.getElementById('summary-total-price');
+      const btnPedirWhatsApp = document.getElementById('btn-pedir-whatsapp');
+
+      const btnDecrease = document.getElementById('btn-decrease-people');
+      const btnIncrease = document.getElementById('btn-increase-people');
+      const modalidadBtns = document.querySelectorAll('.modalidad-btn');
+      const checkboxes = document.querySelectorAll('.dish-checkbox');
+
+      function formatCurrency(num) {
+        return '$' + num.toLocaleString('es-AR');
+      }
+
+      function updateCalculator() {
+        // Update people display
+        displayPeople.textContent = peopleCount;
+        summaryPeople.textContent = `${peopleCount} personas`;
+        summaryModalidad.textContent = selectedModalidad;
+
+        // Calculate selected dishes
+        let extraPricePerPerson = 0;
+        const selectedDishes = [];
+        summaryDishesList.innerHTML = '';
+
+        checkboxes.forEach(cb => {
+          if (cb.checked) {
+            const price = parseInt(cb.dataset.price || '0', 10);
+            extraPricePerPerson += price;
+            selectedDishes.push(cb.value);
+
+            // Add row to summary list
+            const row = document.createElement('div');
+            row.className = 'flex justify-between items-center text-xs';
+            row.innerHTML = `
+              <span class="flex items-center gap-1.5">
+                <span class="text-saffron">✓</span>
+                <span>${cb.value}</span>
+              </span>
+              <span class="text-cream-light/60">${price > 0 ? '+$' + price.toLocaleString('es-AR') : 'Base'}</span>
+            `;
+            summaryDishesList.appendChild(row);
+          }
+        });
+
+        if (selectedDishes.length === 0) {
+          summaryDishesList.innerHTML = '<span class="text-xs text-saffron italic">Por favor seleccioná al menos 1 plato.</span>';
+        }
+
+        const pricePerPerson = basePricePerPerson + extraPricePerPerson;
+        const totalPrice = pricePerPerson * peopleCount;
+
+        summaryPricePerPerson.textContent = formatCurrency(pricePerPerson);
+        summaryTotalPrice.textContent = formatCurrency(totalPrice);
+
+        // Update WhatsApp href and click action
+        const dishesText = selectedDishes.length > 0 ? selectedDishes.join(', ') : 'Mezze tradicional sugerido';
+        const message = `Hola Garbis! Quiero pedir un mezze para ${peopleCount} personas con: ${dishesText}. Modalidad: ${selectedModalidad}. (Total estimado: ${formatCurrency(totalPrice)})`;
+        const encoded = encodeURIComponent(message);
+        const waUrl = `https://wa.me/5491148664000?text=${encoded}`;
+
+        btnPedirWhatsApp.onclick = () => {
+          window.open(waUrl, '_blank');
+        };
+      }
+
+      // Stepper Events
+      btnDecrease.addEventListener('click', () => {
+        if (peopleCount > 2) {
+          peopleCount--;
+          updateCalculator();
+        }
+      });
+
+      btnIncrease.addEventListener('click', () => {
+        if (peopleCount < 12) {
+          peopleCount++;
+          updateCalculator();
+        }
+      });
+
+      // Modalidad Toggle
+      modalidadBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          modalidadBtns.forEach(b => {
+            b.classList.remove('bg-terracotta', 'text-cream-light', 'shadow-sm');
+            b.classList.add('text-pomegranate');
+          });
+          btn.classList.add('bg-terracotta', 'text-cream-light', 'shadow-sm');
+          btn.classList.remove('text-pomegranate');
+          selectedModalidad = btn.dataset.modalidad;
+          updateCalculator();
+        });
+      });
+
+      // Checkbox changes
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', updateCalculator);
+      });
+
+      // Initial run
+      updateCalculator();
+    });
+  </script>
+</body>
+</html>

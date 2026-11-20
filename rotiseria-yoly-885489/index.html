@@ -1,350 +1,571 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta name="robots" content="noindex, nofollow">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rotisería Yoly - Comercio en Villa Crespo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              accent: '#E65100', // Bold warm amber-terracotta accent
-              'accent-hover': '#CC4400',
-              whatsapp: '#25D366',
-              'whatsapp-dark': '#128C7E',
-              dark: '#1A1816',
-              surface: '#FAF9F6',
-              card: '#FFFFFF',
-              muted: '#686461',
-              border: '#E8E5E0',
-              highlight: '#F3EFEA'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            serif: ['"Playfair Display"', 'serif'],
-          }
+
+<html lang="es"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Rotisería Yoly - Cocina Casera de Barrio</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;1,700&amp;family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&amp;display=swap" rel="stylesheet"/><style>.font-chalk { font-family: 'Caveat Brush', cursive; } .chalkboard-texture { background-color: #2c322e; background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), radial-gradient(rgba(248, 189, 70, 0.04) 1px, transparent 1px); background-size: 24px 24px, 32px 32px; background-position: 0 0, 12px 12px; } .chalkboard-card-texture { background-color: rgba(223, 228, 223, 0.07); background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%), linear-gradient(225deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%); background-size: 16px 16px; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.25); }</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .gingham-ribbon { background-color: #f6fbf5; background-image: linear-gradient(90deg, rgba(173, 50, 28, 0.18) 50%, transparent 50%), linear-gradient(rgba(173, 50, 28, 0.18) 50%, transparent 50%); background-size: 16px 16px; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#dae9ac", "surface-variant": "#dfe4df", "error-container": "#ffdad6", "tertiary": "#ad321c", "on-primary-container": "#5b4000", "primary-fixed-dim": "#f8bd46", "on-secondary-fixed-variant": "#3f4b1e", "primary-container": "#e1a933", "secondary": "#576333", "on-primary-fixed": "#271900", "tertiary-fixed-dim": "#ffb4a5", "on-tertiary-container": "#881704", "secondary-fixed-dim": "#becd92", "surface": "#f6fbf5", "on-primary": "#ffffff", "surface-dim": "#d7dbd6", "surface-bright": "#f6fbf5", "on-secondary-fixed": "#161f00", "on-error": "#ffffff", "inverse-on-surface": "#edf2ed", "on-surface-variant": "#4f4535", "on-tertiary-fixed-variant": "#8b1906", "on-primary-fixed-variant": "#5e4200", "surface-tint": "#7c5800", "on-tertiary-fixed": "#3e0400", "surface-container-lowest": "#ffffff", "outline": "#817563", "surface-container-highest": "#dfe4df", "primary-fixed": "#ffdea7", "surface-container": "#ebefea", "on-secondary-container": "#5d6a39", "tertiary-container": "#ff9681", "tertiary-fixed": "#ffdad3", "on-background": "#181d1a", "on-secondary": "#ffffff", "inverse-primary": "#f8bd46", "inverse-surface": "#2c322e", "surface-container-high": "#e5e9e4", "on-error-container": "#93000a", "on-surface": "#181d1a", "surface-container-low": "#f0f5f0", "primary": "#7c5800", "error": "#ba1a1a", "secondary-container": "#dae9ac", "outline-variant": "#d3c4af", "on-tertiary": "#ffffff", "background": "#f6fbf5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "gutter": "1rem", "margin-tablet": "2rem" }, "fontFamily": { "label-lg": ["Nunito Sans"], "headline-md": ["Epilogue"], "body-sm": ["Nunito Sans"], "label-sm": ["Nunito Sans"], "headline-lg": ["Epilogue"], "body-lg": ["Nunito Sans"], "display-hero": ["Epilogue"], "headline-lg-mobile": ["Epilogue"], "label-md": ["Nunito Sans"], "display-hero-mobile": ["Epilogue"], "headline-sm": ["Epilogue"], "body-md": ["Nunito Sans"], "title-lg": ["Epilogue"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "30px", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Rotisería Yoly. No es el sitio oficial.</div><header class="fixed top-0 left-0 right-0 z-50 bg-inverse-surface shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex flex-col"><a class="flex items-baseline gap-space-xs" data-path="menu-de-la-semana" href="#"><span class="font-headline-md text-headline-md text-surface tracking-tight">Rotisería Yoly</span></a><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Villa Crespo · CABA</span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-surface/10 text-primary-fixed font-bold rounded-lg"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-inverse-on-surface hover:text-surface hover:bg-surface/5 transition-colors" data-path="menu-de-la-semana" href="#">Menú de la semana</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-inverse-on-surface hover:text-surface hover:bg-surface/5 transition-colors" data-path="clasicos" href="#">Clásicos</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-inverse-on-surface hover:text-surface hover:bg-surface/5 transition-colors" data-path="nosotros" href="#">Nosotros</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-inverse-on-surface hover:text-surface hover:bg-surface/5 transition-colors" data-path="visitanos" href="#">Visitanos</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="inline-flex items-center gap-space-xs bg-secondary hover:bg-secondary/90 text-on-secondary px-space-md py-space-xs rounded-lg font-label-lg text-label-lg transition-transform active:scale-95 shadow-[0_2px_6px_rgba(0,0,0,0.18)]" href="https://wa.me/5491148562735" rel="noopener noreferrer" target="_blank"><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span><span class="hidden sm:inline">Pedí por WhatsApp</span><span class="sm:hidden">WhatsApp</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="w-full h-1 gingham-ribbon"></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- VICHY GINGHAM DIVIDER BAR -->
+<div class="w-full h-2 gingham-ribbon"></div>
+<!-- SECTION 1: HERO BLACKBOARD & HIGHLIGHT -->
+<section class="w-full bg-surface py-space-xl lg:py-16">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Top Neighborhood Badge Strip -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-lg">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Villa Crespo · Buenos Aires
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">local_fire_department</span>
+          Horno a leña y spiedo
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+          Desde 2011 en el barrio
+        </span>
+</div>
+<!-- Hero Grid: Blackboard left + Crispy Chicken hero right -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Blackboard Left Card -->
+<div class="lg:col-span-6 bg-inverse-surface rounded-xl p-space-lg md:p-space-xl flex flex-col justify-between shadow-xl relative overflow-hidden">
+<!-- Subtle chalk texture glow -->
+<div class="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-variant/20">
+<span class="font-label-md text-label-md tracking-widest text-primary-fixed uppercase">Rotisería de Barrio</span>
+<span class="font-label-sm text-label-sm text-surface-dim">Juan R. de Velasco 1005</span>
+</div>
+<h1 class="font-chalk text-inverse-on-surface tracking-wide leading-tight text-[3rem] sm:text-[3.8rem] lg:text-[4.5rem]">Comida casera, <br class="hidden sm:inline"/><span class="text-primary-fixed-dim italic drop-shadow-sm">como la de Yoly.</span></h1>
+<p class="font-body-lg text-body-lg text-surface-dim leading-relaxed max-w-xl">
+              Platos del día recién salidos del horno y de la olla, porciones generosas y el sabor de la cocina de antes para llevarte a casa.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-highest/15 rounded-lg p-space-sm text-inverse-on-surface">
+<span class="block font-label-sm text-label-sm text-surface-dim uppercase">Mediodías</span>
+<span class="font-label-lg text-label-lg text-surface">11:00 a 15:00 hs</span>
+</div>
+<div class="bg-surface-container-highest/15 rounded-lg p-space-sm text-inverse-on-surface">
+<span class="block font-label-sm text-label-sm text-surface-dim uppercase">Noches (Mar-Sáb)</span>
+<span class="font-label-lg text-label-lg text-surface">19:00 a 22:30 hs</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-lg relative z-10">
+<a class="inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary/90 text-on-secondary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg shadow-md transition-transform active:scale-95 text-center" href="https://wa.me/5491148562735" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+              Pedí por WhatsApp
+            </a>
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-surface px-space-md py-space-sm rounded-lg font-label-lg text-label-lg transition-colors text-center" href="#menu-semana">
+<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+              Ver menú de la semana
+            </a>
+</div>
+</div>
+<!-- Featured Dish Right Card -->
+<div class="lg:col-span-6 flex flex-col rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest relative group">
+<div class="relative w-full h-72 sm:h-96 lg:h-full min-h-[340px] overflow-hidden">
+<img alt="Pollo al spiedo con papas doradas en Rotisería Yoly" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="img/320550acc99b4802.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent"></div>
+<!-- Tilted Price Tag Top Right -->
+<div class="absolute top-4 right-4 rotate-2 bg-primary-container text-on-primary-container px-space-md py-space-xs rounded-lg shadow-lg flex flex-col items-end">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Rey del Spiedo</span>
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface">$14.500</span>
+</div>
+<!-- Bottom Caption Inside Hero Image -->
+<div class="absolute bottom-0 left-0 right-0 p-space-md md:p-space-lg flex flex-col gap-1 text-on-primary">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm w-fit">
+<span class="material-symbols-outlined text-[14px]">star</span>
+                Crocante por fuera, jugoso por dentro
+              </span>
+<h3 class="font-headline-md text-headline-md text-surface font-bold tracking-tight">Pollo al spiedo entero con papas</h3>
+<p class="font-body-sm text-body-sm text-surface-dim">Dorado a fuego lento con hierbas frescas, provenzal y papas cuña rústicas al horno.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GINGHAM STRIP -->
+<div class="w-full h-2 gingham-ribbon"></div>
+<!-- SECTION 2: MENÚ DE LA SEMANA - BLACKBOARD (INTERACTIVE ORDER BUILDER) -->
+<section class="w-full bg-surface-container-low py-space-xl scroll-mt-24" id="menu-semana">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Title Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Olla, horno y tradición diaria</span>
+<h2 class="font-chalk text-[2.5rem] md:text-[3.25rem] text-on-surface tracking-wide leading-tight">Pizarrón del Día · Menú Semanal</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Cocinamos fresco todos los mediodías y noches. Podés armar tu pedido acá abajo y mandarlo directo al WhatsApp del mostrador.
+        </p>
+</div>
+<!-- Slate Blackboard Canvas Frame -->
+<div class="rounded-xl bg-inverse-surface p-space-md md:p-space-lg lg:p-space-xl shadow-2xl relative overflow-hidden chalkboard-texture">
+<!-- Subtle blackboard header text -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md mb-space-md border-b border-surface-variant/20 text-inverse-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[24px]">edit_note</span>
+<span class="font-title-lg text-title-lg text-primary-fixed font-bold">Platos fijados de Lunes a Sábado</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-dim">Porciones generosas para compartir o guardar</span>
+</div>
+<!-- 6 Days Blackboard Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-sm"><div class="chalkboard-card-texture hover:bg-surface-container-highest/20 transition-colors rounded-lg p-space-sm flex flex-col justify-between gap-space-md"><div><div class="flex items-center justify-between mb-space-xs"><span class="font-chalk text-2xl tracking-wider text-primary-fixed uppercase">Lunes</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest/30 text-surface-dim">Olla</span></div><h4 class="font-chalk text-[22px] text-inverse-on-surface leading-snug tracking-wide">Guiso de lentejas de la abuela</h4><p class="font-body-sm text-body-sm text-surface-dim mt-1">Con chorizo colorado, panceta ahumada y sofrito criollo.</p></div><div class="pt-space-xs border-t border-surface-variant/15 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold" data-item-price="7800">$7.800</span><div class="flex items-center justify-between bg-surface-container-highest/20 rounded-md p-1"><button class="w-8 h-8 rounded flex items-center justify-center text-surface hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('lentejas', -1, 'Guiso de lentejas de la abuela', 7800)" type="button">-</button><span class="font-label-lg text-label-lg text-surface font-bold" id="qty-lentejas">0</span><button class="w-8 h-8 rounded flex items-center justify-center text-primary-fixed hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('lentejas', 1, 'Guiso de lentejas de la abuela', 7800)" type="button">+</button></div></div></div><div class="chalkboard-card-texture hover:bg-surface-container-highest/20 transition-colors rounded-lg p-space-sm flex flex-col justify-between gap-space-md relative"><div><div class="flex items-center justify-between mb-space-xs"><span class="font-chalk text-2xl tracking-wider text-primary-fixed uppercase">Martes</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-bold">Especial</span></div><h4 class="font-chalk text-[22px] text-inverse-on-surface leading-snug tracking-wide">Milanesa napolitana con puré</h4><p class="font-body-sm text-body-sm text-surface-dim mt-1">Nalga tierna, jamón cocido, muzzarella y tomate triturado.</p></div><div class="pt-space-xs border-t border-surface-variant/15 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold" data-item-price="9200">$9.200</span><div class="flex items-center justify-between bg-surface-container-highest/20 rounded-md p-1"><button class="w-8 h-8 rounded flex items-center justify-center text-surface hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('milanesa', -1, 'Milanesa napolitana con puré', 9200)" type="button">-</button><span class="font-label-lg text-label-lg text-surface font-bold" id="qty-milanesa">0</span><button class="w-8 h-8 rounded flex items-center justify-center text-primary-fixed hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('milanesa', 1, 'Milanesa napolitana con puré', 9200)" type="button">+</button></div></div></div><div class="chalkboard-card-texture hover:bg-surface-container-highest/20 transition-colors rounded-lg p-space-sm flex flex-col justify-between gap-space-md"><div><div class="flex items-center justify-between mb-space-xs"><span class="font-chalk text-2xl tracking-wider text-primary-fixed uppercase">Miércoles</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest/30 text-surface-dim">Horno</span></div><h4 class="font-chalk text-[22px] text-inverse-on-surface leading-snug tracking-wide">Pastel de papa gratinado</h4><p class="font-body-sm text-body-sm text-surface-dim mt-1">Carne a cuchillo, huevo, aceitunas y costra dorada de queso.</p></div><div class="pt-space-xs border-t border-surface-variant/15 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold" data-item-price="8200">$8.200</span><div class="flex items-center justify-between bg-surface-container-highest/20 rounded-md p-1"><button class="w-8 h-8 rounded flex items-center justify-center text-surface hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('pastelpapa', -1, 'Pastel de papa gratinado', 8200)" type="button">-</button><span class="font-label-lg text-label-lg text-surface font-bold" id="qty-pastelpapa">0</span><button class="w-8 h-8 rounded flex items-center justify-center text-primary-fixed hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('pastelpapa', 1, 'Pastel de papa gratinado', 8200)" type="button">+</button></div></div></div><div class="chalkboard-card-texture hover:bg-surface-container-highest/20 transition-colors rounded-lg p-space-sm flex flex-col justify-between gap-space-md"><div><div class="flex items-center justify-between mb-space-xs"><span class="font-chalk text-2xl tracking-wider text-primary-fixed uppercase">Jueves</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary text-on-secondary font-bold">Pasta</span></div><h4 class="font-chalk text-[22px] text-inverse-on-surface leading-snug tracking-wide">Ñoquis caseros con estofado</h4><p class="font-body-sm text-body-sm text-surface-dim mt-1">Masa de papa suave, salsa de tomate lenta y carne tiernizada.</p></div><div class="pt-space-xs border-t border-surface-variant/15 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold" data-item-price="8500">$8.500</span><div class="flex items-center justify-between bg-surface-container-highest/20 rounded-md p-1"><button class="w-8 h-8 rounded flex items-center justify-center text-surface hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('noquis', -1, 'Ñoquis caseros con estofado', 8500)" type="button">-</button><span class="font-label-lg text-label-lg text-surface font-bold" id="qty-noquis">0</span><button class="w-8 h-8 rounded flex items-center justify-center text-primary-fixed hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('noquis', 1, 'Ñoquis caseros con estofado', 8500)" type="button">+</button></div></div></div><div class="chalkboard-card-texture hover:bg-surface-container-highest/20 transition-colors rounded-lg p-space-sm flex flex-col justify-between gap-space-md"><div><div class="flex items-center justify-between mb-space-xs"><span class="font-chalk text-2xl tracking-wider text-primary-fixed uppercase">Viernes</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest/30 text-surface-dim">Pescado</span></div><h4 class="font-chalk text-[22px] text-inverse-on-surface leading-snug tracking-wide">Merluza a la romana</h4><p class="font-body-sm text-body-sm text-surface-dim mt-1">Filet fresco frito con ensalada mixta de la huerta o puré.</p></div><div class="pt-space-xs border-t border-surface-variant/15 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold" data-item-price="8900">$8.900</span><div class="flex items-center justify-between bg-surface-container-highest/20 rounded-md p-1"><button class="w-8 h-8 rounded flex items-center justify-center text-surface hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('merluza', -1, 'Merluza a la romana', 8900)" type="button">-</button><span class="font-label-lg text-label-lg text-surface font-bold" id="qty-merluza">0</span><button class="w-8 h-8 rounded flex items-center justify-center text-primary-fixed hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('merluza', 1, 'Merluza a la romana', 8900)" type="button">+</button></div></div></div><div class="chalkboard-card-texture hover:bg-surface-container-highest/20 transition-colors rounded-lg p-space-sm flex flex-col justify-between gap-space-md"><div><div class="flex items-center justify-between mb-space-xs"><span class="font-chalk text-2xl tracking-wider text-primary-fixed uppercase">Sábado</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-bold">Spiedo</span></div><h4 class="font-chalk text-[22px] text-inverse-on-surface leading-snug tracking-wide">Pollo con papas provenzal</h4><p class="font-body-sm text-body-sm text-surface-dim mt-1">Entero al spiedo con ajo fresco, perejil y crocante.</p></div><div class="pt-space-xs border-t border-surface-variant/15 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold" data-item-price="14500">$14.500</span><div class="flex items-center justify-between bg-surface-container-highest/20 rounded-md p-1"><button class="w-8 h-8 rounded flex items-center justify-center text-surface hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('pollo', -1, 'Pollo con papas provenzal', 14500)" type="button">-</button><span class="font-label-lg text-label-lg text-surface font-bold" id="qty-pollo">0</span><button class="w-8 h-8 rounded flex items-center justify-center text-primary-fixed hover:bg-surface-variant/30 active:scale-90 font-bold transition-all text-lg" onclick="updateQty('pollo', 1, 'Pollo con papas provenzal', 14500)" type="button">+</button></div></div></div></div>
+<!-- WhatsApp Builder Tray / Comanda Summary Bar -->
+<div class="mt-space-lg bg-surface-container-lowest text-on-surface rounded-xl p-space-md md:p-space-lg shadow-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Summary count and price -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">receipt_long</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Tu comanda de retiro</span>
+<span class="font-label-lg text-label-lg text-on-surface" id="comanda-items-count">0 platos seleccionados</span>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-variant hidden sm:block"></div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total estimado</span>
+<span class="font-headline-md text-headline-md text-primary font-bold" id="total-price-display">$0</span>
+</div>
+</div>
+<!-- User input fields & action button -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm flex-1 lg:max-w-2xl justify-end">
+<div class="flex-1 min-w-[140px]">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1" for="order-name">Nombre</label>
+<input class="w-full bg-surface-container-low px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary-container" id="order-name" placeholder="Ej: Martín" type="text"/>
+</div>
+<div class="min-w-[130px]">
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1" for="order-time">Hora retiro</label>
+<select class="w-full bg-surface-container-low px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container" id="order-time">
+<option value="12:00">12:00 hs</option>
+<option value="12:30">12:30 hs</option>
+<option selected="" value="13:00">13:00 hs</option>
+<option value="13:30">13:30 hs</option>
+<option value="14:30">14:30 hs</option>
+<option value="20:00">20:00 hs</option>
+<option value="20:30">20:30 hs</option>
+<option value="21:00">21:00 hs</option>
+<option value="21:30">21:30 hs</option>
+<option value="22:00">22:00 hs</option>
+</select>
+</div>
+<button class="sm:self-end inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary/90 text-on-secondary px-space-lg py-space-xs rounded-lg font-label-lg text-label-lg transition-transform active:scale-95 shadow-md" onclick="sendWhatsAppOrder()" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+              Pedir para retirar
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GINGHAM STRIP -->
+<div class="w-full h-2 gingham-ribbon"></div>
+<!-- SECTION 3: LOS CLÁSICOS DE SIEMPRE -->
+<section class="w-full bg-surface py-space-xl scroll-mt-24" id="clasicos">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-xl">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Incondicionales de mostrador</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">Los Clásicos de Siempre</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Platos que no pueden faltar en ninguna mesa de domingo o cena familiar en Villa Crespo.
+        </p>
+</div>
+<!-- 4 Photo Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Dish 1: Pollo al Spiedo -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+<div class="relative w-full h-56 overflow-hidden">
+<img alt="Pollo al Spiedo con papas doradas de Rotisería Yoly" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/320550acc99b4802.jpg"/>
+<span class="absolute top-3 left-3 bg-primary text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase font-bold">Especialidad</span>
+<span class="absolute bottom-3 right-3 bg-surface/90 text-on-surface font-label-lg text-label-lg px-2.5 py-1 rounded-md font-bold shadow-sm">$14.500</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Pollo al Spiedo con Papas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pollo entero dorado en espada con papas crocantes horneadas con provenzal suave. (1/2 pollo: $7.900).</p>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs w-full bg-surface-container-high hover:bg-secondary-fixed text-on-surface font-label-md text-label-md py-space-xs rounded-lg transition-colors" href="https://wa.me/5491148562735?text=Hola%20Yoly!%20Quiero%20pedir%20un%20Pollo%20al%20Spiedo%20con%20papas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">shopping_bag</span>
+              Pedir este plato
+            </a>
+</div>
+</div>
+<!-- Dish 2: Milanesas Gigantes -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+<div class="relative w-full h-56 overflow-hidden">
+<img alt="Milanesa napolitana con puré de papa cremoso" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/d197e04fa53b376c.jpg"/>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase font-bold">Favorito</span>
+<span class="absolute bottom-3 right-3 bg-surface/90 text-on-surface font-label-lg text-label-lg px-2.5 py-1 rounded-md font-bold shadow-sm">$9.200</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Milanesa Napolitana con Puré</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Carne de nalga tiernizada a mano, jamón, muzzarella fundida, salsa de tomates frescos y puré con manteca.</p>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs w-full bg-surface-container-high hover:bg-secondary-fixed text-on-surface font-label-md text-label-md py-space-xs rounded-lg transition-colors" href="https://wa.me/5491148562735?text=Hola%20Yoly!%20Quiero%20pedir%20una%20Milanesa%20Napolitana%20con%20pure" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">shopping_bag</span>
+              Pedir este plato
+            </a>
+</div>
+</div>
+<!-- Dish 3: Empanadas Criollas -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+<div class="relative w-full h-56 overflow-hidden">
+<img alt="Empanadas criollas al horno de barro con repulgue tradicional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/0218fce0488b7354.jpg"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase font-bold">Al Horno</span>
+<span class="absolute bottom-3 right-3 bg-surface/90 text-on-surface font-label-lg text-label-lg px-2.5 py-1 rounded-md font-bold shadow-sm">$1.800 u.</span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Empanadas Criollas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Carne cortada a cuchillo suave o picante, Jamón y Queso, Verdura o Pollo. Docena completa: $19.500.</p>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs w-full bg-surface-container-high hover:bg-secondary-fixed text-on-surface font-label-md text-label-md py-space-xs rounded-lg transition-colors" href="https://wa.me/5491148562735?text=Hola%20Yoly!%20Quiero%20pedir%20empanadas%20criollas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">shopping_bag</span>
+              Pedir empanadas
+            </a>
+</div>
+</div>
+<!-- Dish 4: Tartas & Tortillas -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all group">
+<div class="relative w-full h-56 overflow-hidden"><img alt="Tarta Rústica de Jamón y Queso" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/bbd723c3aa3d8e6d.jpg"/><span class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase font-bold">Al Horno</span><span class="absolute bottom-3 right-3 bg-surface/90 text-on-surface font-label-lg text-label-lg px-2.5 py-1 rounded-md font-bold shadow-sm">$6.900</span></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Tarta Rústica o Tortilla Babé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tarta de jamón cocido, queso y ricota o la clásica tortilla de papas y cebolla al punto que más te guste.</p>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs w-full bg-surface-container-high hover:bg-secondary-fixed text-on-surface font-label-md text-label-md py-space-xs rounded-lg transition-colors" href="https://wa.me/5491148562735?text=Hola%20Yoly!%20Quiero%20pedir%20tarta%20o%20tortilla%20de%20papas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">shopping_bag</span>
+              Pedir este plato
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CÓMO FUNCIONA (Cartelería de Almacén) -->
+<section class="w-full bg-surface-container-high py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Simple, rápido y de confianza</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">¿Cómo hacés tu pedido?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Paso 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col items-start gap-space-sm relative">
+<span class="font-display-hero text-display-hero text-primary/20 absolute top-2 right-4 font-black">01</span>
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">1. Elegí tus platos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Revisá el pizarrón del día o nuestros clásicos de rotisería: milanesas, pastas, empanadas o el pollo al spiedo.
+          </p>
+</div>
+<!-- Paso 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col items-start gap-space-sm relative">
+<span class="font-display-hero text-display-hero text-secondary/20 absolute top-2 right-4 font-black">02</span>
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[26px]">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">2. Mandá tu WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Coordinamos la cantidad exacta, las opciones del plato y la hora exacta en la que querés pasar a buscarlo.
+          </p>
+</div>
+<!-- Paso 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col items-start gap-space-sm relative">
+<span class="font-display-hero text-display-hero text-tertiary/20 absolute top-2 right-4 font-black">03</span>
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[26px]">takeout_dining</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">3. Pasá y retirá caliente</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            En Juan Ramírez de Velasco 1005 te lo entregamos listo, en bandejas térmicas para que llegue a la mesa como recién hecho.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- GINGHAM STRIP -->
+<div class="w-full h-2 gingham-ribbon"></div>
+<!-- SECTION 5: HISTORIA DE YOLY (NOSOTROS) -->
+<section class="w-full bg-surface py-space-xl scroll-mt-24" id="nosotros">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Editorial Photo -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Doña Yoly amasando a mano harina sobre tabla de madera en Villa Crespo" class="w-full h-full object-cover min-h-[380px]" src="img/4b082904059d3cdc.jpg"/>
+</div>
+<!-- Stamp Tag -->
+<div class="absolute -bottom-4 -right-4 bg-secondary text-on-secondary px-space-md py-space-xs rounded-lg shadow-lg font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+            Masa fresca todos los días
+          </div>
+</div>
+<!-- Right Story Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Nuestra Historia</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+            Cocinando con amor para Villa Crespo desde hace más de 15 años
+          </h2>
+<div class="font-body-lg text-body-lg text-on-surface-variant space-y-4">
+<p>
+              Doña Yoly empezó cocinando viandas caseras para los vecinos y talleres de la cuadra de Velasco. Con el boca en boca del barrio y los aromas que salían a la vereda, el pequeño despacho familiar se transformó en la rotisería de cabecera de la zona.
+            </p>
+<p>
+              Nuestra filosofía sigue inalterable: recetas familiares sin conservantes químicos, caldos reducidos despacito en ollas de hierro y masa amasada a puño cada mañana.
+            </p>
+</div>
+<!-- Highlight Quote Box -->
+<div class="bg-surface-container p-space-md md:p-space-lg rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[32px] shrink-0">format_quote</span>
+<div class="flex flex-col gap-1">
+<p class="font-headline-sm text-headline-sm text-on-surface italic font-medium">
+                «Acá no hay secretos industriales: hay cebolla rehogada despacito, carne de primera y mucho cariño.»
+              </p>
+<span class="font-label-lg text-label-lg text-secondary font-bold mt-1">— Yoly y familia</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs bg-secondary hover:bg-secondary/90 text-on-secondary px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg shadow-md transition-colors" href="https://wa.me/5491148562735" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+              Hablá directo con Yoly
+            </a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1" href="#visitanos">
+              Conocé el local
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: RESEÑAS DE VECINOS (Estilo libreta de almacén) -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">La voz del barrio</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">Lo que dicen los vecinos</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md relative">
+<!-- Pin decoration -->
+<div class="w-3.5 h-3.5 rounded-full bg-tertiary mx-auto -mt-2 shadow-sm"></div>
+<div>
+<div class="flex items-center gap-1 text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «El mejor pollo al spiedo de Villa Crespo sin discusión. El puré tiene manteca de verdad y las empanadas son de carne cortada a cuchillo. Salvación de todos los domingos.»
+            </p>
+</div>
+<div class="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Mariano G.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Velasco y Thames</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md relative">
+<!-- Pin decoration -->
+<div class="w-3.5 h-3.5 rounded-full bg-secondary mx-auto -mt-2 shadow-sm"></div>
+<div>
+<div class="flex items-center gap-1 text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Las milanesas napolitanas comen dos personas tranquilamente. Todo casero, caliente y la atención de Yoly es como ir a la casa de tu abuela.»
+            </p>
+</div>
+<div class="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Lucía V.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vecina de Serrano</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md relative">
+<!-- Pin decoration -->
+<div class="w-3.5 h-3.5 rounded-full bg-primary mx-auto -mt-2 shadow-sm"></div>
+<div>
+<div class="flex items-center gap-1 text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              «Pedimos los ñoquis de los jueves para la oficina y quedamos enamorados. Calidad pura de barrio, con abundante estofado y salsa casera.»
+            </p>
+</div>
+<div class="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Facundo B.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Taller de Humboldt</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GINGHAM STRIP -->
+<div class="w-full h-2 gingham-ribbon"></div>
+<!-- SECTION 7: VISITANOS & CONTACTO -->
+<section class="w-full bg-surface py-space-xl scroll-mt-24" id="visitanos">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Info Card Left -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Vení a conocernos</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+            El mostrador de Yoly te espera en Villa Crespo
+          </h2>
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[26px] shrink-0 mt-0.5">location_on</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block">Dirección</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Juan Ramírez de Velasco 1005, Villa Crespo, CABA</p>
+<span class="font-label-sm text-label-sm text-secondary">A pocas cuadras de Av. Corrientes y Av. Juan B. Justo</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<span class="material-symbols-outlined text-primary text-[26px] shrink-0 mt-0.5">schedule</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block">Horarios de Cocina y Despacho</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="font-semibold text-on-surface">Lunes a Sábado:</span> 11:00 a 15:00 hs y 19:00 a 22:30 hs
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+<span class="font-semibold text-on-surface">Domingos:</span> 11:00 a 15:00 hs <span class="text-tertiary font-bold">(¡conviene reservar pollo temprano!)</span>
+</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[26px] shrink-0 mt-0.5">call</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold block">Teléfono de Línea</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">+54 11 4856-2735</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg shadow-md transition-colors text-center" href="https://www.google.com/maps/search/?api=1&amp;query=Rotiser%C3%ADa%20Yoly%20Juan%20Ram%C3%ADrez%20de%20Velasco%201005%2C%20Villa%20Crespo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">map</span>
+              Abrir en Google Maps / Cómo llegar
+            </a>
+<a class="inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary/90 text-on-secondary px-space-md py-space-sm rounded-lg font-label-lg text-label-lg shadow-md transition-transform active:scale-95 text-center" href="https://wa.me/5491148562735" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+              Escribinos por WhatsApp
+            </a>
+</div>
+</div>
+<!-- Google Map Container Right -->
+<div class="lg:col-span-6">
+<div class="rounded-xl overflow-hidden shadow-2xl relative bg-surface-container-high">
+<div class="w-full h-80 sm:h-96 bg-cover bg-center" data-location="Juan Ramírez de Velasco 1005, Villa Crespo, Buenos Aires" style="background-image: url('img/c139f0e7de29cb89.png')"></div>
+<div class="p-space-md bg-inverse-surface text-inverse-on-surface flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed">store</span>
+<div>
+<span class="font-label-lg text-label-lg block text-surface">Rotisería Yoly</span>
+<span class="font-label-sm text-label-sm text-surface-dim">Retiro en mostrador · Envíos a zonas cercanas</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-secondary text-on-secondary font-bold">Abierto hoy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript logic for dynamic WhatsApp comanda builder -->
+<script>
+    const orderState = {
+      lentejas: { name: 'Guiso de lentejas de la abuela', price: 7800, qty: 0 },
+      milanesa: { name: 'Milanesa napolitana con puré', price: 9200, qty: 0 },
+      pastelpapa: { name: 'Pastel de papa gratinado', price: 8200, qty: 0 },
+      noquis: { name: 'Ñoquis caseros con tuco y estofado', price: 8500, qty: 0 },
+      merluza: { name: 'Merluza a la romana con ensalada o puré', price: 8900, qty: 0 },
+      pollo: { name: 'Pollo al spiedo con papas provenzal', price: 14500, qty: 0 }
+    };
+
+    function updateQty(itemKey, delta, itemName, itemPrice) {
+      if (!orderState[itemKey]) {
+        orderState[itemKey] = { name: itemName, price: itemPrice, qty: 0 };
+      }
+      const nextVal = Math.max(0, orderState[itemKey].qty + delta);
+      orderState[itemKey].qty = nextVal;
+      
+      const qtyElem = document.getElementById('qty-' + itemKey);
+      if (qtyElem) {
+        qtyElem.textContent = nextVal;
+      }
+      renderSummary();
+    }
+
+    function renderSummary() {
+      let total = 0;
+      let count = 0;
+      for (const k in orderState) {
+        if (orderState[k].qty > 0) {
+          total += orderState[k].qty * orderState[k].price;
+          count += orderState[k].qty;
         }
       }
+
+      const totalDisplay = document.getElementById('total-price-display');
+      const countDisplay = document.getElementById('comanda-items-count');
+
+      if (totalDisplay) {
+        totalDisplay.textContent = '$' + total.toLocaleString('es-AR');
+      }
+      if (countDisplay) {
+        countDisplay.textContent = count + (count === 1 ? ' plato seleccionado' : ' platos seleccionados');
+      }
+    }
+
+    function sendWhatsAppOrder() {
+      const nameInput = document.getElementById('order-name');
+      const timeSelect = document.getElementById('order-time');
+      const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Vecino';
+      const time = timeSelect ? timeSelect.value : '13:00';
+
+      const itemsList = [];
+      let total = 0;
+
+      for (const k in orderState) {
+        if (orderState[k].qty > 0) {
+          itemsList.push('- ' + orderState[k].qty + 'x ' + orderState[k].name + ' ($' + (orderState[k].qty * orderState[k].price).toLocaleString('es-AR') + ')');
+          total += orderState[k].qty * orderState[k].price;
+        }
+      }
+
+      let message = '';
+      if (itemsList.length === 0) {
+        message = 'Hola Yoly! Quiero hacer una consulta sobre los platos del día para retirar a las ' + time + ' hs. Nombre: ' + name;
+      } else {
+        message = 'Hola Yoly! Quiero pedir para retirar hoy:\n' +
+                  itemsList.join('\n') + '\n\n' +
+                  'Total estimado: $' + total.toLocaleString('es-AR') + '\n' +
+                  'Horario de retiro: ' + time + ' hs\n' +
+                  'Nombre: ' + name + '\n' +
+                  'Por favor confírmenme si tienen disponibilidad. ¡Gracias!';
+      }
+
+      const encoded = encodeURIComponent(message);
+      window.open('https://wa.me/5491148562735?text=' + encoded, '_blank');
     }
   </script>
-  <style>
-    body {
-      background-color: #FAF9F6;
-      color: #1A1816;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    .badge-rubro {
-      letter-spacing: 0.05em;
-    }
-    .whatsapp-btn-glow {
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
-    }
-    .accent-btn-glow {
-      box-shadow: 0 4px 18px rgba(230, 81, 0, 0.25);
-    }
-  </style>
-</head>
-<body class="min-h-screen pb-20 relative selection:bg-orange-100 selection:text-orange-900"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Rotisería Yoly. No es el sitio oficial.</div>
-
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-[#FAF9F6]/95 backdrop-blur-md border-b border-brand-border/80 px-4 py-3.5 transition-all">
-    <div class="max-w-md mx-auto flex items-center justify-between">
-      <div class="flex flex-col">
-        <span class="text-xl font-bold tracking-tight text-brand-dark leading-tight">Rotisería Yoly</span>
-        <span class="text-[11px] font-medium text-brand-muted flex items-center gap-1 mt-0.5">
-          <i class="fa-solid fa-location-dot text-brand-accent text-[10px]"></i> Villa Crespo, CABA
-        </span>
-      </div>
-      <div>
-        <span class="badge-rubro inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-stone-200/80 text-stone-800 border border-stone-300">
-          Food
-        </span>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-md mx-auto px-4 pt-4 space-y-8">
-
-    <!-- Hero Section -->
-    <section class="relative rounded-3xl overflow-hidden shadow-sm border border-brand-border bg-brand-card">
-      <div class="relative h-64 w-full">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmU57zE7nmlFaZwFNvKkqyv1jaNZAV9oXQ0wN5Uror7L8G1nWPAU-XNN8UcQXgqERej3HlN7pT9fwQ3ofFzL3upjHnwpo7QsgJttKF6fnTiJE6Sqhb0Pva5hIxDdJ4DPun8Mxv7uicp3CfLbcQUMGr5u1YfAYVXjJ-Eu0mevvPIpr21ar3WIcW-0YIiOAJBEQfVIJU68ctm1nFCergVEBaISWoZceMqZosPOmcMgnc9pAEfJ4ioCOQ3tfMhjBxu0Dq8spMN83GXA" alt="Local comercial en Villa Crespo" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent"></div>
-        <div class="absolute top-3 left-3">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-white/90 backdrop-blur-sm text-stone-900 shadow-sm">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse"></span>
-            Abierto en el barrio
-          </span>
-        </div>
-        <div class="absolute bottom-4 left-4 right-4 text-white">
-          <span class="inline-block text-xs uppercase tracking-wider font-semibold text-orange-200 mb-1">
-            Food en Villa Crespo
-          </span>
-          <h1 class="text-3xl font-extrabold tracking-tight leading-tight mb-2 drop-shadow-sm font-serif">
-            Rotisería Yoly
-          </h1>
-          <p class="text-sm text-stone-200 leading-relaxed max-w-[95%]">
-            Atención cordial, artículos seleccionados y el compromiso de siempre para vecinos y amigos de la zona.
-          </p>
-        </div>
-      </div>
-      
-      <div class="p-4 bg-brand-card">
-        <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer" 
-           class="w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-2xl bg-brand-whatsapp hover:bg-emerald-600 text-white font-bold text-base transition-all whatsapp-btn-glow active:scale-[0.98]">
-          <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>Consultá por WhatsApp</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section class="space-y-3.5">
-      <div class="flex items-center justify-between">
-        <div>
-          <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Confianza de barrio</span>
-          <h2 class="text-xl font-bold text-brand-dark tracking-tight">Por qué elegirnos</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-3">
-        <!-- Beneficio 1 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-150 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-comments text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Atención personalizada</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Te asesoramos con dedicación y conocimiento para encontrar exactamente lo que necesitás.
-            </p>
-          </div>
-        </div>
-
-        <!-- Beneficio 2 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-150 flex items-center justify-center text-emerald-600 shrink-0 mt-0.5">
-            <i class="fa-solid fa-bicycle text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Envíos en el barrio</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Hacemos entregas ágiles y coordinadas en Villa Crespo y alrededores sin complicaciones.
-            </p>
-          </div>
-        </div>
-
-        <!-- Beneficio 3 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-150 flex items-center justify-center text-amber-700 shrink-0 mt-0.5">
-            <i class="fa-solid fa-credit-card text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Todos los medios de pago</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Aceptamos transferencias, tarjetas de débito/crédito, efectivo y billeteras virtuales.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Destacados -->
-    <section class="space-y-4">
-      <div>
-        <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Catálogo sugerido</span>
-        <h2 class="text-xl font-bold text-brand-dark tracking-tight">Destacados</h2>
-        <p class="text-xs text-brand-muted mt-0.5">Selección de artículos disponibles en stock para consultar de inmediato.</p>
-      </div>
-
-      <div class="grid grid-cols-2 gap-3.5">
-        <!-- Producto 1 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb0yjOcWooDirwg2Tu7DYCkJDsHghQ2OntejseOjKT9018yjDjYkZKCDcN8Emm16zTve6BP_hm7sAJiFbopQoWYU4yBMnCQUFYy2sN8RlqzEY6goa5E8KBv-b1OG8ZTemzSzOevV9Z32zR72LgXuU7GbP8Zz4A7v48_QIUrEu3PcGaSeJPJRjqYUTnUZlDRnaucDH6LReoe6O6sFAEIO95ikZKeiI6e1eUVMi92GVQA4JffNK1AJ5qEcPhrfBfsqP5lvCfGgengQ" alt="Producto destacado 1" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Línea Selecta A</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Modelo estándar de primera calidad y alta durabilidad.</p>
-            </div>
-            <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 2 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgXtAfnkMI1CYo-yDgCHxWbe3YjsWjZoJKg3JI2cnUzn63gOKUhtwPGZU9RTI9NQSawzqQhpO2fIxTY4Qho2Mu7H57_2tE4z_ooMGYM_neYr5KyNhGRymwYb6oO3v39eqpIGI7k8vV8ZH1vKLMeS8O1JHpKKbg-7xjZCuCPdtI02zTtdcYFTb1IC5WNht7CXum16skibjfvaIBvreTHC83fCXEM1YYKPWskb_wI6QjSQ-zAmxjHEH7AqPmWCdUTbWrBzcBieMbuA" alt="Producto destacado 2" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Opción Artesanal B</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Pieza destacada con acabados cuidados y gran funcionalidad.</p>
-            </div>
-            <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX7UN7eE_xdGd6zlA6GAJrtT5ZI-jDhiAGsVe_Z4rXY8CLcfnolXehLHK2UFr68cjua0hsKuXkR1z07qOaWASsGjV2AwiQwHaIgL4WcNNslwUcxyKhr4BcRW9m2ViD9Gq_8WsK9uiMy2o8hdnnMDUYF44egGTfLvdUxY8XBgVF3eHEYChrVn8kZdwvAUnjKkTJvkmfceCh5lk8-STfLiCGUBvMA-IGsVA2W4R5m8OStaajC5EzBioeE3aRfX0VrJ4kDGomvv_rfA" alt="Producto destacado 3" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Colección Urbana C</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Versátil, resistente y con el mejor balance para uso diario.</p>
-            </div>
-            <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA27T5MhvcOdVzWVpxazFlLh7vuVEeKP0b6FI2pgAMkDwNqgLs8GAPv6AGXghlonydIvFdnAanqeIkggfwNzYQOyvtH0O10C9_t4Tb8mwCaqlSSH22kRrzUmdnXc3Gm8QpnQcySm2gYa9YWW1zCVksHb_l4L0x_Z7vTcJHZwyY_7eLt5xly3IymRcmzL1eJsUe1oDreWKqqtIPj-y9hJfW3tuzrdZvGnl_3gIM2a46Q5hp-rIu4k0HezpYPDaFEw8lhCDfFTxlbbA" alt="Producto destacado 4" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Serie Especial D</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Alternativa recomendada con óptima relación calidad-precio.</p>
-            </div>
-            <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Visitanos -->
-    <section class="space-y-4">
-      <div>
-        <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Punto de encuentro</span>
-        <h2 class="text-xl font-bold text-brand-dark tracking-tight">Visitanos</h2>
-        <p class="text-xs text-brand-muted mt-0.5">Vení a conocernos al local o contactanos directamente.</p>
-      </div>
-
-      <div class="rounded-2xl bg-brand-card border border-brand-border p-5 space-y-4 shadow-sm">
-        <!-- Dirección -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Dirección</span>
-            <p class="text-sm font-semibold text-brand-dark">Juan Ramírez de Velasco 1005, Villa Crespo</p>
-            <p class="text-xs text-brand-muted">Villa Crespo, Ciudad de Buenos Aires</p>
-          </div>
-        </div>
-
-        <div class="border-t border-brand-border/60"></div>
-
-        <!-- Horarios -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-clock"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Horarios de atención</span>
-            <p class="text-sm font-semibold text-brand-dark">Consultá horarios por WhatsApp</p>
-          </div>
-        </div>
-
-        <div class="border-t border-brand-border/60"></div>
-
-        <!-- Teléfono -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Teléfono</span>
-            <p class="text-sm font-semibold text-brand-dark">+54 11 4856-2735</p>
-          </div>
-        </div>
-
-        <!-- Botones de Acción -->
-        <div class="pt-2 grid grid-cols-1 gap-2.5">
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Rotiser%C3%ADa%20Yoly%20Juan%20Ram%C3%ADrez%20de%20Velasco%201005%2C%20Villa%20Crespo" target="_blank" rel="noopener noreferrer" 
-             class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-dark hover:bg-stone-800 text-white font-semibold text-sm transition-colors shadow-sm active:scale-[0.99]">
-            <i class="fa-solid fa-diamond-turn-right text-brand-accent"></i>
-            <span>Cómo llegar</span>
-          </a>
-
-          <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer" 
-             class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-whatsapp hover:bg-emerald-600 text-white font-semibold text-sm transition-all whatsapp-btn-glow active:scale-[0.99]">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
-            <span>Escribinos por WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="mt-12 border-t border-brand-border bg-stone-100/80 px-4 py-8 text-center">
-    <div class="max-w-md mx-auto space-y-2">
-      <div class="inline-block">
-        <span class="font-bold text-base text-brand-dark">Rotisería Yoly</span>
-        <span class="mx-1.5 text-stone-400">•</span>
-        <span class="text-xs text-brand-muted font-medium">Food</span>
-      </div>
-      <p class="text-xs text-stone-500">
-        Rotisería Yoly © 2026. Todos los derechos reservados.
-      </p>
-      <p class="text-[11px] text-stone-400">
-        Comercio barrial en Villa Crespo, Buenos Aires.
-      </p>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp CTA Button -->
-  <aside aria-label="Contacto directo">
-    <a href="https://wa.me/5491148562735" target="_blank" rel="noopener noreferrer"
-       class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-brand-whatsapp hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl hover:scale-105 active:scale-95 transition-all whatsapp-btn-glow"
-       title="Consultar por WhatsApp">
-      <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
-  </aside>
-
-</body>
-</html>
+</div></main><footer class="w-full bg-surface-container-high text-on-surface pt-space-xl pb-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg pb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rotisería Yoly</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Cocina Casera de Barrio Porteño</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Sabor honesto, recetas de familia y las mejores milanesas y tartas de Villa Crespo desde hace más de 30 años.</p></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider">Ubicación y Contacto</span><p class="font-body-sm text-body-sm text-on-surface-variant flex items-start gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px] shrink-0">location_on</span><span>Juan Ramírez de Velasco 1005<br/>Villa Crespo, CABA</span></p><a class="font-label-md text-label-md text-secondary hover:underline inline-flex items-center gap-space-xs" href="https://maps.google.com/?q=Juan+Ramirez+de+Velasco+1005+Villa+Crespo" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">map</span>Ver en Google Maps</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider">Horarios del Despacho</span><p class="font-body-sm text-body-sm text-on-surface-variant">Martes a Sábados:<br/><span class="font-semibold text-on-surface">11:30 a 15:00 · 19:30 a 23:00</span></p><p class="font-body-sm text-body-sm text-on-surface-variant">Domingos:<br/><span class="font-semibold text-on-surface">11:30 a 15:30 (Mediodía)</span></p><span class="font-label-sm text-label-sm text-tertiary font-semibold">Lunes cerrado</span></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider">Pedidos y Consultas</span><a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container px-space-md py-space-sm rounded-lg font-label-lg text-label-lg hover:bg-primary-fixed-dim transition-colors" href="https://wa.me/5491148562735" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span>+54 11 4856-2735</a><span class="font-body-sm text-body-sm text-on-surface-variant">Entregas en Villa Crespo, Chacarita y Palermo.</span></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">© 2026 Rotisería Yoly. Tradición y comida de verdad en Villa Crespo.</p><div class="flex items-center gap-space-md"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" data-path="menu-de-la-semana" href="#">Menú</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" data-path="clasicos" href="#">Clásicos</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" data-path="visitanos" href="#">Cómo llegar</a></div></div></div></footer><a aria-label="Pedí por WhatsApp directo" class="fixed bottom-6 right-6 z-40 flex items-center gap-space-xs bg-secondary text-on-secondary px-space-md py-space-sm rounded-full shadow-[0_12px_24px_-4px_rgba(31,36,33,0.24)] hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-all" href="https://wa.me/5491148562735" rel="noopener noreferrer" target="_blank"><span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping"></span><span class="material-symbols-outlined text-[20px]">chat</span><span class="font-label-lg text-label-lg font-bold">Pedí por WhatsApp</span></a></body></html>

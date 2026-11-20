@@ -1,350 +1,656 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta name="robots" content="noindex, nofollow">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farmacia Cadefa - Comercio en Villa Crespo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              accent: '#E65100', // Bold warm amber-terracotta accent
-              'accent-hover': '#CC4400',
-              whatsapp: '#25D366',
-              'whatsapp-dark': '#128C7E',
-              dark: '#1A1816',
-              surface: '#FAF9F6',
-              card: '#FFFFFF',
-              muted: '#686461',
-              border: '#E8E5E0',
-              highlight: '#F3EFEA'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            serif: ['"Playfair Display"', 'serif'],
-          }
-        }
+
+<html lang="es"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#191c1a", "tertiary": "#9f3847", "on-tertiary-container": "#fffbff", "secondary-fixed-dim": "#bbcac2", "secondary": "#54615b", "on-error-container": "#93000a", "on-surface": "#191c1a", "on-secondary": "#ffffff", "on-surface-variant": "#3e4a3f", "surface-tint": "#006d38", "primary-fixed-dim": "#70dc92", "surface-container-highest": "#e1e3df", "inverse-primary": "#70dc92", "on-secondary-fixed-variant": "#3c4a44", "on-primary": "#ffffff", "surface-variant": "#e1e3df", "on-tertiary-fixed-variant": "#832333", "background": "#f8faf6", "error": "#ba1a1a", "on-primary-fixed-variant": "#005229", "on-tertiary": "#ffffff", "surface-container-high": "#e7e9e5", "surface-container-low": "#f3f4f0", "on-primary-container": "#f6fff4", "surface-container": "#edeeeb", "error-container": "#ffdad6", "inverse-surface": "#2e312f", "primary": "#006a37", "primary-fixed": "#8cf9ac", "surface": "#f8faf6", "on-secondary-container": "#5a6761", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "inverse-on-surface": "#f0f1ed", "surface-bright": "#f8faf6", "tertiary-fixed-dim": "#ffb2b8", "outline": "#6e7a6f", "secondary-container": "#d7e6de", "outline-variant": "#bdcabd", "secondary-fixed": "#d7e6de", "tertiary-container": "#be505e", "on-tertiary-fixed": "#40000e", "on-primary-fixed": "#00210d", "surface-dim": "#d9dad7", "on-secondary-fixed": "#111e19", "tertiary-fixed": "#ffdadb", "primary-container": "#008647" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "3rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-tablet": "2rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1rem" }, "fontFamily": { "body-lg": [ "Inter" ], "label-index": [ "JetBrains Mono" ], "label-code": [ "JetBrains Mono" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg-mobile": [ "Hanken Grotesk" ], "headline-lg": [ "Hanken Grotesk" ], "label-meta": [ "JetBrains Mono" ], "title-sm": [ "Hanken Grotesk" ], "headline-md": [ "Hanken Grotesk" ], "display-lg-mobile": [ "Hanken Grotesk" ], "display-lg": [ "Hanken Grotesk" ] }, "fontSize": { "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-index": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "label-code": [ "13px", { "lineHeight": "18px", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "600" } ], "label-meta": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "400" } ], "title-sm": [ "16px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-lg-mobile": [ "38px", { "lineHeight": "42px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-lg": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.04em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Farmacia Cadefa. No es el sitio oficial.</div><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop max-w-7xl mx-auto flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="w-8 h-8 bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">add</span></div><div class="flex flex-col"><span class="font-headline-md text-title-sm tracking-tight text-on-surface font-bold uppercase leading-none">FARMACIA CADEFA</span><span class="font-label-index text-label-index text-on-surface-variant tracking-wider uppercase mt-0.5">Villa Crespo • Bs As</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-title-sm"><a aria-current="page" class="transition-colors text-primary font-title-sm" data-path="inicio" href="#"><span class="text-primary mr-1">01</span>Servicios</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" data-path="manda-tu-receta" href="#"><span class="text-primary mr-1">02</span>Mandá tu receta</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" data-path="dermocosmetica" href="#"><span class="text-primary mr-1">03</span>Dermocosmética</a><a class="font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" data-path="visitanos" href="#"><span class="text-primary mr-1">04</span>Visitanos</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs font-label-code text-label-code text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs transition-colors" href="tel:01148543069"><span class="material-symbols-outlined text-[16px]">call</span>4854-3069</a><a class="bg-primary text-on-primary hover:bg-primary-container font-label-code text-label-code px-space-md py-space-sm flex items-center gap-space-xs transition-colors" href="https://wa.me/5491148543069" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">chat</span>WhatsApp</a></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full text-on-surface bg-surface selection:bg-secondary-container selection:text-primary">
+<!-- =========================================================================
+       HERO SECTION: 12-Column Swiss Modular Layout
+       ========================================================================= -->
+<section class="w-full bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[580px]">
+<!-- Left Column (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col justify-between py-space-xl lg:pr-space-xl">
+<div class="space-y-space-md">
+<!-- Mono Index Header Tag -->
+<div class="flex items-center gap-space-xs font-label-index text-label-index text-secondary uppercase tracking-widest">
+<span class="w-2 h-2 bg-primary inline-block"></span>
+<span>[ 00 // VILLA CRESPO • BUENOS AIRES ]</span>
+</div>
+<!-- Giant Bold Grotesk Headline -->
+<h1 class="font-display-lg text-[44px] sm:text-[68px] lg:text-[88px] leading-[0.92] tracking-[-0.04em] text-on-surface font-extrabold uppercase">
+              Tu farmacia,<br/>
+<span class="text-primary">a la vuelta.</span>
+</h1>
+<!-- Descriptive Clinical Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed pt-space-xs">
+              Atención farmacéutica cercana, dispensa ágil de recetas por obras sociales y prepagas, y la selección más rigurosa de dermocosmética y fórmulas oficiales en Av. Raúl Scalabrini Ortiz.
+            </p>
+<!-- Call to Actions -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-sm">
+<a class="bg-primary text-on-primary hover:bg-primary-container px-space-lg py-space-sm font-label-code text-label-code uppercase tracking-wider flex items-center gap-space-xs transition-colors" href="https://wa.me/5491148543069" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                Mandá tu receta por WhatsApp
+              </a>
+<a class="bg-surface-container-low text-on-surface hover:bg-surface-container px-space-md py-space-sm font-label-code text-label-code uppercase tracking-wider flex items-center gap-space-xs transition-colors" href="#dermocosmetica">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+                Ver Dermocosmética
+              </a>
+<div class="w-full sm:w-auto pt-2 sm:pt-0">
+<a class="font-label-code text-label-code text-secondary hover:text-primary flex items-center gap-space-xs transition-colors" href="tel:01148543069">
+<span class="material-symbols-outlined text-[16px]">call</span>
+                  +54 11 4854-3069
+                </a>
+</div>
+</div>
+</div>
+<!-- Bottom Operational Indicators (Swiss Data Strip) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xl mt-space-lg">
+<div class="bg-surface-container-low p-space-sm flex flex-col justify-between">
+<span class="font-label-index text-label-index text-primary uppercase">01 / COBERTURA</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold mt-1">Dispensación Oficial Obras Sociales</span>
+</div>
+<div class="bg-surface-container-low p-space-sm flex flex-col justify-between">
+<span class="font-label-index text-label-index text-primary uppercase">02 / LOGÍSTICA</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold mt-1">Envío express en el día Villa Crespo</span>
+</div>
+<div class="bg-surface-container-low p-space-sm flex flex-col justify-between">
+<span class="font-label-index text-label-index text-primary uppercase">03 / CRITERIO</span>
+<span class="font-label-code text-label-code text-on-surface font-semibold mt-1">Atención profesional personalizada</span>
+</div>
+</div>
+</div>
+<!-- Right Column (5 Cols) Hero Showcase Visual -->
+<div class="lg:col-span-5 bg-secondary-container/40 p-space-md lg:p-space-lg flex flex-col justify-between relative overflow-hidden">
+<!-- Top Spec Header -->
+<div class="flex items-center justify-between font-label-meta text-label-meta text-secondary">
+<span class="uppercase tracking-wider">LAB REF. VC-74</span>
+<span class="font-label-index text-label-index bg-surface px-space-xs py-0.5 text-on-surface">STOCK VERIFICADO</span>
+</div>
+<!-- Central Product Photography Container -->
+<div class="py-space-md flex flex-col items-center justify-center my-auto">
+<div class="relative w-full max-w-[340px] aspect-[4/5] bg-surface-container-lowest shadow-md overflow-hidden flex items-center justify-center">
+<img alt="Lumina Duo Tratamiento Dermocosmético Noche" class="w-full h-full object-cover" src="img/1a6bc6812eb1dfed.jpg"/>
+<!-- Subtle Swiss Cross Stamp Overlay -->
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-sm p-1.5 flex items-center gap-1 font-label-index text-[10px] text-primary">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>ORIGEN CERTIFICADO</span>
+</div>
+</div>
+</div>
+<!-- Floating Clinical Status Card -->
+<div class="bg-surface p-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-code text-label-code font-bold uppercase tracking-wider text-primary">ABIERTO HOY</span>
+</div>
+<span class="font-label-meta text-label-meta text-secondary">ZONA SCALABRINI ORTIZ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              8:00 a 21:00 hs • Guardia de recetas online y WhatsApp activa.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 01: SERVICIOS FARMACÉUTICOS
+       Modular 4-column Swiss matrix with pure technical density
+       ========================================================================= -->
+<section class="w-full py-space-xl bg-surface-container-low" id="servicios">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Title Unit -->
+<div class="pb-space-lg flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-index text-label-index text-primary uppercase tracking-widest">[ 01 / SERVICIOS ASISTENCIALES ]</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase mt-space-xs tracking-tight">
+            Atención clínica y dispensa con rigor científico.
+          </h2>
+</div>
+<p class="font-label-meta text-label-meta text-secondary max-w-xs">
+          Procedimientos estandarizados y validación electrónica en tiempo real de convenios de salud.
+        </p>
+</div>
+<!-- 4 Columns Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Cell 01: Recetas y Obras Sociales -->
+<div class="bg-surface-container-lowest p-space-lg flex flex-col justify-between h-full shadow-sm hover:translate-y-[-2px] transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-index text-label-index text-secondary">01.1 // RECETAS</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface">Obras Sociales &amp; Prepagas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Validación inmediata de recetas electrónicas y físicas: OSDE, Swiss Medical, Galeno, PAMI, Medifé, OMINT, IOMA y colegios profesionales sin demoras.
+            </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-index text-label-index text-primary uppercase">+ VALIDACIÓN VÍA WHATSAPP</span>
+</div>
+</div>
+<!-- Cell 02: Dermocosmética & Fórmulas -->
+<div class="bg-surface-container-lowest p-space-lg flex flex-col justify-between h-full shadow-sm hover:translate-y-[-2px] transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-index text-label-index text-secondary">01.2 // CLÍNICA</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface">Dermocosmética &amp; Skincare</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Líneas clínicamente testeadas, protectores de amplio espectro, sueros con activos puros y asesoramiento personalizado según fototipo cutáneo.
+            </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-index text-label-index text-primary uppercase">+ PROTOCOLOS PERSONALIZADOS</span>
+</div>
+</div>
+<!-- Cell 03: Signos Vitales -->
+<div class="bg-surface-container-lowest p-space-lg flex flex-col justify-between h-full shadow-sm hover:translate-y-[-2px] transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-index text-label-index text-secondary">01.3 // DIAGNÓSTICO</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">ecg_heart</span>
+</div>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface">Control de Presión &amp; Signos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Toma digital de tensión arterial con equipos calibrados Omron, control glucémico rápido y registro periódico de evolución para pacientes crónicos.
+            </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-index text-label-index text-primary uppercase">+ SEGUIMIENTO SIN CARGO</span>
+</div>
+</div>
+<!-- Cell 04: Gabinete de Vacunación -->
+<div class="bg-surface-container-lowest p-space-lg flex flex-col justify-between h-full shadow-sm hover:translate-y-[-2px] transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-index text-label-index text-secondary">01.4 // PREVENCIÓN</span>
+<div class="w-8 h-8 bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">vaccines</span>
+</div>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface">Vacunatorio Habilitado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Gabinete sanitario oficial para campaña antigripal, antineumocócica, colocación de inyectables bajo prescripción médica y nebulizaciones estériles.
+            </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-index text-label-index text-primary uppercase">+ MATRÍCULA NACIONAL ACTIVA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 02: MANDÁ TU RECETA (Interactive Obra Social & WA Builder)
+       ========================================================================= -->
+<section class="w-full py-space-xl bg-surface" id="manda-tu-receta">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin-tablet lg:px-margin-desktop">
+<!-- Container Box -->
+<div class="bg-surface-container p-space-lg md:p-space-xl shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Steps Breakdown (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-label-index text-label-index text-primary uppercase tracking-widest">[ 02 / RECETAS DIGITALES ]</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase mt-space-xs tracking-tight">
+                Mandá tu receta en 3 simples pasos.
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+                Evitá filas. Gestionamos la autorización con tu prepaga, separamos tus medicamentos y te avisamos cuando está listo.
+              </p>
+<!-- Step Sequence -->
+<div class="mt-space-lg space-y-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-7 h-7 bg-primary text-on-primary font-label-code text-label-code flex items-center justify-center shrink-0">1</div>
+<div>
+<h4 class="font-title-sm text-title-sm font-semibold uppercase text-on-surface">Sacale foto a la receta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ya sea recetario papel, foto del membrete médico o captura de pantalla de la app de tu obra social.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-7 h-7 bg-primary text-on-primary font-label-code text-label-code flex items-center justify-center shrink-0">2</div>
+<div>
+<h4 class="font-title-sm text-title-sm font-semibold uppercase text-on-surface">Mandala por WhatsApp</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cotizamos los descuentos, verificamos lotes disponibles y coordinamos la dispensa en minutos.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-7 h-7 bg-primary text-on-primary font-label-code text-label-code flex items-center justify-center shrink-0">3</div>
+<div>
+<h4 class="font-title-sm text-title-sm font-semibold uppercase text-on-surface">Retirá o te la llevamos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pasá directo por nuestro mostrador prioritario en Scalabrini Ortiz o pedí cadetería a domicilio en Villa Crespo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs font-label-meta text-label-meta text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span>Tratamiento confidencial de datos de salud bajo Ley 25.326.</span>
+</div>
+</div>
+<!-- Interactive Action Panel (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-meta text-label-meta uppercase text-secondary">CONFIGURADOR DIRECTO DE MENSAJE</span>
+<span class="font-label-index text-label-index text-primary">CONEXIÓN INMEDIATA</span>
+</div>
+<!-- Selection: Obra Social -->
+<div class="mt-space-md">
+<label class="block font-label-meta text-label-meta uppercase text-secondary mb-space-xs">
+                  1. Seleccioná tu cobertura de salud:
+                </label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs" id="os-selector-grid">
+<button class="os-chip px-space-sm py-space-sm text-center font-label-code text-label-code bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-val="OSDE" type="button">
+                    OSDE
+                  </button>
+<button class="os-chip px-space-sm py-space-sm text-center font-label-code text-label-code bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-val="Swiss Medical" type="button">
+                    Swiss Medical
+                  </button>
+<button class="os-chip px-space-sm py-space-sm text-center font-label-code text-label-code bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-val="Galeno" type="button">
+                    Galeno
+                  </button>
+<button class="os-chip px-space-sm py-space-sm text-center font-label-code text-label-code bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-val="PAMI" type="button">
+                    PAMI
+                  </button>
+<button class="os-chip px-space-sm py-space-sm text-center font-label-code text-label-code bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-val="IOMA" type="button">
+                    IOMA
+                  </button>
+<button class="os-chip px-space-sm py-space-sm text-center font-label-code text-label-code bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" data-val="Particular / Otra" type="button">
+                    Particular / Otra
+                  </button>
+</div>
+</div>
+<!-- Input: Nombre y Apellido -->
+<div class="mt-space-md">
+<label class="block font-label-meta text-label-meta uppercase text-secondary mb-space-xs" for="client-name">
+                  2. Tu nombre y apellido (opcional):
+                </label>
+<input class="w-full h-11 px-space-sm bg-surface-container-lowest text-on-surface font-label-code text-label-code outline-none focus:bg-surface-container-low transition-colors" id="client-name" placeholder="Ej: Marcela Bianchi" type="text"/>
+<span class="block font-label-meta text-label-meta text-secondary mt-1">Sirve para agilizar la búsqueda en el validador electrónico.</span>
+</div>
+<!-- Live Preview Code Block -->
+<div class="mt-space-md p-space-sm bg-surface-container-low">
+<div class="font-label-index text-label-index text-secondary uppercase mb-1">VISTA PREVIA DEL MENSAJE:</div>
+<p class="font-label-code text-label-code text-on-surface italic" id="msg-preview">
+                  “Hola Farmacia Cadefa! Quiero mandar una receta. Obra social: OSDE. Nombre: [Tu nombre]”
+                </p>
+</div>
+</div>
+<!-- Submit Button Trigger -->
+<div class="pt-space-lg">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-code text-label-code py-space-md px-space-lg uppercase tracking-wider flex items-center justify-center gap-space-sm transition-colors shadow-sm" id="send-recipe-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+                Mandar receta por WhatsApp ahora
+              </button>
+<div class="flex items-center justify-between mt-2 font-label-meta text-label-meta text-secondary">
+<span>RESPUESTA ESTIMADA: &lt; 10 MINUTOS</span>
+<span>NÚMERO: 11 4854-3069</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       TICKER / MARQUEE: ENVÍOS BARRIALES
+       Swiss International Technical Ribbon
+       ========================================================================= -->
+<div class="w-full bg-primary text-on-primary py-space-sm overflow-hidden select-none">
+<div class="flex whitespace-nowrap animate-[marquee_24s_linear_infinite]">
+<div class="flex items-center gap-space-lg font-label-code text-label-code uppercase tracking-widest text-on-primary shrink-0">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">two_wheeler</span> ENVÍOS EN EL BARRIO</span>
+<span>•</span>
+<span>VILLA CRESPO</span>
+<span>•</span>
+<span>PALERMO</span>
+<span>•</span>
+<span>ALMAGRO</span>
+<span>•</span>
+<span>CHACARITA</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified</span> PEDIDOS POR WHATSAPP AL +54 11 4854-3069</span>
+<span>•</span>
+<span>DISPENSA Y CADETERÍA EN EL DÍA</span>
+<span>•</span>
+</div>
+<div class="flex items-center gap-space-lg font-label-code text-label-code uppercase tracking-widest text-on-primary shrink-0 ml-space-lg">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">two_wheeler</span> ENVÍOS EN EL BARRIO</span>
+<span>•</span>
+<span>VILLA CRESPO</span>
+<span>•</span>
+<span>PALERMO</span>
+<span>•</span>
+<span>ALMAGRO</span>
+<span>•</span>
+<span>CHACARITA</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified</span> PEDIDOS POR WHATSAPP AL +54 11 4854-3069</span>
+<span>•</span>
+<span>DISPENSA Y CADETERÍA EN EL DÍA</span>
+<span>•</span>
+</div>
+</div>
+</div>
+<!-- =========================================================================
+       SECTION 03: SELECCIÓN DERMOCOSMÉTICA
+       Rigorous 4-column product catalog with clean typography & clear pricing
+       ========================================================================= -->
+<section class="w-full py-space-xl bg-surface-container-low" id="dermocosmetica">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Title Unit -->
+<div class="pb-space-lg flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-index text-label-index text-primary uppercase tracking-widest">[ 03 / SELECCIÓN DERMOCOSMÉTICA ]</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase mt-space-xs tracking-tight">
+            Cuidado de la piel testeado por dermatólogos.
+          </h2>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-meta text-label-meta text-secondary">FÓRMULAS PURAS • DERMOTESTEADAS</span>
+</div>
+</div>
+<!-- 4 Product Grid -->
+<div class="grid lg:grid-cols-4 gap-space-md grid-cols-2 md:grid-cols-4">
+<!-- Product 01: Lumina C15 -->
+<div class="bg-surface-container-lowest flex flex-col justify-between shadow-sm group">
+<div>
+<div class="aspect-square bg-surface-container relative overflow-hidden">
+<img alt="Lumina Vitamin C 15% Serum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="img/5d4ce532da76afd3.jpg"/>
+<span class="absolute top-2 left-2 bg-surface text-primary font-label-index text-label-index px-space-xs py-0.5 uppercase">
+                Dermoactivo
+              </span>
+</div>
+<div class="p-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-label-meta text-label-meta text-secondary">REF: LUM-C15</span>
+<span class="font-label-code text-label-code font-bold text-primary">ARS $32.400</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface mt-1">LUMINA C15 SERUM</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                Suero Vitamina C Pura 15% + Ácido Ferúlico 0.5%. Antioxidante y luminosidad clínica. Frasco gotero 30ml.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<a class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-code text-label-code py-space-xs text-center block uppercase tracking-wider transition-colors" href="https://wa.me/5491148543069?text=Hola%20Farmacia%20Cadefa,%20consulto%20stock%20de%20Lumina%20C15%20Serum" rel="noopener noreferrer" target="_blank">
+              Consultar stock
+            </a>
+</div>
+</div>
+<!-- Product 02: Aura Shield SPF 50+ -->
+<div class="bg-surface-container-lowest flex flex-col justify-between shadow-sm group">
+<div>
+<div class="aspect-square bg-surface-container relative overflow-hidden">
+<img alt="Aura Mineral Sunscreen SPF 50+" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="img/ad425b37035f9f2f.jpg"/>
+<span class="absolute top-2 left-2 bg-surface text-primary font-label-index text-label-index px-space-xs py-0.5 uppercase">
+                Filtro Físico
+              </span>
+</div>
+<div class="p-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-label-meta text-label-meta text-secondary">REF: AUR-50M</span>
+<span class="font-label-code text-label-code font-bold text-primary">ARS $28.900</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface mt-1">AURA SHIELD SPF 50+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                Protector solar mineral toque seco con Óxido de Zinc micronizado y ácido hialurónico. Pieles sensibles 50ml.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<a class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-code text-label-code py-space-xs text-center block uppercase tracking-wider transition-colors" href="https://wa.me/5491148543069?text=Hola%20Farmacia%20Cadefa,%20consulto%20stock%20de%20Aura%20Shield%20SPF%2050+" rel="noopener noreferrer" target="_blank">
+              Consultar stock
+            </a>
+</div>
+</div>
+<!-- Product 03: Aethel Vita D3+K2 -->
+<div class="bg-surface-container-lowest flex flex-col justify-between shadow-sm group">
+<div>
+<div class="aspect-square bg-surface-container relative overflow-hidden">
+<img alt="Aethel Vitamin D3 + K2 Suplemento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="img/e77918a42cbc5982.jpg"/>
+<span class="absolute top-2 left-2 bg-surface text-primary font-label-index text-label-index px-space-xs py-0.5 uppercase">
+                Bio-disponible
+              </span>
+</div>
+<div class="p-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-label-meta text-label-meta text-secondary">REF: AET-DK2</span>
+<span class="font-label-code text-label-code font-bold text-primary">ARS $19.800</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface mt-1">AETHEL VITA D3+K2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                Suplemento nutricional de alta biodisponibilidad para salud ósea e inmunológica. Frasco ambar x 60 cápsulas.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<a class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-code text-label-code py-space-xs text-center block uppercase tracking-wider transition-colors" href="https://wa.me/5491148543069?text=Hola%20Farmacia%20Cadefa,%20consulto%20stock%20de%20Aethel%20D3+K2" rel="noopener noreferrer" target="_blank">
+              Consultar stock
+            </a>
+</div>
+</div>
+<!-- Product 04: Lumina Duo Noche -->
+<div class="bg-surface-container-lowest flex flex-col justify-between shadow-sm group">
+<div>
+<div class="aspect-square bg-surface-container relative overflow-hidden">
+<img alt="Lumina Renewal Face Cream and Serum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="img/1a6bc6812eb1dfed.jpg"/>
+<span class="absolute top-2 left-2 bg-surface text-primary font-label-index text-label-index px-space-xs py-0.5 uppercase">
+                Tratamiento
+              </span>
+</div>
+<div class="p-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-label-meta text-label-meta text-secondary">REF: LUM-DUO</span>
+<span class="font-label-code text-label-code font-bold text-primary">ARS $38.500</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface mt-1">LUMINA DUO NOCHE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                Crema regeneradora + suero complementario con ceramidas esenciales y péptidos restauradores 50ml + 30ml.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<a class="w-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-code text-label-code py-space-xs text-center block uppercase tracking-wider transition-colors" href="https://wa.me/5491148543069?text=Hola%20Farmacia%20Cadefa,%20consulto%20stock%20de%20Lumina%20Duo%20Noche" rel="noopener noreferrer" target="_blank">
+              Consultar stock
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 04: VISITANOS & UBICACIÓN EN VILLA CRESPO
+       Structured analytical schedule table + schematic urban locator
+       ========================================================================= -->
+<section class="w-full py-space-xl bg-surface" id="visitanos">
+<div class="max-w-7xl mx-auto px-gutter md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Title Unit -->
+<div class="pb-space-lg">
+<span class="font-label-index text-label-index text-primary uppercase tracking-widest">[ 04 / UBICACIÓN &amp; HORARIOS ]</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface uppercase mt-space-xs tracking-tight">
+          En el corazón de Villa Crespo.
+        </h2>
+</div>
+<!-- Two Column Layout (6 + 6) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Details & Schedule Table -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg md:p-space-xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-space-xs font-label-meta text-label-meta text-primary uppercase">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>AVENIDA RAÚL SCALABRINI ORTIZ • VILLA CRESPO</span>
+</div>
+<h3 class="font-title-sm text-title-sm font-bold uppercase text-on-surface mt-2">
+              Atención presencial y mostrador prioritario
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              A escasos metros de Avenida Corrientes y de la Estación Malabia – O. Pugliese de la Línea B de Subte. Rápido acceso y estacionamiento transitorio sobre la avenida.
+            </p>
+<!-- Swiss Table: Hours of Operation -->
+<div class="mt-space-lg">
+<div class="font-label-index text-label-index text-secondary uppercase pb-1 tracking-wider">
+                CRONOGRAMA DE ATENCIÓN
+              </div>
+<div class="divide-y divide-surface-container-high">
+<div class="py-space-sm flex items-center justify-between font-label-code text-label-code">
+<span class="text-on-surface font-semibold">Lunes a Viernes</span>
+<span class="text-primary font-bold">08:00 — 21:00 hs corrido</span>
+</div>
+<div class="py-space-sm flex items-center justify-between font-label-code text-label-code">
+<span class="text-on-surface font-semibold">Sábados</span>
+<span class="text-on-surface">09:00 — 14:00 hs</span>
+</div>
+<div class="py-space-sm flex items-center justify-between font-label-code text-label-code bg-surface-container-low px-space-xs">
+<span class="text-secondary">Domingos y Feriados</span>
+<span class="text-secondary font-label-meta text-label-meta">Según turno oficial de farmacia</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-md font-label-code text-label-code">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<a class="hover:text-primary transition-colors" href="tel:01148543069">4854-3069</a>
+</div>
+</div>
+</div>
+<!-- Buttons -->
+<div class="pt-space-lg flex flex-wrap items-center gap-space-sm">
+<a class="bg-on-surface text-on-secondary hover:bg-on-surface-variant font-label-code text-label-code px-space-md py-space-sm uppercase tracking-wider flex items-center gap-space-xs transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia+Cadefa+Avenida+Ra%C3%BAl+Scalabrini+Ortiz+Villa+Crespo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">map</span>
+              Cómo llegar en Google Maps
+            </a>
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-code text-label-code px-space-md py-space-sm uppercase tracking-wider flex items-center gap-space-xs transition-colors" href="https://wa.me/5491148543069" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+              WhatsApp de Turno
+            </a>
+</div>
+</div>
+<!-- Right Column: Stylized Minimal Clinical Urban Schematic -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-lg flex flex-col justify-between relative shadow-sm min-h-[420px]">
+<div class="flex items-center justify-between font-label-index text-label-index text-secondary">
+<span>COORDENADAS • 34°35'58.2"S 58°26'03.1"W</span>
+<span>VILLA CRESPO • COMUNA 15</span>
+</div>
+<!-- Schematic Street Map Visualization (Pure CSS/SVG Clean Modernist Style) -->
+<div class="my-auto py-space-md relative w-full h-[260px] bg-surface-container flex items-center justify-center overflow-hidden">
+<!-- Diagonal/Orthogonal Grid Lines for City Avenues -->
+<svg class="absolute inset-0 w-full h-full text-surface-container-high" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="city-grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#city-grid)" height="100%" width="100%"></rect>
+<!-- Corrientes Ave (Angled artery) -->
+<line stroke="#bdcabd" stroke-linecap="square" stroke-width="24" x1="80" x2="320" y1="0" y2="260"></line>
+<!-- Scalabrini Ortiz Ave (Cross artery) -->
+<line stroke="#bbcac2" stroke-linecap="square" stroke-width="20" x1="0" x2="480" y1="180" y2="90"></line>
+<!-- Warnes Ave -->
+<line stroke="#d7e6de" stroke-width="12" x1="20" x2="160" y1="0" y2="260"></line>
+</svg>
+<!-- Street Name Badges -->
+<div class="absolute bottom-4 left-6 bg-surface-container-lowest/90 px-space-xs py-0.5 font-label-index text-[9px] uppercase tracking-wider text-secondary">
+              Av. Corrientes • Subte B Malabia
+            </div>
+<div class="absolute top-4 right-6 bg-surface-container-lowest/90 px-space-xs py-0.5 font-label-index text-[9px] uppercase tracking-wider text-secondary">
+              Av. Scalabrini Ortiz
+            </div>
+<!-- Pharmacy Cadefa Landmark Pin -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="bg-primary text-on-primary px-space-sm py-1 font-label-code text-label-code font-bold uppercase tracking-wider shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_pharmacy</span>
+                FARMACIA CADEFA
+              </div>
+<div class="w-3 h-3 bg-primary rotate-45 -mt-1.5"></div>
+<span class="mt-2 bg-surface-container-lowest px-space-xs py-0.5 font-label-index text-[10px] text-primary uppercase font-bold tracking-wider">
+                Scalabrini Ortiz • Villa Crespo
+              </span>
+</div>
+</div>
+<!-- Bottom Micro-legend -->
+<div class="flex items-center justify-between font-label-meta text-label-meta text-secondary">
+<span>• ESTACIÓN MALABIA (SUBTE B) A 180 METROS</span>
+<a class="text-primary font-semibold hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia+Cadefa+Avenida+Ra%C3%BAl+Scalabrini+Ortiz+Villa+Crespo" rel="noopener noreferrer" target="_blank">
+              ABRIR EN APP →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       FLOATING WHATSAPP BUTTON (Persistent Quick Action)
+       ========================================================================= -->
+<aside class="fixed bottom-6 right-6 z-40">
+<a aria-label="Contactar a Farmacia Cadefa por WhatsApp" class="w-14 h-14 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg hover:bg-primary-container hover:scale-105 active:scale-95 transition-all" href="https://wa.me/5491148543069" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+</a>
+</aside>
+</div>
+<!-- Client-Side Interactive Logic for Recipe Builder -->
+<script>
+  (function() {
+    let selectedOS = 'OSDE';
+    const chips = document.querySelectorAll('.os-chip');
+    const nameInput = document.getElementById('client-name');
+    const previewEl = document.getElementById('msg-preview');
+    const sendBtn = document.getElementById('send-recipe-btn');
+
+    function updatePreview() {
+      const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : '[Tu nombre]';
+      if (previewEl) {
+        previewEl.innerHTML = `&ldquo;Hola Farmacia Cadefa! Quiero mandar una receta. Obra social: <strong>${selectedOS}</strong>. Nombre: <strong>${name}</strong>&rdquo;`;
       }
     }
-  </script>
-  <style>
-    body {
-      background-color: #FAF9F6;
-      color: #1A1816;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
+
+    function setActiveChip(chipEl) {
+      chips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+        c.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      chipEl.classList.remove('bg-surface-container-low', 'text-on-surface');
+      chipEl.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+      selectedOS = chipEl.getAttribute('data-val') || 'OSDE';
+      updatePreview();
     }
-    .badge-rubro {
-      letter-spacing: 0.05em;
+
+    // Set initial active chip
+    if (chips.length > 0) {
+      setActiveChip(chips[0]);
     }
-    .whatsapp-btn-glow {
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', function() {
+        setActiveChip(this);
+      });
+    });
+
+    if (nameInput) {
+      nameInput.addEventListener('input', updatePreview);
     }
-    .accent-btn-glow {
-      box-shadow: 0 4px 18px rgba(230, 81, 0, 0.25);
+
+    if (sendBtn) {
+      sendBtn.addEventListener('click', function() {
+        const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'No especificado';
+        const text = `Hola Farmacia Cadefa! Quiero mandar una receta. Obra social: ${selectedOS}. Nombre: ${name}`;
+        const url = `https://wa.me/5491148543069?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
     }
-  </style>
-</head>
-<body class="min-h-screen pb-20 relative selection:bg-orange-100 selection:text-orange-900"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Farmacia Cadefa. No es el sitio oficial.</div>
-
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-[#FAF9F6]/95 backdrop-blur-md border-b border-brand-border/80 px-4 py-3.5 transition-all">
-    <div class="max-w-md mx-auto flex items-center justify-between">
-      <div class="flex flex-col">
-        <span class="text-xl font-bold tracking-tight text-brand-dark leading-tight">Farmacia Cadefa</span>
-        <span class="text-[11px] font-medium text-brand-muted flex items-center gap-1 mt-0.5">
-          <i class="fa-solid fa-location-dot text-brand-accent text-[10px]"></i> Villa Crespo, CABA
-        </span>
-      </div>
-      <div>
-        <span class="badge-rubro inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-stone-200/80 text-stone-800 border border-stone-300">
-          Farmacia
-        </span>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-md mx-auto px-4 pt-4 space-y-8">
-
-    <!-- Hero Section -->
-    <section class="relative rounded-3xl overflow-hidden shadow-sm border border-brand-border bg-brand-card">
-      <div class="relative h-64 w-full">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmU57zE7nmlFaZwFNvKkqyv1jaNZAV9oXQ0wN5Uror7L8G1nWPAU-XNN8UcQXgqERej3HlN7pT9fwQ3ofFzL3upjHnwpo7QsgJttKF6fnTiJE6Sqhb0Pva5hIxDdJ4DPun8Mxv7uicp3CfLbcQUMGr5u1YfAYVXjJ-Eu0mevvPIpr21ar3WIcW-0YIiOAJBEQfVIJU68ctm1nFCergVEBaISWoZceMqZosPOmcMgnc9pAEfJ4ioCOQ3tfMhjBxu0Dq8spMN83GXA" alt="Local comercial en Villa Crespo" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent"></div>
-        <div class="absolute top-3 left-3">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-white/90 backdrop-blur-sm text-stone-900 shadow-sm">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse"></span>
-            Abierto en el barrio
-          </span>
-        </div>
-        <div class="absolute bottom-4 left-4 right-4 text-white">
-          <span class="inline-block text-xs uppercase tracking-wider font-semibold text-orange-200 mb-1">
-            Farmacia en Villa Crespo
-          </span>
-          <h1 class="text-3xl font-extrabold tracking-tight leading-tight mb-2 drop-shadow-sm font-serif">
-            Farmacia Cadefa
-          </h1>
-          <p class="text-sm text-stone-200 leading-relaxed max-w-[95%]">
-            Atención cordial, artículos seleccionados y el compromiso de siempre para vecinos y amigos de la zona.
-          </p>
-        </div>
-      </div>
-      
-      <div class="p-4 bg-brand-card">
-        <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer" 
-           class="w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-2xl bg-brand-whatsapp hover:bg-emerald-600 text-white font-bold text-base transition-all whatsapp-btn-glow active:scale-[0.98]">
-          <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>Consultá por WhatsApp</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section class="space-y-3.5">
-      <div class="flex items-center justify-between">
-        <div>
-          <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Confianza de barrio</span>
-          <h2 class="text-xl font-bold text-brand-dark tracking-tight">Por qué elegirnos</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-3">
-        <!-- Beneficio 1 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-150 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-comments text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Atención personalizada</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Te asesoramos con dedicación y conocimiento para encontrar exactamente lo que necesitás.
-            </p>
-          </div>
-        </div>
-
-        <!-- Beneficio 2 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-150 flex items-center justify-center text-emerald-600 shrink-0 mt-0.5">
-            <i class="fa-solid fa-bicycle text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Envíos en el barrio</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Hacemos entregas ágiles y coordinadas en Villa Crespo y alrededores sin complicaciones.
-            </p>
-          </div>
-        </div>
-
-        <!-- Beneficio 3 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-150 flex items-center justify-center text-amber-700 shrink-0 mt-0.5">
-            <i class="fa-solid fa-credit-card text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Todos los medios de pago</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Aceptamos transferencias, tarjetas de débito/crédito, efectivo y billeteras virtuales.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Destacados -->
-    <section class="space-y-4">
-      <div>
-        <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Catálogo sugerido</span>
-        <h2 class="text-xl font-bold text-brand-dark tracking-tight">Destacados</h2>
-        <p class="text-xs text-brand-muted mt-0.5">Selección de artículos disponibles en stock para consultar de inmediato.</p>
-      </div>
-
-      <div class="grid grid-cols-2 gap-3.5">
-        <!-- Producto 1 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb0yjOcWooDirwg2Tu7DYCkJDsHghQ2OntejseOjKT9018yjDjYkZKCDcN8Emm16zTve6BP_hm7sAJiFbopQoWYU4yBMnCQUFYy2sN8RlqzEY6goa5E8KBv-b1OG8ZTemzSzOevV9Z32zR72LgXuU7GbP8Zz4A7v48_QIUrEu3PcGaSeJPJRjqYUTnUZlDRnaucDH6LReoe6O6sFAEIO95ikZKeiI6e1eUVMi92GVQA4JffNK1AJ5qEcPhrfBfsqP5lvCfGgengQ" alt="Producto destacado 1" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Línea Selecta A</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Modelo estándar de primera calidad y alta durabilidad.</p>
-            </div>
-            <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 2 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgXtAfnkMI1CYo-yDgCHxWbe3YjsWjZoJKg3JI2cnUzn63gOKUhtwPGZU9RTI9NQSawzqQhpO2fIxTY4Qho2Mu7H57_2tE4z_ooMGYM_neYr5KyNhGRymwYb6oO3v39eqpIGI7k8vV8ZH1vKLMeS8O1JHpKKbg-7xjZCuCPdtI02zTtdcYFTb1IC5WNht7CXum16skibjfvaIBvreTHC83fCXEM1YYKPWskb_wI6QjSQ-zAmxjHEH7AqPmWCdUTbWrBzcBieMbuA" alt="Producto destacado 2" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Opción Artesanal B</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Pieza destacada con acabados cuidados y gran funcionalidad.</p>
-            </div>
-            <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX7UN7eE_xdGd6zlA6GAJrtT5ZI-jDhiAGsVe_Z4rXY8CLcfnolXehLHK2UFr68cjua0hsKuXkR1z07qOaWASsGjV2AwiQwHaIgL4WcNNslwUcxyKhr4BcRW9m2ViD9Gq_8WsK9uiMy2o8hdnnMDUYF44egGTfLvdUxY8XBgVF3eHEYChrVn8kZdwvAUnjKkTJvkmfceCh5lk8-STfLiCGUBvMA-IGsVA2W4R5m8OStaajC5EzBioeE3aRfX0VrJ4kDGomvv_rfA" alt="Producto destacado 3" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Colección Urbana C</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Versátil, resistente y con el mejor balance para uso diario.</p>
-            </div>
-            <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA27T5MhvcOdVzWVpxazFlLh7vuVEeKP0b6FI2pgAMkDwNqgLs8GAPv6AGXghlonydIvFdnAanqeIkggfwNzYQOyvtH0O10C9_t4Tb8mwCaqlSSH22kRrzUmdnXc3Gm8QpnQcySm2gYa9YWW1zCVksHb_l4L0x_Z7vTcJHZwyY_7eLt5xly3IymRcmzL1eJsUe1oDreWKqqtIPj-y9hJfW3tuzrdZvGnl_3gIM2a46Q5hp-rIu4k0HezpYPDaFEw8lhCDfFTxlbbA" alt="Producto destacado 4" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Serie Especial D</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Alternativa recomendada con óptima relación calidad-precio.</p>
-            </div>
-            <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Visitanos -->
-    <section class="space-y-4">
-      <div>
-        <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Punto de encuentro</span>
-        <h2 class="text-xl font-bold text-brand-dark tracking-tight">Visitanos</h2>
-        <p class="text-xs text-brand-muted mt-0.5">Vení a conocernos al local o contactanos directamente.</p>
-      </div>
-
-      <div class="rounded-2xl bg-brand-card border border-brand-border p-5 space-y-4 shadow-sm">
-        <!-- Dirección -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Dirección</span>
-            <p class="text-sm font-semibold text-brand-dark">Avenida Raúl Scalabrini Ortiz, Villa Crespo</p>
-            <p class="text-xs text-brand-muted">Villa Crespo, Ciudad de Buenos Aires</p>
-          </div>
-        </div>
-
-        <div class="border-t border-brand-border/60"></div>
-
-        <!-- Horarios -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-clock"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Horarios de atención</span>
-            <p class="text-sm font-semibold text-brand-dark">Consultá horarios por WhatsApp</p>
-          </div>
-        </div>
-
-        <div class="border-t border-brand-border/60"></div>
-
-        <!-- Teléfono -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Teléfono</span>
-            <p class="text-sm font-semibold text-brand-dark">+54 11 4854-3069</p>
-          </div>
-        </div>
-
-        <!-- Botones de Acción -->
-        <div class="pt-2 grid grid-cols-1 gap-2.5">
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Farmacia%20Cadefa%20Avenida%20Ra%C3%BAl%20Scalabrini%20Ortiz%2C%20Villa%20Crespo" target="_blank" rel="noopener noreferrer" 
-             class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-dark hover:bg-stone-800 text-white font-semibold text-sm transition-colors shadow-sm active:scale-[0.99]">
-            <i class="fa-solid fa-diamond-turn-right text-brand-accent"></i>
-            <span>Cómo llegar</span>
-          </a>
-
-          <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer" 
-             class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-whatsapp hover:bg-emerald-600 text-white font-semibold text-sm transition-all whatsapp-btn-glow active:scale-[0.99]">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
-            <span>Escribinos por WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="mt-12 border-t border-brand-border bg-stone-100/80 px-4 py-8 text-center">
-    <div class="max-w-md mx-auto space-y-2">
-      <div class="inline-block">
-        <span class="font-bold text-base text-brand-dark">Farmacia Cadefa</span>
-        <span class="mx-1.5 text-stone-400">•</span>
-        <span class="text-xs text-brand-muted font-medium">Farmacia</span>
-      </div>
-      <p class="text-xs text-stone-500">
-        Farmacia Cadefa © 2026. Todos los derechos reservados.
-      </p>
-      <p class="text-[11px] text-stone-400">
-        Comercio barrial en Villa Crespo, Buenos Aires.
-      </p>
-    </div>
-  </footer>
-
-  <!-- Floating WhatsApp CTA Button -->
-  <aside aria-label="Contacto directo">
-    <a href="https://wa.me/5491148543069" target="_blank" rel="noopener noreferrer"
-       class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-brand-whatsapp hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl hover:scale-105 active:scale-95 transition-all whatsapp-btn-glow"
-       title="Consultar por WhatsApp">
-      <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
-  </aside>
-
-</body>
-</html>
+  })();
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full max-w-7xl mx-auto px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm mb-space-sm"><div class="w-5 h-5 bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[14px]">add</span></div><span class="font-title-sm text-title-sm uppercase font-bold text-on-surface">FARMACIA CADEFA</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Servicio farmacéutico y dermocosmético integral en el corazón de Villa Crespo, Ciudad de Buenos Aires.</p></div><div class="space-y-space-xs"><div class="font-label-index text-label-index uppercase tracking-wider text-on-surface font-semibold mb-space-sm">Navegación</div><ul class="space-y-space-xs"><li class="font-label-code text-label-code"><a class="text-on-surface-variant hover:text-on-surface" data-path="inicio" href="#">01 Servicios Farmacéuticos</a></li><li class="font-label-code text-label-code"><a class="text-on-surface-variant hover:text-on-surface" data-path="manda-tu-receta" href="#">02 Recepción de Recetas</a></li><li class="font-label-code text-label-code"><a class="text-on-surface-variant hover:text-on-surface" data-path="dermocosmetica" href="#">03 Dermocosmética Clínica</a></li><li class="font-label-code text-label-code"><a class="text-on-surface-variant hover:text-on-surface" data-path="visitanos" href="#">04 Guardia y Ubicación</a></li></ul></div><div class="space-y-space-xs"><div class="font-label-index text-label-index uppercase tracking-wider text-on-surface font-semibold mb-space-sm">Atención Directa</div><p class="font-body-sm text-body-sm text-on-surface-variant">Av. Raúl Scalabrini Ortiz, Villa Crespo</p><p class="font-label-code text-label-code text-on-surface"><a class="hover:text-primary" href="tel:01148543069">T. (011) 4854-3069</a></p><p class="font-label-code text-label-code text-on-surface"><a class="text-primary hover:underline" href="https://wa.me/5491148543069">WA. +54 9 11 4854-3069</a></p><p class="font-label-meta text-label-meta text-secondary">Lun a Vie 8:00 a 21:00 · Sáb 9:00 a 14:00</p></div><div class="space-y-space-xs"><div class="font-label-index text-label-index uppercase tracking-wider text-on-surface font-semibold mb-space-sm">Obras Sociales</div><p class="font-body-sm text-body-sm text-on-surface-variant">Atención a prepagas y convenios oficiales PAMI, OSDE, Swiss Medical y más.</p><div class="pt-space-xs"><span class="inline-block bg-secondary-container text-on-secondary-container font-label-meta text-label-meta px-space-sm py-space-xs uppercase">Validación en línea</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-meta text-label-meta text-secondary"><div class="flex items-center gap-space-md"><span>© 2026 Farmacia Cadefa. Todos los derechos reservados.</span><span>Villa Crespo, CABA, Argentina.</span></div><div class="flex items-center gap-space-md font-label-code text-label-code"><a class="hover:text-on-surface" href="#">Términos y Condiciones</a><a class="hover:text-on-surface" href="#">Política de Privacidad</a></div></div></div></footer></body></html>

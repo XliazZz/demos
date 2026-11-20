@@ -1,350 +1,1130 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta name="robots" content="noindex, nofollow">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concept - Comercio en Villa Crespo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              accent: '#E65100', // Bold warm amber-terracotta accent
-              'accent-hover': '#CC4400',
-              whatsapp: '#25D366',
-              'whatsapp-dark': '#128C7E',
-              dark: '#1A1816',
-              surface: '#FAF9F6',
-              card: '#FFFFFF',
-              muted: '#686461',
-              border: '#E8E5E0',
-              highlight: '#F3EFEA'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            serif: ['"Playfair Display"', 'serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body {
-      background-color: #FAF9F6;
-      color: #1A1816;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    .badge-rubro {
-      letter-spacing: 0.05em;
-    }
-    .whatsapp-btn-glow {
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
-    }
-    .accent-btn-glow {
-      box-shadow: 0 4px 18px rgba(230, 81, 0, 0.25);
-    }
-  </style>
-</head>
-<body class="min-h-screen pb-20 relative selection:bg-orange-100 selection:text-orange-900"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Concept. No es el sitio oficial.</div>
 
-  <!-- Header -->
-  <header class="sticky top-0 z-40 bg-[#FAF9F6]/95 backdrop-blur-md border-b border-brand-border/80 px-4 py-3.5 transition-all">
-    <div class="max-w-md mx-auto flex items-center justify-between">
-      <div class="flex flex-col">
-        <span class="text-xl font-bold tracking-tight text-brand-dark leading-tight">Concept</span>
-        <span class="text-[11px] font-medium text-brand-muted flex items-center gap-1 mt-0.5">
-          <i class="fa-solid fa-location-dot text-brand-accent text-[10px]"></i> Villa Crespo, CABA
-        </span>
-      </div>
-      <div>
-        <span class="badge-rubro inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-stone-200/80 text-stone-800 border border-stone-300">
-          Gimnasio
-        </span>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-md mx-auto px-4 pt-4 space-y-8">
-
-    <!-- Hero Section -->
-    <section class="relative rounded-3xl overflow-hidden shadow-sm border border-brand-border bg-brand-card">
-      <div class="relative h-64 w-full">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmU57zE7nmlFaZwFNvKkqyv1jaNZAV9oXQ0wN5Uror7L8G1nWPAU-XNN8UcQXgqERej3HlN7pT9fwQ3ofFzL3upjHnwpo7QsgJttKF6fnTiJE6Sqhb0Pva5hIxDdJ4DPun8Mxv7uicp3CfLbcQUMGr5u1YfAYVXjJ-Eu0mevvPIpr21ar3WIcW-0YIiOAJBEQfVIJU68ctm1nFCergVEBaISWoZceMqZosPOmcMgnc9pAEfJ4ioCOQ3tfMhjBxu0Dq8spMN83GXA" alt="Local comercial en Villa Crespo" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent"></div>
-        <div class="absolute top-3 left-3">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-white/90 backdrop-blur-sm text-stone-900 shadow-sm">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse"></span>
-            Abierto en el barrio
-          </span>
-        </div>
-        <div class="absolute bottom-4 left-4 right-4 text-white">
-          <span class="inline-block text-xs uppercase tracking-wider font-semibold text-orange-200 mb-1">
-            Gimnasio en Villa Crespo
-          </span>
-          <h1 class="text-3xl font-extrabold tracking-tight leading-tight mb-2 drop-shadow-sm font-serif">
-            Concept
-          </h1>
-          <p class="text-sm text-stone-200 leading-relaxed max-w-[95%]">
-            Atención cordial, artículos seleccionados y el compromiso de siempre para vecinos y amigos de la zona.
+<html class="dark" lang="es"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CONCEPT // Villa Crespo Training Facility</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .clip-cut-corner { clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%); }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary": "#273500", "on-tertiary-container": "#636565", "outline-variant": "#434933", "on-secondary-container": "#b5b5b5", "on-primary-fixed": "#151f00", "on-secondary-fixed": "#1b1c1c", "on-error-container": "#ffdad6", "inverse-primary": "#4e6700", "error-container": "#93000a", "on-tertiary": "#2f3131", "on-primary-fixed-variant": "#3a4d00", "on-error": "#690005", "on-tertiary-fixed": "#1a1c1c", "tertiary": "#ffffff", "on-secondary-fixed-variant": "#464747", "on-surface-variant": "#c3caac", "inverse-on-surface": "#313030", "tertiary-fixed": "#e2e2e2", "secondary-fixed-dim": "#c7c6c6", "on-background": "#e5e2e1", "secondary": "#c7c6c6", "on-primary-container": "#536d00", "on-tertiary-fixed-variant": "#454747", "surface-container-low": "#1c1b1b", "surface-variant": "#353534", "primary-fixed": "#bef500", "surface-container-high": "#2a2a2a", "primary-fixed-dim": "#a6d700", "surface-container": "#201f1f", "tertiary-container": "#e2e2e2", "on-surface": "#e5e2e1", "primary": "#ffffff", "surface-container-lowest": "#0e0e0e", "tertiary-fixed-dim": "#c6c6c7", "on-secondary": "#303031", "surface-container-highest": "#353534", "secondary-container": "#464747", "background": "#131313", "error": "#ffb4ab", "surface": "#131313", "surface-tint": "#a6d700", "surface-dim": "#131313", "primary-container": "#bef500", "inverse-surface": "#e5e2e1", "outline": "#8d9479", "surface-bright": "#3a3939", "secondary-fixed": "#e3e2e2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "3rem", "margin": "2.5rem", "margin-mobile": "1rem", "space-lg": "1.75rem", "gutter-mobile": "0.75rem", "gutter": "1.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "display-hero": ["Barlow Condensed"], "body-lg": ["Inter"], "display-hero-mobile": ["Barlow Condensed"], "headline-lg-mobile": ["Barlow Condensed"], "label-lg": ["Barlow Condensed"], "headline-md": ["Barlow Condensed"], "headline-sm": ["Barlow Condensed"], "label-sm": ["Barlow Condensed"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Barlow Condensed"], "label-md": ["Barlow Condensed"] }, fontSize: { "display-hero": ["72px", { lineHeight: "68px", letterSpacing: "-0.02em", fontWeight: "900" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "display-hero-mobile": ["44px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "900" }], "headline-lg-mobile": ["32px", { lineHeight: "34px", letterSpacing: "0em", fontWeight: "800" }], "label-lg": ["18px", { lineHeight: "18px", letterSpacing: "0.08em", fontWeight: "700" }], "headline-md": ["28px", { lineHeight: "30px", letterSpacing: "0.01em", fontWeight: "700" }], "headline-sm": ["22px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "12px", letterSpacing: "0.12em", fontWeight: "700" }], "body-md": ["15px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["48px", { lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "800" }], "label-md": ["14px", { lineHeight: "14px", letterSpacing: "0.1em", fontWeight: "700" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden"><div style="position:fixed;left:12px;bottom:12px;z-index:2147483647;max-width:calc(100% - 100px);background:rgba(17,17,17,.92);color:#fff;font:12px/1.35 system-ui,sans-serif;padding:7px 11px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Demo de muestra hecha por Elias para Concept. No es el sitio oficial.</div><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest"><div class="h-20 w-full px-gutter-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex items-center tracking-tighter group" data-path="landing" href="#"><span class="font-headline-lg text-headline-lg italic font-black uppercase text-tertiary tracking-tight">CONCEPT</span><span class="font-headline-lg text-headline-lg italic font-black text-primary-container ml-1 transform group-hover:skew-x-12 transition-transform">//</span></a><div class="hidden xl:flex items-center px-space-xs py-0.5 bg-surface-container-high border border-surface-variant"><span class="font-label-sm text-label-sm uppercase text-primary-container tracking-widest">VILLA CRESPO HQ</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary-container border-b-2 border-primary-container"><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary-container transition-colors py-1" data-path="disciplinas" href="#disciplinas">Disciplinas</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary-container transition-colors py-1" data-path="grilla-semanal" href="#grilla-semanal">Grilla Semanal</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary-container transition-colors py-1" data-path="planes" href="#planes">Planes</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary-container transition-colors py-1" data-path="ubicacion" href="#ubicacion">Ubicación</a></nav><div class="flex items-center gap-space-md"><a class="clip-cut-corner bg-primary-container hover:bg-tertiary text-on-primary-container hover:text-surface-container-lowest px-space-lg py-3 font-label-lg text-label-lg italic font-black uppercase tracking-wider transition-all duration-150 transform hover:-translate-y-0.5 inline-flex items-center gap-space-xs" href="#clase-gratis">Clase Gratis</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full text-on-surface bg-surface-container-lowest selection:bg-primary-container selection:text-on-primary-container overflow-hidden">
+<!-- ========================================================================= -->
+<!-- 1. HERO SECTION                                                          -->
+<!-- ========================================================================= -->
+<section class="relative w-full lg:min-h-[820px] flex flex-col justify-between overflow-hidden bg-surface-container-lowest">
+<!-- Huge Watermark Backdrop Typo -->
+<div class="block lg:hidden absolute inset-0 z-0 pointer-events-none overflow-hidden"><img alt="Concept Gym Villa Crespo Kettlebells" class="w-full h-full object-cover filter grayscale contrast-125 opacity-20" src="img/40e832c0549db761.jpg"/><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-surface-container-lowest/90"></div></div><div class="absolute -top-12 -left-10 select-none pointer-events-none opacity-[0.03] whitespace-nowrap z-0">
+<span class="font-display-hero text-[180px] lg:text-[340px] uppercase italic font-black text-tertiary">FUERZA</span>
+</div>
+<!-- Main Hero Split Container -->
+<div class="relative z-10 w-full px-gutter-mobile md:px-margin pt-6 lg:pt-12 pb-12 flex flex-col lg:justify-center lg:flex-1">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Dynamic Visual & Bold Manifesto -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Neighborhood Badge -->
+<div class="inline-flex items-center gap-space-xs self-start px-3 py-1 bg-surface-container-high">
+<span class="w-2 h-2 bg-primary-container inline-block animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">VILLA CRESPO // SERRANO 290</span>
+<span class="font-label-sm text-label-sm text-secondary">· GIMNASIO DE BARRIO</span>
+</div>
+<!-- Giant Display Headline -->
+<h1 class="font-display-hero text-display-hero uppercase italic tracking-tighter text-tertiary">
+            ENTRENÁ <br/>
+<span class="text-primary-container">SIN EXCUSAS</span>
+</h1>
+<!-- Argentine Rioplatense Manifesto Body -->
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+            El centro de entrenamiento de Villa Crespo que te empuja a romper tus límites con profes que te cuidan la técnica y la mejor comunidad del barrio.
           </p>
-        </div>
-      </div>
-      
-      <div class="p-4 bg-brand-card">
-        <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer" 
-           class="w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-2xl bg-brand-whatsapp hover:bg-emerald-600 text-white font-bold text-base transition-all whatsapp-btn-glow active:scale-[0.98]">
-          <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>Consultá por WhatsApp</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Por qué elegirnos -->
-    <section class="space-y-3.5">
-      <div class="flex items-center justify-between">
-        <div>
-          <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Confianza de barrio</span>
-          <h2 class="text-xl font-bold text-brand-dark tracking-tight">Por qué elegirnos</h2>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 gap-3">
-        <!-- Beneficio 1 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-orange-50 border border-orange-150 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-comments text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Atención personalizada</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Te asesoramos con dedicación y conocimiento para encontrar exactamente lo que necesitás.
+<!-- Action Hub & Fast Metrics -->
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<a class="clip-cut-corner bg-primary-container hover:bg-tertiary text-on-primary-container hover:text-surface-container-lowest px-8 py-4 font-label-lg text-label-lg italic font-black uppercase tracking-wider transition-all duration-150 transform hover:-translate-y-0.5 inline-flex items-center gap-space-xs" href="#prueba-gratis">
+<span>VENÍ A ENTRENAR HOY</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="px-6 py-4 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-widest transition-colors inline-flex items-center gap-space-xs" href="#grilla-semanal">
+<span class="material-symbols-outlined text-base text-primary-container">calendar_month</span>
+<span>VER HORARIOS</span>
+</a>
+</div>
+<!-- Sub-hero Photo Banner (High Contrast B&W Kettlebells) -->
+<div class="relative w-full h-44 sm:h-56 mt-4 overflow-hidden clip-cut-corner bg-surface-container">
+<img class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 hover:scale-105 transition-transform duration-700" data-alt="High-contrast black and white dynamic gym photography of two focused athletes swinging heavy cast iron kettlebells in a gritty industrial subterranean gym in Villa Crespo with chalk dust floating in stark directional rim lighting" src="img/40e832c0549db761.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-3 left-4 flex items-center gap-2">
+<span class="px-2 py-0.5 bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary-container uppercase">POTENCIA REAL</span>
+<span class="font-body-sm text-body-sm text-secondary">// TÉCNICA Y CORRECCIÓN CONSTANTE</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Electric Lime Impact Action Panel -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="relative bg-primary-container text-on-primary-container p-6 sm:p-8 clip-cut-corner shadow-2xl">
+<!-- Cut corner badge -->
+<div class="flex items-center justify-between pb-4">
+<span class="font-label-sm text-label-sm font-black uppercase tracking-widest bg-surface-container-lowest text-primary-container px-2.5 py-1">BENEFICIO VECINAL</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-primary-container tracking-wider">CUPO LIMITADO</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-on-primary-container leading-none pt-2">
+              CLASE DE PRUEBA <br/>100% GRATIS
+            </h2>
+<p class="font-body-md text-body-md font-semibold text-on-primary-container/90 pt-3">
+              Vení a probar el gimnasio sin costo ni compromiso. Conocé las instalaciones, sentí la intensidad y charlá con nuestro equipo de profes sobre tus objetivos.
             </p>
-          </div>
-        </div>
-
-        <!-- Beneficio 2 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-150 flex items-center justify-center text-emerald-600 shrink-0 mt-0.5">
-            <i class="fa-solid fa-bicycle text-lg"></i>
-          </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Envíos en el barrio</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Hacemos entregas ágiles y coordinadas en Villa Crespo y alrededores sin complicaciones.
+<!-- Feature Bullet List -->
+<div class="py-4 space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base font-black">check_circle</span>
+<span class="font-label-md text-label-md uppercase font-bold">Evaluación funcional inicial</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base font-black">check_circle</span>
+<span class="font-label-md text-label-md uppercase font-bold">Cualquier disciplina a elección</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base font-black">check_circle</span>
+<span class="font-label-md text-label-md uppercase font-bold">Vestuarios con duchas y lockers</span>
+</div>
+</div>
+<!-- Action Button -->
+<a class="w-full bg-surface-container-lowest hover:bg-surface-container text-primary-container hover:text-tertiary px-6 py-4 font-label-lg text-label-lg italic font-black uppercase tracking-widest flex items-center justify-center gap-2 transition-all duration-150 transform active:scale-95" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20reservar%20mi%20clase%20de%20prueba%20gratis%20en%20Serrano%20290" rel="noopener noreferrer" target="_blank">
+<span>RESERVÁ TU CLASE POR WHATSAPP</span>
+<span class="material-symbols-outlined">bolt</span>
+</a>
+<!-- Footnote notice -->
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container/80 pt-3 text-center">
+              Sin tarjeta ni permanencia. Serrano 290, Villa Crespo.
             </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Continuous Running Marquee Banner -->
+<div class="w-full bg-primary-container text-on-primary-container py-2.5 overflow-hidden select-none z-20">
+<div class="flex whitespace-nowrap font-label-md text-label-md uppercase font-black tracking-widest animate-[marquee_20s_linear_infinite]">
+<span>FUNCIONAL · CROSSFIT · SPINNING · YOGA · MUSCULACIÓN · BOXEO RECREATIVO · MOVILIDAD · RECUPERACIÓN · COMUNIDAD VILLA CRESPO · FUNCIONAL · CROSSFIT · SPINNING · YOGA · MUSCULACIÓN · BOXEO RECREATIVO · MOVILIDAD · RECUPERACIÓN · COMUNIDAD VILLA CRESPO · </span>
+<span>FUNCIONAL · CROSSFIT · SPINNING · YOGA · MUSCULACIÓN · BOXEO RECREATIVO · MOVILIDAD · RECUPERACIÓN · COMUNIDAD VILLA CRESPO · FUNCIONAL · CROSSFIT · SPINNING · YOGA · MUSCULACIÓN · BOXEO RECREATIVO · MOVILIDAD · RECUPERACIÓN · COMUNIDAD VILLA CRESPO · </span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 2. DISCIPLINAS // NUESTRO MÉTODO                                         -->
+<!-- ========================================================================= -->
+<section class="relative w-full px-gutter-mobile md:px-margin py-space-xl bg-surface-container-lowest" id="disciplinas">
+<!-- Huge background watermark -->
+<div class="absolute right-0 top-1/4 select-none pointer-events-none opacity-[0.025] z-0">
+<span class="font-display-hero text-[140px] lg:text-[280px] uppercase italic font-black text-tertiary">ENERGÍA</span>
+</div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="inline-flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">SISTEMA DE ENTRENAMIENTO INTEGRAL</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-tertiary">
+            DISCIPLINAS <span class="text-primary-container">//</span> NUESTRO MÉTODO
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary max-w-md">
+          Rutinas planificadas por entrenadores matriculados. Desde acondicionamiento metabólico hasta fuerza estructural pesada.
+        </p>
+</div>
+<!-- 4-Card Responsive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- CARD 1: Funcional -->
+<div class="group relative flex flex-col bg-surface-container-low clip-cut-corner overflow-hidden transition-all duration-200 hover:-translate-y-1">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:scale-110 transition-transform duration-500" data-alt="Intense monochromatic athletic training photography of woman swinging heavy kettlebell overhead with chalk dust flying and fierce expression in Villa Crespo gym" src="img/4d594d6b5508b6b5.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-3 left-3 bg-primary-container text-on-primary-container px-2 py-0.5 font-label-sm text-label-sm uppercase font-black">
+              POTENCIA
+            </div>
+<div class="absolute bottom-3 left-3 font-label-sm text-label-sm text-secondary">
+              01 // METABÓLICO
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary group-hover:text-primary-container transition-colors">
+                Funcional &amp; Kettlebells
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary pt-2">
+                Circuitos metabólicos para quemar, tonificar y ganar resistencia real con pesas rusas, cajones, sogas y trineos.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">TODOS LOS NIVELES</span>
+<a class="text-tertiary hover:text-primary-container flex items-center gap-1 font-label-sm text-label-sm uppercase font-bold" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20consultar%20por%20Funcional" target="_blank">
+                CONSULTAR <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 2: Levantamiento Olímpico & Musculación -->
+<div class="group relative flex flex-col bg-surface-container-low clip-cut-corner overflow-hidden transition-all duration-200 hover:-translate-y-1">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:scale-110 transition-transform duration-500" data-alt="Muscular male athlete performing heavy barbell deadlift with bent bar and intense grit facial expression in dark raw industrial gym aesthetic with chalk on floor" src="img/333d7aced3b6f721.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-3 left-3 bg-surface-container-high text-tertiary px-2 py-0.5 font-label-sm text-label-sm uppercase font-black">
+              FUERZA
+            </div>
+<div class="absolute bottom-3 left-3 font-label-sm text-label-sm text-secondary">
+              02 // ESTRUCTURAL
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary group-hover:text-primary-container transition-colors">
+                Fuerza &amp; Musculación
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary pt-2">
+                Zona de barras, plataformas de caucho y racks equipados para ganar masa muscular sólida y técnica de levantamiento limpia.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">SALA LIBRE + COACH</span>
+<a class="text-tertiary hover:text-primary-container flex items-center gap-1 font-label-sm text-label-sm uppercase font-bold" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20consultar%20por%20Musculaci%C3%B3n" target="_blank">
+                CONSULTAR <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 3: Spinning & Indoor Cycle -->
+<div class="group relative flex flex-col bg-surface-container-low clip-cut-corner overflow-hidden transition-all duration-200 hover:-translate-y-1">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:scale-110 transition-transform duration-500" data-alt="Studio filled with sweaty athletes riding stationary spin bikes in dimly lit neon indoor cycling room, high energy rhythm workout in black and white" src="img/e4c8c1825699c39f.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-3 left-3 bg-primary-container text-on-primary-container px-2 py-0.5 font-label-sm text-label-sm uppercase font-black">
+              CARDIO
+            </div>
+<div class="absolute bottom-3 left-3 font-label-sm text-label-sm text-secondary">
+              03 // CADENCIA
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary group-hover:text-primary-container transition-colors">
+                Spinning &amp; Indoor Cycle
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary pt-2">
+                Pedaleo intenso guiado por música, ritmo y cadencia. Subidas de montaña e intervalos de sprint con control de frecuencia.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">BICIS MAGNÉTICAS</span>
+<a class="text-tertiary hover:text-primary-container flex items-center gap-1 font-label-sm text-label-sm uppercase font-bold" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20consultar%20por%20Spinning" target="_blank">
+                CONSULTAR <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 4: Boxeo & Golpeo Recreativo -->
+<div class="group relative flex flex-col bg-surface-container-low clip-cut-corner overflow-hidden transition-all duration-200 hover:-translate-y-1">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:scale-110 transition-transform duration-500" data-alt="Sweaty boxer throwing a powerful punch against a heavy hanging leather bag with dust particles illuminated in dramatic dark gym lighting" src="img/66ed8968bbe3987c.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-3 left-3 bg-surface-container-high text-tertiary px-2 py-0.5 font-label-sm text-label-sm uppercase font-black">
+              VELOCIDAD
+            </div>
+<div class="absolute bottom-3 left-3 font-label-sm text-label-sm text-secondary">
+              04 // REFLEJOS
+            </div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary group-hover:text-primary-container transition-colors">
+                Boxeo &amp; Golpeo
+              </h3>
+<p class="font-body-sm text-body-sm text-secondary pt-2">
+                Técnica de guardia, golpe al saco, soga y desplazamientos. Todo el desgaste físico del ring sin combate directo entre alumnos.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">GUANTES INCLUIDOS</span>
+<a class="text-tertiary hover:text-primary-container flex items-center gap-1 font-label-sm text-label-sm uppercase font-bold" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20consultar%20por%20Boxeo" target="_blank">
+                CONSULTAR <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. GRILLA SEMANAL DE CLASES (SIGNATURE INTERACTIVE FEATURE)               -->
+<!-- ========================================================================= -->
+<section class="w-full px-gutter-mobile md:px-margin py-space-xl bg-surface-container-lowest" id="grilla-semanal">
+<div class="flex flex-col gap-space-md">
+<!-- Header & Disciplines Filter Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">HORARIOS Y CUPOS EN VIVO</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-tertiary">
+            GRILLA SEMANAL <span class="text-primary-container">//</span> RESERVÁ TU LUGAR
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary pt-1">
+            Hacé clic en cualquier clase para enviar un WhatsApp automático y asegurar tu lugar en el turno.
+          </p>
+</div>
+<!-- Filter Chips -->
+<div class="flex flex-wrap items-center gap-2" id="grilla-filter-container">
+<button class="filter-btn active bg-primary-container text-on-primary-container px-3 py-1.5 font-label-md text-label-md uppercase font-bold transition-all" data-filter="TODAS">
+            TODAS
+          </button>
+<button class="filter-btn bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 font-label-md text-label-md uppercase font-bold transition-all" data-filter="FUNCIONAL">
+            FUNCIONAL
+          </button>
+<button class="filter-btn bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 font-label-md text-label-md uppercase font-bold transition-all" data-filter="CROSSFIT">
+            CROSSFIT
+          </button>
+<button class="filter-btn bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 font-label-md text-label-md uppercase font-bold transition-all" data-filter="SPINNING">
+            SPINNING
+          </button>
+<button class="filter-btn bg-surface-container hover:bg-surface-container-high text-on-surface px-3 py-1.5 font-label-md text-label-md uppercase font-bold transition-all" data-filter="YOGA">
+            YOGA
+          </button>
+</div>
+</div>
+<!-- Instruction Notice -->
+<div class="flex items-center gap-2 p-2.5 bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-primary-container text-base">touch_app</span>
+<span>Hacé clic en cualquier bloque horario para reservar directo vía WhatsApp con el profe a cargo.</span>
+</div>
+<!-- DESKTOP VIEW (>=768px): 7-Column Grid Table -->
+<div class="hidden md:block w-full overflow-hidden bg-surface-container-low p-3 clip-cut-corner">
+<div class="grid grid-cols-7 gap-2">
+<!-- Column Headers -->
+<div class="p-3 bg-surface-container-lowest text-center flex flex-col justify-center">
+<span class="font-label-md text-label-md uppercase text-secondary">HORARIO</span>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm uppercase italic font-black text-tertiary">LUNES</span>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm uppercase italic font-black text-tertiary">MARTES</span>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm uppercase italic font-black text-tertiary">MIÉRCOLES</span>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm uppercase italic font-black text-tertiary">JUEVES</span>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm uppercase italic font-black text-tertiary">VIERNES</span>
+</div>
+<div class="p-3 bg-surface-container-lowest text-center">
+<span class="font-headline-sm text-headline-sm uppercase italic font-black text-primary-container">SÁBADO</span>
+</div>
+<!-- ROW 1: 08:00 AM -->
+<div class="p-3 bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm italic font-bold text-secondary">
+            08:00
           </div>
-        </div>
-
-        <!-- Beneficio 3 -->
-        <div class="p-4 rounded-2xl bg-brand-card border border-brand-border flex items-start gap-3.5 shadow-sm hover:border-stone-300 transition-colors">
-          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-150 flex items-center justify-center text-amber-700 shrink-0 mt-0.5">
-            <i class="fa-solid fa-credit-card text-lg"></i>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Lunes" data-time="08:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container group-hover:text-on-primary-container">FUNCIONAL</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Nico</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Martes" data-time="08:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">CROSSFIT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Miércoles" data-time="08:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Nico</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Jueves" data-time="08:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">CROSSFIT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Viernes" data-time="08:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Nico</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Sábado" data-time="09:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING (9:30)</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Caro</span>
+</div>
+</div>
+<!-- ROW 2: 10:00 AM -->
+<div class="p-3 bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm italic font-bold text-secondary">
+            10:00
           </div>
-          <div>
-            <h3 class="font-bold text-brand-dark text-sm sm:text-base">Todos los medios de pago</h3>
-            <p class="text-xs sm:text-sm text-brand-muted mt-0.5 leading-snug">
-              Aceptamos transferencias, tarjetas de débito/crédito, efectivo y billeteras virtuales.
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Lunes" data-time="10:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Caro</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="YOGA" data-day="Martes" data-time="10:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-on-surface-variant">YOGA FLOW</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Flor</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Miércoles" data-time="10:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Caro</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="YOGA" data-day="Jueves" data-time="10:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-on-surface-variant">YOGA FLOW</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Flor</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Viernes" data-time="10:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Caro</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Sábado" data-time="11:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">TEAM WOD (11:00)</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<!-- ROW 3: 18:00 PM -->
+<div class="p-3 bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm italic font-bold text-secondary">
+            18:00
+          </div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Lunes" data-time="18:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Fede</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Martes" data-time="18:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">CROSSFIT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Miércoles" data-time="18:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Fede</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Jueves" data-time="18:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">CROSSFIT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Viernes" data-time="18:00">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Fede</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Sábado" data-time="12:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">OPEN BOX (12:30)</span>
+<span class="font-body-sm text-body-sm font-semibold">Guardia</span>
+</div>
+</div>
+<!-- ROW 4: 19:30 PM -->
+<div class="p-3 bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm italic font-bold text-secondary">
+            19:30
+          </div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Lunes" data-time="19:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING RUSH</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Lucas</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Martes" data-time="19:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL HIT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Nico</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Miércoles" data-time="19:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING RUSH</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Lucas</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="FUNCIONAL" data-day="Jueves" data-time="19:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-primary-container">FUNCIONAL HIT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Nico</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="SPINNING" data-day="Viernes" data-time="19:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-tertiary">SPINNING RUSH</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Lucas</span>
+</div>
+</div>
+<div class="p-1">
+<div class="p-2.5 bg-surface-container-lowest text-secondary/40 flex items-center justify-center h-20 clip-cut-corner">
+<span class="font-label-sm text-label-sm">CIERRE 20HS</span>
+</div>
+</div>
+<!-- ROW 5: 20:30 PM -->
+<div class="p-3 bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm italic font-bold text-secondary">
+            20:30
+          </div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Lunes" data-time="20:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">CROSSFIT NIGHT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="YOGA" data-day="Martes" data-time="20:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-on-surface-variant">YOGA ASHTANGA</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Flor</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Miércoles" data-time="20:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">CROSSFIT NIGHT</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="YOGA" data-day="Jueves" data-time="20:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-on-surface-variant">YOGA ASHTANGA</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Flor</span>
+</div>
+</div>
+<div class="p-1">
+<div class="class-card cursor-pointer p-2.5 bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container transition-all flex flex-col justify-between h-20 clip-cut-corner" data-class="CROSSFIT" data-day="Viernes" data-time="20:30">
+<span class="font-label-sm text-label-sm uppercase font-black text-secondary">FRIDAY WOD</span>
+<span class="font-body-sm text-body-sm font-semibold">Profe Juan</span>
+</div>
+</div>
+<div class="p-1">
+<div class="p-2.5 bg-surface-container-lowest text-secondary/40 flex items-center justify-center h-20 clip-cut-corner">
+<span class="font-label-sm text-label-sm">CIERRE 20HS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- MOBILE VIEW (<768px): Day Tabs Switcher + Vertical Card Stream -->
+<div class="block md:hidden w-full flex flex-col gap-space-sm">
+<!-- Day Pill Switcher -->
+<div class="flex items-center gap-1 overflow-x-auto pb-2 scrollbar-none" id="mobile-day-tabs">
+<button class="day-tab active px-4 py-2 bg-primary-container text-on-primary-container font-label-md text-label-md uppercase font-black flex-1 text-center" data-day="LUN">LUN</button>
+<button class="day-tab px-4 py-2 bg-surface-container text-on-surface font-label-md text-label-md uppercase font-bold flex-1 text-center" data-day="MAR">MAR</button>
+<button class="day-tab px-4 py-2 bg-surface-container text-on-surface font-label-md text-label-md uppercase font-bold flex-1 text-center" data-day="MIE">MIÉ</button>
+<button class="day-tab px-4 py-2 bg-surface-container text-on-surface font-label-md text-label-md uppercase font-bold flex-1 text-center" data-day="JUE">JUE</button>
+<button class="day-tab px-4 py-2 bg-surface-container text-on-surface font-label-md text-label-md uppercase font-bold flex-1 text-center" data-day="VIE">VIE</button>
+<button class="day-tab px-4 py-2 bg-surface-container text-on-surface font-label-md text-label-md uppercase font-bold flex-1 text-center" data-day="SAB">SÁB</button>
+</div>
+<!-- Dynamic Mobile List Container -->
+<div class="flex flex-col gap-2" id="mobile-schedule-content">
+<!-- Populated by JavaScript according to active day and active discipline filter -->
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. PLANES & MEMBRESÍAS (3 COLUMNS)                                       -->
+<!-- ========================================================================= -->
+<section class="w-full px-gutter-mobile md:px-margin py-space-xl bg-surface-container-lowest" id="planes">
+<div class="flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="inline-flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">VALORES CLAROS // SIN SORPRESAS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-tertiary">
+            PLANES <span class="text-primary-container">//</span> INVERTÍ EN VOS
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary max-w-md">
+          Elegí la modalidad que mejor se adapte a tu rutina. Descuentos por pago en efectivo o transferencia en recepción.
+        </p>
+</div>
+<!-- 3-Column Plan Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch">
+<!-- PLAN 1: Mensual Estándar -->
+<div class="flex flex-col justify-between bg-surface-container-low p-6 sm:p-8 clip-cut-corner">
+<div>
+<div class="flex justify-between items-center pb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">MEMBRESÍA BÁSICA</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary">MENSUAL</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary">
+              Plan Mensual
+            </h3>
+<div class="pt-4 pb-6">
+<span class="font-display-hero text-[56px] leading-none uppercase italic font-black text-tertiary">$38.000</span>
+<span class="font-label-md text-label-md text-secondary">/ MES</span>
+</div>
+<!-- Bullet perks -->
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Acceso completo a sala de musculación</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Hasta 3 clases guiadas por semana</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Vestuarios con duchas y lockers libres</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Rutina digital y seguimiento en app</span>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface px-6 py-4 font-label-md text-label-md uppercase font-bold tracking-wider text-center flex items-center justify-center gap-2 transition-colors" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20anotarme%20en%20el%20Plan%20Mensual" rel="noopener noreferrer" target="_blank">
+<span>QUIERO ESTE PLAN</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- PLAN 2: Trimestral (DESTACADO / MÁS ELEGIDO) -->
+<div class="relative flex flex-col justify-between bg-surface-container p-6 sm:p-8 clip-cut-corner shadow-2xl lg:-translate-y-2">
+<!-- Outstanding badge -->
+<div class="absolute -top-3 right-6 bg-primary-container text-on-primary-container px-3 py-1 font-label-sm text-label-sm uppercase font-black">
+            MÁS ELEGIDO · AHORRO $15.000
+          </div>
+<div>
+<div class="flex justify-between items-center pb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-bold">RECOMENDADO</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary">3 MESES</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary">
+              Plan Trimestral
+            </h3>
+<div class="pt-4 pb-2">
+<span class="font-display-hero text-[56px] leading-none uppercase italic font-black text-primary-container">$99.000</span>
+<span class="font-label-md text-label-md text-secondary">/ TRIMESTRE</span>
+</div>
+<p class="font-label-sm text-label-sm text-primary-container font-semibold uppercase tracking-wider pb-6">
+              Equivalente a solo $33.000 por mes
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Destacados -->
-    <section class="space-y-4">
-      <div>
-        <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Catálogo sugerido</span>
-        <h2 class="text-xl font-bold text-brand-dark tracking-tight">Destacados</h2>
-        <p class="text-xs text-brand-muted mt-0.5">Selección de artículos disponibles en stock para consultar de inmediato.</p>
-      </div>
-
-      <div class="grid grid-cols-2 gap-3.5">
-        <!-- Producto 1 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb0yjOcWooDirwg2Tu7DYCkJDsHghQ2OntejseOjKT9018yjDjYkZKCDcN8Emm16zTve6BP_hm7sAJiFbopQoWYU4yBMnCQUFYy2sN8RlqzEY6goa5E8KBv-b1OG8ZTemzSzOevV9Z32zR72LgXuU7GbP8Zz4A7v48_QIUrEu3PcGaSeJPJRjqYUTnUZlDRnaucDH6LReoe6O6sFAEIO95ikZKeiI6e1eUVMi92GVQA4JffNK1AJ5qEcPhrfBfsqP5lvCfGgengQ" alt="Producto destacado 1" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Línea Selecta A</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Modelo estándar de primera calidad y alta durabilidad.</p>
+<!-- Bullet perks -->
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base font-bold">check_circle</span>
+<span class="font-semibold text-tertiary">Pase libre ilimitado a todas las disciplinas</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base font-bold">check_circle</span>
+<span>Crossfit, Funcional, Spinning, Yoga y Musculación</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base font-bold">check_circle</span>
+<span>Seguimiento antropométrico y corporal mensual</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base font-bold">check_circle</span>
+<span>2 pases de invitado mensuales gratis para amigos</span>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="clip-cut-corner w-full bg-primary-container hover:bg-tertiary text-on-primary-container hover:text-surface-container-lowest px-6 py-4 font-label-lg text-label-lg italic font-black uppercase tracking-widest text-center flex items-center justify-center gap-2 transition-all duration-150 transform hover:-translate-y-0.5" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20anotarme%20en%20el%20Plan%20Trimestral" rel="noopener noreferrer" target="_blank">
+<span>QUIERO ESTE PLAN</span>
+<span class="material-symbols-outlined text-base">bolt</span>
+</a>
+</div>
+</div>
+<!-- PLAN 3: Pase Libre Mensual -->
+<div class="flex flex-col justify-between bg-surface-container-low p-6 sm:p-8 clip-cut-corner">
+<div>
+<div class="flex justify-between items-center pb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">FLEXIBILIDAD TOTAL</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary">LIBRE</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase italic font-black text-tertiary">
+              Pase Libre Mensual
+            </h3>
+<div class="pt-4 pb-6">
+<span class="font-display-hero text-[56px] leading-none uppercase italic font-black text-tertiary">$52.000</span>
+<span class="font-label-md text-label-md text-secondary">/ MES</span>
+</div>
+<!-- Bullet perks -->
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Sin permanencia mínima, cancelás cuando querés</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Entrená las veces al día que quieras</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Acceso completo a clases y musculación libre</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">check</span>
+<span>Reserva prioritaria en horarios pico</span>
+</li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface px-6 py-4 font-label-md text-label-md uppercase font-bold tracking-wider text-center flex items-center justify-center gap-2 transition-colors" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quiero%20anotarme%20en%20el%20Plan%20Pase%20Libre%20Mensual" rel="noopener noreferrer" target="_blank">
+<span>QUIERO ESTE PLAN</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. STATS BAND & TESTIMONIOS                                              -->
+<!-- ========================================================================= -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="w-full px-gutter-mobile md:px-margin flex flex-col gap-space-xl">
+<!-- Stats 4-Item Band -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter py-space-md">
+<div class="flex flex-col items-start p-4">
+<span class="font-display-hero text-display-hero uppercase italic font-black text-tertiary">500+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container pt-1">SOCIOS ACTIVOS</span>
+<span class="font-body-sm text-body-sm text-secondary">Comunidad de Villa Crespo</span>
+</div>
+<div class="flex flex-col items-start p-4">
+<span class="font-display-hero text-display-hero uppercase italic font-black text-tertiary">40+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container pt-1">CLASES SEMANALES</span>
+<span class="font-body-sm text-body-sm text-secondary">De lunes a sábado</span>
+</div>
+<div class="flex flex-col items-start p-4">
+<span class="font-display-hero text-display-hero uppercase italic font-black text-tertiary">12</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container pt-1">PROFES RECIBIDOS</span>
+<span class="font-body-sm text-body-sm text-secondary">Técnica y biomecánica</span>
+</div>
+<div class="flex flex-col items-start p-4">
+<span class="font-display-hero text-display-hero uppercase italic font-black text-primary-container">100%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary pt-1">ACTITUD Y COMPROMISO</span>
+<span class="font-body-sm text-body-sm text-secondary">Ambiente cero postura</span>
+</div>
+</div>
+<!-- Testimonials Header -->
+<div class="flex flex-col items-center text-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">LA VOZ DEL BARRIO</span>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-tertiary">
+          QUÉ DICEN QUIENES ENTRENAN ACÁ
+        </h2>
+</div>
+<!-- 3 Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-6 clip-cut-corner flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<!-- Lime Star glyphs -->
+<div class="flex text-primary-container gap-1">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic pt-2">
+              "Entreno hace dos años en Concept. Lo mejor es que los profes realmente corrigen la postura y no te sentís un número. El ambiente es insuperable."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm italic font-black text-primary-container">
+              MR
             </div>
-            <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 2 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgXtAfnkMI1CYo-yDgCHxWbe3YjsWjZoJKg3JI2cnUzn63gOKUhtwPGZU9RTI9NQSawzqQhpO2fIxTY4Qho2Mu7H57_2tE4z_ooMGYM_neYr5KyNhGRymwYb6oO3v39eqpIGI7k8vV8ZH1vKLMeS8O1JHpKKbg-7xjZCuCPdtI02zTtdcYFTb1IC5WNht7CXum16skibjfvaIBvreTHC83fCXEM1YYKPWskb_wI6QjSQ-zAmxjHEH7AqPmWCdUTbWrBzcBieMbuA" alt="Producto destacado 2" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Opción Artesanal B</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Pieza destacada con acabados cuidados y gran funcionalidad.</p>
+<div>
+<p class="font-label-md text-label-md uppercase font-bold text-tertiary">Matías R.</p>
+<p class="font-body-sm text-body-sm text-secondary">Vecino de Malabia (Socio Funcional)</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-6 clip-cut-corner flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex text-primary-container gap-1">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic pt-2">
+              "Las clases de spinning de las 19hs me cambiaron la semana. Tremenda energía del grupo, música al palo y el lugar siempre impecable y ventilado."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm italic font-black text-primary-container">
+              LP
             </div>
-            <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX7UN7eE_xdGd6zlA6GAJrtT5ZI-jDhiAGsVe_Z4rXY8CLcfnolXehLHK2UFr68cjua0hsKuXkR1z07qOaWASsGjV2AwiQwHaIgL4WcNNslwUcxyKhr4BcRW9m2ViD9Gq_8WsK9uiMy2o8hdnnMDUYF44egGTfLvdUxY8XBgVF3eHEYChrVn8kZdwvAUnjKkTJvkmfceCh5lk8-STfLiCGUBvMA-IGsVA2W4R5m8OStaajC5EzBioeE3aRfX0VrJ4kDGomvv_rfA" alt="Producto destacado 3" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Colección Urbana C</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Versátil, resistente y con el mejor balance para uso diario.</p>
+<div>
+<p class="font-label-md text-label-md uppercase font-bold text-tertiary">Luciana P.</p>
+<p class="font-body-sm text-body-sm text-secondary">Vecina de Serrano (Socia Spinning)</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-6 clip-cut-corner flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex text-primary-container gap-1">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic pt-2">
+              "El ambiente de barrio pero con equipamiento de primer nivel. Racks sólidos, discos olímpicos de verdad. Recomendadísimo si buscás constancia."
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-3">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm italic font-black text-primary-container">
+              DF
             </div>
-            <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="rounded-2xl overflow-hidden bg-brand-card border border-brand-border flex flex-col shadow-sm">
-          <div class="relative aspect-square w-full bg-stone-100 overflow-hidden">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA27T5MhvcOdVzWVpxazFlLh7vuVEeKP0b6FI2pgAMkDwNqgLs8GAPv6AGXghlonydIvFdnAanqeIkggfwNzYQOyvtH0O10C9_t4Tb8mwCaqlSSH22kRrzUmdnXc3Gm8QpnQcySm2gYa9YWW1zCVksHb_l4L0x_Z7vTcJHZwyY_7eLt5xly3IymRcmzL1eJsUe1oDreWKqqtIPj-y9hJfW3tuzrdZvGnl_3gIM2a46Q5hp-rIu4k0HezpYPDaFEw8lhCDfFTxlbbA" alt="Producto destacado 4" class="w-full h-full object-cover">
-            <span class="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-stone-800 px-2 py-0.5 rounded-full border border-stone-200">
-              Disponible
-            </span>
-          </div>
-          <div class="p-3 flex flex-col flex-1 justify-between">
-            <div>
-              <h3 class="font-bold text-brand-dark text-sm leading-snug">Serie Especial D</h3>
-              <p class="text-[11px] text-brand-muted mt-1 line-clamp-2">Alternativa recomendada con óptima relación calidad-precio.</p>
-            </div>
-            <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer"
-               class="mt-3.5 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-semibold text-xs border border-emerald-200/80 transition-colors active:scale-95">
-              <i class="fa-brands fa-whatsapp text-sm"></i>
-              <span>Consultar</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Visitanos -->
-    <section class="space-y-4">
-      <div>
-        <span class="text-xs uppercase font-bold tracking-wider text-brand-accent">Punto de encuentro</span>
-        <h2 class="text-xl font-bold text-brand-dark tracking-tight">Visitanos</h2>
-        <p class="text-xs text-brand-muted mt-0.5">Vení a conocernos al local o contactanos directamente.</p>
-      </div>
-
-      <div class="rounded-2xl bg-brand-card border border-brand-border p-5 space-y-4 shadow-sm">
-        <!-- Dirección -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Dirección</span>
-            <p class="text-sm font-semibold text-brand-dark">Serrano 290, Villa Crespo</p>
-            <p class="text-xs text-brand-muted">Villa Crespo, Ciudad de Buenos Aires</p>
-          </div>
-        </div>
-
-        <div class="border-t border-brand-border/60"></div>
-
-        <!-- Horarios -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-clock"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Horarios de atención</span>
-            <p class="text-sm font-semibold text-brand-dark">Lun-Vie 07:00-22:00 · Sáb 09:00-20:00</p>
-          </div>
-        </div>
-
-        <div class="border-t border-brand-border/60"></div>
-
-        <!-- Teléfono -->
-        <div class="flex items-start gap-3.5">
-          <div class="w-9 h-9 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-brand-accent shrink-0 mt-0.5">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div>
-            <span class="text-[11px] font-bold text-stone-500 uppercase tracking-wide">Teléfono</span>
-            <p class="text-sm font-semibold text-brand-dark">+54 11 4854-2745</p>
-          </div>
-        </div>
-
-        <!-- Botones de Acción -->
-        <div class="pt-2 grid grid-cols-1 gap-2.5">
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Concept%20Serrano%20290%2C%20Villa%20Crespo" target="_blank" rel="noopener noreferrer" 
-             class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-dark hover:bg-stone-800 text-white font-semibold text-sm transition-colors shadow-sm active:scale-[0.99]">
-            <i class="fa-solid fa-diamond-turn-right text-brand-accent"></i>
-            <span>Cómo llegar</span>
-          </a>
-
-          <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer" 
-             class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-whatsapp hover:bg-emerald-600 text-white font-semibold text-sm transition-all whatsapp-btn-glow active:scale-[0.99]">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
-            <span>Escribinos por WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="mt-12 border-t border-brand-border bg-stone-100/80 px-4 py-8 text-center">
-    <div class="max-w-md mx-auto space-y-2">
-      <div class="inline-block">
-        <span class="font-bold text-base text-brand-dark">Concept</span>
-        <span class="mx-1.5 text-stone-400">•</span>
-        <span class="text-xs text-brand-muted font-medium">Gimnasio</span>
-      </div>
-      <p class="text-xs text-stone-500">
-        Concept © 2026. Todos los derechos reservados.
-      </p>
-      <p class="text-[11px] text-stone-400">
-        Comercio barrial en Villa Crespo, Buenos Aires.
-      </p>
+<div>
+<p class="font-label-md text-label-md uppercase font-bold text-tertiary">Diego F.</p>
+<p class="font-body-sm text-body-sm text-secondary">Vecino de Gurruchaga (Socio Crossfit)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 6. CLASE DE PRUEBA GRATIS + VISITANOS EN EL BARRIO                       -->
+<!-- ========================================================================= -->
+<section class="w-full px-gutter-mobile md:px-margin py-space-xl bg-surface-container-lowest" id="clase-gratis">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- LEFT: Interactive Trial Form -->
+<div class="lg:col-span-7 bg-surface-container-low p-6 sm:p-8 clip-cut-corner flex flex-col justify-between" id="prueba-gratis">
+<div>
+<div class="inline-flex items-center gap-space-xs pb-2">
+<span class="w-2 h-2 bg-primary-container inline-block"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">SIN COSTO NI COMPROMISO</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-tertiary">
+            PEDÍ TU CLASE DE PRUEBA GRATIS
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary pt-1 pb-6">
+            Completá tus datos y te redirigimos al WhatsApp oficial para coordinar el día y horario que te quede más cómodo.
+          </p>
+<form class="space-y-4" id="free-trial-form">
+<!-- Nombre y Apellido -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" for="trial-name">NOMBRE Y APELLIDO *</label>
+<input class="w-full bg-surface-container-lowest text-tertiary placeholder:text-secondary/50 px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" id="trial-name" placeholder="Ej: Santiago Gómez" required="" type="text"/>
+</div>
+<!-- Disciplina Favorita -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" for="trial-discipline">DISCIPLINA DE INTERÉS *</label>
+<select class="w-full bg-surface-container-lowest text-tertiary px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" id="trial-discipline">
+<option value="Funcional">Funcional &amp; Kettlebells</option>
+<option value="Crossfit">Crossfit / WOD</option>
+<option value="Spinning">Spinning &amp; Indoor Cycle</option>
+<option value="Musculación">Musculación &amp; Racks</option>
+<option value="Boxeo">Boxeo Recreativo</option>
+<option value="Yoga">Yoga Flow</option>
+</select>
+</div>
+<!-- Turno Preferido -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" for="trial-shift">TURNO PREFERIDO *</label>
+<select class="w-full bg-surface-container-lowest text-tertiary px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" id="trial-shift">
+<option value="Mañana (07:00 a 12:00)">Mañana (07:00 a 12:00)</option>
+<option value="Tarde / Noche (17:00 a 22:00)">Tarde / Noche (17:00 a 22:00)</option>
+<option value="Sábado (09:00 a 14:00)">Sábado (09:00 a 14:00)</option>
+</select>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="clip-cut-corner w-full bg-primary-container hover:bg-tertiary text-on-primary-container hover:text-surface-container-lowest px-8 py-4 font-label-lg text-label-lg italic font-black uppercase tracking-widest flex items-center justify-center gap-2 transition-all duration-150 transform hover:-translate-y-0.5" type="submit">
+<span>SOLICITAR CLASE GRATIS POR WHATSAPP</span>
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-base text-primary-container">verified</span>
+<span class="font-label-sm text-label-sm uppercase">Atención directa e inmediata por el equipo de coordinación</span>
+</div>
+</div>
+<!-- RIGHT: Visit Us & Practical Neighborhood Data -->
+<div class="lg:col-span-5 bg-surface-container p-6 sm:p-8 clip-cut-corner flex flex-col justify-between gap-space-md" id="ubicacion">
+<div class="flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">LOCALIZACIÓN EXACTA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase italic font-black text-tertiary">
+            VISITANOS EN EL BARRIO
+          </h2>
+<div class="space-y-4 pt-2">
+<!-- Dirección -->
+<div class="flex items-start gap-3">
+<div class="p-2 bg-surface-container-high text-primary-container shrink-0">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">DIRECCIÓN</p>
+<p class="font-headline-sm text-headline-sm text-tertiary italic font-bold">Serrano 290, Villa Crespo</p>
+<p class="font-body-sm text-body-sm text-secondary">A 150m de Av. Corrientes · Subte B (Estación Malabia)</p>
+</div>
+</div>
+<!-- Horarios -->
+<div class="flex items-start gap-3">
+<div class="p-2 bg-surface-container-high text-primary-container shrink-0">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">HORARIOS DE ATENCIÓN</p>
+<p class="font-body-md text-body-md text-tertiary font-semibold">Lunes a viernes 7:00–22:00</p>
+<p class="font-body-md text-body-md text-tertiary font-semibold">Sábados 9:00–20:00</p>
+<p class="font-body-sm text-body-sm text-secondary">Domingo cerrado</p>
+</div>
+</div>
+<!-- Teléfono & WhatsApp -->
+<div class="flex items-start gap-3">
+<div class="p-2 bg-surface-container-high text-primary-container shrink-0">
+<span class="material-symbols-outlined text-xl">call</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">TELÉFONO DIRECTO</p>
+<a class="font-headline-sm text-headline-sm text-tertiary italic font-bold hover:text-primary-container transition-colors" href="tel:+541148542745">
+                  +54 11 4854-2745
+                </a>
+</div>
+</div>
+</div>
+<!-- Stylized Dark Street Intersection Graphic -->
+<div class="relative w-full h-32 bg-surface-container-lowest mt-4 overflow-hidden clip-cut-corner p-4 flex flex-col justify-between">
+<div class="absolute inset-0 opacity-10 flex flex-col justify-around">
+<div class="h-0.5 w-full bg-tertiary"></div>
+<div class="h-0.5 w-full bg-tertiary"></div>
+<div class="h-0.5 w-full bg-tertiary"></div>
+</div>
+<div class="relative z-10 flex justify-between items-start">
+<span class="font-label-sm text-label-sm uppercase text-secondary">INTERSECCIÓN CLAVE</span>
+<span class="px-2 py-0.5 bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-black">SUBTE B MALABIA</span>
+</div>
+<div class="relative z-10 flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm italic font-black text-tertiary">CORRIENTES &amp; SERRANO</span>
+</div>
+<span class="w-3 h-3 bg-primary-container rounded-full animate-ping"></span>
+</div>
+</div>
+</div>
+<!-- Google Maps Direct Link -->
+<div class="pt-4">
+<a class="w-full bg-surface-container-high hover:bg-surface-container-highest text-tertiary hover:text-primary-container px-6 py-4 font-label-md text-label-md uppercase font-bold tracking-wider text-center flex items-center justify-center gap-2 transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Concept+Gimnasio+Serrano+290+Villa+Crespo" rel="noopener noreferrer" target="_blank">
+<span>CÓMO LLEGAR (GOOGLE MAPS)</span>
+<span class="material-symbols-outlined text-base">near_me</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 7. FLOATING WHATSAPP BUTTON                                              -->
+<!-- ========================================================================= -->
+<div class="fixed bottom-6 right-6 z-50 flex items-center group">
+<!-- Tooltip label on desktop hover -->
+<div class="hidden md:flex mr-3 px-3 py-1.5 bg-surface-container-lowest text-tertiary font-label-sm text-label-sm uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl">
+      HABLANOS POR WHATSAPP
     </div>
-  </footer>
+<a aria-label="Escribinos por WhatsApp" class="relative w-14 h-14 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center shadow-2xl transform hover:scale-110 active:scale-95 transition-all" href="https://wa.me/5491148542745?text=Hola%20Concept!%20Quisiera%20recibir%20informaci%C3%B3n%20sobre%20el%20gimnasio" rel="noopener noreferrer" target="_blank">
+<span class="absolute inset-0 rounded-full bg-primary-container opacity-40 animate-ping"></span>
+<span class="material-symbols-outlined text-3xl font-black relative z-10">chat</span>
+</a>
+</div>
+<!-- ========================================================================= -->
+<!-- INLINE CLIENT MICRO-INTERACTION LOGIC                                    -->
+<!-- ========================================================================= -->
+<script>
+    (function initConceptGym() {
+      // 1. WhatsApp Reservation Builder for Schedule Cards
+      const scheduleCards = document.querySelectorAll('.class-card');
+      scheduleCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const discipline = card.getAttribute('data-class') || 'Entrenamiento';
+          const day = card.getAttribute('data-day') || 'Semana';
+          const time = card.getAttribute('data-time') || 'Turno';
+          const message = encodeURIComponent(`Hola Concept! Quiero reservar la clase de ${discipline} del ${day} a las ${time}`);
+          const url = `https://wa.me/5491148542745?text=${message}`;
+          window.open(url, '_blank');
+        });
+      });
 
-  <!-- Floating WhatsApp CTA Button -->
-  <aside aria-label="Contacto directo">
-    <a href="https://wa.me/5491148542745" target="_blank" rel="noopener noreferrer"
-       class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-brand-whatsapp hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl hover:scale-105 active:scale-95 transition-all whatsapp-btn-glow"
-       title="Consultar por WhatsApp">
-      <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
-  </aside>
+      // 2. Grilla Filter Interactivity (Desktop chips)
+      const filterButtons = document.querySelectorAll('#grilla-filter-container .filter-btn');
+      let currentFilter = 'TODAS';
 
-</body>
-</html>
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary-container');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary-container');
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+
+          currentFilter = btn.getAttribute('data-filter') || 'TODAS';
+
+          // Update Desktop Classes Visibility / Opacity
+          scheduleCards.forEach(card => {
+            const cardDiscipline = card.getAttribute('data-class');
+            if (currentFilter === 'TODAS' || cardDiscipline === currentFilter) {
+              card.style.opacity = '1';
+              card.style.pointerEvents = 'auto';
+            } else {
+              card.style.opacity = '0.2';
+              card.style.pointerEvents = 'none';
+            }
+          });
+
+          // Also re-render Mobile Schedule view
+          renderMobileSchedule();
+        });
+      });
+
+      // 3. Mobile Schedule Day Tabs & Dynamic Rendering
+      const scheduleData = {
+        'LUN': [
+          { time: '08:00', name: 'FUNCIONAL', coach: 'Profe Nico', type: 'FUNCIONAL' },
+          { time: '10:00', name: 'SPINNING', coach: 'Profe Caro', type: 'SPINNING' },
+          { time: '18:00', name: 'FUNCIONAL', coach: 'Profe Fede', type: 'FUNCIONAL' },
+          { time: '19:30', name: 'SPINNING RUSH', coach: 'Profe Lucas', type: 'SPINNING' },
+          { time: '20:30', name: 'CROSSFIT NIGHT', coach: 'Profe Juan', type: 'CROSSFIT' }
+        ],
+        'MAR': [
+          { time: '08:00', name: 'CROSSFIT', coach: 'Profe Juan', type: 'CROSSFIT' },
+          { time: '10:00', name: 'YOGA FLOW', coach: 'Profe Flor', type: 'YOGA' },
+          { time: '18:00', name: 'CROSSFIT', coach: 'Profe Juan', type: 'CROSSFIT' },
+          { time: '19:30', name: 'FUNCIONAL HIT', coach: 'Profe Nico', type: 'FUNCIONAL' },
+          { time: '20:30', name: 'YOGA ASHTANGA', coach: 'Profe Flor', type: 'YOGA' }
+        ],
+        'MIE': [
+          { time: '08:00', name: 'FUNCIONAL', coach: 'Profe Nico', type: 'FUNCIONAL' },
+          { time: '10:00', name: 'SPINNING', coach: 'Profe Caro', type: 'SPINNING' },
+          { time: '18:00', name: 'FUNCIONAL', coach: 'Profe Fede', type: 'FUNCIONAL' },
+          { time: '19:30', name: 'SPINNING RUSH', coach: 'Profe Lucas', type: 'SPINNING' },
+          { time: '20:30', name: 'CROSSFIT NIGHT', coach: 'Profe Juan', type: 'CROSSFIT' }
+        ],
+        'JUE': [
+          { time: '08:00', name: 'CROSSFIT', coach: 'Profe Juan', type: 'CROSSFIT' },
+          { time: '10:00', name: 'YOGA FLOW', coach: 'Profe Flor', type: 'YOGA' },
+          { time: '18:00', name: 'CROSSFIT', coach: 'Profe Juan', type: 'CROSSFIT' },
+          { time: '19:30', name: 'FUNCIONAL HIT', coach: 'Profe Nico', type: 'FUNCIONAL' },
+          { time: '20:30', name: 'YOGA ASHTANGA', coach: 'Profe Flor', type: 'YOGA' }
+        ],
+        'VIE': [
+          { time: '08:00', name: 'FUNCIONAL', coach: 'Profe Nico', type: 'FUNCIONAL' },
+          { time: '10:00', name: 'SPINNING', coach: 'Profe Caro', type: 'SPINNING' },
+          { time: '18:00', name: 'FUNCIONAL', coach: 'Profe Fede', type: 'FUNCIONAL' },
+          { time: '19:30', name: 'SPINNING RUSH', coach: 'Profe Lucas', type: 'SPINNING' },
+          { time: '20:30', name: 'FRIDAY WOD', coach: 'Profe Juan', type: 'CROSSFIT' }
+        ],
+        'SAB': [
+          { time: '09:30', name: 'SPINNING', coach: 'Profe Caro', type: 'SPINNING' },
+          { time: '11:00', name: 'TEAM WOD', coach: 'Profe Juan', type: 'CROSSFIT' },
+          { time: '12:30', name: 'OPEN BOX', coach: 'Guardia', type: 'FUNCIONAL' }
+        ]
+      };
+
+      let activeMobileDay = 'LUN';
+      const dayTabs = document.querySelectorAll('.day-tab');
+      const mobileContainer = document.getElementById('mobile-schedule-content');
+
+      function renderMobileSchedule() {
+        if (!mobileContainer) return;
+        const classes = scheduleData[activeMobileDay] || [];
+        const filtered = classes.filter(item => {
+          if (currentFilter === 'TODAS') return true;
+          return item.type === currentFilter;
+        });
+
+        if (filtered.length === 0) {
+          mobileContainer.innerHTML = `
+            <div class="p-6 bg-surface-container text-center font-body-sm text-secondary">
+              No hay clases de ${currentFilter} programadas para este día.
+            </div>
+          `;
+          return;
+        }
+
+        mobileContainer.innerHTML = filtered.map(item => `
+          <div data-class="${item.name}" data-day="${activeMobileDay}" data-time="${item.time}" class="mobile-item cursor-pointer p-4 bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between clip-cut-corner">
+            <div class="flex items-center gap-3">
+              <span class="font-headline-sm text-headline-sm italic font-bold text-primary-container">${item.time}</span>
+              <div>
+                <p class="font-headline-sm text-headline-sm uppercase italic font-black text-tertiary">${item.name}</p>
+                <p class="font-body-sm text-body-sm text-secondary">${item.coach}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 text-primary-container font-label-sm text-label-sm uppercase font-bold">
+              <span>RESERVAR</span>
+              <span class="material-symbols-outlined text-base">send</span>
+            </div>
+          </div>
+        `).join('');
+
+        // Attach tap listeners to generated items
+        mobileContainer.querySelectorAll('.mobile-item').forEach(el => {
+          el.addEventListener('click', () => {
+            const discipline = el.getAttribute('data-class');
+            const day = el.getAttribute('data-day');
+            const time = el.getAttribute('data-time');
+            const message = encodeURIComponent(`Hola Concept! Quiero reservar la clase de ${discipline} del ${day} a las ${time}`);
+            window.open(`https://wa.me/5491148542745?text=${message}`, '_blank');
+          });
+        });
+      }
+
+      dayTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          dayTabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary-container');
+            t.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          tab.classList.add('bg-primary-container', 'text-on-primary-container');
+          tab.classList.remove('bg-surface-container', 'text-on-surface');
+
+          activeMobileDay = tab.getAttribute('data-day') || 'LUN';
+          renderMobileSchedule();
+        });
+      });
+
+      // Initial mobile schedule paint
+      renderMobileSchedule();
+
+      // 4. Free Trial Form Submission Handler
+      const trialForm = document.getElementById('free-trial-form');
+      if (trialForm) {
+        trialForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const nameInput = document.getElementById('trial-name');
+          const disciplineInput = document.getElementById('trial-discipline');
+          const shiftInput = document.getElementById('trial-shift');
+
+          const name = nameInput ? nameInput.value.trim() : '';
+          const discipline = disciplineInput ? disciplineInput.value : '';
+          const shift = shiftInput ? shiftInput.value : '';
+
+          const text = `Hola Concept! Quiero mi clase de prueba gratis en Serrano 290. Mi nombre es ${name}. Disciplina de interés: ${discipline}. Turno preferido: ${shift}.`;
+          const url = `https://wa.me/5491148542745?text=${encodeURIComponent(text)}`;
+          window.open(url, '_blank');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest"><div class="w-full px-gutter-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-lg border-b border-surface-container-high"><div class="md:col-span-6 flex flex-col gap-space-xs"><div class="flex items-center"><span class="font-headline-md text-headline-md italic font-black uppercase text-tertiary tracking-tight">CONCEPT</span><span class="font-headline-md text-headline-md italic font-black text-primary-container ml-1">//</span></div><p class="font-body-sm text-body-sm text-secondary max-w-md">Instalación subterránea de alto rendimiento físico y mental. Fuerza estructural, acondicionamiento metabólico y precisión atlética en Villa Crespo, Buenos Aires.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">Instalación &amp; Acceso</span><p class="font-body-sm text-body-sm text-on-surface">Gurruchaga &amp; Av. Corrientes</p><p class="font-body-sm text-body-sm text-secondary">Villa Crespo, CABA</p><p class="font-body-sm text-body-sm text-secondary">Lunes a Viernes // 06:00 - 22:00</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">Contacto Directo</span><p class="font-body-sm text-body-sm text-on-surface">info@conceptgym.com.ar</p><p class="font-body-sm text-body-sm text-secondary">WA: +54 9 11 4987-6543</p><p class="font-body-sm text-body-sm text-secondary">IG: @concept.vc</p></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm uppercase tracking-widest text-secondary"><div>© 2025 CONCEPT GYM VILLA CRESPO. TODOS LOS DERECHOS RESERVADOS.</div><div class="flex items-center gap-space-md"><span class="text-primary-container">SYS.V2.4 // OPERATIVO</span><span>ALTO RENDIMIENTO URBANO</span></div></div></div></footer></body></html>
