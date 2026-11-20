@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#ffb59c", "tertiary-fixed": "#66ff8e", "inverse-on-surface": "#ffede8", "on-primary-fixed": "#390c00", "surface-container-highest": "#f5ddd7", "surface-variant": "#f5ddd7", "background": "#fff8f6", "surface-container-lowest": "#ffffff", "outline": "#8a726a", "on-tertiary": "#ffffff", "primary": "#9f3c16", "surface-bright": "#fff8f6", "secondary-fixed": "#dbe8b6", "on-error": "#ffffff", "surface-dim": "#edd5ce", "primary-fixed-dim": "#ffb59c", "on-secondary-container": "#5b673f", "on-primary-fixed-variant": "#822801", "secondary": "#57633b", "surface-container": "#ffe9e3", "on-surface": "#251915", "on-error-container": "#93000a", "tertiary": "#006b2e", "error": "#ba1a1a", "inverse-surface": "#3b2d29", "on-surface-variant": "#57423b", "on-tertiary-container": "#f7fff3", "on-primary": "#ffffff", "outline-variant": "#dec0b7", "on-background": "#251915", "on-tertiary-fixed-variant": "#005322", "secondary-container": "#d8e5b3", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#3de273", "on-tertiary-fixed": "#002109", "tertiary-container": "#00873c", "primary-fixed": "#ffdbcf", "primary-container": "#bf542c", "secondary-fixed-dim": "#bfcc9c", "surface-container-low": "#fff1ed", "on-primary-container": "#fffbff", "on-secondary-fixed-variant": "#404b26", "error-container": "#ffdad6", "on-secondary-fixed": "#151f01", "surface": "#fff8f6", "surface-tint": "#a23e18", "surface-container-high": "#fbe3dc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "2rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "headline-sm": ["Newsreader"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen pt-safe pb-safe"><div style="background:#111;color:#fff;font:13px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Demo de muestra hecha por Elias para San Bernardo. No es el sitio oficial del negocio.</div><main class="flex flex-col relative w-full px-margin bg-surface"><div class="flex flex-col w-full pb-16">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-40 w-full bg-surface/90 backdrop-blur-md px-margin py-3 flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">San Bernardo</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-0.5">Bar</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#25D366] text-white font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="https://wa.me/5491148553956">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Reservar</span>
+</a>
+</header>
+<!-- Hero Section -->
+<section class="flex flex-col px-margin pt-4 pb-6">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md">
+<img alt="Café de especialidad en Villa Crespo" class="w-full h-80 object-cover object-center" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/30 to-transparent flex flex-col justify-end p-5 text-surface-bright">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary text-surface-bright font-label-sm text-label-sm w-fit mb-2 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Villa Crespo • Buenos Aires</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-bright font-semibold leading-tight mb-1">
+          San Bernardo
+        </h1>
+<p class="font-headline-sm text-headline-sm text-surface-container-high italic mb-2">
+          Tu lugar en Villa Crespo
+        </p>
+<p class="font-body-sm text-body-sm text-surface-bright/90 line-clamp-3 mb-4">
+          Café de especialidad, cocina honesta de estación y pastelería artesanal hecha todos los días con amor de barrio.
+        </p>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg shadow-md active:scale-98 transition-transform" href="https://wa.me/5491148553956">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Pedí por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Nuestra Carta -->
+<section class="flex flex-col px-margin py-6">
+<div class="flex flex-col mb-6">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1">Platos y delicias</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Nuestra carta</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sabores simples, ingredientes nobles y recetas caseras</p>
+</div>
+<div class="grid grid-cols-1 gap-5">
+<!-- Card 1 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-48 overflow-hidden">
+<img alt="Medialunas con dulce de leche casero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
+</div>
+<div class="p-4 flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Medialunas artesanales de manteca</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Crocantes por fuera, esponjosas por dentro, bañadas en almíbar de naranja y acompañadas con dulce de leche casero.
+          </p>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-48 overflow-hidden">
+<img alt="Tostón de masa madre con jamón y burrata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
+</div>
+<div class="p-4 flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Tostón con jamón crudo y burrata</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pan de masa madre tostado, burrata cremosa, rúcula fresca del mercado y oliva virgen extra.
+          </p>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-48 overflow-hidden">
+<img alt="Ravioles caseros de ricota y nuez" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCeTRY5a8cfr3g-qt8uzkY1G5ho6v1VlWFj7xk8r0iIh9aT1EYHaVAU8AGChTgfdVbyO-FFLjd9pZr-0Vqw48qCFgfUWAK-X_2EkbYE5gJ7pOY5-6vGZZxEcWq5ReXLzG6SfTzZ1aBSoRod4skGsUi6kbZvsLhXQngtSLLvUR5fQ7WSTWroNEFNP7nI5ijloFwTb5ms0jOg1_N3HYPCRmfV903j6RauFd4gArb9hYkcDtsLYYTU2W8R4Q"/>
+</div>
+<div class="p-4 flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Ravioles caseros de ricota y nuez</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pasta fresca hecha a mano con manteca noisette, salvia fresca de nuestra huerta y nueces tostadas.
+          </p>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-48 overflow-hidden">
+<img alt="Café de especialidad filtrado y espresso" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
+</div>
+<div class="p-4 flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Café de especialidad filtrado y espresso</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Granos seleccionados de origen tostados en pequeños lotes, calibrados a diario por nuestros baristas.
+          </p>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-48 overflow-hidden">
+<img alt="Sandwich caliente de pastrón curado" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
+</div>
+<div class="p-4 flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Sandwich caliente de pastrón en jalá</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Mostaza artesanal a la antigua, pepinillos encurtidos caseros y queso fundido entre rebanadas doradas.
+          </p>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="w-full h-48 overflow-hidden">
+<img alt="Tarta rústica tibia de manzanas y canela" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
+</div>
+<div class="p-4 flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-1">Tarta rústica tibia de manzanas y canela</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Masa crocante con manteca de campo, manzanas caramelizadas y crema chantilly fresca recién batida.
+          </p>
+</div>
+</article>
+</div>
+</section>
+<!-- Gallery Strip -->
+<section class="flex flex-col py-6">
+<div class="px-margin mb-3 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Espacios</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">El rincón del barrio</h2>
+</div>
+<span class="material-symbols-outlined text-outline">photo_camera</span>
+</div>
+<div class="flex overflow-x-auto gap-3 px-margin py-2 scroll-smooth no-scrollbar">
+<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Ambiente de cafetería en Villa Crespo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDDkAGUM9dcbzUX2wMNhZxPuooWxNA0Tjn6O1TnKQeYCFKZvbGs2upuUzc1kNRkgu3Pfms1t5vG_OlKlCmLInc1Pvg8Km2YgXqb2x2BWwIDT0CZR6z0hWEA0N9jumWjd0vPZhbSRrvGy0qV5P7JJs6pI4AkiXn8T5LewRz_18t3AZp_EheLLKMPVJSGTFboefBVBhTK-3PdNHo0mpiVxqY_Z8WqL06YUmWn4V6-hNNAVd-Od7vhNqHd-Q"/>
+</div>
+<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Medialunas y café sobre mesa de madera" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrC5LOB23scJpIbU1bJbuGKv7nrGspV0G6wp2o8QKpW0ABqkCYIppL4_dXy_T2UlixC7eAqJLGPw12HINlI2pkjucSpTKjXG_4UbW62Fu4h58J8lJwiI--995gQoW6ucqXInjMyreZsywPiaQwaCM9Y_yeJa3cNdanm2JRsW7ZYLtv4ifemZmfpdDgpJUvxncofOIll8nycf1EOXDfbXYsV7XND_IO7j248RikicI5-V_l9wzIpOA0rM1A"/>
+</div>
+<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Tostón gourmet en plato artesanal de cerámica" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCgiZUprgUbeK7k3kjZ3COyjFdVcz0hW8AOlEhDIEUfGK_OIeA8Ecp9RgTa0BUaMbNd-JBH_uezAyBjhdGOezXEO2i-LAOqDylwV2_LnDot9emCL9xJ-j6uKMOYeCdDdYOhz0ZYngSs5Ps1xFptcLmrtper3TV8gAEX-N5XpQGiMAhEFlePsYc4IQOYwRBCZ18NHbCg8-ZbIILE8_DyIimM3fOk3FlZuxa7-5dOy2nfrYtm6V7YUWYu"/>
+</div>
+<div class="w-64 h-48 shrink-0 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Plato de pasta casera con copa de vino" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCeTRY5a8cfr3g-qt8uzkY1G5ho6v1VlWFj7xk8r0iIh9aT1EYHaVAU8AGChTgfdVbyO-FFLjd9pZr-0Vqw48qCFgfUWAK-X_2EkbYE5gJ7pOY5-6vGZZxEcWq5ReXLzG6SfTzZ1aBSoRod4skGsUi6kbZvsLhXQngtSLLvUR5fQ7WSTWroNEFNP7nI5ijloFwTb5ms0jOg1_N3HYPCRmfV903j6RauFd4gArb9hYkcDtsLYYTU2W8R4Q"/>
+</div>
+</div>
+</section>
+<!-- Reviews / Testimonios -->
+<section class="flex flex-col px-margin py-6">
+<div class="mb-4">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Comunidad</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Lo que dicen en el barrio</h2>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Review 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex text-amber-500 gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+          "Las mejores medialunas de Villa Crespo sin dudas. El café increíble y la atención te hace sentir como en casa."
+        </p>
+<span class="font-label-md text-label-md text-secondary font-medium">— Sofía M.</span>
+</div>
+<!-- Review 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex text-amber-500 gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+          "El lugar perfecto para trabajar un rato a la mañana o clavarse un vermucito al caer la tarde. Hermosa energía."
+        </p>
+<span class="font-label-md text-label-md text-secondary font-medium">— Lucas G.</span>
+</div>
+<!-- Review 3 -->
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex text-amber-500 gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+          "La pasta casera del mediodía y el tostón de burrata son de otro planeta. Una joyita escondida."
+        </p>
+<span class="font-label-md text-label-md text-secondary font-medium">— Camila R.</span>
+</div>
+</div>
+</section>
+<!-- Visitanos Section -->
+<section class="flex flex-col px-margin py-6">
+<div class="bg-surface-container rounded-2xl p-5 shadow-sm flex flex-col gap-5">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Acercate</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Visitanos</h2>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Dirección -->
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dirección</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Villa Crespo, CABA</span>
+</div>
+</div>
+<!-- Horarios -->
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Horarios</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">08:00-04:00</span>
+</div>
+</div>
+<!-- Teléfono -->
+<div class="flex items-start gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container-high text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Teléfono</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">+54 11 4855-3956</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-2.5 pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://www.google.com/maps/search/?api=1&amp;query=San%20Bernardo%20Villa%20Crespo%2C%20CABA">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Cómo llegar</span>
+</a>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] text-white font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5491148553956">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Escribinos por WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="flex flex-col items-center justify-center text-center px-margin pt-6 pb-12 mt-4">
+<p class="font-headline-sm text-headline-sm text-primary mb-1">San Bernardo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">
+      San Bernardo © 2026. Todos los derechos reservados.
+    </p>
+<p class="font-label-sm text-label-sm text-secondary">
+      Hecho con amor en Villa Crespo, Buenos Aires.
+    </p>
+</footer>
+<!-- Floating WhatsApp Action -->
+<a class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl active:scale-90 transition-transform" href="https://wa.me/5491148553956">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+</a>
+</div></main></body></html>
